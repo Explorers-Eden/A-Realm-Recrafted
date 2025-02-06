@@ -1,0 +1,23 @@
+{
+	"placement": {
+		"type": "minecraft:random_spread",
+		"separation": 20,
+		"spacing": 35,
+		"spread_type": "triangular",
+		"salt": 5819896,
+		"exclusion_zone": {
+			"other_set": "minecraft:end_cities",
+			"chunk_count": 10
+		}
+	},
+	"structures": [
+		{
+			"structure": "eden:end_ship_flying",
+			"weight": 6
+		},
+        {
+			"structure": "eden:end_ship_crashed",
+			"weight": 1
+		}
+	]
+}

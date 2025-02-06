@@ -1,0 +1,14 @@
+{
+    "name": "eden:end_ship/boomship2",
+    "fallback": "minecraft:empty",
+    "elements": [{
+        "weight": 1,
+        "element": {
+            "location": "eden:end_ship/end_ship_08_2",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+        }
+    }
+]
+}
