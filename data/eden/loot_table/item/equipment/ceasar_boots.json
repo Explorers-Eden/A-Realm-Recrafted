@@ -10,13 +10,13 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Caesar's Boots\",\"translate\":\"equipment.eden.caesar_boots\"}",
-                  "minecraft:custom_data": "{equipment:caesar_boots}",
-                  "minecraft:item_model": "eden:equipment/caesar_boots",
+                  "minecraft:item_name": "{\"fallback\":\"Ceasar's Boots\",\"translate\":\"equipment.eden.ceasar_boots\"}",
+                  "minecraft:custom_data": "{equipment:ceasar_boots}",
+                  "minecraft:item_model": "eden:equipment/ceasar_boots",
                   "minecraft:rarity": "rare",
                   "minecraft:equippable": {
                     "slot": "feet",
-                    "asset_id": "eden:caesar"
+                    "asset_id": "eden:ceasar"
                   }
                 }
               }

@@ -10,13 +10,13 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Caesar's Helmet\",\"translate\":\"equipment.eden.caesar_helmet\"}",
-                  "minecraft:custom_data": "{equipment:caesar_helmet}",
-                  "minecraft:item_model": "eden:equipment/caesar_helmet",
+                  "minecraft:item_name": "{\"fallback\":\"Ceasar's Helmet\",\"translate\":\"equipment.eden.ceasar_helmet\"}",
+                  "minecraft:custom_data": "{equipment:ceasar_helmet}",
+                  "minecraft:item_model": "eden:equipment/ceasar_helmet",
                   "minecraft:rarity": "rare",
                   "minecraft:equippable": {
                     "slot": "head",
-                    "asset_id": "eden:caesar"
+                    "asset_id": "eden:ceasar"
                   }
                 }
               }

@@ -10,13 +10,13 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Caesar's Leggings\",\"translate\":\"equipment.eden.caesar_leggings\"}",
-                  "minecraft:custom_data": "{equipment:caesar_leggings}",
-                  "minecraft:item_model": "eden:equipment/caesar_leggings",
+                  "minecraft:item_name": "{\"fallback\":\"Ceasar's Leggings\",\"translate\":\"equipment.eden.ceasar_leggings\"}",
+                  "minecraft:custom_data": "{equipment:ceasar_leggings}",
+                  "minecraft:item_model": "eden:equipment/ceasar_leggings",
                   "minecraft:rarity": "rare",
                   "minecraft:equippable": {
                     "slot": "legs",
-                    "asset_id": "eden:caesar"
+                    "asset_id": "eden:ceasar"
                   }
                 }
               }
