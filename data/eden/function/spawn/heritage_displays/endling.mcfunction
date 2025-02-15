@@ -15,7 +15,7 @@ tellraw @s [{"text":"▊ ","color":"dark_purple","bold":true,"italic":false},{"t
 tellraw @s [{"text":"▊ ","color":"dark_purple","bold":true,"italic":false},{"text":" ","color":"#D1D1D1","bold":false,"italic":false}]
 tellraw @s [{"text":"▊ ","color":"dark_purple","bold":true,"italic":false},{"text":"Characteristics:","color":"dark_purple","bold":false,"italic":false,"underlined":true}]
 tellraw @s [{"text":"▊ ","color":"dark_purple","bold":true,"italic":false},{"text":"• 0.04 Base Gravity","color":"#D1D1D1","bold":false,"italic":false}]
-tellraw @s [{"text":"▊ ","color":"dark_purple","bold":true,"italic":false},{"text":"• 1.5 Base Fall DAmage Multiplier","color":"#D1D1D1","bold":false,"italic":false}]
+tellraw @s [{"text":"▊ ","color":"dark_purple","bold":true,"italic":false},{"text":"• 1.5 Base Fall Damage Multiplier","color":"#D1D1D1","bold":false,"italic":false}]
 tellraw @s [{"text":"▊ ","color":"dark_purple","bold":true,"italic":false},{"text":"• Infinite Trial Omen Effect","color":"#D1D1D1","bold":false,"italic":false}]
 tellraw @s [{"text":"▊ ","color":"dark_purple","bold":true,"italic":false},{"text":"• Small Strength Effect When In The End","color":"#D1D1D1","bold":false,"italic":false}]
 tellraw @s [{"text":"▊ ","color":"dark_purple","bold":true,"italic":false},{"text":"• Guardian Entity: Enderman","color":"#D1D1D1","bold":false,"italic":false}]

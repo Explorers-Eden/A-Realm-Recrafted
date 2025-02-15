@@ -6,7 +6,7 @@ execute as @a[scores={huds.has_died_today=1..}] run scoreboard players set @s hu
 execute as @a[scores={huds.has_died_today=1..}] run scoreboard players set @s huds.years_lived.counter 0
 
 ##april fools
-execute as @a at @s if score $day huds.calendar matches 1 if score $month huds.calendar matches 4 run function huds:events/april_fools
+execute as @a at @s if predicate eden:percentages/25 if score $day huds.calendar matches 1 if score $month huds.calendar matches 4 run function huds:events/april_fools
 
 ##valentines day
 execute as @a at @s if predicate eden:percentages/25 if score $day huds.calendar matches 14 if score $month huds.calendar matches 2 run function huds:events/valentines_day
