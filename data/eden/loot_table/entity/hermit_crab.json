@@ -2,10 +2,7 @@
     "type": "minecraft:command",
     "pools": [
       {
-        "rolls": {
-          "min": 0,
-          "max": 1
-        },
+        "rolls": 1,
         "entries": [
           {
             "type": "minecraft:item",
