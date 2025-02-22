@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "heritage_horns",
+	"pattern": [
+		" # ",
+		" X ",
+		" X "
+	],
+	"key": {
+		"#": "minecraft:dead_bush",
+		"X": "minecraft:iron_ingot"
+	},
+	"result": {
+		"id": "minecraft:goat_horn",
+		"count": 1,
+		"components": {
+			"minecraft:item_model": "eden:dunesworn_horn",
+			"minecraft:item_name": "{\"fallback\":\"Horn of a Dunesworn\",\"translate\":\"items.eden.heritage_horn.dunesworn\"}",
+			"minecraft:instrument": "eden:dunesworn_horn",
+			"minecraft:custom_data": "{eden:dunesworn}",
+			"minecraft:use_cooldown": {
+				"seconds": 240,
+				"cooldown_group": "eden:heritage_horns"
+			}
+		}
+	}
+}

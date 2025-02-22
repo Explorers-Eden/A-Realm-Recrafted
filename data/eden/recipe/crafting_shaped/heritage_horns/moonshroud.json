@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "heritage_horns",
+	"pattern": [
+		" # ",
+		" X ",
+		" X "
+	],
+	"key": {
+		"#": "minecraft:echo_shard",
+		"X": "minecraft:iron_ingot"
+	},
+	"result": {
+		"id": "minecraft:goat_horn",
+		"count": 1,
+		"components": {
+			"minecraft:item_model": "eden:moonshroud_horn",
+			"minecraft:item_name": "{\"fallback\":\"Horn of a Moonshroud\",\"translate\":\"items.eden.heritage_horn.moonshroud\"}",
+			"minecraft:instrument": "eden:moonshroud_horn",
+			"minecraft:custom_data": "{eden:moonshroud}",
+			"minecraft:use_cooldown": {
+				"seconds": 240,
+				"cooldown_group": "eden:heritage_horns"
+			}
+		}
+	}
+}

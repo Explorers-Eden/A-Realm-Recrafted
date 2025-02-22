@@ -1,0 +1,11 @@
+{
+  "description": {
+    "translate": "instrument.redux.dunesworn_horn",
+      "fallback": "Call of Husks"
+  },
+  "range": 128,
+  "sound_event": {
+    "sound_id": "eden:item.heritage_horn.dunesworn"
+  },
+  "use_duration": 180
+}

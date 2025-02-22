@@ -1,2 +1,0 @@
-title @s actionbar [{"bold":false,"color":"white","italic":false,"text":"- "},{"bold":false,"color":"green","italic":false,"text":"Guardian Ready"},{"bold":false,"color":"white","italic":false,"text":" -"}]
-playsound minecraft:block.trial_spawner.spawn_item_begin master @a ~ ~ ~ 1 0.1

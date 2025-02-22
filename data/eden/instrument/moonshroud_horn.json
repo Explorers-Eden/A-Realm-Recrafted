@@ -1,0 +1,11 @@
+{
+  "description": {
+    "translate": "instrument.redux.moonshroud_horn",
+      "fallback": "Call of Wolves"
+  },
+  "range": 128,
+  "sound_event": {
+    "sound_id": "eden:item.heritage_horn.moonshroud"
+  },
+  "use_duration": 180
+}

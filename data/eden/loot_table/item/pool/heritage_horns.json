@@ -1,0 +1,270 @@
+
+{
+	"type": "minecraft:command",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:goat_horn",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_model": "eden:dunesworn_horn",
+			                    "minecraft:item_name": "{\"fallback\":\"Horn of a Dunesworn\",\"translate\":\"items.eden.heritage_horn.dunesworn\"}",
+			                    "minecraft:instrument": "eden:dunesworn_horn",
+			                    "minecraft:custom_data": "{eden:dunesworn}",
+								"minecraft:use_cooldown": {
+									"seconds": 240,
+									"cooldown_group": "eden:heritage_horns"
+								}
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"team": "eden.dunesworn"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:goat_horn",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_model": "eden:endling_horn",
+			                    "minecraft:item_name": "{\"fallback\":\"Horn of an Endling\",\"translate\":\"items.eden.heritage_horn.endling\"}",
+			                    "minecraft:instrument": "eden:endling_horn",
+			                    "minecraft:custom_data": "{eden:endling}",
+								"minecraft:use_cooldown": {
+									"seconds": 240,
+									"cooldown_group": "eden:heritage_horns"
+								}
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"team": "eden.endling"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:goat_horn",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+                                "minecraft:item_model": "eden:frostborne_horn",
+                                "minecraft:item_name": "{\"fallback\":\"Horn of a Frostborne\",\"translate\":\"items.eden.heritage_horn.frostborne\"}",
+                                "minecraft:instrument": "eden:frostborne_horn",
+                                "minecraft:custom_data": "{eden:frostborne}",
+								"minecraft:use_cooldown": {
+									"seconds": 240,
+									"cooldown_group": "eden:heritage_horns"
+								}
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"team": "eden.frostborne"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:goat_horn",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+                                "minecraft:item_model": "eden:moonshroud_horn",
+                                "minecraft:item_name": "{\"fallback\":\"Horn of a Moonshroud\",\"translate\":\"items.eden.heritage_horn.moonshroud\"}",
+                                "minecraft:instrument": "eden:moonshroud_horn",
+                                "minecraft:custom_data": "{eden:moonshroud}",
+								"minecraft:use_cooldown": {
+									"seconds": 240,
+									"cooldown_group": "eden:heritage_horns"
+								}
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"team": "eden.moonshroud"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:goat_horn",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+                                "minecraft:item_model": "eden:netherian_horn",
+                                "minecraft:item_name": "{\"fallback\":\"Horn of a Netherian\",\"translate\":\"items.eden.heritage_horn.netherian\"}",
+                                "minecraft:instrument": "eden:netherian_horn",
+                                "minecraft:custom_data": "{eden:netherian}",
+								"minecraft:use_cooldown": {
+									"seconds": 240,
+									"cooldown_group": "eden:heritage_horns"
+								}
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"team": "eden.netherian"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:goat_horn",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+                                "minecraft:item_model": "eden:oakhearted_horn",
+                                "minecraft:item_name": "{\"fallback\":\"Horn of an Oakhearted\",\"translate\":\"items.eden.heritage_horn.oakhearted\"}",
+                                "minecraft:instrument": "eden:oakhearted_horn",
+                                "minecraft:custom_data": "{eden:oakhearted}",
+								"minecraft:use_cooldown": {
+									"seconds": 240,
+									"cooldown_group": "eden:heritage_horns"
+								}
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"team": "eden.oakhearted"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:goat_horn",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+                                "minecraft:item_model": "eden:orebringer_horn",
+                                "minecraft:item_name": "{\"fallback\":\"Horn of an Orebringer\",\"translate\":\"items.eden.heritage_horn.orebringer\"}",
+                                "minecraft:instrument": "eden:orebringer_horn",
+                                "minecraft:custom_data": "{eden:orebringer}",
+								"minecraft:use_cooldown": {
+									"seconds": 240,
+									"cooldown_group": "eden:heritage_horns"
+								}
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"team": "eden.orebringer"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:goat_horn",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+                                "minecraft:item_model": "eden:turtlekin_horn",
+                                "minecraft:item_name": "{\"fallback\":\"Horn of a Turtlekin\",\"translate\":\"items.eden.heritage_horn.turtlekin\"}",
+                                "minecraft:instrument": "eden:turtlekin_horn",
+                                "minecraft:custom_data": "{eden:turtlekin}",
+								"minecraft:use_cooldown": {
+									"seconds": 240,
+									"cooldown_group": "eden:heritage_horns"
+								}
+							}
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"team": "eden.turtlekin"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

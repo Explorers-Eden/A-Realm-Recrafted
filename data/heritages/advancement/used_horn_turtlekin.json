@@ -1,0 +1,22 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": {
+					"type": "minecraft:player",
+					"team": "eden.turtlekin"
+				},
+				"item": {
+					"items": "minecraft:goat_horn",
+					"components": {
+						"minecraft:custom_data": "{eden:turtlekin}"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "heritages:guardians/trigger"
+	}
+}

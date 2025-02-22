@@ -1,0 +1,11 @@
+{
+  "description": {
+    "translate": "instrument.redux.netherian_horn",
+      "fallback": "Call of Zombified Piglins"
+  },
+  "range": 128,
+  "sound_event": {
+    "sound_id": "eden:item.heritage_horn.netherian"
+  },
+  "use_duration": 180
+}

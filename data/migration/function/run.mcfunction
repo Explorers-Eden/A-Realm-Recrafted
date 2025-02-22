@@ -19,4 +19,4 @@ execute as @a run attribute @s minecraft:max_health modifier remove pdr_5
 
 execute as @a[team=eden.orebringer,tag=!hero_effect_removed] run function migration:remove_hero
 
-schedule function migration:run 13s
+#schedule function migration:run 13s

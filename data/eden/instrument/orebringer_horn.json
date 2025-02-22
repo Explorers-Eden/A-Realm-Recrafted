@@ -1,0 +1,11 @@
+{
+  "description": {
+    "translate": "instrument.redux.orebringer_horn",
+      "fallback": "Call of Iron Golems"
+  },
+  "range": 128,
+  "sound_event": {
+    "sound_id": "eden:item.heritage_horn.orebringer"
+  },
+  "use_duration": 180
+}

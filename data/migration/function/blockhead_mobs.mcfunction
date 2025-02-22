@@ -50,4 +50,4 @@ execute as @e[type=panda,tag=nmr_snail] at @s run function blockhead_mobs:snail/
 execute as @e[type=panda,tag=nmr_snail] run kill @s
 execute as @e[type=item_display,tag=nmr_snail_head] run kill @s
 
-schedule function migration:blockhead_mobs 10s
+#schedule function migration:blockhead_mobs 10s

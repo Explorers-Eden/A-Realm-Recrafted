@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "heritage_horns",
+	"pattern": [
+		" # ",
+		" X ",
+		" X "
+	],
+	"key": {
+		"#": "minecraft:oak_sapling",
+		"X": "minecraft:iron_ingot"
+	},
+	"result": {
+		"id": "minecraft:goat_horn",
+		"count": 1,
+		"components": {
+			"minecraft:item_model": "eden:oakhearted_horn",
+			"minecraft:item_name": "{\"fallback\":\"Horn of an Oakhearted\",\"translate\":\"items.eden.heritage_horn.oakhearted\"}",
+			"minecraft:instrument": "eden:oakhearted_horn",
+			"minecraft:custom_data": "{eden:oakhearted}",
+			"minecraft:use_cooldown": {
+				"seconds": 240,
+				"cooldown_group": "eden:heritage_horns"
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "description": {
+    "translate": "instrument.redux.turtlekin_horn",
+      "fallback": "Call of Pufferfish"
+  },
+  "range": 128,
+  "sound_event": {
+    "sound_id": "eden:item.heritage_horn.turtlekin"
+  },
+  "use_duration": 180
+}

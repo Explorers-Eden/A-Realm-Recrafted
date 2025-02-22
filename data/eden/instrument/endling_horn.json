@@ -1,0 +1,11 @@
+{
+  "description": {
+    "translate": "instrument.redux.endling_horn",
+      "fallback": "Call of Endermen"
+  },
+  "range": 128,
+  "sound_event": {
+    "sound_id": "eden:item.heritage_horn.endling"
+  },
+  "use_duration": 180
+}
