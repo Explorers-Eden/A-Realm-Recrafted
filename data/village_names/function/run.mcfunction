@@ -20,8 +20,8 @@ execute as @e[type=text_display,tag=village.name] at @s unless block ~ ~ ~ #mine
 
 execute as @e[type=villager,tag=eden.villagename.set,limit=32,sort=random] unless data entity @s Brain.memories.minecraft:meeting_point.value run tag @s remove eden.villagename.set
 
-execute as @e[type=player,tag=!at_village] at @s if entity @e[type=marker,tag=village.name,distance=..96] unless score @s village_names matches 1 run function village_names:display_name/entering with entity @n[type=marker,tag=village.name]
-execute as @e[type=player,tag=!not_at_village] at @s unless entity @e[type=marker,tag=village.name,distance=..96] run function village_names:display_name/exiting
+execute as @e[type=player,tag=!at_village] at @s if entity @e[type=marker,tag=village.name,distance=..64] run function village_names:display_name/entering with entity @n[type=marker,tag=village.name]
+execute as @e[type=player,tag=!not_at_village] at @s unless entity @e[type=marker,tag=village.name,distance=..64] run function village_names:display_name/exiting
 
 execute as @e[type=#eden:valid_for_village_healing] at @s if entity @e[type=marker,tag=village.name,distance=..32] unless predicate eden:time/night_time run effect give @s regeneration 5 0 true
 
