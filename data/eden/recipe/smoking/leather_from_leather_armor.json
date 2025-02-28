@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:smoking",
+	"category": "misc",
+	"cookingtime": 200,
+	"experience": 0.1,
+	"ingredient": [
+		"minecraft:leather_boots",
+		"minecraft:leather_chestplate",
+		"minecraft:leather_helmet",
+		"minecraft:leather_leggings"
+	],
+	"result": {
+		"id": "minecraft:leather"
+	}
+}

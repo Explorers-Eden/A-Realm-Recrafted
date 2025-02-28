@@ -1,0 +1,1 @@
+execute in minecraft:overworld positioned -205.00 -41.46 425.51 if entity @e[type=minecraft:chicken,tag=!name_set,distance=..25] run function eden:misc/chicken_naming/get_data
