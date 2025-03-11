@@ -26,8 +26,8 @@ $execute if score $eden.chest.type eden.technical matches 61..65 if score $eden.
 execute if score $eden.chest.type eden.technical matches 66..67 if score $eden.chest.trimmed eden.technical matches 1 run data modify entity @s ArmorItems[2] set value {id:"minecraft:netherite_chestplate",count:1}
 $execute if score $eden.chest.type eden.technical matches 66..67 if score $eden.chest.trimmed eden.technical matches 2 run data modify entity @s ArmorItems[2] set value {id:"minecraft:netherite_chestplate",count:1,components:{trim:{material:"minecraft:$(trim_material)",pattern:"minecraft:$(trim_pattern)"}}}
 
-execute if score $eden.chest.type eden.technical matches 1..30 run data modify entity @s ArmorDropChances[2] set value 0.100F
-execute if score $eden.chest.type eden.technical matches 31..40 run data modify entity @s ArmorDropChances[2] set value 0.080F
-execute if score $eden.chest.type eden.technical matches 41..50 run data modify entity @s ArmorDropChances[2] set value 0.060F
-execute if score $eden.chest.type eden.technical matches 51..60 run data modify entity @s ArmorDropChances[2] set value 0.040F
+execute if score $eden.chest.type eden.technical matches 1..30 run data modify entity @s ArmorDropChances[2] set value 0.025F
+execute if score $eden.chest.type eden.technical matches 31..40 run data modify entity @s ArmorDropChances[2] set value 0.020F
+execute if score $eden.chest.type eden.technical matches 41..50 run data modify entity @s ArmorDropChances[2] set value 0.015F
+execute if score $eden.chest.type eden.technical matches 51..60 run data modify entity @s ArmorDropChances[2] set value 0.010F
 execute if score $eden.chest.type eden.technical matches 61..67 run data modify entity @s ArmorDropChances[2] set value -327.670F

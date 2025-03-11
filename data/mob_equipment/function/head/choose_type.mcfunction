@@ -36,8 +36,8 @@ execute if score $eden.head.type eden.technical matches 85 if score $eden.head.t
 execute if score $eden.head.type eden.technical matches 87 if score $eden.head.trimmed eden.technical matches 1 run data modify entity @s ArmorItems[3] set value {id:"minecraft:end_rod",count:1}
 execute if score $eden.head.type eden.technical matches 89 if score $eden.head.trimmed eden.technical matches 1 run data modify entity @s ArmorItems[3] set value {id:"minecraft:cod",count:1}
 
-execute if score $eden.feet.type eden.technical matches 1..30 run data modify entity @s ArmorDropChances[3] set value 0.100F
-execute if score $eden.feet.type eden.technical matches 31..40 run data modify entity @s ArmorDropChances[3] set value 0.080F
-execute if score $eden.feet.type eden.technical matches 41..50 run data modify entity @s ArmorDropChances[3] set value 0.060F
-execute if score $eden.feet.type eden.technical matches 51..60 run data modify entity @s ArmorDropChances[3] set value 0.040F
+execute if score $eden.feet.type eden.technical matches 1..30 run data modify entity @s ArmorDropChances[3] set value 0.025F
+execute if score $eden.feet.type eden.technical matches 31..40 run data modify entity @s ArmorDropChances[3] set value 0.020F
+execute if score $eden.feet.type eden.technical matches 41..50 run data modify entity @s ArmorDropChances[3] set value 0.015F
+execute if score $eden.feet.type eden.technical matches 51..60 run data modify entity @s ArmorDropChances[3] set value 0.010F
 execute if score $eden.feet.type eden.technical matches 61..89 run data modify entity @s ArmorDropChances[3] set value -327.670F

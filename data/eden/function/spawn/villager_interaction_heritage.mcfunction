@@ -3,7 +3,7 @@ execute as @e[type=minecraft:interaction,tag=heritage_villager] if data entity @
 
 advancement revoke @s only eden:technical/spawn_interactions/villager_heritage
 
-execute unless items entity @s weapon.* #eden:heritage_items run return run tellraw @s [{"text":"Villager: ","color":"green","bold":true,"italic":false},{"text":"You're not holding any heritage book. Talk to me again if you made up your choice and bring me a heritage book.","color":"gray","bold":false,"italic":true}]
+execute unless items entity @s weapon.* #eden:heritage_items run return run tellraw @s [{"text":"Villager: ","color":"green","bold":true,"italic":false},{"text":"You're not holding a heritage token. Talk to me again if you made up your choice and bring me a heritage token.","color":"gray","bold":false,"italic":true}]
 
 execute if items entity @s weapon.* minecraft:arms_up_pottery_sherd[minecraft:custom_data={token:dunesworn}] at @s run return run function heritages:dunesworn/select
 execute if items entity @s weapon.* minecraft:ender_eye[minecraft:custom_data={token:endling}] at @s run return run function heritages:endling/select

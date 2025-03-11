@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "banner_dye",
+    "category": "misc",
+    "ingredients": [
+      "#minecraft:banners",
+      "minecraft:magenta_dye"
+    ],
+    "result": {
+      "id": "minecraft:magenta_banner"
+    }
+  }

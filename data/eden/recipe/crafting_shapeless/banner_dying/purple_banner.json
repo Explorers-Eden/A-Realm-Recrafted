@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "banner_dye",
+    "category": "misc",
+    "ingredients": [
+      "#minecraft:banners",
+      "minecraft:purple_dye"
+    ],
+    "result": {
+      "id": "minecraft:purple_banner"
+    }
+  }
