@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Horns\"}",
+                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Horn\"}",
                   "minecraft:custom_data": "{hats:horns_1}",
                   "minecraft:item_model": "eden:hats/horns_1",
                 "minecraft:equippable": {

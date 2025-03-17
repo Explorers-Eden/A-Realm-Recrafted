@@ -46,4 +46,4 @@ gamerule commandBlockOutput false
 gamerule playersSleepingPercentage 66
 gamerule announceAdvancements false
 gamerule enderPearlsVanishOnDeath true
-gamerule sendCommandFeedback false
+#gamerule sendCommandFeedback false
