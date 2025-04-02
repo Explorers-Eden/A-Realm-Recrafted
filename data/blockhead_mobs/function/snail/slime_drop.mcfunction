@@ -1,2 +1,0 @@
-
-execute as @e[tag=eden.snail,type=armadillo] at @s positioned ^ ^.2 ^-.2 if predicate eden:percentages/2-5 if predicate eden:location/valid_for_snail_drop run summon item ~ ~ ~ {Item:{id:"minecraft:slime_ball",Count:1b}}
