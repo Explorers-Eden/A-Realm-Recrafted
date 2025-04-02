@@ -121,6 +121,6 @@ ___
 <img src="https://explorerseden.eu/uploads/nice_mobs/cruncher_small.gif" style="float: right;" alt="cruncher_small" width=14%>
 
 ### Cruncher
-A mob that lives in the Badlands biome. It loves to eat ore blocks, and when it does, it spits out a cobblestone version of them. It's fire-resistant and doesn’t take fall damage, so it can survive tough environments. If you hit it, the Cruncher will drop the ores it ate, giving you a chance to get them back. It’s a weird but useful creature to find in the Badlands!
+A mob that lives in the Badlands biome. It loves to eat ore blocks, and when it does, it spits out a cobbled stone/deepslate. It's fire-resistant and doesn’t take fall damage, so it can survive tough environments. If you hit it, the Cruncher will drop the ores it ate, giving you a chance to get them back. It’s a weird but useful creature to find in the Badlands!
 
 <br>
