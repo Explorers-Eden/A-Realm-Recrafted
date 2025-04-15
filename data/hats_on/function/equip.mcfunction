@@ -1,2 +1,0 @@
-execute if items entity @s armor.head * if items entity @s weapon.mainhand * run function hats_on:wears_hat
-execute unless items entity @s armor.head * if items entity @s weapon.mainhand * run function hats_on:no_hat

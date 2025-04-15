@@ -1,2 +1,0 @@
-execute store result score $eden.head.color eden.technical run random value 0..16777215
-execute store result storage eden:temp mob_equipment.head.color int 1 run scoreboard players get $eden.head.color eden.technical

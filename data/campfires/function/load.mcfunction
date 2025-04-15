@@ -1,1 +1,0 @@
-schedule function campfires:replace_vanilla/run 3s

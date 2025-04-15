@@ -1,1 +1,0 @@
-playsound minecraft:entity.firework_rocket.launch master @s ~ ~ ~ 1 1

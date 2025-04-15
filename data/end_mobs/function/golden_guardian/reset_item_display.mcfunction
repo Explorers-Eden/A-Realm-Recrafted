@@ -1,2 +1,0 @@
-execute as @e[type=item_display,tag=eden.golden_guardian.head] run data modify entity @s item set value {id:"minecraft:player_head",count:1,components:{profile:{name:"goldenguardian",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE0MWM4NTEwN2Y4YTI5YjU0NWNlZWFlN2RmNmNkODVhODVhMDU1ZWJkNTA1OGQ1NzNhNzk3OTQ2MGY2NzM0NiJ9fX0="}]}}}
-execute as @e[type=item_display,tag=eden.golden_guardian.head] run tag @s remove eden.golden_guardian.reset

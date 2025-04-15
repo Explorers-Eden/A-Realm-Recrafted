@@ -1,1 +1,0 @@
-effect give @a minecraft:luck 30 4 true

@@ -1,1 +1,0 @@
-execute if predicate eden:percentages/10 run loot spawn ~ ~ ~ loot eden:gameplay/easter_egg
