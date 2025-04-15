@@ -7,7 +7,7 @@ clear @s minecraft:oak_sapling[minecraft:custom_data={token:oakhearted}]
 clear @s minecraft:stone_pickaxe[minecraft:custom_data={token:orebringer}]
 clear @s minecraft:nautilus_shell[minecraft:custom_data={token:turtlekin}]
 
-give @s powder_snow_bucket[item_name='{"bold":false,"color":"aqua","italic":false,"text":"Token of a Frostborne"}',custom_data={token:frostborne}] 1
+give @s powder_snow_bucket[item_name={"bold":false,"color":"aqua","italic":false,"text":"Token of a Frostborne"},custom_data={token:frostborne}] 1
 
 execute as @s at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 tellraw @s [{"text":"▊ ","color":"aqua","bold":true,"italic":false},{"text":"Legend tells of the Frostborne, ancient people who emerged from the heart of glaciers, their bodies forged by the endless cold of the frozen north.","color":"#D1D1D1","bold":false,"italic":false}]

@@ -7,7 +7,7 @@ clear @s minecraft:oak_sapling[minecraft:custom_data={token:oakhearted}]
 clear @s minecraft:stone_pickaxe[minecraft:custom_data={token:orebringer}]
 clear @s minecraft:nautilus_shell[minecraft:custom_data={token:turtlekin}]
 
-give @s nautilus_shell[item_name='{"bold":false,"color":"dark_aqua","italic":false,"text":"Token of a Turtlekin"}',custom_data={token:turtlekin}] 1
+give @s nautilus_shell[item_name={"bold":false,"color":"dark_aqua","italic":false,"text":"Token of a Turtlekin"},custom_data={token:turtlekin}] 1
 
 execute as @s at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 tellraw @s [{"text":"▊ ","color":"dark_aqua","bold":true,"italic":false},{"text":"Legend speaks of the Turtlekin, an ancient race born from the primordial energies of the sea itself. Shaped by the essence of the ocean’s currents and tides, they are one with the vast and mysterious depths.","color":"#D1D1D1","bold":false,"italic":false}]

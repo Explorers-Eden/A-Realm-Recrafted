@@ -7,7 +7,7 @@ clear @s minecraft:oak_sapling[minecraft:custom_data={token:oakhearted}]
 clear @s minecraft:stone_pickaxe[minecraft:custom_data={token:orebringer}]
 clear @s minecraft:nautilus_shell[minecraft:custom_data={token:turtlekin}]
 
-give @s oak_sapling[item_name='{"bold":false,"color":"dark_green","italic":false,"text":"Token of an Oakhearted"}',custom_data={token:oakhearted}] 1
+give @s oak_sapling[item_name={"bold":false,"color":"dark_green","italic":false,"text":"Token of an Oakhearted"},custom_data={token:oakhearted}] 1
 
 execute as @s at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 tellraw @s [{"text":"▊ ","color":"dark_green","bold":true,"italic":false},{"text":"In the heart of lush, sprawling forests where the canopy stretches high above and the roots run deep beneath the earth, there dwells a race known as the Oakhearted.","color":"#D1D1D1","bold":false,"italic":false}]

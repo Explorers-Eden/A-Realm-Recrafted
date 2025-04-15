@@ -16,6 +16,7 @@ scoreboard objectives add eden.digsite.placed dummy
 scoreboard objectives add eden.digsite.attempts dummy
 scoreboard objectives add eden.digsite.age dummy
 scoreboard objectives add eden.digsite.type dummy
+scoreboard objectives add eden.deathcounter deathCount
 
 ##init schedules
 schedule function eden:rtp/run 2s
@@ -32,6 +33,9 @@ schedule function eden:wandering_trader/run 3s
 schedule function eden:misc/update_material_lore 5s
 schedule function eden:villager/run 9t
 schedule function eden:misc/migration 11s
+
+##run on load
+function eden:database/create
 
 ##gamerules
 difficulty hard

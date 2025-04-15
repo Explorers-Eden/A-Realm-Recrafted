@@ -7,7 +7,7 @@ clear @s minecraft:oak_sapling[minecraft:custom_data={token:oakhearted}]
 clear @s minecraft:stone_pickaxe[minecraft:custom_data={token:orebringer}]
 clear @s minecraft:nautilus_shell[minecraft:custom_data={token:turtlekin}]
 
-give @s blaze_powder[item_name='{"bold":false,"color":"red","italic":false,"text":"Token of a Netherian"}',custom_data={token:netherian}] 1
+give @s blaze_powder[item_name={"bold":false,"color":"red","italic":false,"text":"Token of a Netherian"},custom_data={token:netherian}] 1
 
 execute as @s at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 tellraw @s [{"text":"▊ ","color":"red","bold":true,"italic":false},{"text":"Forged in the crucible of lava and brimstone, the Netherians are a race born from the searing heat and molten chaos of the Nether. Their homeland is a land of perpetual fire and ash, where rivers of lava flow freely and the very air is thick with the scent of sulfur.","color":"#D1D1D1","bold":false,"italic":false}]

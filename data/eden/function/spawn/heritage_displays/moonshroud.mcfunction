@@ -7,7 +7,7 @@ clear @s minecraft:oak_sapling[minecraft:custom_data={token:oakhearted}]
 clear @s minecraft:stone_pickaxe[minecraft:custom_data={token:orebringer}]
 clear @s minecraft:nautilus_shell[minecraft:custom_data={token:turtlekin}]
 
-give @s echo_shard[item_name='{"bold":false,"color":"blue","italic":false,"text":"Token of a Moonshroud"}',custom_data={token:moonshroud}] 1
+give @s echo_shard[item_name={"bold":false,"color":"blue","italic":false,"text":"Token of a Moonshroud"},custom_data={token:moonshroud}] 1
 
 execute as @s at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 tellraw @s [{"text":"▊ ","color":"blue","bold":true,"italic":false},{"text":"The Moonshroud are beings of grace and silence, their movements fluid and almost spectral. Their skin reflects the silvered hues of moonlight, and their eyes glow faintly with the pale luminescence of the lunar surface, giving them an otherworldly, ghost-like appearance.","color":"#D1D1D1","bold":false,"italic":false}]

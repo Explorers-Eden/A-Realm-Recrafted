@@ -7,7 +7,7 @@ clear @s minecraft:oak_sapling[minecraft:custom_data={token:oakhearted}]
 clear @s minecraft:stone_pickaxe[minecraft:custom_data={token:orebringer}]
 clear @s minecraft:nautilus_shell[minecraft:custom_data={token:turtlekin}]
 
-give @s stone_pickaxe[item_name='{"bold":false,"color":"#D1D1D1","italic":false,"text":"Token of an Orebringer"}',custom_data={token:orebringer}] 1
+give @s stone_pickaxe[item_name={"bold":false,"color":"#D1D1D1","italic":false,"text":"Token of an Orebringer"},custom_data={token:orebringer}] 1
 
 execute as @s at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 tellraw @s [{"text":"▊ ","color":"gray","bold":true,"italic":false},{"text":"Deep beneath the surface of the world, where light fades and the stone speaks in whispers, dwell the Orebringers—guardians of the subterranean realms.","color":"#D1D1D1","bold":false,"italic":false}]

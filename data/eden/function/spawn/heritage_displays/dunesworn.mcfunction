@@ -7,7 +7,7 @@ clear @s minecraft:oak_sapling[minecraft:custom_data={token:oakhearted}]
 clear @s minecraft:stone_pickaxe[minecraft:custom_data={token:orebringer}]
 clear @s minecraft:nautilus_shell[minecraft:custom_data={token:turtlekin}]
 
-give @s arms_up_pottery_sherd[item_name='{"bold":false,"color":"yellow","italic":false,"text":"Token of a Dunesworn"}',custom_data={token:dunesworn}] 1
+give @s arms_up_pottery_sherd[item_name={"bold":false,"color":"yellow","italic":false,"text":"Token of a Dunesworn"},custom_data={token:dunesworn}] 1
 
 execute as @s at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 tellraw @s [{"text":"▊ ","color":"yellow","bold":true,"italic":false},{"text":"In the scorching deserts, amidst the shifting sands and relentless sun, dwells a race known as the Dunesworn.","color":"#D1D1D1","bold":false,"italic":false}]

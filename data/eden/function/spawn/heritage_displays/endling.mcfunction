@@ -7,7 +7,7 @@ clear @s minecraft:oak_sapling[minecraft:custom_data={token:oakhearted}]
 clear @s minecraft:stone_pickaxe[minecraft:custom_data={token:orebringer}]
 clear @s minecraft:nautilus_shell[minecraft:custom_data={token:turtlekin}]
 
-give @s ender_eye[item_name='{"bold":false,"color":"dark_purple","italic":false,"text":"Token of an Endling"}',custom_data={token:endling}] 1
+give @s ender_eye[item_name={"bold":false,"color":"dark_purple","italic":false,"text":"Token of an Endling"},custom_data={token:endling}] 1
 
 execute as @s at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 tellraw @s [{"text":"▊ ","color":"dark_purple","bold":true,"italic":false},{"text":"Legends whisper of the Endlings, the last surviving echoes of a once-great and now forgotten civilization, living on the Fringes of Reality, where the boundaries between worlds blur and twist.","color":"#D1D1D1","bold":false,"italic":false}]
