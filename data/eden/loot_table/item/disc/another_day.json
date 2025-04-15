@@ -10,15 +10,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Music Disc\",\"translate\":\"discs.eden.music_disc\"}",
                 "minecraft:custom_data": "{music:another_day}",
                 "minecraft:item_model": "eden:discs/another_day",
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "rare",
-                "minecraft:jukebox_playable": {
-                  "song": "eden:another_day",
-                  "show_in_tooltip": true
-                }
+                "minecraft:jukebox_playable": "eden:another_day"
               }
             }
           ]

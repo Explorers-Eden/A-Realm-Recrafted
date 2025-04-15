@@ -10,15 +10,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Music Disc\",\"translate\":\"discs.eden.music_disc\"}",
                 "minecraft:custom_data": "{music:all_for_one}",
                 "minecraft:item_model": "eden:discs/all_for_one",
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "rare",
-                "minecraft:jukebox_playable": {
-                  "song": "eden:all_for_one",
-                  "show_in_tooltip": true
-                }
+                "minecraft:jukebox_playable": "eden:all_for_one"
               }
             }
           ]

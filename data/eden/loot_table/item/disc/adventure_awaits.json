@@ -10,15 +10,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Music Disc\",\"translate\":\"discs.eden.music_disc\"}",
                 "minecraft:custom_data": "{music:adventure_awaits}",
                 "minecraft:item_model": "eden:discs/adventure_awaits",
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "rare",
-                "minecraft:jukebox_playable": {
-                  "song": "eden:adventure_awaits",
-                  "show_in_tooltip": true
-                }
+                "minecraft:jukebox_playable": "eden:adventure_awaits"
               }
             }
           ]

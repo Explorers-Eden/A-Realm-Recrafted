@@ -1,9 +1,0 @@
-{
-  "angry_texture": "minecraft:entity/wolf/wolf_shrub_angry",
-  "tame_texture": "minecraft:entity/wolf/wolf_shrub_tame",
-  "wild_texture": "minecraft:entity/wolf/wolf_shrub",
-
-  "biomes": [
-    "minecraft:windswept_savanna"
-  ]
-}

@@ -19,7 +19,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Bamboo Bow\",\"translate\":\"tools.eden.bow.bamboo\"}",
+                  "minecraft:item_name": {"fallback":"Bamboo Bow","translate":"tools.eden.bow.bamboo"},
                   "minecraft:custom_data": "{tools:bamboo_bow}",
                   "minecraft:item_model": "eden:bows/bamboo",
                   "minecraft:max_stack_size": 1,
@@ -32,4 +32,3 @@
       }
     ]
   }
-  

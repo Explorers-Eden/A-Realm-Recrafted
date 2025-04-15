@@ -10,15 +10,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Music Disc\",\"translate\":\"discs.eden.music_disc\"}",
                 "minecraft:custom_data": "{music:trick_or_treat}",
                 "minecraft:item_model": "eden:discs/trick_or_treat",
                 "minecraft:max_stack_size": 1,
                 "minecraft:rarity": "rare",
-                "minecraft:jukebox_playable": {
-                  "song": "eden:trick_or_treat",
-                  "show_in_tooltip": true
-                }
+                "minecraft:jukebox_playable": "eden:trick_or_treat"
               }
             }
           ]

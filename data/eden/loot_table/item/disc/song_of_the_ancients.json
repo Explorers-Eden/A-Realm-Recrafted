@@ -10,15 +10,11 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Music Disc\",\"translate\":\"discs.eden.music_disc\"}",
                   "minecraft:custom_data": "{music:song_of_the_ancients}",
                   "minecraft:item_model": "eden:discs/song_of_the_ancients",
                   "minecraft:max_stack_size": 1,
                   "minecraft:rarity": "rare",
-                  "minecraft:jukebox_playable": {
-                    "song": "eden:song_of_the_ancients",
-                    "show_in_tooltip": true
-                  }
+                  "minecraft:jukebox_playable": "eden:song_of_the_ancients"
                 }
               }
             ]
