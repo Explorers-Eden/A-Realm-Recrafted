@@ -31,6 +31,8 @@ schedule function eden:misc/cauldron_convertible 1s
 schedule function eden:wandering_trader/run 3s
 schedule function eden:misc/update_material_lore 5s
 schedule function eden:villager/run 9t
+schedule function eden:migrate/init 11s
+schedule function eden:misc/kill_entities_at_spawn 8s
 
 ##gamerules
 difficulty hard

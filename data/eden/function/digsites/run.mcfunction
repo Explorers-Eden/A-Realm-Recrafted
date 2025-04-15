@@ -13,4 +13,4 @@ execute as @e[type=marker,tag=eden.digsite.stone,tag=!digsite_finished] at @s if
 execute as @e[type=marker,tag=eden.digsite.terracotta,tag=!digsite_finished] at @s if score @s eden.digsite.placed matches ..41 if score @s eden.digsite.attempts matches ..999 run function eden:digsites/terracotta/get_data
 execute as @e[type=marker,tag=eden.digsite.water,tag=!digsite_finished] at @s if score @s eden.digsite.placed matches ..41 if score @s eden.digsite.attempts matches ..999 run function eden:digsites/water/get_data
 
-schedule function eden:digsites/run 4t
+schedule function eden:digsites/run 7t
