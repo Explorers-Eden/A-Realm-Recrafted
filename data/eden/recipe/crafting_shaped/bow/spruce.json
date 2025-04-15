@@ -19,7 +19,7 @@
     "id": "minecraft:bow",
     "count": 1,
     "components": {
-      "minecraft:item_name": "{\"fallback\":\"Spruce Bow\",\"translate\":\"tools.eden.bow.spruce\"}",
+      "minecraft:item_name": {"fallback":"Spruce Bow","translate":"tools.eden.bow.spruce"},
       "minecraft:custom_data": "{tools:spruce_bow}",
       "minecraft:item_model": "eden:bows/spruce",
       "minecraft:max_stack_size": 1,

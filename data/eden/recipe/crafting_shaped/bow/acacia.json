@@ -19,7 +19,7 @@
     "id": "minecraft:bow",
     "count": 1,
     "components": {
-      "minecraft:item_name": "{\"fallback\":\"Acacia Bow\",\"translate\":\"tools.eden.bow.acacia\"}",
+      "minecraft:item_name": {"fallback":"Acacia Bow","translate":"tools.eden.bow.acacia"},
       "minecraft:custom_data": "{tools:acacia_bow}",
       "minecraft:item_model": "eden:bows/acacia",
       "minecraft:max_stack_size": 1,

@@ -12,7 +12,7 @@
           "west": "false",
           "south": "false"
         },
-        "minecraft:item_name": "{\"bold\":false,\"fallback\":\"Horizontal Stripped Mushroom Stem\",\"italic\":false,\"translate\":\"block.eden.horizontal_stripped_mushroom_stem\"}"
+        "minecraft:item_name": {"bold":false,"fallback":"Horizontal Stripped Mushroom Stem","italic":false,"translate":"block.eden.horizontal_stripped_mushroom_stem"}
       },
       "count": 1
     }

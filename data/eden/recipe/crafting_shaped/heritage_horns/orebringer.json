@@ -16,7 +16,7 @@
 		"count": 1,
 		"components": {
 			"minecraft:item_model": "eden:orebringer_horn",
-			"minecraft:item_name": "{\"fallback\":\"Horn of an Orebringer\",\"translate\":\"items.eden.heritage_horn.orebringer\"}",
+			"minecraft:item_name": {"fallback":"Horn of an Orebringer","translate":"items.eden.heritage_horn.orebringer"},
 			"minecraft:instrument": "eden:orebringer_horn",
 			"minecraft:custom_data": "{eden:orebringer}",
 			"minecraft:use_cooldown": {

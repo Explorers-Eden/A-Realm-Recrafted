@@ -12,7 +12,7 @@
           "west": "false",
           "south": "false"
         },
-        "minecraft:item_name": "{\"bold\":false,\"fallback\":\"Stripped Brown Mushroom Block\",\"italic\":false,\"translate\":\"block.eden.stripped_brown_mushroom_block\"}"
+        "minecraft:item_name": {"bold":false,"fallback":"Stripped Brown Mushroom Block","italic":false,"translate":"block.eden.stripped_brown_mushroom_block"}
       },
       "count": 1
     }

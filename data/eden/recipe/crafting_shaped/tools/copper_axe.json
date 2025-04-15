@@ -18,7 +18,7 @@
       "id": "minecraft:iron_axe",
       "count": 1,
       "components": {
-        "minecraft:item_name": "{\"fallback\":\"Copper Axe\",\"translate\":\"tools.eden.axe.copper\"}",
+        "minecraft:item_name": {"fallback":"Copper Axe","translate":"tools.eden.axe.copper"},
         "minecraft:custom_data": "{tools:copper_axe}",
         "minecraft:item_model": "eden:tools/copper_axe",
         "minecraft:rarity": "common"

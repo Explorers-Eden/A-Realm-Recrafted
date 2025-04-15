@@ -10,7 +10,7 @@
     ],
     "result": {
       "components": {
-        "minecraft:item_name": "{\"fallback\":\"Turtle Boots\",\"translate\":\"equipment.eden.turtle_boots\"}",
+        "minecraft:item_name": {"fallback":"Turtle Boots","translate":"equipment.eden.turtle_boots"},
         "minecraft:custom_data": "{equipment:turtle_boots}",
         "minecraft:item_model": "eden:equipment/turtle_boots",
         "minecraft:equippable": {

@@ -16,7 +16,7 @@
 		"count": 1,
 		"components": {
 			"minecraft:item_model": "eden:oakhearted_horn",
-			"minecraft:item_name": "{\"fallback\":\"Horn of an Oakhearted\",\"translate\":\"items.eden.heritage_horn.oakhearted\"}",
+			"minecraft:item_name": {"fallback":"Horn of an Oakhearted","translate":"items.eden.heritage_horn.oakhearted"},
 			"minecraft:instrument": "eden:oakhearted_horn",
 			"minecraft:custom_data": "{eden:oakhearted}",
 			"minecraft:use_cooldown": {

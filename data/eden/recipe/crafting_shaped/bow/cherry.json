@@ -19,7 +19,7 @@
     "id": "minecraft:bow",
     "count": 1,
     "components": {
-      "minecraft:item_name": "{\"fallback\":\"Cherry Bow\",\"translate\":\"tools.eden.bow.cherry\"}",
+      "minecraft:item_name": {"fallback":"Cherry Bow","translate":"tools.eden.bow.cherry"},
       "minecraft:custom_data": "{tools:cherry_bow}",
       "minecraft:item_model": "eden:bows/cherry",
       "minecraft:max_stack_size": 1,

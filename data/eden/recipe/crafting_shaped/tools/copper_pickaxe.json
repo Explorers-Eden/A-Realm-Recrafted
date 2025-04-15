@@ -18,7 +18,7 @@
       "id": "minecraft:iron_pickaxe",
       "count": 1,
       "components": {
-        "minecraft:item_name": "{\"fallback\":\"Copper pickaxe\",\"translate\":\"tools.eden.pickaxe.copper\"}",
+        "minecraft:item_name": {"fallback":"Copper pickaxe","translate":"tools.eden.pickaxe.copper"},
         "minecraft:custom_data": "{tools:copper_pickaxe}",
         "minecraft:item_model": "eden:tools/copper_pickaxe",
         "minecraft:rarity": "common"

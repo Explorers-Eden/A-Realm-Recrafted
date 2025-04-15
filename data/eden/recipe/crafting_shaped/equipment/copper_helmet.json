@@ -10,7 +10,7 @@
     ],
     "result": {
       "components": {
-        "minecraft:item_name": "{\"fallback\":\"Copper Helmet\",\"translate\":\"equipment.eden.copper_helmet\"}",
+        "minecraft:item_name": {"fallback":"Copper Helmet","translate":"equipment.eden.copper_helmet"},
         "minecraft:custom_data": "{equipment:copper_helmet}",
         "minecraft:item_model": "eden:equipment/copper_helmet",
         "minecraft:equippable": {

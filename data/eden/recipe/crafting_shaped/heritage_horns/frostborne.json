@@ -16,7 +16,7 @@
 		"count": 1,
 		"components": {
 			"minecraft:item_model": "eden:frostborne_horn",
-			"minecraft:item_name": "{\"fallback\":\"Horn of a Frostborne\",\"translate\":\"items.eden.heritage_horn.frostborne\"}",
+			"minecraft:item_name": {"fallback":"Horn of a Frostborne","translate":"items.eden.heritage_horn.frostborne"},
 			"minecraft:instrument": "eden:frostborne_horn",
 			"minecraft:custom_data": "{eden:frostborne}",
 			"minecraft:use_cooldown": {

@@ -19,7 +19,7 @@
     "id": "minecraft:bow",
     "count": 1,
     "components": {
-      "minecraft:item_name": "{\"fallback\":\"Dark Oak Bow\",\"translate\":\"tools.eden.bow.dark_oak\"}",
+      "minecraft:item_name": {"fallback":"Dark Oak Bow","translate":"tools.eden.bow.dark_oak"},
       "minecraft:custom_data": "{tools:dark_oak_bow}",
       "minecraft:item_model": "eden:bows/dark_oak",
       "minecraft:max_stack_size": 1,

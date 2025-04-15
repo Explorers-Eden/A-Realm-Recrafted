@@ -16,7 +16,7 @@
 		"count": 1,
 		"components": {
 			"minecraft:item_model": "eden:endling_horn",
-			"minecraft:item_name": "{\"fallback\":\"Horn of an Endling\",\"translate\":\"items.eden.heritage_horn.endling\"}",
+			"minecraft:item_name": {"fallback":"Horn of an Endling","translate":"items.eden.heritage_horn.endling"},
 			"minecraft:instrument": "eden:endling_horn",
 			"minecraft:custom_data": "{eden:endling}",
 			"minecraft:use_cooldown": {

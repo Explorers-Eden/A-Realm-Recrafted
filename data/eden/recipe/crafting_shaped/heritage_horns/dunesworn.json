@@ -16,7 +16,7 @@
 		"count": 1,
 		"components": {
 			"minecraft:item_model": "eden:dunesworn_horn",
-			"minecraft:item_name": "{\"fallback\":\"Horn of a Dunesworn\",\"translate\":\"items.eden.heritage_horn.dunesworn\"}",
+			"minecraft:item_name": {"fallback":"Horn of a Dunesworn","translate":"items.eden.heritage_horn.dunesworn"},
 			"minecraft:instrument": "eden:dunesworn_horn",
 			"minecraft:custom_data": "{eden:dunesworn}",
 			"minecraft:use_cooldown": {

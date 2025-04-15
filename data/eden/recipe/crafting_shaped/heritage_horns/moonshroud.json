@@ -16,7 +16,7 @@
 		"count": 1,
 		"components": {
 			"minecraft:item_model": "eden:moonshroud_horn",
-			"minecraft:item_name": "{\"fallback\":\"Horn of a Moonshroud\",\"translate\":\"items.eden.heritage_horn.moonshroud\"}",
+			"minecraft:item_name": {"fallback":"Horn of a Moonshroud","translate":"items.eden.heritage_horn.moonshroud"},
 			"minecraft:instrument": "eden:moonshroud_horn",
 			"minecraft:custom_data": "{eden:moonshroud}",
 			"minecraft:use_cooldown": {

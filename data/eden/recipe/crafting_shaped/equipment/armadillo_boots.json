@@ -10,7 +10,7 @@
     ],
     "result": {
       "components": {
-        "minecraft:item_name": "{\"fallback\":\"Armadillo Boots\",\"translate\":\"equipment.eden.armadillo_boots\"}",
+        "minecraft:item_name": {"fallback":"Armadillo Boots","translate":"equipment.eden.armadillo_boots"},
         "minecraft:custom_data": "{equipment:armadillo_boots}",
         "minecraft:item_model": "eden:equipment/armadillo_boots",
         "minecraft:equippable": {

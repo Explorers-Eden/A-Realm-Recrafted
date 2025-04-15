@@ -13,7 +13,7 @@
     "id": "minecraft:glow_item_frame",
     "count": 1,
     "components": {
-      "minecraft:item_name": "{\"bold\":false,\"color\":\"white\",\"italic\":false,\"text\":\"Invisible Glow Item Frame\"}",
+      "minecraft:item_name": {"bold":false,"color":"white","italic":false,"text":"Invisible Glow Item Frame"},
       "minecraft:entity_data": {
         "id": "minecraft:glow_item_frame",
         "Invisible": true

@@ -18,7 +18,7 @@
       "id": "minecraft:iron_hoe",
       "count": 1,
       "components": {
-        "minecraft:item_name": "{\"fallback\":\"Copper Hoe\",\"translate\":\"tools.eden.hoe.copper\"}",
+        "minecraft:item_name": {"fallback":"Copper Hoe","translate":"tools.eden.hoe.copper"},
         "minecraft:custom_data": "{tools:copper_hoe}",
         "minecraft:item_model": "eden:tools/copper_hoe",
         "minecraft:rarity": "common"

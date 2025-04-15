@@ -11,7 +11,7 @@
     ],
     "result": {
       "components": {
-        "minecraft:item_name": "{\"fallback\":\"Copper Chestplate\",\"translate\":\"equipment.eden.copper_chestplate\"}",
+        "minecraft:item_name": {"fallback":"Copper Chestplate","translate":"equipment.eden.copper_chestplate"},
         "minecraft:custom_data": "{equipment:copper_chestplate}",
         "minecraft:item_model": "eden:equipment/copper_chestplate",
         "minecraft:equippable": {
