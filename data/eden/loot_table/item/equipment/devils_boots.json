@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Devil's Boots\",\"translate\":\"equipment.eden.devils_boots\"}",
+                  "minecraft:item_name": {"fallback":"Devil's Boots","translate":"equipment.eden.devils_boots"},
                   "minecraft:custom_data": "{equipment:devils_boots}",
                   "minecraft:item_model": "eden:equipment/devils_boots",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cherry Hoe\",\"translate\":\"tools.eden.hoe.cherry\"}",
+                  "minecraft:item_name": {"fallback":"Cherry Hoe","translate":"tools.eden.hoe.cherry"},
                   "minecraft:custom_data": "{tools:cherry_hoe}",
                   "minecraft:item_model": "eden:tools/cherry_hoe",
                   "minecraft:rarity": "rare"

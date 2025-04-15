@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Raider Helmet\",\"translate\":\"equipment.eden.raider_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Raider Helmet","translate":"equipment.eden.raider_helmet"},
                   "minecraft:custom_data": "{equipment:raider_helmet}",
                   "minecraft:item_model": "eden:equipment/raider_helmet",
                   "minecraft:rarity": "rare",

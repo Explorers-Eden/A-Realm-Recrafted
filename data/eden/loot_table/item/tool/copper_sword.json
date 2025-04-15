@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Copper Sword\",\"translate\":\"tools.eden.sword.copper\"}",
+                  "minecraft:item_name": {"fallback":"Copper Sword","translate":"tools.eden.sword.copper"},
                   "minecraft:custom_data": "{tools:copper_sword}",
                   "minecraft:item_model": "eden:tools/copper_sword",
                   "minecraft:rarity": "common"

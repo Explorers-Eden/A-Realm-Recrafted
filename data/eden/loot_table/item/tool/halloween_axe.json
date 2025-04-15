@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Halloween Axe\",\"translate\":\"tools.eden.axe.halloween\"}",
+                  "minecraft:item_name": {"fallback":"Halloween Axe","translate":"tools.eden.axe.halloween"},
                   "minecraft:custom_data": "{tools:halloween_axe}",
                   "minecraft:item_model": "eden:tools/halloween_axe",
                   "minecraft:rarity": "rare"

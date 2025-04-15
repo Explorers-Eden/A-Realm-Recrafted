@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Melon Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Melon Hat"},
                   "minecraft:custom_data": "{hats:melon_hat}",
                   "minecraft:item_model": "eden:hats/melon_hat",
                 "minecraft:equippable": {

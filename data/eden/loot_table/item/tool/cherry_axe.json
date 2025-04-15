@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cherry Axe\",\"translate\":\"tools.eden.axe.cherry\"}",
+                  "minecraft:item_name": {"fallback":"Cherry Axe","translate":"tools.eden.axe.cherry"},
                   "minecraft:custom_data": "{tools:cherry_axe}",
                   "minecraft:item_model": "eden:tools/cherry_axe",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Magnate Leggings\",\"translate\":\"equipment.eden.magnate_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Magnate Leggings","translate":"equipment.eden.magnate_leggings"},
                   "minecraft:custom_data": "{equipment:magnate_leggings}",
                   "minecraft:item_model": "eden:equipment/magnate_leggings",
                   "minecraft:rarity": "rare",

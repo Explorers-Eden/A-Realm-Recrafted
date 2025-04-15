@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Frog Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Frog Hat"},
                   "minecraft:custom_data": "{hats:frog_hat}",
                   "minecraft:item_model": "eden:hats/frog_hat",
                 "minecraft:equippable": {

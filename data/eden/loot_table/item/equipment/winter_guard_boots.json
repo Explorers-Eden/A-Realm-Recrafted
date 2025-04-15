@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Winter Guard Boots\",\"translate\":\"equipment.eden.winter_guard_boots\"}",
+                  "minecraft:item_name": {"fallback":"Winter Guard Boots","translate":"equipment.eden.winter_guard_boots"},
                   "minecraft:custom_data": "{equipment:winter_guard_boots}",
                   "minecraft:item_model": "eden:equipment/winter_guard_boots",
                   "minecraft:rarity": "rare",

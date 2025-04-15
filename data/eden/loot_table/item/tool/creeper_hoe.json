@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Creeper Hoe\",\"translate\":\"tools.eden.hoe.creeper\"}",
+                "minecraft:item_name": {"fallback":"Creeper Hoe","translate":"tools.eden.hoe.creeper"},
                 "minecraft:custom_data": "{tools:creeper_hoe}",
                 "minecraft:item_model": "eden:tools/creeper_hoe",
                 "minecraft:rarity": "uncommon"

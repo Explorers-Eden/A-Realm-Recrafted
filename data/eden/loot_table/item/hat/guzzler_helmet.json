@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Guzzler Helmet\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Guzzler Helmet"},
                   "minecraft:custom_data": "{hats:guzzler_helmet}",
                   "minecraft:item_model": "eden:hats/guzzler_helmet",
                 "minecraft:equippable": {

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Creeper Bow\",\"translate\":\"tools.eden.bow.creeper\"}",
+                  "minecraft:item_name": {"fallback":"Creeper Bow","translate":"tools.eden.bow.creeper"},
                   "minecraft:custom_data": "{tools:creeper_bow}",
                   "minecraft:item_model": "eden:bows/creeper",
                   "minecraft:max_stack_size": 1,

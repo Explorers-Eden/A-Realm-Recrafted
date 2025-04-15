@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Pharaoh's Boots\",\"translate\":\"equipment.eden.pharoh_boots\"}",
+                  "minecraft:item_name": {"fallback":"Pharaoh's Boots","translate":"equipment.eden.pharoh_boots"},
                   "minecraft:custom_data": "{equipment:pharaoh_boots}",
                   "minecraft:item_model": "eden:equipment/pharaoh_boots",
                   "minecraft:rarity": "rare",

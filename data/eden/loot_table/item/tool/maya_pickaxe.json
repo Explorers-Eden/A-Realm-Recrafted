@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mayan Pickaxe\",\"translate\":\"tools.eden.pickaxe.maya\"}",
+                  "minecraft:item_name": {"fallback":"Mayan Pickaxe","translate":"tools.eden.pickaxe.maya"},
                   "minecraft:custom_data": "{tools:maya_pickaxe}",
                   "minecraft:item_model": "eden:tools/maya_pickaxe",
                   "minecraft:rarity": "rare"

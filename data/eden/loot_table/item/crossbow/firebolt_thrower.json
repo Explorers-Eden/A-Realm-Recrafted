@@ -24,7 +24,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Firebolt Thrower Crossbow\",\"translate\":\"tools.eden.crossbow.firebolt_thrower\"}",
+                  "minecraft:item_name": {"fallback":"Firebolt Thrower Crossbow","translate":"tools.eden.crossbow.firebolt_thrower"},
                   "minecraft:custom_data": "{tools:firebolt_thrower_crossbow}",
                   "minecraft:item_model": "eden:bows/firebolt_thrower",
                   "minecraft:max_stack_size": 1,

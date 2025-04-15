@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Sculk Axe\",\"translate\":\"tools.eden.axe.sculk\"}",
+                  "minecraft:item_name": {"fallback":"Sculk Axe","translate":"tools.eden.axe.sculk"},
                   "minecraft:custom_data": "{tools:sculk_axe}",
                   "minecraft:item_model": "eden:tools/sculk_axe",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Vengeful Bow\",\"translate\":\"tools.eden.bow.vengeful\"}",
+                  "minecraft:item_name": {"fallback":"Vengeful Bow","translate":"tools.eden.bow.vengeful"},
                   "minecraft:custom_data": "{tools:vengeful_bow}",
                   "minecraft:item_model": "eden:bows/vengeful",
                   "minecraft:max_stack_size": 1,

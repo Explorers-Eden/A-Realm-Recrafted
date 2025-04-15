@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Infernal Hoe\",\"translate\":\"tools.eden.hoe.infernal\"}",
+                  "minecraft:item_name": {"fallback":"Infernal Hoe","translate":"tools.eden.hoe.infernal"},
                   "minecraft:custom_data": "{tools:infernal_hoe}",
                   "minecraft:item_model": "eden:tools/infernal_hoe",
                   "minecraft:rarity": "rare"

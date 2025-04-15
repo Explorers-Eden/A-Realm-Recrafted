@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Atlantian Leggings\",\"translate\":\"equipment.eden.atlantis_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Atlantian Leggings","translate":"equipment.eden.atlantis_leggings"},
                   "minecraft:custom_data": "{equipment:atlantis_leggings}",
                   "minecraft:item_model": "eden:equipment/atlantis_leggings",
                   "minecraft:rarity": "rare",

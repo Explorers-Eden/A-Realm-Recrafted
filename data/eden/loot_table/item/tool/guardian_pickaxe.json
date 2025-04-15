@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Guardian Pickaxe\",\"translate\":\"tools.eden.pickaxe.guardian\"}",
+                  "minecraft:item_name": {"fallback":"Guardian Pickaxe","translate":"tools.eden.pickaxe.guardian"},
                   "minecraft:custom_data": "{tools:guardian_pickaxe}",
                   "minecraft:item_model": "eden:tools/guardian_pickaxe",
                   "minecraft:rarity": "rare"

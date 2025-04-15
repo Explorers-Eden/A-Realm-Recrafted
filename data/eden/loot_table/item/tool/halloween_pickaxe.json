@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Halloween Pickaxe\",\"translate\":\"tools.eden.pickaxe.halloween\"}",
+                  "minecraft:item_name": {"fallback":"Halloween Pickaxe","translate":"tools.eden.pickaxe.halloween"},
                   "minecraft:custom_data": "{tools:halloween_pickaxe}",
                   "minecraft:item_model": "eden:tools/halloween_pickaxe",
                   "minecraft:rarity": "rare"

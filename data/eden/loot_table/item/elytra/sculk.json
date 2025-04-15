@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Sculk Elytra\",\"translate\":\"equipment.eden.sculk_elytra\"}",
+                "minecraft:item_name": {"fallback":"Sculk Elytra","translate":"equipment.eden.sculk_elytra"},
                 "minecraft:custom_data": "{equipment:sculk_elytra}",
                 "minecraft:item_model": "eden:equipment/sculk_elytra",
                 "minecraft:rarity": "epic",

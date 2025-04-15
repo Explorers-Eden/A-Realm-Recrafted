@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Wings of a Ladybug\",\"translate\":\"equipment.eden.ladybug_elytra\"}",
+                "minecraft:item_name": {"fallback":"Wings of a Ladybug","translate":"equipment.eden.ladybug_elytra"},
                 "minecraft:custom_data": "{equipment:ladybug_elytra}",
                 "minecraft:item_model": "eden:equipment/ladybug_elytra",
                 "minecraft:rarity": "epic",

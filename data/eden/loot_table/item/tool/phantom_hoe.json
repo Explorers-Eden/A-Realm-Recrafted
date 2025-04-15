@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Phantom Hoe\",\"translate\":\"tools.eden.hoe.phantom\"}",
+                  "minecraft:item_name": {"fallback":"Phantom Hoe","translate":"tools.eden.hoe.phantom"},
                   "minecraft:custom_data": "{tools:phantom_hoe}",
                   "minecraft:item_model": "eden:tools/phantom_hoe",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aztec Sword\",\"translate\":\"tools.eden.sword.aztec\"}",
+                  "minecraft:item_name": {"fallback":"Aztec Sword","translate":"tools.eden.sword.aztec"},
                   "minecraft:custom_data": "{tools:aztec_sword}",
                   "minecraft:item_model": "eden:tools/aztec_sword",
                   "minecraft:rarity": "rare"

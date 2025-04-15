@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Warden Helmet\",\"translate\":\"equipment.eden.warden_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Warden Helmet","translate":"equipment.eden.warden_helmet"},
                   "minecraft:custom_data": "{equipment:warden_helmet}",
                   "minecraft:item_model": "eden:equipment/warden_helmet",
                   "minecraft:rarity": "epic",

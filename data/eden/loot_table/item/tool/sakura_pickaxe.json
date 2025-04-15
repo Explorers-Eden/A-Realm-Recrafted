@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Sakura Pickaxe\",\"translate\":\"tools.eden.pickaxe.sakura\"}",
+                  "minecraft:item_name": {"fallback":"Sakura Pickaxe","translate":"tools.eden.pickaxe.sakura"},
                   "minecraft:custom_data": "{tools:sakura_pickaxe}",
                   "minecraft:item_model": "eden:tools/sakura_pickaxe",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Raider Chestplate\",\"translate\":\"equipment.eden.raider_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Raider Chestplate","translate":"equipment.eden.raider_chestplate"},
                   "minecraft:custom_data": "{equipment:raider_chestplate}",
                   "minecraft:item_model": "eden:equipment/raider_chestplate",
                   "minecraft:rarity": "rare",

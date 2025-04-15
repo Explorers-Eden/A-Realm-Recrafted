@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Sniffer Axe\",\"translate\":\"tools.eden.axe.sniffer\"}",
+                  "minecraft:item_name": {"fallback":"Sniffer Axe","translate":"tools.eden.axe.sniffer"},
                   "minecraft:custom_data": "{tools:sniffer_axe}",
                   "minecraft:item_model": "eden:tools/sniffer_axe",
                   "minecraft:rarity": "rare"

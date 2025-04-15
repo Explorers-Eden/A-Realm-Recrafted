@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Prismarine Bow\",\"translate\":\"tools.eden.bow.prismarine\"}",
+                  "minecraft:item_name": {"fallback":"Prismarine Bow","translate":"tools.eden.bow.prismarine"},
                   "minecraft:custom_data": "{tools:prismarine_bow}",
                   "minecraft:item_model": "eden:bows/prismarine",
                   "minecraft:max_stack_size": 1,

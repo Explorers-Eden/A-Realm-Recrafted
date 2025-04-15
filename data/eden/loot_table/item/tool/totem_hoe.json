@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Totem Hoe\",\"translate\":\"tools.eden.hoe.totem\"}",
+                  "minecraft:item_name": {"fallback":"Totem Hoe","translate":"tools.eden.hoe.totem"},
                   "minecraft:custom_data": "{tools:totem_hoe}",
                   "minecraft:item_model": "eden:tools/totem_hoe",
                   "minecraft:rarity": "rare"

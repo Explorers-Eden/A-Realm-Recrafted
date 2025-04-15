@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mushroom Pickaxe\",\"translate\":\"tools.eden.pickaxe.mushroom\"}",
+                  "minecraft:item_name": {"fallback":"Mushroom Pickaxe","translate":"tools.eden.pickaxe.mushroom"},
                   "minecraft:custom_data": "{tools:mushroom_pickaxe}",
                   "minecraft:item_model": "eden:tools/mushroom_pickaxe",
                   "minecraft:rarity": "rare"

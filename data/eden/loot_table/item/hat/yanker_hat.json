@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Yanker Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Yanker Hat"},
                   "minecraft:custom_data": "{hats:yanker_hat}",
                   "minecraft:item_model": "eden:hats/yanker_hat",
                 "minecraft:equippable": {

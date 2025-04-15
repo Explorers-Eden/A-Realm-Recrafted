@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Infernal Sword\",\"translate\":\"tools.eden.sword.infernal\"}",
+                  "minecraft:item_name": {"fallback":"Infernal Sword","translate":"tools.eden.sword.infernal"},
                   "minecraft:custom_data": "{tools:infernal_sword}",
                   "minecraft:item_model": "eden:tools/infernal_sword",
                   "minecraft:rarity": "rare"

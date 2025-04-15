@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Minty Pickaxe\",\"translate\":\"tools.eden.pickaxe.minty\"}",
+                  "minecraft:item_name": {"fallback":"Minty Pickaxe","translate":"tools.eden.pickaxe.minty"},
                   "minecraft:custom_data": "{tools:minty_pickaxe}",
                   "minecraft:item_model": "eden:tools/minty_pickaxe",
                   "minecraft:rarity": "rare"

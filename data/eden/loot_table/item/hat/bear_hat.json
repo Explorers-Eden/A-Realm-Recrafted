@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Bear Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Bear Hat"},
                   "minecraft:custom_data": "{hats:bear_hat}",
                   "minecraft:item_model": "eden:hats/bear_hat",
                 "minecraft:equippable": {

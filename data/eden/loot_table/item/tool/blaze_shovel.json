@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Blaze Shovel\",\"translate\":\"tools.eden.shovel.blaze\"}",
+                  "minecraft:item_name": {"fallback":"Blaze Shovel","translate":"tools.eden.shovel.blaze"},
                   "minecraft:custom_data": "{tools:blaze_shovel}",
                   "minecraft:item_model": "eden:tools/blaze_shovel",
                   "minecraft:rarity": "rare"

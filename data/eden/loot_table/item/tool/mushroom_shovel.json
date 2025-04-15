@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mushroom Shovel\",\"translate\":\"tools.eden.shovel.mushroom\"}",
+                  "minecraft:item_name": {"fallback":"Mushroom Shovel","translate":"tools.eden.shovel.mushroom"},
                   "minecraft:custom_data": "{tools:mushroom_shovel}",
                   "minecraft:item_model": "eden:tools/mushroom_shovel",
                   "minecraft:rarity": "rare"

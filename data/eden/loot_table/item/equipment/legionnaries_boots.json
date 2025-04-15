@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Legionnaries Boots\",\"translate\":\"equipment.eden.legionnaries_boots\"}",
+                  "minecraft:item_name": {"fallback":"Legionnaries Boots","translate":"equipment.eden.legionnaries_boots"},
                   "minecraft:custom_data": "{equipment:legionnaries_boots}",
                   "minecraft:item_model": "eden:equipment/legionnaries_boots",
                   "minecraft:rarity": "rare",

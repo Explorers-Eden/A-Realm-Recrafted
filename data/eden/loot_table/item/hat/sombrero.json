@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Sombrero\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Sombrero"},
                   "minecraft:custom_data": "{hats:sombrero}",
                   "minecraft:item_model": "eden:hats/sombrero",
                 "minecraft:equippable": {

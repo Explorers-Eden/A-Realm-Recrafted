@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Verdant Shovel\",\"translate\":\"tools.eden.shovel.verdant\"}",
+                  "minecraft:item_name": {"fallback":"Verdant Shovel","translate":"tools.eden.shovel.verdant"},
                   "minecraft:custom_data": "{tools:verdant_shovel}",
                   "minecraft:item_model": "eden:tools/verdant_shovel",
                   "minecraft:rarity": "rare"

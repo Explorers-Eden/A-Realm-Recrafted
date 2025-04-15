@@ -17,7 +17,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-        "minecraft:item_name": "{\"fallback\":\"Golden Sweet Berries\",\"translate\":\"food.eden.golden_sweet_berries\"}",
+        "minecraft:item_name": {"fallback":"Golden Sweet Berries","translate":"food.eden.golden_sweet_berries"},
         "minecraft:item_model": "eden:food/golden_sweet_berries"
       }
               }

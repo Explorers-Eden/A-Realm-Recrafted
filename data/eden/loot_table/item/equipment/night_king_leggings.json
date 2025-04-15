@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Night King's Leggings\",\"translate\":\"equipment.eden.night_king_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Night King's Leggings","translate":"equipment.eden.night_king_leggings"},
                   "minecraft:custom_data": "{equipment:night_king_leggings}",
                   "minecraft:item_model": "eden:equipment/night_king_leggings",
                   "minecraft:rarity": "rare",

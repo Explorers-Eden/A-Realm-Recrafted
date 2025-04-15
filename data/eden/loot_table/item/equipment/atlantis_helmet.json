@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Atlantian Helmet\",\"translate\":\"equipment.eden.atlantis_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Atlantian Helmet","translate":"equipment.eden.atlantis_helmet"},
                   "minecraft:custom_data": "{equipment:atlantis_helmet}",
                   "minecraft:item_model": "eden:equipment/atlantis_helmet",
                   "minecraft:rarity": "rare",

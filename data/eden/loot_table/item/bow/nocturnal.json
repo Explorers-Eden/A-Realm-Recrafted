@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Nocturnal Bow\",\"translate\":\"tools.eden.bow.nocturnal\"}",
+                  "minecraft:item_name": {"fallback":"Nocturnal Bow","translate":"tools.eden.bow.nocturnal"},
                   "minecraft:custom_data": "{tools:nocturnal_bow}",
                   "minecraft:item_model": "eden:bows/nocturnal",
                   "minecraft:max_stack_size": 1,

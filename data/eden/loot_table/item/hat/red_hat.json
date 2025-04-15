@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Red Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Red Hat"},
                   "minecraft:custom_data": "{hats:red_hat}",
                   "minecraft:item_model": "eden:hats/red_hat",
                 "minecraft:equippable": {

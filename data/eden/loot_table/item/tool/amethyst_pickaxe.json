@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Amethyst Pickaxe\",\"translate\":\"tools.eden.pickaxe.amethyst\"}",
+                  "minecraft:item_name": {"fallback":"Amethyst Pickaxe","translate":"tools.eden.pickaxe.amethyst"},
                   "minecraft:custom_data": "{tools:amethyst_pickaxe}",
                   "minecraft:item_model": "eden:tools/amethyst_pickaxe",
                   "minecraft:rarity": "common"

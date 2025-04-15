@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Sakura Sword\",\"translate\":\"tools.eden.sword.sakura\"}",
+                  "minecraft:item_name": {"fallback":"Sakura Sword","translate":"tools.eden.sword.sakura"},
                   "minecraft:custom_data": "{tools:sakura_sword}",
                   "minecraft:item_model": "eden:tools/sakura_sword",
                   "minecraft:rarity": "rare"

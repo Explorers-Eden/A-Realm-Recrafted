@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Scarlet\",\"translate\":\"tools.eden.scarlet\"}",
+                  "minecraft:item_name": {"fallback":"Scarlet","translate":"tools.eden.scarlet"},
                   "minecraft:custom_data": "{tools:scarlet}",
                   "minecraft:item_model": "eden:tools/scarlet",
                   "minecraft:rarity": "epic"

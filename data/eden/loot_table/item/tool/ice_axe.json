@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Ice Axe\",\"translate\":\"tools.eden.axe.ice\"}",
+                  "minecraft:item_name": {"fallback":"Ice Axe","translate":"tools.eden.axe.ice"},
                   "minecraft:custom_data": "{tools:ice_axe}",
                   "minecraft:item_model": "eden:tools/ice_axe",
                   "minecraft:rarity": "rare"

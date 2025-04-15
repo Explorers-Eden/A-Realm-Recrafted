@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Wings of a Monarch\",\"translate\":\"equipment.eden.monarch_elytra\"}",
+                "minecraft:item_name": {"fallback":"Wings of a Monarch","translate":"equipment.eden.monarch_elytra"},
                 "minecraft:custom_data": "{equipment:monarch_elytra}",
                 "minecraft:item_model": "eden:equipment/monarch_elytra",
                 "minecraft:rarity": "epic",

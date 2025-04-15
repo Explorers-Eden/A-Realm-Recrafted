@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mangrove Pickaxe\",\"translate\":\"tools.eden.pickaxe.mangrove\"}",
+                  "minecraft:item_name": {"fallback":"Mangrove Pickaxe","translate":"tools.eden.pickaxe.mangrove"},
                   "minecraft:custom_data": "{tools:mangrove_pickaxe}",
                   "minecraft:item_model": "eden:tools/mangrove_pickaxe",
                   "minecraft:rarity": "rare"

@@ -10,8 +10,13 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"3D Goggles Hat\",\"translate\":\"hats.eden.3d_goggles\"}",
-                "minecraft:custom_data": "{hats:3d_goggles_hat}",
+                "minecraft:item_name": {
+                  "fallback": "3D Goggles Hat",
+                  "translate": "hats.eden.3d_goggles"
+                },
+                "minecraft:custom_data": {
+                  "hats": "3d_goggles_hat"
+                },
                 "minecraft:item_model": "eden:hats/3d_goggles",
                 "minecraft:equippable": {
                   "slot": "head",

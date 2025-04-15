@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Chorus Bow\",\"translate\":\"tools.eden.bow.chorus\"}",
+                  "minecraft:item_name": {"fallback":"Chorus Bow","translate":"tools.eden.bow.chorus"},
                   "minecraft:custom_data": "{tools:chorus_bow}",
                   "minecraft:item_model": "eden:bows/chorus",
                   "minecraft:max_stack_size": 1,

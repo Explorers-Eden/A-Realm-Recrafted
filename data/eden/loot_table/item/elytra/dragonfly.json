@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Wings of a Dragonfly\",\"translate\":\"equipment.eden.dragonfly_elytra\"}",
+                "minecraft:item_name": {"fallback":"Wings of a Dragonfly","translate":"equipment.eden.dragonfly_elytra"},
                 "minecraft:custom_data": "{equipment:dragonfly_elytra}",
                 "minecraft:item_model": "eden:equipment/dragonfly_elytra",
                 "minecraft:rarity": "epic",

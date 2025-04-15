@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Overgrown Axe\",\"translate\":\"tools.eden.axe.overgrown\"}",
+                  "minecraft:item_name": {"fallback":"Overgrown Axe","translate":"tools.eden.axe.overgrown"},
                   "minecraft:custom_data": "{tools:overgrown_axe}",
                   "minecraft:item_model": "eden:tools/overgrown_axe",
                   "minecraft:rarity": "rare"

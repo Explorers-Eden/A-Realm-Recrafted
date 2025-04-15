@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Water Bow\",\"translate\":\"tools.eden.bow.water\"}",
+                  "minecraft:item_name": {"fallback":"Water Bow","translate":"tools.eden.bow.water"},
                   "minecraft:custom_data": "{tools:water_bow}",
                   "minecraft:item_model": "eden:bows/water",
                   "minecraft:max_stack_size": 1,

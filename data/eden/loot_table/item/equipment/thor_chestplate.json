@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Thor's Chestplate\",\"translate\":\"equipment.eden.thor_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Thor's Chestplate","translate":"equipment.eden.thor_chestplate"},
                   "minecraft:custom_data": "{equipment:thor_chestplate}",
                   "minecraft:item_model": "eden:equipment/thor_chestplate",
                   "minecraft:rarity": "rare",

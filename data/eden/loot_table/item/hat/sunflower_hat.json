@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Sunflower Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Sunflower Hat"},
                   "minecraft:custom_data": "{hats:sunflower_hat}",
                   "minecraft:item_model": "eden:hats/sunflower_hat",
                 "minecraft:equippable": {

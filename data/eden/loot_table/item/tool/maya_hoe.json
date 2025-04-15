@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mayan Hoe\",\"translate\":\"tools.eden.hoe.maya\"}",
+                  "minecraft:item_name": {"fallback":"Mayan Hoe","translate":"tools.eden.hoe.maya"},
                   "minecraft:custom_data": "{tools:maya_hoe}",
                   "minecraft:item_model": "eden:tools/maya_hoe",
                   "minecraft:rarity": "rare"

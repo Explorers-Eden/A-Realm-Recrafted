@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Melon Sword\",\"translate\":\"tools.eden.sword.melon\"}",
+                  "minecraft:item_name": {"fallback":"Melon Sword","translate":"tools.eden.sword.melon"},
                   "minecraft:custom_data": "{tools:melon_sword}",
                   "minecraft:item_model": "eden:tools/melon_sword",
                   "minecraft:rarity": "rare"

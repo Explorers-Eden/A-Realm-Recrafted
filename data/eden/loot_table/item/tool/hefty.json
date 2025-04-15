@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Hefty\",\"translate\":\"tools.eden.hefty\"}",
+                  "minecraft:item_name": {"fallback":"Hefty","translate":"tools.eden.hefty"},
                   "minecraft:custom_data": "{tools:hefty}",
                   "minecraft:item_model": "eden:tools/hefty",
                   "minecraft:rarity": "epic"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Ice Hoe\",\"translate\":\"tools.eden.hoe.ice\"}",
+                  "minecraft:item_name": {"fallback":"Ice Hoe","translate":"tools.eden.hoe.ice"},
                   "minecraft:custom_data": "{tools:ice_hoe}",
                   "minecraft:item_model": "eden:tools/ice_hoe",
                   "minecraft:rarity": "rare"

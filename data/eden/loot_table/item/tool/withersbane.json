@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Withersbane\",\"translate\":\"tools.eden.withersbane\"}",
+                  "minecraft:item_name": {"fallback":"Withersbane","translate":"tools.eden.withersbane"},
                   "minecraft:custom_data": "{tools:withersbane}",
                   "minecraft:item_model": "eden:tools/withersbane",
                   "minecraft:rarity": "epic"

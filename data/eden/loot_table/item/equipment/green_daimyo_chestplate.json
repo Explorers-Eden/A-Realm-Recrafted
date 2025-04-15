@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Green Daimyo Chestplate\",\"translate\":\"equipment.eden.green_daimyo_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Green Daimyo Chestplate","translate":"equipment.eden.green_daimyo_chestplate"},
                   "minecraft:custom_data": "{equipment:green_daimyo_chestplate}",
                   "minecraft:item_model": "eden:equipment/green_daimyo_chestplate",
                   "minecraft:rarity": "rare",

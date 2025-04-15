@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Ushanka\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Ushanka"},
                   "minecraft:custom_data": "{hats:ushanka}",
                   "minecraft:item_model": "eden:hats/ushanka",
                 "minecraft:equippable": {

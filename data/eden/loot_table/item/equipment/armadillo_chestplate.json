@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Armadillo Chestplate\",\"translate\":\"equipment.eden.armadillo_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Armadillo Chestplate","translate":"equipment.eden.armadillo_chestplate"},
                   "minecraft:custom_data": "{equipment:armadillo_chestplate}",
                   "minecraft:item_model": "eden:equipment/armadillo_chestplate",
                   "minecraft:equippable": {

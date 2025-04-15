@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Phantom Axe\",\"translate\":\"tools.eden.axe.phantom\"}",
+                  "minecraft:item_name": {"fallback":"Phantom Axe","translate":"tools.eden.axe.phantom"},
                   "minecraft:custom_data": "{tools:phantom_axe}",
                   "minecraft:item_model": "eden:tools/phantom_axe",
                   "minecraft:rarity": "rare"

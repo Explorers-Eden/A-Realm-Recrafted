@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Minty Shovel\",\"translate\":\"tools.eden.shovel.minty\"}",
+                  "minecraft:item_name": {"fallback":"Minty Shovel","translate":"tools.eden.shovel.minty"},
                   "minecraft:custom_data": "{tools:minty_shovel}",
                   "minecraft:item_model": "eden:tools/minty_shovel",
                   "minecraft:rarity": "rare"

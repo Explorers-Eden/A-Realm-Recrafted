@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Amethyst Hoe\",\"translate\":\"tools.eden.hoe.amethyst\"}",
+                  "minecraft:item_name": {"fallback":"Amethyst Hoe","translate":"tools.eden.hoe.amethyst"},
                   "minecraft:custom_data": "{tools:amethyst_hoe}",
                   "minecraft:item_model": "eden:tools/amethyst_hoe",
                   "minecraft:rarity": "common"

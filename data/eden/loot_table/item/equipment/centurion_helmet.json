@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Centurion Helmet\",\"translate\":\"equipment.eden.centurion_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Centurion Helmet","translate":"equipment.eden.centurion_helmet"},
                   "minecraft:custom_data": "{equipment:centurion_helmet}",
                   "minecraft:item_model": "eden:equipment/centurion_helmet",
                   "minecraft:rarity": "rare",

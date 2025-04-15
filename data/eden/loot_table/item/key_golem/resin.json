@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Resin Key Golem\",\"translate\":\"item.eden.key_golem.resin\"}",
+                  "minecraft:item_name": {"fallback":"Resin Key Golem","translate":"item.eden.key_golem.resin"},
                   "minecraft:custom_data": "{item:key_golem}",
                   "minecraft:item_model": "eden:key_golem/resin_key_golem",
                   "minecraft:max_stack_size": 16,
@@ -22,7 +22,7 @@
                   }
                 },
                   "minecraft:lore": [
-                    "{\"bold\":false,\"color\":\"gray\",\"italic\":false,\"text\":\"Opens A Key Golem Vault\"}"
+                    {"bold":false,"color":"gray","italic":false,"text":"Opens A Key Golem Vault"}
                   ]
                 }
               }

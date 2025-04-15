@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Apple With Arrow\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Apple With Arrow"},
                   "minecraft:item_model": "eden:hats/apple_with_arrow",
                 "minecraft:equippable": {
                   "slot": "head",

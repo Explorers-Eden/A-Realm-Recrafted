@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Hoplite Leggings\",\"translate\":\"equipment.eden.hoplite_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Hoplite Leggings","translate":"equipment.eden.hoplite_leggings"},
                   "minecraft:custom_data": "{equipment:hoplite_leggings}",
                   "minecraft:item_model": "eden:equipment/hoplite_leggings",
                   "minecraft:rarity": "rare",

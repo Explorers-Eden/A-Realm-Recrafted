@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Skull Sword\",\"translate\":\"tools.eden.sword.skull\"}",
+                  "minecraft:item_name": {"fallback":"Skull Sword","translate":"tools.eden.sword.skull"},
                   "minecraft:custom_data": "{tools:skull_sword}",
                   "minecraft:item_model": "eden:tools/skull_sword",
                   "minecraft:rarity": "rare"

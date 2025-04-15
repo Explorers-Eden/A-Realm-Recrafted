@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Fire Bow\",\"translate\":\"tools.eden.bow.fire\"}",
+                  "minecraft:item_name": {"fallback":"Fire Bow","translate":"tools.eden.bow.fire"},
                   "minecraft:custom_data": "{tools:fire_bow}",
                   "minecraft:item_model": "eden:bows/fire",
                   "minecraft:max_stack_size": 1,

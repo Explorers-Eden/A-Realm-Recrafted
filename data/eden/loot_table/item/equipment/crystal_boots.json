@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Crystal Boots\",\"translate\":\"equipment.eden.crystal_boots\"}",
+                  "minecraft:item_name": {"fallback":"Crystal Boots","translate":"equipment.eden.crystal_boots"},
                   "minecraft:custom_data": "{equipment:crystal_boots}",
                   "minecraft:item_model": "eden:equipment/crystal_boots",
                   "minecraft:rarity": "rare",

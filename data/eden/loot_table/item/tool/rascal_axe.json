@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Rascal Axe\",\"translate\":\"tools.eden.axe.rascal\"}",
+                  "minecraft:item_name": {"fallback":"Rascal Axe","translate":"tools.eden.axe.rascal"},
                   "minecraft:custom_data": "{tools:rascal_axe}",
                   "minecraft:item_model": "eden:tools/rascal_axe",
                   "minecraft:rarity": "rare"

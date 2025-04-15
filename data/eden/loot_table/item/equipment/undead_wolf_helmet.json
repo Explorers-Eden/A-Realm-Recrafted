@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Undead Wolf Helmet\",\"translate\":\"equipment.eden.undead_wolf_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Undead Wolf Helmet","translate":"equipment.eden.undead_wolf_helmet"},
                   "minecraft:custom_data": "{equipment:undead_wolf_helmet}",
                   "minecraft:item_model": "eden:equipment/undead_wolf_helmet",
                   "minecraft:rarity": "rare",

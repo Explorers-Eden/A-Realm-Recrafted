@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Minty Axe\",\"translate\":\"tools.eden.axe.minty\"}",
+                  "minecraft:item_name": {"fallback":"Minty Axe","translate":"tools.eden.axe.minty"},
                   "minecraft:custom_data": "{tools:minty_axe}",
                   "minecraft:item_model": "eden:tools/minty_axe",
                   "minecraft:rarity": "rare"

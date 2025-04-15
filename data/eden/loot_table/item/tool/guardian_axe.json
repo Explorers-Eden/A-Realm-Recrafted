@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Guardian Axe\",\"translate\":\"tools.eden.axe.guardian\"}",
+                  "minecraft:item_name": {"fallback":"Guardian Axe","translate":"tools.eden.axe.guardian"},
                   "minecraft:custom_data": "{tools:guardian_axe}",
                   "minecraft:item_model": "eden:tools/guardian_axe",
                   "minecraft:rarity": "rare"

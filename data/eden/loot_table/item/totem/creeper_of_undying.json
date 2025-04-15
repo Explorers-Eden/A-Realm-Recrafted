@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/creeper_of_undying",
                   "minecraft:custom_data": "{totem:creeper}",
-                  "minecraft:item_name": "{\"fallback\":\"Creeper of Undying\",\"translate\":\"totems.eden.creeper\"}"
+                  "minecraft:item_name": {"fallback":"Creeper of Undying","translate":"totems.eden.creeper"}
                 }
               }
             ]

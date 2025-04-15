@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Sniffer Shovel\",\"translate\":\"tools.eden.shovel.sniffer\"}",
+                  "minecraft:item_name": {"fallback":"Sniffer Shovel","translate":"tools.eden.shovel.sniffer"},
                   "minecraft:custom_data": "{tools:sniffer_shovel}",
                   "minecraft:item_model": "eden:tools/sniffer_shovel",
                   "minecraft:rarity": "rare"

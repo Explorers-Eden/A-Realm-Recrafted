@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Guardian Shovel\",\"translate\":\"tools.eden.shovel.guardian\"}",
+                  "minecraft:item_name": {"fallback":"Guardian Shovel","translate":"tools.eden.shovel.guardian"},
                   "minecraft:custom_data": "{tools:guardian_shovel}",
                   "minecraft:item_model": "eden:tools/guardian_shovel",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Rascal Pickaxe\",\"translate\":\"tools.eden.pickaxe.rascal\"}",
+                  "minecraft:item_name": {"fallback":"Rascal Pickaxe","translate":"tools.eden.pickaxe.rascal"},
                   "minecraft:custom_data": "{tools:rascal_pickaxe}",
                   "minecraft:item_model": "eden:tools/rascal_pickaxe",
                   "minecraft:rarity": "rare"

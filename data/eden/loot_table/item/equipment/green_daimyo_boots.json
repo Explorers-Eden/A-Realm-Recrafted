@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Green Daimyo Boots\",\"translate\":\"equipment.eden.green_daimyo_boots\"}",
+                  "minecraft:item_name": {"fallback":"Green Daimyo Boots","translate":"equipment.eden.green_daimyo_boots"},
                   "minecraft:custom_data": "{equipment:green_daimyo_boots}",
                   "minecraft:item_model": "eden:equipment/green_daimyo_boots",
                   "minecraft:rarity": "rare",

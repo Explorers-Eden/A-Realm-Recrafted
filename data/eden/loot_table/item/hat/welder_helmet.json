@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Welder Helmet\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Welder Helmet"},
                   "minecraft:custom_data": "{hats:welder_helmet}",
                   "minecraft:item_model": "eden:hats/welder_helmet",
                 "minecraft:equippable": {

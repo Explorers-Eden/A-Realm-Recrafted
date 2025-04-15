@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cupid Shovel\",\"translate\":\"tools.eden.shovel.cupid\"}",
+                  "minecraft:item_name": {"fallback":"Cupid Shovel","translate":"tools.eden.shovel.cupid"},
                   "minecraft:custom_data": "{tools:cupid_shovel}",
                   "minecraft:item_model": "eden:tools/cupid_shovel",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Mushroom Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Mushroom Hat"},
                   "minecraft:custom_data": "{hats:mushroom_hat}",
                   "minecraft:item_model": "eden:hats/mushroom_hat",
                 "minecraft:equippable": {

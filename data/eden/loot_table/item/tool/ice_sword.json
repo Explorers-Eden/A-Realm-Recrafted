@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Ice Sword\",\"translate\":\"tools.eden.sword.ice\"}",
+                  "minecraft:item_name": {"fallback":"Ice Sword","translate":"tools.eden.sword.ice"},
                   "minecraft:custom_data": "{tools:ice_sword}",
                   "minecraft:item_model": "eden:tools/ice_sword",
                   "minecraft:rarity": "rare"

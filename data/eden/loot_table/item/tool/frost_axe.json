@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Frost Axe\",\"translate\":\"tools.eden.axe.frost\"}",
+                  "minecraft:item_name": {"fallback":"Frost Axe","translate":"tools.eden.axe.frost"},
                   "minecraft:custom_data": "{tools:frost_axe}",
                   "minecraft:item_model": "eden:tools/frost_axe",
                   "minecraft:rarity": "rare"

@@ -24,7 +24,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Soul Crossbow\",\"translate\":\"tools.eden.crossbow.soul_crossbow\"}",
+                  "minecraft:item_name": {"fallback":"Soul Crossbow","translate":"tools.eden.crossbow.soul_crossbow"},
                   "minecraft:custom_data": "{tools:soul_crossbow}",
                   "minecraft:item_model": "eden:bows/soul_crossbow",
                   "minecraft:max_stack_size": 1,

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Desert Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Desert Hat"},
                   "minecraft:custom_data": "{hats:desert_hat}",
                   "minecraft:item_model": "eden:hats/desert_hat",
                 "minecraft:equippable": {

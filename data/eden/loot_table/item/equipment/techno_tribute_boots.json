@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Techno Tribute Boots\",\"translate\":\"equipment.eden.techno_tribute_boots\"}",
+                  "minecraft:item_name": {"fallback":"Techno Tribute Boots","translate":"equipment.eden.techno_tribute_boots"},
                   "minecraft:custom_data": "{equipment:techno_tribute_boots}",
                   "minecraft:item_model": "eden:equipment/techno_tribute_boots",
                   "minecraft:rarity": "epic",

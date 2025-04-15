@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Techno Tribute Helmet\",\"translate\":\"equipment.eden.techno_tribute_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Techno Tribute Helmet","translate":"equipment.eden.techno_tribute_helmet"},
                   "minecraft:custom_data": "{equipment:techno_tribute_helmet}",
                   "minecraft:item_model": "eden:equipment/techno_tribute_helmet",
                   "minecraft:rarity": "epic",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Golden Viking Boots\",\"translate\":\"equipment.eden.golden_viking_boots\"}",
+                  "minecraft:item_name": {"fallback":"Golden Viking Boots","translate":"equipment.eden.golden_viking_boots"},
                   "minecraft:custom_data": "{equipment:golden_viking_boots}",
                   "minecraft:item_model": "eden:equipment/golden_viking_boots",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Woodland Helmet\",\"translate\":\"equipment.eden.woodland_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Woodland Helmet","translate":"equipment.eden.woodland_helmet"},
                   "minecraft:custom_data": "{equipment:woodland_helmet}",
                   "minecraft:item_model": "eden:equipment/woodland_helmet",
                   "minecraft:rarity": "rare",

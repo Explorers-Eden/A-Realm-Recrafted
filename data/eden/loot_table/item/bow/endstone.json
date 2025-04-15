@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Endstone Bow\",\"translate\":\"tools.eden.bow.endstone\"}",
+                  "minecraft:item_name": {"fallback":"Endstone Bow","translate":"tools.eden.bow.endstone"},
                   "minecraft:custom_data": "{tools:endstone_bow}",
                   "minecraft:item_model": "eden:bows/endstone",
                   "minecraft:max_stack_size": 1,

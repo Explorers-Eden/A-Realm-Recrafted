@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Royal Axe\",\"translate\":\"tools.eden.axe.royal\"}",
+                  "minecraft:item_name": {"fallback":"Royal Axe","translate":"tools.eden.axe.royal"},
                   "minecraft:custom_data": "{tools:royal_axe}",
                   "minecraft:item_model": "eden:tools/royal_axe",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Gilded Pickaxe\",\"translate\":\"tools.eden.pickaxe.gilded\"}",
+                  "minecraft:item_name": {"fallback":"Gilded Pickaxe","translate":"tools.eden.pickaxe.gilded"},
                   "minecraft:custom_data": "{tools:gilded_pickaxe}",
                   "minecraft:item_model": "eden:tools/gilded_pickaxe",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cherry Pickaxe\",\"translate\":\"tools.eden.pickaxe.cherry\"}",
+                  "minecraft:item_name": {"fallback":"Cherry Pickaxe","translate":"tools.eden.pickaxe.cherry"},
                   "minecraft:custom_data": "{tools:cherry_pickaxe}",
                   "minecraft:item_model": "eden:tools/cherry_pickaxe",
                   "minecraft:rarity": "rare"

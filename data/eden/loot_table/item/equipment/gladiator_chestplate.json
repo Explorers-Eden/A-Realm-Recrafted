@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Gladiator Chestplate\",\"translate\":\"equipment.eden.gladiator_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Gladiator Chestplate","translate":"equipment.eden.gladiator_chestplate"},
                   "minecraft:custom_data": "{equipment:gladiator_chestplate}",
                   "minecraft:item_model": "eden:equipment/gladiator_chestplate",
                   "minecraft:rarity": "rare",

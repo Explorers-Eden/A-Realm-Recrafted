@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Psiloi Boots\",\"translate\":\"equipment.eden.psiloi_boots\"}",
+                  "minecraft:item_name": {"fallback":"Psiloi Boots","translate":"equipment.eden.psiloi_boots"},
                   "minecraft:custom_data": "{equipment:psiloi_boots}",
                   "minecraft:item_model": "eden:equipment/psiloi_boots",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Cardboard Box\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Cardboard Box"},
                   "minecraft:custom_data": "{hats:cardboard_box}",
                   "minecraft:item_model": "eden:hats/cardboard_box",
                 "minecraft:equippable": {

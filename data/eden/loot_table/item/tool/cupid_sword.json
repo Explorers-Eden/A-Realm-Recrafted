@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cupid Sword\",\"translate\":\"tools.eden.sword.cupid\"}",
+                  "minecraft:item_name": {"fallback":"Cupid Sword","translate":"tools.eden.sword.cupid"},
                   "minecraft:custom_data": "{tools:cupid_sword}",
                   "minecraft:item_model": "eden:tools/cupid_sword",
                   "minecraft:rarity": "rare"

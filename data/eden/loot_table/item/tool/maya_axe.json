@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mayan Axe\",\"translate\":\"tools.eden.axe.maya\"}",
+                  "minecraft:item_name": {"fallback":"Mayan Axe","translate":"tools.eden.axe.maya"},
                   "minecraft:custom_data": "{tools:maya_axe}",
                   "minecraft:item_model": "eden:tools/maya_axe",
                   "minecraft:rarity": "rare"

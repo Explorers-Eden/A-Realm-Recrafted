@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Brown Samurai Helmet\",\"translate\":\"equipment.eden.brown_samurai_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Brown Samurai Helmet","translate":"equipment.eden.brown_samurai_helmet"},
                   "minecraft:custom_data": "{equipment:brown_samurai_helmet}",
                   "minecraft:item_model": "eden:equipment/brown_samurai_helmet",
                   "minecraft:rarity": "rare",

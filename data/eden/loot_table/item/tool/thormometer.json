@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Thormometer\",\"translate\":\"tools.eden.Thormometer\"}",
+                  "minecraft:item_name": {"fallback":"Thormometer","translate":"tools.eden.Thormometer"},
                   "minecraft:custom_data": "{tools:thormometer}",
                   "minecraft:item_model": "eden:tools/thormometer",
                   "minecraft:rarity": "epic"

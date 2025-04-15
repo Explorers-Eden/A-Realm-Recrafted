@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Infernal Axe\",\"translate\":\"tools.eden.axe.infernal\"}",
+                  "minecraft:item_name": {"fallback":"Infernal Axe","translate":"tools.eden.axe.infernal"},
                   "minecraft:custom_data": "{tools:infernal_axe}",
                   "minecraft:item_model": "eden:tools/infernal_axe",
                   "minecraft:rarity": "rare"

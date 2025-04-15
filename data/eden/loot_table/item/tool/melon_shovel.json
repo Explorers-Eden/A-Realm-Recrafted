@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Melon Shovel\",\"translate\":\"tools.eden.shovel.melon\"}",
+                  "minecraft:item_name": {"fallback":"Melon Shovel","translate":"tools.eden.shovel.melon"},
                   "minecraft:custom_data": "{tools:melon_shovel}",
                   "minecraft:item_model": "eden:tools/melon_shovel",
                   "minecraft:rarity": "rare"

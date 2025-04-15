@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Blue Samurai Boots\",\"translate\":\"equipment.eden.blue_samurai_boots\"}",
+                  "minecraft:item_name": {"fallback":"Blue Samurai Boots","translate":"equipment.eden.blue_samurai_boots"},
                   "minecraft:custom_data": "{equipment:blue_samurai_boots}",
                   "minecraft:item_model": "eden:equipment/blue_samurai_boots",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Egyptian Guardian Leggings\",\"translate\":\"equipment.eden.guardian_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Egyptian Guardian Leggings","translate":"equipment.eden.guardian_leggings"},
                   "minecraft:custom_data": "{equipment:guardian_leggings}",
                   "minecraft:item_model": "eden:equipment/guardian_leggings",
                   "minecraft:rarity": "rare",

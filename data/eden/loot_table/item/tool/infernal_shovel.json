@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Infernal Shovel\",\"translate\":\"tools.eden.shovel.infernal\"}",
+                  "minecraft:item_name": {"fallback":"Infernal Shovel","translate":"tools.eden.shovel.infernal"},
                   "minecraft:custom_data": "{tools:infernal_shovel}",
                   "minecraft:item_model": "eden:tools/infernal_shovel",
                   "minecraft:rarity": "rare"

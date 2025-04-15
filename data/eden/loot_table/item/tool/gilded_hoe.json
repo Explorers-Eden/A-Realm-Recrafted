@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Gilded Hoe\",\"translate\":\"tools.eden.hoe.gilded\"}",
+                  "minecraft:item_name": {"fallback":"Gilded Hoe","translate":"tools.eden.hoe.gilded"},
                   "minecraft:custom_data": "{tools:gilded_hoe}",
                   "minecraft:item_model": "eden:tools/gilded_hoe",
                   "minecraft:rarity": "rare"

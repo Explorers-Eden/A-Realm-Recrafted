@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Red Snake Bow\",\"translate\":\"tools.eden.bow.red_snake\"}",
+                  "minecraft:item_name": {"fallback":"Red Snake Bow","translate":"tools.eden.bow.red_snake"},
                   "minecraft:custom_data": "{tools:red_snake_bow}",
                   "minecraft:item_model": "eden:bows/red_snake",
                   "minecraft:max_stack_size": 1,

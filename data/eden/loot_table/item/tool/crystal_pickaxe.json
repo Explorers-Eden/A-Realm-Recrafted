@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Crystal Pickaxe\",\"translate\":\"tools.eden.pickaxe.crystal\"}",
+                  "minecraft:item_name": {"fallback":"Crystal Pickaxe","translate":"tools.eden.pickaxe.crystal"},
                   "minecraft:custom_data": "{tools:crystal_pickaxe}",
                   "minecraft:item_model": "eden:tools/crystal_pickaxe",
                   "minecraft:rarity": "rare"

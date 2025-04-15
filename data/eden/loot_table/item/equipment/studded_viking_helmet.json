@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Studded Viking Helmet\",\"translate\":\"equipment.eden.studded_viking_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Studded Viking Helmet","translate":"equipment.eden.studded_viking_helmet"},
                   "minecraft:custom_data": "{equipment:studded_viking_helmet}",
                   "minecraft:item_model": "eden:equipment/studded_viking_helmet",
                   "minecraft:rarity": "rare",

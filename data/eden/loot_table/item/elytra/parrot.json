@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Wings of a Parrot\",\"translate\":\"equipment.eden.parrot_elytra\"}",
+                "minecraft:item_name": {"fallback":"Wings of a Parrot","translate":"equipment.eden.parrot_elytra"},
                 "minecraft:custom_data": "{equipment:parrot_elytra}",
                 "minecraft:item_model": "eden:equipment/parrot_elytra",
                 "minecraft:rarity": "epic",

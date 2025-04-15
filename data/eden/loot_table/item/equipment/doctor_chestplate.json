@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Doctor's Chestplate\",\"translate\":\"equipment.eden.doctor_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Doctor's Chestplate","translate":"equipment.eden.doctor_chestplate"},
                   "minecraft:custom_data": "{equipment:doctor_chestplate}",
                   "minecraft:item_model": "eden:equipment/doctor_chestplate",
                   "minecraft:rarity": "rare",

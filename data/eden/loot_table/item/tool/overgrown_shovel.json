@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Overgrown Shovel\",\"translate\":\"tools.eden.shovel.overgrown\"}",
+                  "minecraft:item_name": {"fallback":"Overgrown Shovel","translate":"tools.eden.shovel.overgrown"},
                   "minecraft:custom_data": "{tools:overgrown_shovel}",
                   "minecraft:item_model": "eden:tools/overgrown_shovel",
                   "minecraft:rarity": "rare"

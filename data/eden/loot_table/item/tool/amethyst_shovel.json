@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Amethyst Shovel\",\"translate\":\"tools.eden.shovel.amethyst\"}",
+                  "minecraft:item_name": {"fallback":"Amethyst Shovel","translate":"tools.eden.shovel.amethyst"},
                   "minecraft:custom_data": "{tools:amethyst_shovel}",
                   "minecraft:item_model": "eden:tools/amethyst_shovel",
                   "minecraft:rarity": "common"

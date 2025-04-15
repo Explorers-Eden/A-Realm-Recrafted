@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"VR Headset\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"VR Headset"},
                   "minecraft:custom_data": "{hats:vr_headset}",
                   "minecraft:item_model": "eden:hats/vr_headset",
                 "minecraft:equippable": {

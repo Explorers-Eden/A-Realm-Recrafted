@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Wings of a Emperor Moth\",\"translate\":\"equipment.eden.emperor_moth_elytra\"}",
+                "minecraft:item_name": {"fallback":"Wings of a Emperor Moth","translate":"equipment.eden.emperor_moth_elytra"},
                 "minecraft:custom_data": "{equipment:emperor_moth_elytra}",
                 "minecraft:item_model": "eden:equipment/emperor_moth_elytra",
                 "minecraft:rarity": "epic",

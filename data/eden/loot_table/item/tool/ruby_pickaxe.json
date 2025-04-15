@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Ruby Pickaxe\",\"translate\":\"tools.eden.pickaxe.ruby\"}",
+                  "minecraft:item_name": {"fallback":"Ruby Pickaxe","translate":"tools.eden.pickaxe.ruby"},
                   "minecraft:custom_data": "{tools:ruby_pickaxe}",
                   "minecraft:item_model": "eden:tools/ruby_pickaxe",
                   "minecraft:rarity": "rare"

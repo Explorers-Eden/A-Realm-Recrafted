@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Flower Bow\",\"translate\":\"tools.eden.bow.flower\"}",
+                  "minecraft:item_name": {"fallback":"Flower Bow","translate":"tools.eden.bow.flower"},
                   "minecraft:custom_data": "{tools:flower_bow}",
                   "minecraft:item_model": "eden:bows/flower",
                   "minecraft:max_stack_size": 1,

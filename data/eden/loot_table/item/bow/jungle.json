@@ -19,7 +19,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Jungle Bow\",\"translate\":\"tools.eden.bow.jungle\"}",
+                  "minecraft:item_name": {"fallback":"Jungle Bow","translate":"tools.eden.bow.jungle"},
                   "minecraft:custom_data": "{tools:jungle_bow}",
                   "minecraft:item_model": "eden:bows/jungle",
                   "minecraft:max_stack_size": 1,

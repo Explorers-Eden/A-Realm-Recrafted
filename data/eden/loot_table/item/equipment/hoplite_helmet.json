@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Hoplite Helmet\",\"translate\":\"equipment.eden.hoplite_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Hoplite Helmet","translate":"equipment.eden.hoplite_helmet"},
                   "minecraft:custom_data": "{equipment:hoplite_helmet}",
                   "minecraft:item_model": "eden:equipment/hoplite_helmet",
                   "minecraft:rarity": "rare",

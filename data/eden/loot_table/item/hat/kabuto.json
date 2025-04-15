@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Kabuto\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Kabuto"},
                   "minecraft:custom_data": "{hats:kabuto}",
                   "minecraft:item_model": "eden:hats/kabuto",
                 "minecraft:equippable": {

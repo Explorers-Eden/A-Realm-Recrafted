@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Jade Sword\",\"translate\":\"tools.eden.sword.jade\"}",
+                  "minecraft:item_name": {"fallback":"Jade Sword","translate":"tools.eden.sword.jade"},
                   "minecraft:custom_data": "{tools:jade_sword}",
                   "minecraft:item_model": "eden:tools/jade_sword",
                   "minecraft:rarity": "rare"

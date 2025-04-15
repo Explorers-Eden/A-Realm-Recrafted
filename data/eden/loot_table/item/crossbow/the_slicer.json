@@ -24,7 +24,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"The Slicer Crossbow\",\"translate\":\"tools.eden.crossbow.the_slicer\"}",
+                  "minecraft:item_name": {"fallback":"The Slicer Crossbow","translate":"tools.eden.crossbow.the_slicer"},
                   "minecraft:custom_data": "{tools:the_slicer_crossbow}",
                   "minecraft:item_model": "eden:bows/the_slicer",
                   "minecraft:max_stack_size": 1,

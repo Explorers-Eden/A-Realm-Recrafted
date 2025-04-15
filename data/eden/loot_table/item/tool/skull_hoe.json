@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Skull Hoe\",\"translate\":\"tools.eden.hoe.skull\"}",
+                  "minecraft:item_name": {"fallback":"Skull Hoe","translate":"tools.eden.hoe.skull"},
                   "minecraft:custom_data": "{tools:skull_hoe}",
                   "minecraft:item_model": "eden:tools/skull_hoe",
                   "minecraft:rarity": "rare"

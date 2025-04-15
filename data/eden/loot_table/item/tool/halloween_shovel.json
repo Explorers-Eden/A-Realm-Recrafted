@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Halloween Shovel\",\"translate\":\"tools.eden.shovel.halloween\"}",
+                  "minecraft:item_name": {"fallback":"Halloween Shovel","translate":"tools.eden.shovel.halloween"},
                   "minecraft:custom_data": "{tools:halloween_shovel}",
                   "minecraft:item_model": "eden:tools/halloween_shovel",
                   "minecraft:rarity": "rare"

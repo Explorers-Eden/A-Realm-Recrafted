@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Santa Claus\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Santa Claus"},
                   "minecraft:custom_data": "{hats:santa_claus}",
                   "minecraft:item_model": "eden:hats/santa_claus",
                 "minecraft:equippable": {

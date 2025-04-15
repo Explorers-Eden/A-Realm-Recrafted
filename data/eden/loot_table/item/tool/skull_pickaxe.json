@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Skull Pickaxe\",\"translate\":\"tools.eden.pickaxe.skull\"}",
+                  "minecraft:item_name": {"fallback":"Skull Pickaxe","translate":"tools.eden.pickaxe.skull"},
                   "minecraft:custom_data": "{tools:skull_pickaxe}",
                   "minecraft:item_model": "eden:tools/skull_pickaxe",
                   "minecraft:rarity": "rare"

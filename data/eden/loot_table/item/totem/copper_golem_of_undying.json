@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/copper_golem_of_undying",
                   "minecraft:custom_data": "{totem:copper_golem}",
-                  "minecraft:item_name": "{\"fallback\":\"Copper Golem of Undying\",\"translate\":\"totems.eden.copper_golem\"}"
+                  "minecraft:item_name": {"fallback":"Copper Golem of Undying","translate":"totems.eden.copper_golem"}
                 }
               }
             ]

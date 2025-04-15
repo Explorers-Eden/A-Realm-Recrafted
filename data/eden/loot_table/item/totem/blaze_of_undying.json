@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/blaze_of_undying",
                   "minecraft:custom_data": "{totem:blaze}",
-                  "minecraft:item_name": "{\"fallback\":\"Blaze of Undying\",\"translate\":\"totems.eden.blaze\"}"
+                  "minecraft:item_name": {"fallback":"Blaze of Undying","translate":"totems.eden.blaze"}
                 }
               }
             ]

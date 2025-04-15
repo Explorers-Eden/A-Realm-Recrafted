@@ -24,7 +24,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Butterfly Crossbow\",\"translate\":\"tools.eden.crossbow.butterfly\"}",
+                  "minecraft:item_name": {"fallback":"Butterfly Crossbow","translate":"tools.eden.crossbow.butterfly"},
                   "minecraft:custom_data": "{tools:butterfly_crossbow}",
                   "minecraft:item_model": "eden:bows/butterfly",
                   "minecraft:max_stack_size": 1,

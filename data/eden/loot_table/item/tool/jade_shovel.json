@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Jade Shovel\",\"translate\":\"tools.eden.shovel.jade\"}",
+                  "minecraft:item_name": {"fallback":"Jade Shovel","translate":"tools.eden.shovel.jade"},
                   "minecraft:custom_data": "{tools:jade_shovel}",
                   "minecraft:item_model": "eden:tools/jade_shovel",
                   "minecraft:rarity": "rare"

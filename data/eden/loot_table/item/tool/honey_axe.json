@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Honey Axe\",\"translate\":\"tools.eden.axe.honey\"}",
+                  "minecraft:item_name": {"fallback":"Honey Axe","translate":"tools.eden.axe.honey"},
                   "minecraft:custom_data": "{tools:honey_axe}",
                   "minecraft:item_model": "eden:tools/honey_axe",
                   "minecraft:rarity": "rare"

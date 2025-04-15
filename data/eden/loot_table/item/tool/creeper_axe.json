@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Creeper Axe\",\"translate\":\"tools.eden.axe.creeper\"}",
+                  "minecraft:item_name": {"fallback":"Creeper Axe","translate":"tools.eden.axe.creeper"},
                   "minecraft:custom_data": "{tools:creeper_axe}",
                   "minecraft:item_model": "eden:tools/creeper_axe",
                   "minecraft:rarity": "uncommon"

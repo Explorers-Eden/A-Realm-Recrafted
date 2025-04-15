@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Golden Tophat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Golden Tophat"},
                   "minecraft:custom_data": "{hats:golden_tophat}",
                   "minecraft:item_model": "eden:hats/golden_tophat",
                 "minecraft:equippable": {

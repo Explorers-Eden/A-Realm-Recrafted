@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Armadillo Helmet\",\"translate\":\"equipment.eden.armadillo_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Armadillo Helmet","translate":"equipment.eden.armadillo_helmet"},
                   "minecraft:custom_data": "{equipment:armadillo_helmet}",
                   "minecraft:item_model": "eden:equipment/armadillo_helmet",
                   "minecraft:equippable": {

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Sculk Hoe\",\"translate\":\"tools.eden.hoe.sculk\"}",
+                  "minecraft:item_name": {"fallback":"Sculk Hoe","translate":"tools.eden.hoe.sculk"},
                   "minecraft:custom_data": "{tools:sculk_hoe}",
                   "minecraft:item_model": "eden:tools/sculk_hoe",
                   "minecraft:rarity": "rare"

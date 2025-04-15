@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Night King's Helmet\",\"translate\":\"equipment.eden.night_king_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Night King's Helmet","translate":"equipment.eden.night_king_helmet"},
                   "minecraft:custom_data": "{equipment:night_king_helmet}",
                   "minecraft:item_model": "eden:equipment/night_king_helmet",
                   "minecraft:rarity": "rare",

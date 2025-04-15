@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aetherian Axe\",\"translate\":\"tools.eden.axe.aetherian\"}",
+                  "minecraft:item_name": {"fallback":"Aetherian Axe","translate":"tools.eden.axe.aetherian"},
                   "minecraft:custom_data": "{tools:aetherian_axe}",
                   "minecraft:item_model": "eden:tools/aetherian_axe",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Sakura Shovel\",\"translate\":\"tools.eden.shovel.sakura\"}",
+                  "minecraft:item_name": {"fallback":"Sakura Shovel","translate":"tools.eden.shovel.sakura"},
                   "minecraft:custom_data": "{tools:sakura_shovel}",
                   "minecraft:item_model": "eden:tools/sakura_shovel",
                   "minecraft:rarity": "rare"

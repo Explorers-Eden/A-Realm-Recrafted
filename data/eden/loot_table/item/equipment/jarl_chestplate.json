@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Jarl's Chestplate\",\"translate\":\"equipment.eden.jarl_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Jarl's Chestplate","translate":"equipment.eden.jarl_chestplate"},
                   "minecraft:custom_data": "{equipment:jarl_chestplate}",
                   "minecraft:item_model": "eden:equipment/jarl_chestplate",
                   "minecraft:rarity": "rare",

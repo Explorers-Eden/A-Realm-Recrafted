@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aetherian Pickaxe\",\"translate\":\"tools.eden.pickaxe.aetherian\"}",
+                  "minecraft:item_name": {"fallback":"Aetherian Pickaxe","translate":"tools.eden.pickaxe.aetherian"},
                   "minecraft:custom_data": "{tools:aetherian_pickaxe}",
                   "minecraft:item_model": "eden:tools/aetherian_pickaxe",
                   "minecraft:rarity": "rare"

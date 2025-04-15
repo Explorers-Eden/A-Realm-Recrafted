@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Olympian Chestplate\",\"translate\":\"equipment.eden.olympus_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Olympian Chestplate","translate":"equipment.eden.olympus_chestplate"},
                   "minecraft:custom_data": "{equipment:olympus_chestplate}",
                   "minecraft:item_model": "eden:equipment/olympus_chestplate",
                   "minecraft:rarity": "rare",

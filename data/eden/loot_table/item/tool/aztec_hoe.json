@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aztec Hoe\",\"translate\":\"tools.eden.hoe.aztec\"}",
+                  "minecraft:item_name": {"fallback":"Aztec Hoe","translate":"tools.eden.hoe.aztec"},
                   "minecraft:custom_data": "{tools:aztec_hoe}",
                   "minecraft:item_model": "eden:tools/aztec_hoe",
                   "minecraft:rarity": "rare"

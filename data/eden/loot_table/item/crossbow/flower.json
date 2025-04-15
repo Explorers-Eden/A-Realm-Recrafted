@@ -24,7 +24,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Flower Crossbow\",\"translate\":\"tools.eden.crossbow.flower\"}",
+                  "minecraft:item_name": {"fallback":"Flower Crossbow","translate":"tools.eden.crossbow.flower"},
                   "minecraft:custom_data": "{tools:flower_crossbow}",
                   "minecraft:item_model": "eden:bows/flower_crossbow",
                   "minecraft:max_stack_size": 1,

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Melon Helmet\",\"translate\":\"equipment.eden.melon_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Melon Helmet","translate":"equipment.eden.melon_helmet"},
                   "minecraft:custom_data": "{equipment:melon_helmet}",
                   "minecraft:item_model": "eden:equipment/melon_helmet",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Raider Leggings\",\"translate\":\"equipment.eden.raider_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Raider Leggings","translate":"equipment.eden.raider_leggings"},
                   "minecraft:custom_data": "{equipment:raider_leggings}",
                   "minecraft:item_model": "eden:equipment/raider_leggings",
                   "minecraft:rarity": "rare",

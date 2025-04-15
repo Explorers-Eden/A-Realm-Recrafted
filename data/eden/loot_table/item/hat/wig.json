@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Wig\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Wig"},
                   "minecraft:custom_data": "{hats:wig}",
                   "minecraft:item_model": "eden:hats/wig",
                 "minecraft:equippable": {

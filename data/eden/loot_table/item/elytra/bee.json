@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Wings of a Bee\",\"translate\":\"equipment.eden.bee_elytra\"}",
+                "minecraft:item_name": {"fallback":"Wings of a Bee","translate":"equipment.eden.bee_elytra"},
                 "minecraft:custom_data": "{equipment:bee_elytra}",
                 "minecraft:item_model": "eden:equipment/bee_elytra",
                 "minecraft:rarity": "epic",

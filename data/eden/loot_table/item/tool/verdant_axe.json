@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Verdant Axe\",\"translate\":\"tools.eden.axe.verdant\"}",
+                  "minecraft:item_name": {"fallback":"Verdant Axe","translate":"tools.eden.axe.verdant"},
                   "minecraft:custom_data": "{tools:verdant_axe}",
                   "minecraft:item_model": "eden:tools/verdant_axe",
                   "minecraft:rarity": "rare"

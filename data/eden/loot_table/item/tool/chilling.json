@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Chilling\",\"translate\":\"tools.eden.chilling\"}",
+                  "minecraft:item_name": {"fallback":"Chilling","translate":"tools.eden.chilling"},
                   "minecraft:custom_data": "{tools:chilling}",
                   "minecraft:item_model": "eden:tools/chilling",
                   "minecraft:rarity": "epic"

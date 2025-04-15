@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Totem Sword\",\"translate\":\"tools.eden.sword.totem\"}",
+                  "minecraft:item_name": {"fallback":"Totem Sword","translate":"tools.eden.sword.totem"},
                   "minecraft:custom_data": "{tools:totem_sword}",
                   "minecraft:item_model": "eden:tools/totem_sword",
                   "minecraft:rarity": "rare"

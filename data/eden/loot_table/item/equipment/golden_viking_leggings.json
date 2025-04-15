@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Golden Viking Leggings\",\"translate\":\"equipment.eden.golden_viking_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Golden Viking Leggings","translate":"equipment.eden.golden_viking_leggings"},
                   "minecraft:custom_data": "{equipment:golden_viking_leggings}",
                   "minecraft:item_model": "eden:equipment/golden_viking_leggings",
                   "minecraft:rarity": "rare",

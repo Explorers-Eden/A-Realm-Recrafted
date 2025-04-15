@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/enderman_of_undying",
                   "minecraft:custom_data": "{totem:enderman}",
-                  "minecraft:item_name": "{\"fallback\":\"Enderman of Undying\",\"translate\":\"totems.eden.enderman\"}"
+                  "minecraft:item_name": {"fallback":"Enderman of Undying","translate":"totems.eden.enderman"}
                 }
               }
             ]

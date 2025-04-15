@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Crystal Hoe\",\"translate\":\"tools.eden.hoe.crystal\"}",
+                  "minecraft:item_name": {"fallback":"Crystal Hoe","translate":"tools.eden.hoe.crystal"},
                   "minecraft:custom_data": "{tools:crystal_hoe}",
                   "minecraft:item_model": "eden:tools/crystal_hoe",
                   "minecraft:rarity": "rare"

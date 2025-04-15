@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Senator Leggings\",\"translate\":\"equipment.eden.senator_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Senator Leggings","translate":"equipment.eden.senator_leggings"},
                   "minecraft:custom_data": "{equipment:senator_leggings}",
                   "minecraft:item_model": "eden:equipment/senator_leggings",
                   "minecraft:rarity": "rare",

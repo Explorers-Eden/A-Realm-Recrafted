@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Chest Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Chest Hat"},
                   "minecraft:custom_data": "{hats:chest_hat}",
                   "minecraft:item_model": "eden:hats/chest_hat",
                 "minecraft:equippable": {

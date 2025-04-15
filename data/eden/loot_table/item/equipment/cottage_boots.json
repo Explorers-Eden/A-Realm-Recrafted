@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cottage Boots\",\"translate\":\"equipment.eden.cottage_boots\"}",
+                  "minecraft:item_name": {"fallback":"Cottage Boots","translate":"equipment.eden.cottage_boots"},
                   "minecraft:custom_data": "{equipment:cottage_boots}",
                   "minecraft:item_model": "eden:equipment/cottage_boots",
                   "minecraft:rarity": "rare",
@@ -18,10 +18,7 @@
                     "slot": "feet",
                     "asset_id": "eden:cottage"
                   },
-                  "minecraft:dyed_color": {
-                    "rgb": -6265536,
-                    "show_in_tooltip": true
-                  }
+                  "minecraft:dyed_color": -6265536
                 }
               }
             ]

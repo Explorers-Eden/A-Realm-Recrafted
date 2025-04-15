@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mangrove Hoe\",\"translate\":\"tools.eden.hoe.mangrove\"}",
+                  "minecraft:item_name": {"fallback":"Mangrove Hoe","translate":"tools.eden.hoe.mangrove"},
                   "minecraft:custom_data": "{tools:mangrove_hoe}",
                   "minecraft:item_model": "eden:tools/mangrove_hoe",
                   "minecraft:rarity": "rare"

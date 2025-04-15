@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Crown\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Crown"},
                   "minecraft:custom_data": "{hats:crown_2}",
                   "minecraft:item_model": "eden:hats/crown_2",
                 "minecraft:equippable": {

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aquanaut Helmet\",\"translate\":\"equipment.eden.aquanaut_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Aquanaut Helmet","translate":"equipment.eden.aquanaut_helmet"},
                   "minecraft:custom_data": "{equipment:aquanaut_helmet}",
                   "minecraft:item_model": "eden:equipment/aquanaut_helmet",
                   "minecraft:rarity": "rare",

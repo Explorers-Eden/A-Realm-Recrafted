@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cupid Pickaxe\",\"translate\":\"tools.eden.pickaxe.cupid\"}",
+                  "minecraft:item_name": {"fallback":"Cupid Pickaxe","translate":"tools.eden.pickaxe.cupid"},
                   "minecraft:custom_data": "{tools:cupid_pickaxe}",
                   "minecraft:item_model": "eden:tools/cupid_pickaxe",
                   "minecraft:rarity": "rare"

@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/shulker_of_undying",
                   "minecraft:custom_data": "{totem:shulker}",
-                  "minecraft:item_name": "{\"fallback\":\"Shulker of Undying\",\"translate\":\"totems.eden.shulker\"}"
+                  "minecraft:item_name": {"fallback":"Shulker of Undying","translate":"totems.eden.shulker"}
                 }
               }
             ]

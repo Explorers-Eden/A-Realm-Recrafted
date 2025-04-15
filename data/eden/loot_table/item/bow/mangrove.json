@@ -19,7 +19,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mangrove Bow\",\"translate\":\"tools.eden.bow.mangrove\"}",
+                  "minecraft:item_name": {"fallback":"Mangrove Bow","translate":"tools.eden.bow.mangrove"},
                   "minecraft:custom_data": "{tools:mangrove_bow}",
                   "minecraft:item_model": "eden:bows/mangrove",
                   "minecraft:max_stack_size": 1,

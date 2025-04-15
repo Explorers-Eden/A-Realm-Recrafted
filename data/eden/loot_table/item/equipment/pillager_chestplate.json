@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Pillager Chestplate\",\"translate\":\"equipment.eden.pillager_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Pillager Chestplate","translate":"equipment.eden.pillager_chestplate"},
                   "minecraft:custom_data": "{equipment:pillager_chestplate}",
                   "minecraft:item_model": "eden:equipment/pillager_chestplate",
                   "minecraft:rarity": "rare",

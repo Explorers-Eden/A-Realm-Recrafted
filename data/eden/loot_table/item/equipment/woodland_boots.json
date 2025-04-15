@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Woodland Boots\",\"translate\":\"equipment.eden.woodland_boots\"}",
+                  "minecraft:item_name": {"fallback":"Woodland Boots","translate":"equipment.eden.woodland_boots"},
                   "minecraft:custom_data": "{equipment:woodland_boots}",
                   "minecraft:item_model": "eden:equipment/woodland_boots",
                   "minecraft:rarity": "rare",

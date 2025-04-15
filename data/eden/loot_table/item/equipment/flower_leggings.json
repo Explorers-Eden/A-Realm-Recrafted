@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Flower Leggings\",\"translate\":\"equipment.eden.flower_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Flower Leggings","translate":"equipment.eden.flower_leggings"},
                   "minecraft:custom_data": "{equipment:flower_leggings}",
                   "minecraft:item_model": "eden:equipment/flower_leggings",
                   "minecraft:rarity": "rare",

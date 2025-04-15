@@ -17,7 +17,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-        "minecraft:item_name": "{\"fallback\":\"Golden Potato\",\"translate\":\"food.eden.golden_potato\"}",
+        "minecraft:item_name": {"fallback":"Golden Potato","translate":"food.eden.golden_potato"},
         "minecraft:item_model": "eden:food/golden_potato"
       }
               }

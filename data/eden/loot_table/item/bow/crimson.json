@@ -19,7 +19,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Crimson Bow\",\"translate\":\"tools.eden.bow.crimson\"}",
+                  "minecraft:item_name": {"fallback":"Crimson Bow","translate":"tools.eden.bow.crimson"},
                   "minecraft:custom_data": "{tools:crimson_bow}",
                   "minecraft:item_model": "eden:bows/crimson",
                   "minecraft:max_stack_size": 1,

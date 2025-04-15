@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Warden Leggings\",\"translate\":\"equipment.eden.warden_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Warden Leggings","translate":"equipment.eden.warden_leggings"},
                   "minecraft:custom_data": "{equipment:warden_leggings}",
                   "minecraft:item_model": "eden:equipment/warden_leggings",
                   "minecraft:rarity": "epic",

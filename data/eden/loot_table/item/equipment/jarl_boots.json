@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Jarl's Boots\",\"translate\":\"equipment.eden.jarl_boots\"}",
+                  "minecraft:item_name": {"fallback":"Jarl's Boots","translate":"equipment.eden.jarl_boots"},
                   "minecraft:custom_data": "{equipment:jarl_boots}",
                   "minecraft:item_model": "eden:equipment/jarl_boots",
                   "minecraft:rarity": "rare",

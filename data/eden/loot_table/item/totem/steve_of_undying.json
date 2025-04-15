@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/steve_of_undying",
                   "minecraft:custom_data": "{totem:steve}",
-                  "minecraft:item_name": "{\"fallback\":\"Steve of Undying\",\"translate\":\"totems.eden.steve\"}"
+                  "minecraft:item_name": {"fallback":"Steve of Undying","translate":"totems.eden.steve"}
                 }
               }
             ]

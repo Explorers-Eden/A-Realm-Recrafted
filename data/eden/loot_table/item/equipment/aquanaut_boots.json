@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aquanaut Boots\",\"translate\":\"equipment.eden.aquanaut_boots\"}",
+                  "minecraft:item_name": {"fallback":"Aquanaut Boots","translate":"equipment.eden.aquanaut_boots"},
                   "minecraft:custom_data": "{equipment:aquanaut_boots}",
                   "minecraft:item_model": "eden:equipment/aquanaut_boots",
                   "minecraft:rarity": "rare",

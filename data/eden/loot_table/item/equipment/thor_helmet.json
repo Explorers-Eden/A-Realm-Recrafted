@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Thor's Helmet\",\"translate\":\"equipment.eden.thor_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Thor's Helmet","translate":"equipment.eden.thor_helmet"},
                   "minecraft:custom_data": "{equipment:thor_helmet}",
                   "minecraft:item_model": "eden:equipment/thor_helmet",
                   "minecraft:rarity": "rare",

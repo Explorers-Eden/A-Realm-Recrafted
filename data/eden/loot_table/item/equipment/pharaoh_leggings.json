@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Pharaoh's Leggings\",\"translate\":\"equipment.eden.pharoh_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Pharaoh's Leggings","translate":"equipment.eden.pharoh_leggings"},
                   "minecraft:custom_data": "{equipment:pharaoh_leggings}",
                   "minecraft:item_model": "eden:equipment/pharaoh_leggings",
                   "minecraft:rarity": "rare",

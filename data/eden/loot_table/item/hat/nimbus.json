@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Nimbus\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Nimbus"},
                   "minecraft:custom_data": "{hats:nimbus}",
                   "minecraft:item_model": "eden:hats/nimbus",
                 "minecraft:equippable": {

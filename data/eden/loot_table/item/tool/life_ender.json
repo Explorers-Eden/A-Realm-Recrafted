@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Life Ender\",\"translate\":\"tools.eden.life_ender\"}",
+                  "minecraft:item_name": {"fallback":"Life Ender","translate":"tools.eden.life_ender"},
                   "minecraft:custom_data": "{tools:life_ender}",
                   "minecraft:item_model": "eden:tools/life_ender",
                   "minecraft:rarity": "epic"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Elite Power Bow\",\"translate\":\"tools.eden.bow.elite_power\"}",
+                  "minecraft:item_name": {"fallback":"Elite Power Bow","translate":"tools.eden.bow.elite_power"},
                   "minecraft:custom_data": "{tools:elite_power_bow}",
                   "minecraft:item_model": "eden:bows/elite_power",
                   "minecraft:max_stack_size": 1,

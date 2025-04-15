@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Wither Axe\",\"translate\":\"tools.eden.axe.wither\"}",
+                  "minecraft:item_name": {"fallback":"Wither Axe","translate":"tools.eden.axe.wither"},
                   "minecraft:custom_data": "{tools:wither_axe}",
                   "minecraft:item_model": "eden:tools/wither_axe",
                   "minecraft:rarity": "rare"

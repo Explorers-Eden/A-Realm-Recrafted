@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aetherian Boots\",\"translate\":\"equipment.eden.aetherian_boots\"}",
+                  "minecraft:item_name": {"fallback":"Aetherian Boots","translate":"equipment.eden.aetherian_boots"},
                   "minecraft:custom_data": "{equipment:aetherian_boots}",
                   "minecraft:item_model": "eden:equipment/aetherian_boots",
                   "minecraft:rarity": "rare",

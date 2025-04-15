@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Piglin Sword\",\"translate\":\"tools.eden.sword.piglin\"}",
+                  "minecraft:item_name": {"fallback":"Piglin Sword","translate":"tools.eden.sword.piglin"},
                   "minecraft:custom_data": "{tools:piglin_sword}",
                   "minecraft:item_model": "eden:tools/piglin_sword",
                   "minecraft:rarity": "epic"

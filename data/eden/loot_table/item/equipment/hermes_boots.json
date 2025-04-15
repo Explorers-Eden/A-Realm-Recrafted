@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Hermes' Boots\",\"translate\":\"equipment.eden.hermes_boots\"}",
+                  "minecraft:item_name": {"fallback":"Hermes' Boots","translate":"equipment.eden.hermes_boots"},
                   "minecraft:custom_data": "{equipment:hermes_boots}",
                   "minecraft:item_model": "eden:equipment/hermes_boots",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Breeze Pickaxe\",\"translate\":\"tools.eden.pickaxe.breeze\"}",
+                  "minecraft:item_name": {"fallback":"Breeze Pickaxe","translate":"tools.eden.pickaxe.breeze"},
                   "minecraft:custom_data": "{tools:breeze_pickaxe}",
                   "minecraft:item_model": "eden:tools/breeze_pickaxe",
                   "minecraft:rarity": "rare"

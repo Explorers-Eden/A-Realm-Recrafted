@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Legate Chestplate\",\"translate\":\"equipment.eden.legate_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Legate Chestplate","translate":"equipment.eden.legate_chestplate"},
                   "minecraft:custom_data": "{equipment:legate_chestplate}",
                   "minecraft:item_model": "eden:equipment/legate_chestplate",
                   "minecraft:rarity": "rare",

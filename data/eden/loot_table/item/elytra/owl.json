@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Wings of an Owl\",\"translate\":\"equipment.eden.owl_elytra\"}",
+                "minecraft:item_name": {"fallback":"Wings of an Owl","translate":"equipment.eden.owl_elytra"},
                 "minecraft:custom_data": "{equipment:owl_elytra}",
                 "minecraft:item_model": "eden:equipment/owl_elytra",
                 "minecraft:rarity": "epic",

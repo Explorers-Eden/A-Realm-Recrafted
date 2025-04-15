@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Legate Helmet\",\"translate\":\"equipment.eden.legate_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Legate Helmet","translate":"equipment.eden.legate_helmet"},
                   "minecraft:custom_data": "{equipment:legate_helmet}",
                   "minecraft:item_model": "eden:equipment/legate_helmet",
                   "minecraft:rarity": "rare",

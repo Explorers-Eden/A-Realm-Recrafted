@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cupid Hoe\",\"translate\":\"tools.eden.hoe.cupid\"}",
+                  "minecraft:item_name": {"fallback":"Cupid Hoe","translate":"tools.eden.hoe.cupid"},
                   "minecraft:custom_data": "{tools:cupid_hoe}",
                   "minecraft:item_model": "eden:tools/cupid_hoe",
                   "minecraft:rarity": "rare"

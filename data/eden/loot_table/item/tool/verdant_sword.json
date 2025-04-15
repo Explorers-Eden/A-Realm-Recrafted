@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Verdant Sword\",\"translate\":\"tools.eden.sword.verdant\"}",
+                  "minecraft:item_name": {"fallback":"Verdant Sword","translate":"tools.eden.sword.verdant"},
                   "minecraft:custom_data": "{tools:verdant_sword}",
                   "minecraft:item_model": "eden:tools/verdant_sword",
                   "minecraft:rarity": "rare"

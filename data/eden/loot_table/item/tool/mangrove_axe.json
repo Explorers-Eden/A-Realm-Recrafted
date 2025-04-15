@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mangrove Axe\",\"translate\":\"tools.eden.axe.mangrove\"}",
+                  "minecraft:item_name": {"fallback":"Mangrove Axe","translate":"tools.eden.axe.mangrove"},
                   "minecraft:custom_data": "{tools:mangrove_axe}",
                   "minecraft:item_model": "eden:tools/mangrove_axe",
                   "minecraft:rarity": "rare"

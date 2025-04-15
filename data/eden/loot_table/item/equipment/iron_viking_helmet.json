@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Iron Viking Helmet\",\"translate\":\"equipment.eden.iron_viking_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Iron Viking Helmet","translate":"equipment.eden.iron_viking_helmet"},
                   "minecraft:custom_data": "{equipment:iron_viking_helmet}",
                   "minecraft:item_model": "eden:equipment/iron_viking_helmet",
                   "minecraft:rarity": "rare",

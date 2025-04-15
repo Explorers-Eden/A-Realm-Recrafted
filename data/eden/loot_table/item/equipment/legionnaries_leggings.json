@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Legionnaries Leggings\",\"translate\":\"equipment.eden.legionnaries_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Legionnaries Leggings","translate":"equipment.eden.legionnaries_leggings"},
                   "minecraft:custom_data": "{equipment:legionnaries_leggings}",
                   "minecraft:item_model": "eden:equipment/legionnaries_leggings",
                   "minecraft:rarity": "rare",

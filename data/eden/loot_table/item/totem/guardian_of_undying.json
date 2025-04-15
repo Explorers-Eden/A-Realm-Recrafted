@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/guardian_of_undying",
                   "minecraft:custom_data": "{totem:guardian}",
-                  "minecraft:item_name": "{\"fallback\":\"Guardian of Undying\",\"translate\":\"totems.eden.guardian\"}"
+                  "minecraft:item_name": {"fallback":"Guardian of Undying","translate":"totems.eden.guardian"}
                 }
               }
             ]

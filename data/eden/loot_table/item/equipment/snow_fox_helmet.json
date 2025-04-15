@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Snow Fox Helmet\",\"translate\":\"equipment.eden.snow_fox_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Snow Fox Helmet","translate":"equipment.eden.snow_fox_helmet"},
                   "minecraft:custom_data": "{equipment:snow_fox_helmet}",
                   "minecraft:item_model": "eden:equipment/snow_fox_helmet",
                   "minecraft:rarity": "rare",

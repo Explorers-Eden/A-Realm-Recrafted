@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Pillager Leggings\",\"translate\":\"equipment.eden.pillager_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Pillager Leggings","translate":"equipment.eden.pillager_leggings"},
                   "minecraft:custom_data": "{equipment:pillager_leggings}",
                   "minecraft:item_model": "eden:equipment/pillager_leggings",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aetherian Hoe\",\"translate\":\"tools.eden.hoe.aetherian\"}",
+                  "minecraft:item_name": {"fallback":"Aetherian Hoe","translate":"tools.eden.hoe.aetherian"},
                   "minecraft:custom_data": "{tools:aetherian_hoe}",
                   "minecraft:item_model": "eden:tools/aetherian_hoe",
                   "minecraft:rarity": "rare"

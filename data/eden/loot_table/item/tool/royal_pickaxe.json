@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Royal Pickaxe\",\"translate\":\"tools.eden.pickaxe.royal\"}",
+                  "minecraft:item_name": {"fallback":"Royal Pickaxe","translate":"tools.eden.pickaxe.royal"},
                   "minecraft:custom_data": "{tools:royal_pickaxe}",
                   "minecraft:item_model": "eden:tools/royal_pickaxe",
                   "minecraft:rarity": "rare"

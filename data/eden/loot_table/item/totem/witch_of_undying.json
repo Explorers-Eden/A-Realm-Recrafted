@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/witch_of_undying",
                   "minecraft:custom_data": "{totem:witch}",
-                  "minecraft:item_name": "{\"fallback\":\"Witch of Undying\",\"translate\":\"totems.eden.witch\"}"
+                  "minecraft:item_name": {"fallback":"Witch of Undying","translate":"totems.eden.witch"}
                 }
               }
             ]

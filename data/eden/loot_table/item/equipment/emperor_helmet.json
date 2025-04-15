@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Emperor's Helmet\",\"translate\":\"equipment.eden.emperor_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Emperor's Helmet","translate":"equipment.eden.emperor_helmet"},
                   "minecraft:custom_data": "{equipment:emperor_helmet}",
                   "minecraft:item_model": "eden:equipment/emperor_helmet",
                   "minecraft:rarity": "rare",

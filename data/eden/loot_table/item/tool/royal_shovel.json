@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Royal Shovel\",\"translate\":\"tools.eden.shovel.royal\"}",
+                  "minecraft:item_name": {"fallback":"Royal Shovel","translate":"tools.eden.shovel.royal"},
                   "minecraft:custom_data": "{tools:royal_shovel}",
                   "minecraft:item_model": "eden:tools/royal_shovel",
                   "minecraft:rarity": "rare"

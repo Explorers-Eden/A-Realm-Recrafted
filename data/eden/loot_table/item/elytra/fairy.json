@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Wings of a Fairy\",\"translate\":\"equipment.eden.fairy_elytra\"}",
+                  "minecraft:item_name": {"fallback":"Wings of a Fairy","translate":"equipment.eden.fairy_elytra"},
                   "minecraft:custom_data": "{equipment:fairy_elytra}",
                   "minecraft:item_model": "eden:equipment/fairy_elytra",
                   "minecraft:rarity": "epic",

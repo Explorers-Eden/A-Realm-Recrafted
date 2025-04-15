@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Legate Boots\",\"translate\":\"equipment.eden.legate_boots\"}",
+                  "minecraft:item_name": {"fallback":"Legate Boots","translate":"equipment.eden.legate_boots"},
                   "minecraft:custom_data": "{equipment:legate_boots}",
                   "minecraft:item_model": "eden:equipment/legate_boots",
                   "minecraft:rarity": "rare",

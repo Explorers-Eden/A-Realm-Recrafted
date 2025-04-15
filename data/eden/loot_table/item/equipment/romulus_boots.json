@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Romulus' Boots\",\"translate\":\"equipment.eden.romulus_boots\"}",
+                  "minecraft:item_name": {"fallback":"Romulus' Boots","translate":"equipment.eden.romulus_boots"},
                   "minecraft:custom_data": "{equipment:romulus_boots}",
                   "minecraft:item_model": "eden:equipment/romulus_boots",
                   "minecraft:rarity": "rare",

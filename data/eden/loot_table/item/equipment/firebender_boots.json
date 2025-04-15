@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Firebender Boots\",\"translate\":\"equipment.eden.firebender_boots\"}",
+                  "minecraft:item_name": {"fallback":"Firebender Boots","translate":"equipment.eden.firebender_boots"},
                   "minecraft:custom_data": "{equipment:firebender_boots}",
                   "minecraft:item_model": "eden:equipment/firebender_boots",
                   "minecraft:rarity": "rare",

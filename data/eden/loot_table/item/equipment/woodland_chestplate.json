@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Woodland Chestplate\",\"translate\":\"equipment.eden.woodland_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Woodland Chestplate","translate":"equipment.eden.woodland_chestplate"},
                   "minecraft:custom_data": "{equipment:woodland_chestplate}",
                   "minecraft:item_model": "eden:equipment/woodland_chestplate",
                   "minecraft:rarity": "rare",

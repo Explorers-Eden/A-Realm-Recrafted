@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Astronaut Helmet\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Astronaut Helmet"},
                   "minecraft:custom_data": "{hats:astronaut_helmet}",
                   "minecraft:item_model": "eden:hats/astronaut_helmet",
                 "minecraft:equippable": {

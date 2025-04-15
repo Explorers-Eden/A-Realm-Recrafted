@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Jarl's Leggings\",\"translate\":\"equipment.eden.jarl_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Jarl's Leggings","translate":"equipment.eden.jarl_leggings"},
                   "minecraft:custom_data": "{equipment:jarl_leggings}",
                   "minecraft:item_model": "eden:equipment/jarl_leggings",
                   "minecraft:rarity": "rare",

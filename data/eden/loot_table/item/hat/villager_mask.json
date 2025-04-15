@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Villager Mask\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Villager Mask"},
                   "minecraft:custom_data": "{hats:villager_mask}",
                   "minecraft:item_model": "eden:hats/villager_mask",
                 "minecraft:equippable": {

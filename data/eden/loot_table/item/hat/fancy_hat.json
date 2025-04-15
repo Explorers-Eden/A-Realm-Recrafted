@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Fancy Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Fancy Hat"},
                   "minecraft:custom_data": "{hats:fancy_hat}",
                   "minecraft:item_model": "eden:hats/fancy_hat",
                 "minecraft:equippable": {

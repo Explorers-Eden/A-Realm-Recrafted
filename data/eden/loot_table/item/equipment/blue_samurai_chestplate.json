@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Blue Samurai Chestplate\",\"translate\":\"equipment.eden.blue_samurai_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Blue Samurai Chestplate","translate":"equipment.eden.blue_samurai_chestplate"},
                   "minecraft:custom_data": "{equipment:blue_samurai_chestplate}",
                   "minecraft:item_model": "eden:equipment/blue_samurai_chestplate",
                   "minecraft:rarity": "rare",

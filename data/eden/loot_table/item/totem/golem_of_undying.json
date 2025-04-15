@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/golem_of_undying",
                   "minecraft:custom_data": "{totem:golem}",
-                  "minecraft:item_name": "{\"fallback\":\"Golem of Undying\",\"translate\":\"totems.eden.golem\"}"
+                  "minecraft:item_name": {"fallback":"Golem of Undying","translate":"totems.eden.golem"}
                 }
               }
             ]

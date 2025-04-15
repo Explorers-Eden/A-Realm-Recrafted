@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Bunny Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Bunny Hat"},
                   "minecraft:custom_data": "{hats:bunny_hat}",
                   "minecraft:item_model": "eden:hats/bunny_hat",
                 "minecraft:equippable": {

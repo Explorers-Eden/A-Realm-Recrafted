@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Cowboy Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Cowboy Hat"},
                   "minecraft:custom_data": "{hats:cowboy_hat}",
                   "minecraft:item_model": "eden:hats/cowboy_hat",
                 "minecraft:equippable": {

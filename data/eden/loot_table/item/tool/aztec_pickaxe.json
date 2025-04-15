@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aztec Pickaxe\",\"translate\":\"tools.eden.pickaxe.aztec\"}",
+                  "minecraft:item_name": {"fallback":"Aztec Pickaxe","translate":"tools.eden.pickaxe.aztec"},
                   "minecraft:custom_data": "{tools:aztec_pickaxe}",
                   "minecraft:item_model": "eden:tools/aztec_pickaxe",
                   "minecraft:rarity": "rare"

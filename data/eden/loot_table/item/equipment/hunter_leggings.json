@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Hunter Leggings\",\"translate\":\"equipment.eden.hunter_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Hunter Leggings","translate":"equipment.eden.hunter_leggings"},
                   "minecraft:custom_data": "{equipment:hunter_leggings}",
                   "minecraft:item_model": "eden:equipment/hunter_leggings",
                   "minecraft:rarity": "rare",

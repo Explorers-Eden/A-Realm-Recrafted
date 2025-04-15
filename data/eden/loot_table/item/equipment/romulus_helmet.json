@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Romulus' Helmet\",\"translate\":\"equipment.eden.romulus_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Romulus' Helmet","translate":"equipment.eden.romulus_helmet"},
                   "minecraft:custom_data": "{equipment:romulus_helmet}",
                   "minecraft:item_model": "eden:equipment/romulus_helmet",
                   "minecraft:rarity": "rare",

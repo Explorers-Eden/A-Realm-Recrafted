@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Fisherman Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Fisherman Hat"},
                   "minecraft:custom_data": "{hats:fisherman_hat}",
                   "minecraft:item_model": "eden:hats/fisherman_hat",
                 "minecraft:equippable": {

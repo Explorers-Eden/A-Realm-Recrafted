@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Celestial Pickaxe\",\"translate\":\"tools.eden.pickaxe.celestial\"}",
+                "minecraft:item_name": {"fallback":"Celestial Pickaxe","translate":"tools.eden.pickaxe.celestial"},
                 "minecraft:custom_data": "{tools:celestial_pickaxe}",
                 "minecraft:item_model": "eden:tools/celestial_pickaxe",
                 "minecraft:rarity": "epic"

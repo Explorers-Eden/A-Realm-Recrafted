@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aetherian Chestplate\",\"translate\":\"equipment.eden.aetherian_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Aetherian Chestplate","translate":"equipment.eden.aetherian_chestplate"},
                   "minecraft:custom_data": "{equipment:aetherian_chestplate}",
                   "minecraft:item_model": "eden:equipment/aetherian_chestplate",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Angel's Chestplate\",\"translate\":\"equipment.eden.angels_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Angel's Chestplate","translate":"equipment.eden.angels_chestplate"},
                   "minecraft:custom_data": "{equipment:angels_chestplate}",
                   "minecraft:item_model": "eden:equipment/angels_chestplate",
                   "minecraft:rarity": "rare",

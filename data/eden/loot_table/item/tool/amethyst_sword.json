@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Amethyst Sword\",\"translate\":\"tools.eden.sword.amethyst\"}",
+                  "minecraft:item_name": {"fallback":"Amethyst Sword","translate":"tools.eden.sword.amethyst"},
                   "minecraft:custom_data": "{tools:amethyst_sword}",
                   "minecraft:item_model": "eden:tools/amethyst_sword",
                   "minecraft:rarity": "common"

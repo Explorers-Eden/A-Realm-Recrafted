@@ -17,7 +17,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-        "minecraft:item_name": "{\"fallback\":\"Golden Beetroot\",\"translate\":\"food.eden.golden_beetroot\"}",
+        "minecraft:item_name": {"fallback":"Golden Beetroot","translate":"food.eden.golden_beetroot"},
         "minecraft:item_model": "eden:food/golden_beetroot"
       }
               }

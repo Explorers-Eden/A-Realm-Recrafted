@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Iron Viking Chestplate\",\"translate\":\"equipment.eden.iron_viking_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Iron Viking Chestplate","translate":"equipment.eden.iron_viking_chestplate"},
                   "minecraft:custom_data": "{equipment:iron_viking_chestplate}",
                   "minecraft:item_model": "eden:equipment/iron_viking_chestplate",
                   "minecraft:rarity": "rare",

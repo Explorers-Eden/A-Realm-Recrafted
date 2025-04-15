@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Honey Pickaxe\",\"translate\":\"tools.eden.pickaxe.honey\"}",
+                  "minecraft:item_name": {"fallback":"Honey Pickaxe","translate":"tools.eden.pickaxe.honey"},
                   "minecraft:custom_data": "{tools:honey_pickaxe}",
                   "minecraft:item_model": "eden:tools/honey_pickaxe",
                   "minecraft:rarity": "rare"

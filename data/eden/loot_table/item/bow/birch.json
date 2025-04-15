@@ -19,7 +19,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Birch Bow\",\"translate\":\"tools.eden.bow.birch\"}",
+                  "minecraft:item_name": {"fallback":"Birch Bow","translate":"tools.eden.bow.birch"},
                   "minecraft:custom_data": "{tools:birch_bow}",
                   "minecraft:item_model": "eden:bows/birch",
                   "minecraft:max_stack_size": 1,

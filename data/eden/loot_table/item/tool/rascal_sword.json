@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Rascal Sword\",\"translate\":\"tools.eden.sword.rascal\"}",
+                  "minecraft:item_name": {"fallback":"Rascal Sword","translate":"tools.eden.sword.rascal"},
                   "minecraft:custom_data": "{tools:rascal_sword}",
                   "minecraft:item_model": "eden:tools/rascal_sword",
                   "minecraft:rarity": "rare"

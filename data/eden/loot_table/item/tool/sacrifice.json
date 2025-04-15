@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Sacrifice\",\"translate\":\"tools.eden.sacrifice\"}",
+                  "minecraft:item_name": {"fallback":"Sacrifice","translate":"tools.eden.sacrifice"},
                   "minecraft:custom_data": "{tools:sacrifice}",
                   "minecraft:item_model": "eden:tools/sacrifice",
                   "minecraft:rarity": "epic"

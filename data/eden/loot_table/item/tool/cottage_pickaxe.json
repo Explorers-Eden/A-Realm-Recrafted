@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cottage Pickaxe\",\"translate\":\"tools.eden.pickaxe.cottage\"}",
+                  "minecraft:item_name": {"fallback":"Cottage Pickaxe","translate":"tools.eden.pickaxe.cottage"},
                   "minecraft:custom_data": "{tools:cottage_pickaxe}",
                   "minecraft:item_model": "eden:tools/cottage_pickaxe",
                   "minecraft:rarity": "rare"

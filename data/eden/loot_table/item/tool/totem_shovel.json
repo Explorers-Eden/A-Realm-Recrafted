@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Totem Shovel\",\"translate\":\"tools.eden.shovel.totem\"}",
+                  "minecraft:item_name": {"fallback":"Totem Shovel","translate":"tools.eden.shovel.totem"},
                   "minecraft:custom_data": "{tools:totem_shovel}",
                   "minecraft:item_model": "eden:tools/totem_shovel",
                   "minecraft:rarity": "rare"

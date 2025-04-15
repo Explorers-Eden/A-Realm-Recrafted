@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Piglin Ears\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Piglin Ears"},
                   "minecraft:custom_data": "{hats:piglin_ears}",
                   "minecraft:item_model": "eden:hats/piglin_ears",
                 "minecraft:equippable": {

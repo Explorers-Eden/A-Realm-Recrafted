@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Festive Pickaxe\",\"translate\":\"tools.eden.pickaxe.festive\"}",
+                  "minecraft:item_name": {"fallback":"Festive Pickaxe","translate":"tools.eden.pickaxe.festive"},
                   "minecraft:custom_data": "{tools:festive_pickaxe}",
                   "minecraft:item_model": "eden:tools/festive_pickaxe",
                   "minecraft:rarity": "rare"

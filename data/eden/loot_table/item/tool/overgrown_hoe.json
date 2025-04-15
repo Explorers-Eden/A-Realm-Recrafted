@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Overgrown Hoe\",\"translate\":\"tools.eden.hoe.overgrown\"}",
+                  "minecraft:item_name": {"fallback":"Overgrown Hoe","translate":"tools.eden.hoe.overgrown"},
                   "minecraft:custom_data": "{tools:overgrown_hoe}",
                   "minecraft:item_model": "eden:tools/overgrown_hoe",
                   "minecraft:rarity": "rare"

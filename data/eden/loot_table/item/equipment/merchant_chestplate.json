@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Merchant Chestplate\",\"translate\":\"equipment.eden.merchant_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Merchant Chestplate","translate":"equipment.eden.merchant_chestplate"},
                   "minecraft:custom_data": "{equipment:merchant_chestplate}",
                   "minecraft:item_model": "eden:equipment/merchant_chestplate",
                   "minecraft:rarity": "rare",

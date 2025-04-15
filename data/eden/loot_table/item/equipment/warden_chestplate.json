@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Warden Chestplate\",\"translate\":\"equipment.eden.warden_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Warden Chestplate","translate":"equipment.eden.warden_chestplate"},
                   "minecraft:custom_data": "{equipment:warden_chestplate}",
                   "minecraft:item_model": "eden:equipment/warden_chestplate",
                   "minecraft:rarity": "epic",

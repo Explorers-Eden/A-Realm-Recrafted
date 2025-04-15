@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Brown Ronin Helmet\",\"translate\":\"equipment.eden.brown_ronin_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Brown Ronin Helmet","translate":"equipment.eden.brown_ronin_helmet"},
                   "minecraft:custom_data": "{equipment:brown_ronin_helmet}",
                   "minecraft:item_model": "eden:equipment/brown_ronin_helmet",
                   "minecraft:rarity": "rare",

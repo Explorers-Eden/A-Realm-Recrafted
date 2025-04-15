@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Safety Helmet\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Safety Helmet"},
                   "minecraft:custom_data": "{hats:safety_helmet}",
                   "minecraft:item_model": "eden:hats/safety_helmet",
                 "minecraft:equippable": {

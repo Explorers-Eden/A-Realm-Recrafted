@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Ceasar's Leggings\",\"translate\":\"equipment.eden.ceasar_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Ceasar's Leggings","translate":"equipment.eden.ceasar_leggings"},
                   "minecraft:custom_data": "{equipment:ceasar_leggings}",
                   "minecraft:item_model": "eden:equipment/ceasar_leggings",
                   "minecraft:rarity": "rare",

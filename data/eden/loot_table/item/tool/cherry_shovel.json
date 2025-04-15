@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cherry Shovel\",\"translate\":\"tools.eden.shovel.cherry\"}",
+                  "minecraft:item_name": {"fallback":"Cherry Shovel","translate":"tools.eden.shovel.cherry"},
                   "minecraft:custom_data": "{tools:cherry_shovel}",
                   "minecraft:item_model": "eden:tools/cherry_shovel",
                   "minecraft:rarity": "rare"

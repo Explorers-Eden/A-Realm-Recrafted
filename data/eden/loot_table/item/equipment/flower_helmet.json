@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Flower Helmet\",\"translate\":\"equipment.eden.flower_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Flower Helmet","translate":"equipment.eden.flower_helmet"},
                   "minecraft:custom_data": "{equipment:flower_helmet}",
                   "minecraft:item_model": "eden:equipment/flower_helmet",
                   "minecraft:rarity": "rare",

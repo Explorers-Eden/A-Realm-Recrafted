@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Minty Hoe\",\"translate\":\"tools.eden.hoe.minty\"}",
+                  "minecraft:item_name": {"fallback":"Minty Hoe","translate":"tools.eden.hoe.minty"},
                   "minecraft:custom_data": "{tools:minty_hoe}",
                   "minecraft:item_model": "eden:tools/minty_hoe",
                   "minecraft:rarity": "rare"

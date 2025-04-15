@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Vampire Hoe\",\"translate\":\"tools.eden.hoe.vampire\"}",
+                  "minecraft:item_name": {"fallback":"Vampire Hoe","translate":"tools.eden.hoe.vampire"},
                   "minecraft:custom_data": "{tools:vampire_hoe}",
                   "minecraft:item_model": "eden:tools/vampire_hoe",
                   "minecraft:rarity": "rare"

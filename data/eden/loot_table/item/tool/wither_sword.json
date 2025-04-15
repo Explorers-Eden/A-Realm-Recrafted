@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Wither Sword\",\"translate\":\"tools.eden.sword.wither\"}",
+                  "minecraft:item_name": {"fallback":"Wither Sword","translate":"tools.eden.sword.wither"},
                   "minecraft:custom_data": "{tools:wither_sword}",
                   "minecraft:item_model": "eden:tools/wither_sword",
                   "minecraft:rarity": "rare"

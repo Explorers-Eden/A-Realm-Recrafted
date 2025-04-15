@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Hunter Helmet\",\"translate\":\"equipment.eden.hunter_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Hunter Helmet","translate":"equipment.eden.hunter_helmet"},
                   "minecraft:custom_data": "{equipment:hunter_helmet}",
                   "minecraft:item_model": "eden:equipment/hunter_helmet",
                   "minecraft:rarity": "rare",

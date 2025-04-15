@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cottage Axe\",\"translate\":\"tools.eden.axe.cottage\"}",
+                  "minecraft:item_name": {"fallback":"Cottage Axe","translate":"tools.eden.axe.cottage"},
                   "minecraft:custom_data": "{tools:cottage_axe}",
                   "minecraft:item_model": "eden:tools/cottage_axe",
                   "minecraft:rarity": "rare"

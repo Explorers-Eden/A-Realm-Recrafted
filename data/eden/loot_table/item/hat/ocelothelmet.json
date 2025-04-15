@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Ocelot Helmet\",\"translate\":\"hats.eden.ocelothelmet\"}",
+                "minecraft:item_name": {"fallback":"Ocelot Helmet","translate":"hats.eden.ocelothelmet"},
                 "minecraft:custom_data": "{hats:ocelothelmet}",
                 "minecraft:item_model": "eden:hats/ocelothelmet",
                 "minecraft:equippable": {

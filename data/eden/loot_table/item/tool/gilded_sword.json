@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Gilded Sword\",\"translate\":\"tools.eden.sword.gilded\"}",
+                  "minecraft:item_name": {"fallback":"Gilded Sword","translate":"tools.eden.sword.gilded"},
                   "minecraft:custom_data": "{tools:gilded_sword}",
                   "minecraft:item_model": "eden:tools/gilded_sword",
                   "minecraft:rarity": "rare"

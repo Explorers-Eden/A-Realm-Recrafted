@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Swamp Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Swamp Hat"},
                   "minecraft:custom_data": "{hats:swamp_hat}",
                   "minecraft:item_model": "eden:hats/swamp_hat",
                 "minecraft:equippable": {

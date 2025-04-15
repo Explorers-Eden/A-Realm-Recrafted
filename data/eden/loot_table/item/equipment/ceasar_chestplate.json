@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Ceasar's Chestplate\",\"translate\":\"equipment.eden.ceasar_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Ceasar's Chestplate","translate":"equipment.eden.ceasar_chestplate"},
                   "minecraft:custom_data": "{equipment:ceasar_chestplate}",
                   "minecraft:item_model": "eden:equipment/ceasar_chestplate",
                   "minecraft:rarity": "rare",

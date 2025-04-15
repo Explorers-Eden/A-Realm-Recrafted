@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Wither Hoe\",\"translate\":\"tools.eden.hoe.wither\"}",
+                  "minecraft:item_name": {"fallback":"Wither Hoe","translate":"tools.eden.hoe.wither"},
                   "minecraft:custom_data": "{tools:wither_hoe}",
                   "minecraft:item_model": "eden:tools/wither_hoe",
                   "minecraft:rarity": "rare"

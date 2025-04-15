@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Bone Bow\",\"translate\":\"tools.eden.bow.bone\"}",
+                  "minecraft:item_name": {"fallback":"Bone Bow","translate":"tools.eden.bow.bone"},
                   "minecraft:custom_data": "{tools:bone_bow}",
                   "minecraft:item_model": "eden:bows/bone",
                   "minecraft:max_stack_size": 1,

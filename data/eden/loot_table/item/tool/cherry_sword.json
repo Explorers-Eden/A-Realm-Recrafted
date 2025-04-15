@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cherry Sword\",\"translate\":\"tools.eden.sword.cherry\"}",
+                  "minecraft:item_name": {"fallback":"Cherry Sword","translate":"tools.eden.sword.cherry"},
                   "minecraft:custom_data": "{tools:cherry_sword}",
                   "minecraft:item_model": "eden:tools/cherry_sword",
                   "minecraft:rarity": "rare"

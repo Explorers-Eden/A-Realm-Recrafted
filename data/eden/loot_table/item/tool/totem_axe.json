@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Totem Axe\",\"translate\":\"tools.eden.axe.totem\"}",
+                  "minecraft:item_name": {"fallback":"Totem Axe","translate":"tools.eden.axe.totem"},
                   "minecraft:custom_data": "{tools:totem_axe}",
                   "minecraft:item_model": "eden:tools/totem_axe",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Devil's Chestplate\",\"translate\":\"equipment.eden.devils_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Devil's Chestplate","translate":"equipment.eden.devils_chestplate"},
                   "minecraft:custom_data": "{equipment:devils_chestplate}",
                   "minecraft:item_model": "eden:equipment/devils_chestplate",
                   "minecraft:rarity": "rare",

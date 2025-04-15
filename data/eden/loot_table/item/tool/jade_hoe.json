@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Jade Hoe\",\"translate\":\"tools.eden.hoe.jade\"}",
+                  "minecraft:item_name": {"fallback":"Jade Hoe","translate":"tools.eden.hoe.jade"},
                   "minecraft:custom_data": "{tools:jade_hoe}",
                   "minecraft:item_model": "eden:tools/jade_hoe",
                   "minecraft:rarity": "rare"

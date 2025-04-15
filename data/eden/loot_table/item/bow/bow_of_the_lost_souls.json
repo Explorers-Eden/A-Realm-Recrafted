@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Bow of the Lost Souls\",\"translate\":\"tools.eden.bow.bow_of_the_lost_souls\"}",
+                  "minecraft:item_name": {"fallback":"Bow of the Lost Souls","translate":"tools.eden.bow.bow_of_the_lost_souls"},
                   "minecraft:custom_data": "{tools:bow_of_the_lost_souls}",
                   "minecraft:item_model": "eden:bows/bow_of_the_lost_souls",
                   "minecraft:max_stack_size": 1,

@@ -596,7 +596,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "value": "eden:item/automaticons/any_tier"
+          "value": "eden:item/automaticon"
         },
         {
           "type": "minecraft:loot_table",

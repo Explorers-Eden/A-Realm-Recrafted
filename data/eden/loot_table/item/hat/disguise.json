@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Disguise\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Disguise"},
                   "minecraft:custom_data": "{hats:disguise}",
                   "minecraft:item_model": "eden:hats/disguise",
                 "minecraft:equippable": {

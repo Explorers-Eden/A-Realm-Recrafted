@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Respirator\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Respirator"},
                   "minecraft:custom_data": "{hats:respirator}",
                   "minecraft:item_model": "eden:hats/respirator",
                 "minecraft:equippable": {

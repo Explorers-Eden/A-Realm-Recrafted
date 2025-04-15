@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Glow Berry Hoe\",\"translate\":\"tools.eden.hoe.glow_berry\"}",
+                  "minecraft:item_name": {"fallback":"Glow Berry Hoe","translate":"tools.eden.hoe.glow_berry"},
                   "minecraft:custom_data": "{tools:glow_berry_hoe}",
                   "minecraft:item_model": "eden:tools/glow_berry_hoe",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Wings of an Aetherian\",\"translate\":\"equipment.eden.aetherian_elytra\"}",
+                  "minecraft:item_name": {"fallback":"Wings of an Aetherian","translate":"equipment.eden.aetherian_elytra"},
                   "minecraft:custom_data": "{equipment:aetherian_elytra}",
                   "minecraft:item_model": "eden:equipment/aetherian_elytra",
                   "minecraft:rarity": "epic",

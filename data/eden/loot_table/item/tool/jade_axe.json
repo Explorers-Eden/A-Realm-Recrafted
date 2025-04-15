@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Jade Axe\",\"translate\":\"tools.eden.axe.jade\"}",
+                  "minecraft:item_name": {"fallback":"Jade Axe","translate":"tools.eden.axe.jade"},
                   "minecraft:custom_data": "{tools:jade_axe}",
                   "minecraft:item_model": "eden:tools/jade_axe",
                   "minecraft:rarity": "rare"

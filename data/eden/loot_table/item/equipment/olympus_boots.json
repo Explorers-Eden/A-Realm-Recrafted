@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Olympian Boots\",\"translate\":\"equipment.eden.olympus_boots\"}",
+                  "minecraft:item_name": {"fallback":"Olympian Boots","translate":"equipment.eden.olympus_boots"},
                   "minecraft:custom_data": "{equipment:olympus_boots}",
                   "minecraft:item_model": "eden:equipment/olympus_boots",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Serpents Tongue\",\"translate\":\"tools.eden.serpents_tongue\"}",
+                  "minecraft:item_name": {"fallback":"Serpents Tongue","translate":"tools.eden.serpents_tongue"},
                   "minecraft:custom_data": "{tools:serpents_tongue}",
                   "minecraft:item_model": "eden:tools/serpents_tongue",
                   "minecraft:rarity": "epic"

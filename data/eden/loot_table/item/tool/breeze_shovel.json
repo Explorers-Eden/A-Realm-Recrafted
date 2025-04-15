@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Breeze Shovel\",\"translate\":\"tools.eden.shovel.breeze\"}",
+                  "minecraft:item_name": {"fallback":"Breeze Shovel","translate":"tools.eden.shovel.breeze"},
                   "minecraft:custom_data": "{tools:breeze_shovel}",
                   "minecraft:item_model": "eden:tools/breeze_shovel",
                   "minecraft:rarity": "rare"

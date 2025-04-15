@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cupid Axe\",\"translate\":\"tools.eden.axe.cupid\"}",
+                  "minecraft:item_name": {"fallback":"Cupid Axe","translate":"tools.eden.axe.cupid"},
                   "minecraft:custom_data": "{tools:cupid_axe}",
                   "minecraft:item_model": "eden:tools/cupid_axe",
                   "minecraft:rarity": "rare"

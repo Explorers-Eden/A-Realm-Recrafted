@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Celestial Hoe\",\"translate\":\"tools.eden.hoe.celestial\"}",
+                "minecraft:item_name": {"fallback":"Celestial Hoe","translate":"tools.eden.hoe.celestial"},
                 "minecraft:custom_data": "{tools:celestial_hoe}",
                 "minecraft:item_model": "eden:tools/celestial_hoe",
                 "minecraft:rarity": "epic"

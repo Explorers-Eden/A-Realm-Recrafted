@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Ice Pickaxe\",\"translate\":\"tools.eden.pickaxe.ice\"}",
+                  "minecraft:item_name": {"fallback":"Ice Pickaxe","translate":"tools.eden.pickaxe.ice"},
                   "minecraft:custom_data": "{tools:ice_pickaxe}",
                   "minecraft:item_model": "eden:tools/ice_pickaxe",
                   "minecraft:rarity": "rare"

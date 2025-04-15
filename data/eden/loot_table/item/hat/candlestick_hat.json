@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Candlestick Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Candlestick Hat"},
                   "minecraft:custom_data": "{hats:candlestick_hat}",
                   "minecraft:item_model": "eden:hats/candlestick_hat",
                 "minecraft:equippable": {

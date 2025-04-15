@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/slime_of_undying",
                   "minecraft:custom_data": "{totem:slime}",
-                  "minecraft:item_name": "{\"fallback\":\"Slime of Undying\",\"translate\":\"totems.eden.slime\"}"
+                  "minecraft:item_name": {"fallback":"Slime of Undying","translate":"totems.eden.slime"}
                 }
               }
             ]

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Reindeer Antlers\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Reindeer Antlers"},
                   "minecraft:custom_data": "{hats:reindeer_antlers}",
                   "minecraft:item_model": "eden:hats/reindeer_antlers",
                 "minecraft:equippable": {

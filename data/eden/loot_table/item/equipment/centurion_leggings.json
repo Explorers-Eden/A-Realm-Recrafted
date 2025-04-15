@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Centurion Leggings\",\"translate\":\"equipment.eden.centurion_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Centurion Leggings","translate":"equipment.eden.centurion_leggings"},
                   "minecraft:custom_data": "{equipment:centurion_leggings}",
                   "minecraft:item_model": "eden:equipment/centurion_leggings",
                   "minecraft:rarity": "rare",

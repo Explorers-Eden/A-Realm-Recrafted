@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Ender Bow\",\"translate\":\"tools.eden.bow.ender\"}",
+                  "minecraft:item_name": {"fallback":"Ender Bow","translate":"tools.eden.bow.ender"},
                   "minecraft:custom_data": "{tools:ender_bow}",
                   "minecraft:item_model": "eden:bows/ender",
                   "minecraft:max_stack_size": 1,

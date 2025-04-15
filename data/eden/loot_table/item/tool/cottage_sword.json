@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cottage Sword\",\"translate\":\"tools.eden.sword.cottage\"}",
+                  "minecraft:item_name": {"fallback":"Cottage Sword","translate":"tools.eden.sword.cottage"},
                   "minecraft:custom_data": "{tools:cottage_sword}",
                   "minecraft:item_model": "eden:tools/cottage_sword",
                   "minecraft:rarity": "rare"

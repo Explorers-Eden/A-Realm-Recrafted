@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Purpur Bow\",\"translate\":\"tools.eden.bow.purpur\"}",
+                  "minecraft:item_name": {"fallback":"Purpur Bow","translate":"tools.eden.bow.purpur"},
                   "minecraft:custom_data": "{tools:purpur_bow}",
                   "minecraft:item_model": "eden:bows/purpur",
                   "minecraft:max_stack_size": 1,

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Nature Bow\",\"translate\":\"tools.eden.bow.nature\"}",
+                  "minecraft:item_name": {"fallback":"Nature Bow","translate":"tools.eden.bow.nature"},
                   "minecraft:custom_data": "{tools:nature_bow}",
                   "minecraft:item_model": "eden:bows/nature",
                   "minecraft:max_stack_size": 1,

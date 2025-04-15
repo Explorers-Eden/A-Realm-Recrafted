@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Black Ronin Chestplate\",\"translate\":\"equipment.eden.black_ronin_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Black Ronin Chestplate","translate":"equipment.eden.black_ronin_chestplate"},
                   "minecraft:custom_data": "{equipment:black_ronin_chestplate}",
                   "minecraft:item_model": "eden:equipment/black_ronin_chestplate",
                   "minecraft:rarity": "rare",

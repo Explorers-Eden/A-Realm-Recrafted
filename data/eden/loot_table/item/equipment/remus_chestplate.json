@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Remus' Chestplate\",\"translate\":\"equipment.eden.remus_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Remus' Chestplate","translate":"equipment.eden.remus_chestplate"},
                   "minecraft:custom_data": "{equipment:remus_chestplate}",
                   "minecraft:item_model": "eden:equipment/remus_chestplate",
                   "minecraft:rarity": "rare",

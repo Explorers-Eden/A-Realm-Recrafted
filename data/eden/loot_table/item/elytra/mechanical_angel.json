@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Mechanical Angel Wings\",\"translate\":\"equipment.eden.mechanical_angel_elytra\"}",
+                "minecraft:item_name": {"fallback":"Mechanical Angel Wings","translate":"equipment.eden.mechanical_angel_elytra"},
                 "minecraft:custom_data": "{equipment:mechanical_angel_elytra}",
                 "minecraft:item_model": "eden:equipment/mechanical_angel_elytra",
                 "minecraft:rarity": "epic",

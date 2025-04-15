@@ -17,7 +17,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-        "minecraft:item_name": "{\"fallback\":\"Golden Chorus Fruit\",\"translate\":\"food.eden.golden_chorus_fruit\"}",
+        "minecraft:item_name": {"fallback":"Golden Chorus Fruit","translate":"food.eden.golden_chorus_fruit"},
         "minecraft:item_model": "eden:food/golden_chorus_fruit"
       }
               }

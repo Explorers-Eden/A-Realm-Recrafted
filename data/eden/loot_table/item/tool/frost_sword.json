@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Frost Sword\",\"translate\":\"tools.eden.sword.frost\"}",
+                  "minecraft:item_name": {"fallback":"Frost Sword","translate":"tools.eden.sword.frost"},
                   "minecraft:custom_data": "{tools:frost_sword}",
                   "minecraft:item_model": "eden:tools/frost_sword",
                   "minecraft:rarity": "rare"

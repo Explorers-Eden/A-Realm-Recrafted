@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Wizard Leggings\",\"translate\":\"equipment.eden.winter_guard_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Wizard Leggings","translate":"equipment.eden.winter_guard_leggings"},
                   "minecraft:custom_data": "{equipment:winter_guard_leggings}",
                   "minecraft:item_model": "eden:equipment/winter_guard_leggings",
                   "minecraft:rarity": "rare",

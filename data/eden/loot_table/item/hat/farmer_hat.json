@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Farmer Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Farmer Hat"},
                   "minecraft:custom_data": "{hats:farmer_hat}",
                   "minecraft:item_model": "eden:hats/farmer_hat",
                 "minecraft:equippable": {

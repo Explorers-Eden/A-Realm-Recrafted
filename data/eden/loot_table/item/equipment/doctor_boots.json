@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Doctor's Boots\",\"translate\":\"equipment.eden.doctor_boots\"}",
+                  "minecraft:item_name": {"fallback":"Doctor's Boots","translate":"equipment.eden.doctor_boots"},
                   "minecraft:custom_data": "{equipment:doctor_boots}",
                   "minecraft:item_model": "eden:equipment/doctor_boots",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Earth Bow\",\"translate\":\"tools.eden.bow.earth\"}",
+                  "minecraft:item_name": {"fallback":"Earth Bow","translate":"tools.eden.bow.earth"},
                   "minecraft:custom_data": "{tools:earth_bow}",
                   "minecraft:item_model": "eden:bows/earth",
                   "minecraft:max_stack_size": 1,

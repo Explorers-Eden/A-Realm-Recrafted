@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Senator Chestplate\",\"translate\":\"equipment.eden.senator_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Senator Chestplate","translate":"equipment.eden.senator_chestplate"},
                   "minecraft:custom_data": "{equipment:senator_chestplate}",
                   "minecraft:item_model": "eden:equipment/senator_chestplate",
                   "minecraft:rarity": "rare",

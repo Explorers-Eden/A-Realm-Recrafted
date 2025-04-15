@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Propeller Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Propeller Hat"},
                   "minecraft:custom_data": "{hats:propeller_hat}",
                   "minecraft:item_model": "eden:hats/propeller_hat",
                 "minecraft:equippable": {

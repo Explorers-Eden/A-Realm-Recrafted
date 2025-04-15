@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Vampire Axe\",\"translate\":\"tools.eden.axe.vampire\"}",
+                  "minecraft:item_name": {"fallback":"Vampire Axe","translate":"tools.eden.axe.vampire"},
                   "minecraft:custom_data": "{tools:vampire_axe}",
                   "minecraft:item_model": "eden:tools/vampire_axe",
                   "minecraft:rarity": "rare"

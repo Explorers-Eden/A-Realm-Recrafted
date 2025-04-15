@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Ruby Axe\",\"translate\":\"tools.eden.axe.ruby\"}",
+                  "minecraft:item_name": {"fallback":"Ruby Axe","translate":"tools.eden.axe.ruby"},
                   "minecraft:custom_data": "{tools:ruby_axe}",
                   "minecraft:item_model": "eden:tools/ruby_axe",
                   "minecraft:rarity": "rare"

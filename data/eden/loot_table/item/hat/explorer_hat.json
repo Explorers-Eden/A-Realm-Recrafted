@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Explorer Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Explorer Hat"},
                   "minecraft:custom_data": "{hats:explorer_hat}",
                   "minecraft:item_model": "eden:hats/explorer_hat",
                 "minecraft:equippable": {

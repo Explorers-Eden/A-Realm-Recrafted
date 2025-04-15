@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"fallback\":\"Cherry Blossom Elytra\",\"translate\":\"equipment.eden.cherry_blossom_elytra\"}",
+                "minecraft:item_name": {"fallback":"Cherry Blossom Elytra","translate":"equipment.eden.cherry_blossom_elytra"},
                 "minecraft:custom_data": "{equipment:cherry_blossom_elytra}",
                 "minecraft:item_model": "eden:equipment/cherry_blossom_elytra",
                 "minecraft:rarity": "epic",

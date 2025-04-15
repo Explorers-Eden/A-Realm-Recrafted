@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Iron Viking Boots\",\"translate\":\"equipment.eden.iron_viking_boots\"}",
+                  "minecraft:item_name": {"fallback":"Iron Viking Boots","translate":"equipment.eden.iron_viking_boots"},
                   "minecraft:custom_data": "{equipment:iron_viking_boots}",
                   "minecraft:item_model": "eden:equipment/iron_viking_boots",
                   "minecraft:rarity": "rare",

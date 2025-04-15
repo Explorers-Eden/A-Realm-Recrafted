@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Magnate Boots\",\"translate\":\"equipment.eden.magnate_boots\"}",
+                  "minecraft:item_name": {"fallback":"Magnate Boots","translate":"equipment.eden.magnate_boots"},
                   "minecraft:custom_data": "{equipment:magnate_boots}",
                   "minecraft:item_model": "eden:equipment/magnate_boots",
                   "minecraft:rarity": "rare",

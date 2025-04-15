@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/dark_totem_of_undying",
                   "minecraft:custom_data": "{totem:dark_totem}",
-                  "minecraft:item_name": "{\"fallback\":\"Dark Totem of Undying\",\"translate\":\"totems.eden.dark_totem\"}"
+                  "minecraft:item_name": {"fallback":"Dark Totem of Undying","translate":"totems.eden.dark_totem"}
                 }
               }
             ]

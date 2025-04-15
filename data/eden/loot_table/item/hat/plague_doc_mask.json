@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Plague Doctor Mask\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Plague Doctor Mask"},
                   "minecraft:custom_data": "{hats:plague_doc_mask}",
                   "minecraft:item_model": "eden:hats/plague_doc_mask",
                 "minecraft:equippable": {

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Winter Guard Chestplate\",\"translate\":\"equipment.eden.winter_guard_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Winter Guard Chestplate","translate":"equipment.eden.winter_guard_chestplate"},
                   "minecraft:custom_data": "{equipment:winter_guard_chestplate}",
                   "minecraft:item_model": "eden:equipment/winter_guard_chestplate",
                   "minecraft:rarity": "rare",

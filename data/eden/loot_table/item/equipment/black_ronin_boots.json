@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Black Ronin Boots\",\"translate\":\"equipment.eden.black_ronin_boots\"}",
+                  "minecraft:item_name": {"fallback":"Black Ronin Boots","translate":"equipment.eden.black_ronin_boots"},
                   "minecraft:custom_data": "{equipment:black_ronin_boots}",
                   "minecraft:item_model": "eden:equipment/black_ronin_boots",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mangrove Shovel\",\"translate\":\"tools.eden.shovel.mangrove\"}",
+                  "minecraft:item_name": {"fallback":"Mangrove Shovel","translate":"tools.eden.shovel.mangrove"},
                   "minecraft:custom_data": "{tools:mangrove_shovel}",
                   "minecraft:item_model": "eden:tools/mangrove_shovel",
                   "minecraft:rarity": "rare"

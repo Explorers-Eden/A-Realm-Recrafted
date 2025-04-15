@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Angel's Helmet\",\"translate\":\"equipment.eden.angels_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Angel's Helmet","translate":"equipment.eden.angels_helmet"},
                   "minecraft:custom_data": "{equipment:angels_helmet}",
                   "minecraft:item_model": "eden:equipment/angels_helmet",
                   "minecraft:rarity": "rare",

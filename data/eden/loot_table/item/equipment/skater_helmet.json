@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Skater Helmet\",\"translate\":\"equipment.eden.skater_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Skater Helmet","translate":"equipment.eden.skater_helmet"},
                   "minecraft:custom_data": "{equipment:skater_helmet}",
                   "minecraft:item_model": "eden:equipment/skater_helmet",
                   "minecraft:rarity": "rare",

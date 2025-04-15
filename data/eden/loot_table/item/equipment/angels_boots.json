@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Angel's Boots\",\"translate\":\"equipment.eden.angels_boots\"}",
+                  "minecraft:item_name": {"fallback":"Angel's Boots","translate":"equipment.eden.angels_boots"},
                   "minecraft:custom_data": "{equipment:angels_boots}",
                   "minecraft:item_model": "eden:equipment/angels_boots",
                   "minecraft:rarity": "rare",

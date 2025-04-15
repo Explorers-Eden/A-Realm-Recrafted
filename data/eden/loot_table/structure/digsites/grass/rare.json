@@ -241,7 +241,7 @@
           },
           {
             "type": "minecraft:loot_table",
-            "value": "eden:item/automaticons/stone_tier",
+            "value": "eden:item/automaticon",
             "weight": 8,
             "functions": [
               {
@@ -255,7 +255,7 @@
           },
           {
             "type": "minecraft:loot_table",
-            "value": "eden:item/automaticons/gold_tier",
+            "value": "eden:item/automaticon",
             "weight": 4,
             "functions": [
               {

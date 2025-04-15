@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Brown Samurai Leggings\",\"translate\":\"equipment.eden.brown_samurai_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Brown Samurai Leggings","translate":"equipment.eden.brown_samurai_leggings"},
                   "minecraft:custom_data": "{equipment:brown_samurai_leggings}",
                   "minecraft:item_model": "eden:equipment/brown_samurai_leggings",
                   "minecraft:rarity": "rare",

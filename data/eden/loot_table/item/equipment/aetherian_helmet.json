@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aetherian Helmet\",\"translate\":\"equipment.eden.aetherian_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Aetherian Helmet","translate":"equipment.eden.aetherian_helmet"},
                   "minecraft:custom_data": "{equipment:aetherian_helmet}",
                   "minecraft:item_model": "eden:equipment/aetherian_helmet",
                   "minecraft:rarity": "rare",

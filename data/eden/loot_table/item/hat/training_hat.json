@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Training Hat\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Training Hat"},
                   "minecraft:custom_data": "{hats:training_hat}",
                   "minecraft:item_model": "eden:hats/training_hat",
                 "minecraft:equippable": {

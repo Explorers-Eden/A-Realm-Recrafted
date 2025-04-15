@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Crystal Shovel\",\"translate\":\"tools.eden.shovel.crystal\"}",
+                  "minecraft:item_name": {"fallback":"Crystal Shovel","translate":"tools.eden.shovel.crystal"},
                   "minecraft:custom_data": "{tools:crystal_shovel}",
                   "minecraft:item_model": "eden:tools/crystal_shovel",
                   "minecraft:rarity": "rare"

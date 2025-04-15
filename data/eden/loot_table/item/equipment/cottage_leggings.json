@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Cottage Leggings\",\"translate\":\"equipment.eden.cottage_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Cottage Leggings","translate":"equipment.eden.cottage_leggings"},
                   "minecraft:custom_data": "{equipment:cottage_leggings}",
                   "minecraft:item_model": "eden:equipment/cottage_leggings",
                   "minecraft:rarity": "rare",
@@ -18,10 +18,7 @@
                     "slot": "legs",
                     "asset_id": "eden:cottage"
                   },
-                  "minecraft:dyed_color": {
-                    "rgb": -6265536,
-                    "show_in_tooltip": true
-                  }
+                  "minecraft:dyed_color": -6265536
                 }
               }
             ]

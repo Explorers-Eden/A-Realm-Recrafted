@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/squid_of_undying",
                   "minecraft:custom_data": "{totem:squid}",
-                  "minecraft:item_name": "{\"fallback\":\"Squid of Undying\",\"translate\":\"totems.eden.squid\"}"
+                  "minecraft:item_name": {"fallback":"Squid of Undying","translate":"totems.eden.squid"}
                 }
               }
             ]

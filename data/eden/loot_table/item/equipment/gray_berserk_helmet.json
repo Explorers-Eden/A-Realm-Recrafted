@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Gray Berserk Helmet\",\"translate\":\"equipment.eden.gray_berserk_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Gray Berserk Helmet","translate":"equipment.eden.gray_berserk_helmet"},
                   "minecraft:custom_data": "{equipment:gray_berserk_helmet}",
                   "minecraft:item_model": "eden:equipment/gray_berserk_helmet",
                   "minecraft:rarity": "rare",

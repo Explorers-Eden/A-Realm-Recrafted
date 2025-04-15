@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Crystal Helmet\",\"translate\":\"equipment.eden.crystal_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Crystal Helmet","translate":"equipment.eden.crystal_helmet"},
                   "minecraft:custom_data": "{equipment:crystal_helmet}",
                   "minecraft:item_model": "eden:equipment/crystal_helmet",
                   "minecraft:rarity": "rare",

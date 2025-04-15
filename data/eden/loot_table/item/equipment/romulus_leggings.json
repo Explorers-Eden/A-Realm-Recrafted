@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Romulus' Leggings\",\"translate\":\"equipment.eden.romulus_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Romulus' Leggings","translate":"equipment.eden.romulus_leggings"},
                   "minecraft:custom_data": "{equipment:romulus_leggings}",
                   "minecraft:item_model": "eden:equipment/romulus_leggings",
                   "minecraft:rarity": "rare",

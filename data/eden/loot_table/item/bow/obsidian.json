@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Obsidian Bow\",\"translate\":\"tools.eden.bow.obsidian\"}",
+                  "minecraft:item_name": {"fallback":"Obsidian Bow","translate":"tools.eden.bow.obsidian"},
                   "minecraft:custom_data": "{tools:obsidian_bow}",
                   "minecraft:item_model": "eden:bows/obsidian",
                   "minecraft:max_stack_size": 1,

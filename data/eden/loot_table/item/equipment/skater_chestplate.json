@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Skater Chestplate\",\"translate\":\"equipment.eden.skater_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Skater Chestplate","translate":"equipment.eden.skater_chestplate"},
                   "minecraft:custom_data": "{equipment:skater_chestplate}",
                   "minecraft:item_model": "eden:equipment/skater_chestplate",
                   "minecraft:rarity": "rare",

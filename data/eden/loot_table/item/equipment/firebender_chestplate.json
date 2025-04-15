@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Firebender Chestplate\",\"translate\":\"equipment.eden.firebender_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Firebender Chestplate","translate":"equipment.eden.firebender_chestplate"},
                   "minecraft:custom_data": "{equipment:firebender_chestplate}",
                   "minecraft:item_model": "eden:equipment/firebender_chestplate",
                   "minecraft:rarity": "rare",

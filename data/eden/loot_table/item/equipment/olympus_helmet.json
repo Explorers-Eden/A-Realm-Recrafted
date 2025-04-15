@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Olympian Helmet\",\"translate\":\"equipment.eden.olympus_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Olympian Helmet","translate":"equipment.eden.olympus_helmet"},
                   "minecraft:custom_data": "{equipment:olympus_helmet}",
                   "minecraft:item_model": "eden:equipment/olympus_helmet",
                   "minecraft:rarity": "rare",

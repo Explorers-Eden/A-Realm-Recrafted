@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Celestial Axe\",\"translate\":\"tools.eden.axe.celestial\"}",
+                  "minecraft:item_name": {"fallback":"Celestial Axe","translate":"tools.eden.axe.celestial"},
                   "minecraft:custom_data": "{tools:celestial_axe}",
                   "minecraft:item_model": "eden:tools/celestial_axe",
                   "minecraft:rarity": "epic"

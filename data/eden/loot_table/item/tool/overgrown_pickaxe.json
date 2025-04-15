@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Overgrown Pickaxe\",\"translate\":\"tools.eden.pickaxe.overgrown\"}",
+                  "minecraft:item_name": {"fallback":"Overgrown Pickaxe","translate":"tools.eden.pickaxe.overgrown"},
                   "minecraft:custom_data": "{tools:overgrown_pickaxe}",
                   "minecraft:item_model": "eden:tools/overgrown_pickaxe",
                   "minecraft:rarity": "rare"

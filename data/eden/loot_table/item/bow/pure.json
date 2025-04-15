@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Pure Bow\",\"translate\":\"tools.eden.bow.pure\"}",
+                  "minecraft:item_name": {"fallback":"Pure Bow","translate":"tools.eden.bow.pure"},
                   "minecraft:custom_data": "{tools:pure_bow}",
                   "minecraft:item_model": "eden:bows/pure",
                   "minecraft:max_stack_size": 1,

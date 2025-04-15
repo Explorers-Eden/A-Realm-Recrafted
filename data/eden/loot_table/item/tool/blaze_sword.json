@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Blaze Sword\",\"translate\":\"tools.eden.sword.blaze\"}",
+                  "minecraft:item_name": {"fallback":"Blaze Sword","translate":"tools.eden.sword.blaze"},
                   "minecraft:custom_data": "{tools:blaze_sword}",
                   "minecraft:item_model": "eden:tools/blaze_sword",
                   "minecraft:rarity": "rare"

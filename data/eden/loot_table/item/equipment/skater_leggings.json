@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Skater Leggings\",\"translate\":\"equipment.eden.skater_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Skater Leggings","translate":"equipment.eden.skater_leggings"},
                   "minecraft:custom_data": "{equipment:skater_leggings}",
                   "minecraft:item_model": "eden:equipment/skater_leggings",
                   "minecraft:rarity": "rare",

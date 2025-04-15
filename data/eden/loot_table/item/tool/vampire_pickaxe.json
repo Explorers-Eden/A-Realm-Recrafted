@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Vampire Pickaxe\",\"translate\":\"tools.eden.pickaxe.vampire\"}",
+                  "minecraft:item_name": {"fallback":"Vampire Pickaxe","translate":"tools.eden.pickaxe.vampire"},
                   "minecraft:custom_data": "{tools:vampire_pickaxe}",
                   "minecraft:item_model": "eden:tools/vampire_pickaxe",
                   "minecraft:rarity": "rare"

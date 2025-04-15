@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Armadillo Leggings\",\"translate\":\"equipment.eden.armadillo_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Armadillo Leggings","translate":"equipment.eden.armadillo_leggings"},
                   "minecraft:custom_data": "{equipment:armadillo_leggings}",
                   "minecraft:item_model": "eden:equipment/armadillo_leggings",
                   "minecraft:equippable": {

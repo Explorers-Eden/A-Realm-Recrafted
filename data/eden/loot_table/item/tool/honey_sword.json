@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Honey Shovel\",\"translate\":\"tools.eden.shovel.honey\"}",
+                  "minecraft:item_name": {"fallback":"Honey Shovel","translate":"tools.eden.shovel.honey"},
                   "minecraft:custom_data": "{tools:honey_sword}",
                   "minecraft:item_model": "eden:tools/honey_sword",
                   "minecraft:rarity": "rare"

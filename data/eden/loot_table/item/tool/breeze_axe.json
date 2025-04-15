@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Breeze Axe\",\"translate\":\"tools.eden.axe.breeze\"}",
+                  "minecraft:item_name": {"fallback":"Breeze Axe","translate":"tools.eden.axe.breeze"},
                   "minecraft:custom_data": "{tools:breeze_axe}",
                   "minecraft:item_model": "eden:tools/breeze_axe",
                   "minecraft:rarity": "rare"

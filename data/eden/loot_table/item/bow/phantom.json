@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Phantom Bow\",\"translate\":\"tools.eden.bow.phantom\"}",
+                  "minecraft:item_name": {"fallback":"Phantom Bow","translate":"tools.eden.bow.phantom"},
                   "minecraft:custom_data": "{tools:phantom_bow}",
                   "minecraft:item_model": "eden:bows/phantom",
                   "minecraft:max_stack_size": 1,

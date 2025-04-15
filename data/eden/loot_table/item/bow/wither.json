@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Wither Bow\",\"translate\":\"tools.eden.bow.wither\"}",
+                  "minecraft:item_name": {"fallback":"Wither Bow","translate":"tools.eden.bow.wither"},
                   "minecraft:custom_data": "{tools:wither_bow}",
                   "minecraft:item_model": "eden:bows/wither",
                   "minecraft:max_stack_size": 1,

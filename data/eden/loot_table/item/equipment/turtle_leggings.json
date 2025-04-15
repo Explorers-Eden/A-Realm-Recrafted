@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Turtle Leggings\",\"translate\":\"equipment.eden.turtle_leggings\"}",
+                  "minecraft:item_name": {"fallback":"Turtle Leggings","translate":"equipment.eden.turtle_leggings"},
                   "minecraft:custom_data": "{equipment:turtle_leggings}",
                   "minecraft:item_model": "eden:equipment/turtle_leggings",
                   "minecraft:equippable": {

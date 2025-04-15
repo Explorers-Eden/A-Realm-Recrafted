@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Royal Sword\",\"translate\":\"tools.eden.sword.royal\"}",
+                  "minecraft:item_name": {"fallback":"Royal Sword","translate":"tools.eden.sword.royal"},
                   "minecraft:custom_data": "{tools:royal_sword}",
                   "minecraft:item_model": "eden:tools/royal_sword",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Legionnaries Chestplate\",\"translate\":\"equipment.eden.legionnaries_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Legionnaries Chestplate","translate":"equipment.eden.legionnaries_chestplate"},
                   "minecraft:custom_data": "{equipment:legionnaries_chestplate}",
                   "minecraft:item_model": "eden:equipment/legionnaries_chestplate",
                   "minecraft:rarity": "rare",

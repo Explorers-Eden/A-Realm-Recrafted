@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Aetherian Shovel\",\"translate\":\"tools.eden.shovel.aetherian\"}",
+                  "minecraft:item_name": {"fallback":"Aetherian Shovel","translate":"tools.eden.shovel.aetherian"},
                   "minecraft:custom_data": "{tools:aetherian_shovel}",
                   "minecraft:item_model": "eden:tools/aetherian_shovel",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mushroom Axe\",\"translate\":\"tools.eden.axe.mushroom\"}",
+                  "minecraft:item_name": {"fallback":"Mushroom Axe","translate":"tools.eden.axe.mushroom"},
                   "minecraft:custom_data": "{tools:mushroom_axe}",
                   "minecraft:item_model": "eden:tools/mushroom_axe",
                   "minecraft:rarity": "rare"

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Doctor's Helmet\",\"translate\":\"equipment.eden.doctor_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Doctor's Helmet","translate":"equipment.eden.doctor_helmet"},
                   "minecraft:custom_data": "{equipment:doctor_helmet}",
                   "minecraft:item_model": "eden:equipment/doctor_helmet",
                   "minecraft:rarity": "rare",

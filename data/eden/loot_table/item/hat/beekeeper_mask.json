@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Beekeeper Mask\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Beekeeper Mask"},
                   "minecraft:custom_data": "{hats:beekeeper_mask}",
                   "minecraft:item_model": "eden:hats/beekeeper_mask",
                 "minecraft:equippable": {

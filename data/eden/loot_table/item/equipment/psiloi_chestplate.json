@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Psiloi Chestplate\",\"translate\":\"equipment.eden.psiloi_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Psiloi Chestplate","translate":"equipment.eden.psiloi_chestplate"},
                   "minecraft:custom_data": "{equipment:psiloi_chestplate}",
                   "minecraft:item_model": "eden:equipment/psiloi_chestplate",
                   "minecraft:rarity": "rare",

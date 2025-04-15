@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Breeze Hoe\",\"translate\":\"tools.eden.hoe.breeze\"}",
+                  "minecraft:item_name": {"fallback":"Breeze Hoe","translate":"tools.eden.hoe.breeze"},
                   "minecraft:custom_data": "{tools:breeze_hoe}",
                   "minecraft:item_model": "eden:tools/breeze_hoe",
                   "minecraft:rarity": "rare"

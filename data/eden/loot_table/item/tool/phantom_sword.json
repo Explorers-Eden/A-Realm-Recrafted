@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Phantom Sword\",\"translate\":\"tools.eden.sword.phantom\"}",
+                  "minecraft:item_name": {"fallback":"Phantom Sword","translate":"tools.eden.sword.phantom"},
                   "minecraft:custom_data": "{tools:phantom_sword}",
                   "minecraft:item_model": "eden:tools/phantom_sword",
                   "minecraft:rarity": "rare"

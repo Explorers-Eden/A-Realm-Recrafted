@@ -12,7 +12,7 @@
                 "components": {
                   "minecraft:item_model": "eden:totems/ghast_of_undying",
                   "minecraft:custom_data": "{totem:ghast}",
-                  "minecraft:item_name": "{\"fallback\":\"Ghast of Undying\",\"translate\":\"totems.eden.ghast\"}"
+                  "minecraft:item_name": {"fallback":"Ghast of Undying","translate":"totems.eden.ghast"}
                 }
               }
             ]

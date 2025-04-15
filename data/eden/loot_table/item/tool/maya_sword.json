@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Mayan Sword\",\"translate\":\"tools.eden.sword.maya\"}",
+                  "minecraft:item_name": {"fallback":"Mayan Sword","translate":"tools.eden.sword.maya"},
                   "minecraft:custom_data": "{tools:maya_sword}",
                   "minecraft:item_model": "eden:tools/maya_sword",
                   "minecraft:rarity": "rare"

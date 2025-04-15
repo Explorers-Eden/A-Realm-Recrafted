@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Emperor's Boots\",\"translate\":\"equipment.eden.emperor_boots\"}",
+                  "minecraft:item_name": {"fallback":"Emperor's Boots","translate":"equipment.eden.emperor_boots"},
                   "minecraft:custom_data": "{equipment:emperor_boots}",
                   "minecraft:item_model": "eden:equipment/emperor_boots",
                   "minecraft:rarity": "rare",

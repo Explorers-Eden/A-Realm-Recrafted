@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Recall Mace\",\"translate\":\"tools.eden.recall_mace\"}",
+                  "minecraft:item_name": {"fallback":"Recall Mace","translate":"tools.eden.recall_mace"},
                   "minecraft:custom_data": "{tools:recall_mace}",
                   "minecraft:item_model": "eden:tools/recall_mace",
                   "minecraft:rarity": "epic"

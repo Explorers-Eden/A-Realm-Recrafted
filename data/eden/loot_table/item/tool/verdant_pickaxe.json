@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Verdant Pickaxe\",\"translate\":\"tools.eden.pickaxe.verdant\"}",
+                  "minecraft:item_name": {"fallback":"Verdant Pickaxe","translate":"tools.eden.pickaxe.verdant"},
                   "minecraft:custom_data": "{tools:verdant_pickaxe}",
                   "minecraft:item_model": "eden:tools/verdant_pickaxe",
                   "minecraft:rarity": "rare"

@@ -349,7 +349,7 @@
           },
           {
             "type": "minecraft:loot_table",
-            "value": "eden:item/automaticons/iron_tier",
+            "value": "eden:item/automaticon",
             "weight": 8,
             "functions": [
               {
@@ -363,7 +363,7 @@
           },
           {
             "type": "minecraft:loot_table",
-            "value": "eden:item/automaticons/gold_tier",
+            "value": "eden:item/automaticon",
             "weight": 8,
             "functions": [
               {
@@ -377,7 +377,7 @@
           },
           {
             "type": "minecraft:loot_table",
-            "value": "eden:item/automaticons/diamond_tier",
+            "value": "eden:item/automaticon",
             "weight": 6,
             "functions": [
               {

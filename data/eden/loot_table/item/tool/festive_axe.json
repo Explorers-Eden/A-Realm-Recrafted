@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Festive Axe\",\"translate\":\"tools.eden.axe.festive\"}",
+                  "minecraft:item_name": {"fallback":"Festive Axe","translate":"tools.eden.axe.festive"},
                   "minecraft:custom_data": "{tools:festive_axe}",
                   "minecraft:item_model": "eden:tools/festive_axe",
                   "minecraft:rarity": "rare"

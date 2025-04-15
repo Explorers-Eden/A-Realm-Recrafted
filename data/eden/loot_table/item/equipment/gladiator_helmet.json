@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Gladiator Helmet\",\"translate\":\"equipment.eden.gladiator_helmet\"}",
+                  "minecraft:item_name": {"fallback":"Gladiator Helmet","translate":"equipment.eden.gladiator_helmet"},
                   "minecraft:custom_data": "{equipment:gladiator_helmet}",
                   "minecraft:item_model": "eden:equipment/gladiator_helmet",
                   "minecraft:rarity": "rare",

@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"bold\":false,\"italic\":false,\"text\":\"Headphones\"}",
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Headphones"},
                   "minecraft:custom_data": "{hats:headphones}",
                   "minecraft:item_model": "eden:hats/headphones",
                 "minecraft:equippable": {

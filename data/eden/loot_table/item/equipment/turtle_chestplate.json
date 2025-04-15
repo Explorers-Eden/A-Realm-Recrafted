@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "{\"fallback\":\"Turtle Chestplate\",\"translate\":\"equipment.eden.turtle_chestplate\"}",
+                  "minecraft:item_name": {"fallback":"Turtle Chestplate","translate":"equipment.eden.turtle_chestplate"},
                   "minecraft:custom_data": "{equipment:turtle_chestplate}",
                   "minecraft:item_model": "eden:equipment/turtle_chestplate",
                   "minecraft:equippable": {
