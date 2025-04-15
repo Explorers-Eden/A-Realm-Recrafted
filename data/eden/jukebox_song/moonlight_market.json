@@ -1,0 +1,11 @@
+{
+    "sound_event": {
+      "sound_id": "minecraft:music_disc.moonlight_market_tottomori"
+  },
+    "description": {
+      "text": "tottomori - Moonlight Market"
+    },
+    "length_in_seconds": 220.0,
+    "comparator_output": 10
+  }
+  

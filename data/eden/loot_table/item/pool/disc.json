@@ -202,6 +202,14 @@
           {
             "type": "minecraft:loot_table",
             "value": "eden:item/disc/whispering_woods"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/disc/venice_violins"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/disc/moonlight_market"
           }
         ]
       }

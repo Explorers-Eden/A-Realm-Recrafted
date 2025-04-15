@@ -370,9 +370,12 @@
           {
             "type": "minecraft:loot_table",
             "value": "eden:item/hat/wolfhelmet"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/hat/suria_civilasi"
           }
         ]
       }
     ]
   }
-  

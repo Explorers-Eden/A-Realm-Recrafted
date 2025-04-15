@@ -1,0 +1,11 @@
+{
+    "sound_event": {
+      "sound_id": "minecraft:music_disc.venice_violins_oliver_moya_bueno"
+  },
+    "description": {
+      "text": "Oliver Moya Bueno - Venice Violins"
+    },
+    "length_in_seconds": 175.0,
+    "comparator_output": 15
+  }
+  
