@@ -42,6 +42,10 @@
             "weight": 10
           },
           {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pool/pet_hat"
+          },
+          {
             "type": "minecraft:item",
             "name": "minecraft:cactus",
             "weight": 10,

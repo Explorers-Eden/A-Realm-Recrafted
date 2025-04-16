@@ -1,0 +1,30 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_helmet",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name": {"bold":false,"italic":false,"text":"Pet Vindicator Hat"},
+                  "minecraft:custom_data": "{eden:pet_hat}",
+                  "minecraft:item_model": "eden:pet_hats/vindicator",
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "equip_sound": "minecraft:entity.vindicator.ambient"
+                },
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:rarity": "uncommon"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

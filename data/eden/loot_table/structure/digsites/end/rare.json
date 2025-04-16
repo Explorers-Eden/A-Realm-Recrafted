@@ -182,6 +182,10 @@
           },
           {
             "type": "minecraft:loot_table",
+            "value": "eden:item/pool/pet_hat"
+          },
+          {
+            "type": "minecraft:loot_table",
             "value": "eden:item/automaticon",
             "weight": 4,
             "functions": [

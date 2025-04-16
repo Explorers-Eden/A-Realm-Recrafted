@@ -1,0 +1,309 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/axolotl_blue"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/axolotl_cyan"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/axolotl_pink"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/axolotl_wild"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/axolotl_yellow"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/bee"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/camel"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/chicken"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/cow"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/creeper"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/dragon"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/drowned"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/elder_guardian"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/enderman"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/evoker"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/fox"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/frog_cold"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/frog_hot"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/frog_warm"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/glow_squid"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/goat"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/guardian"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/hoglin"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/husk"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/iron_golem"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/llama_brown"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/llama_creamy"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/llama_gray"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/llama_white"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/mooshroom_brown"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/mooshroom"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/panda_brown"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/panda"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/phantom"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/pig"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/piglin_brute"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/piglin"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/pillager"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/polar_bear"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/pufferfish"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/ravager"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/sheep_blue"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/sheep_lime"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/sheep_orange"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/sheep_pink"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/sheep_purple"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/sheep_red"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/sheep_red"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/sheep_white"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/sheep_yellow"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/shulker"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/skeleton"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/sniffer"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/snow_fox"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/snow_golem"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/spider"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/squid"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/stray"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/strider"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/trader_llama"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/turtle"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/villager_armorer"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/villager_farmer"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/villager_librarian"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/villager"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/vindicator"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/warden"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/witch"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/wither_skeleton"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/wither"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/wolf"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/zoglin"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/zombie_villager"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/zombie"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pet_hat/zombified_piglin"
+          }
+        ]
+      }
+    ]
+  }

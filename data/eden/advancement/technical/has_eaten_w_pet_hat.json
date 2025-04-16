@@ -1,0 +1,27 @@
+{
+    "criteria": {
+      "wears_hat_eaten": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": "#minecraft:head_armor",
+                "components": {
+                  "minecraft:custom_data": {
+                    "eden": "pet_hat"
+                  }
+                }
+              }
+            }
+          },
+          "item": {
+            "items": "#eden:food"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "eden:misc/pet_hat_buff"
+    }
+  }

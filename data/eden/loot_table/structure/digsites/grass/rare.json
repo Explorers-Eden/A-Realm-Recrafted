@@ -47,6 +47,10 @@
             "weight": 2
           },
           {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pool/pet_hat"
+          },
+          {
             "type": "minecraft:item",
             "name": "minecraft:oak_log",
             "weight": 10,

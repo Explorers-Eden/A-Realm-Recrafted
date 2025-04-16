@@ -41,6 +41,10 @@
           },
           {
             "type": "minecraft:loot_table",
+            "value": "eden:item/pool/pet_hat"
+          },
+          {
+            "type": "minecraft:loot_table",
             "value": "eden:item/pool/crossbow",
             "weight": 10
           },

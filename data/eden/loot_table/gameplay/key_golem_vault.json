@@ -744,6 +744,10 @@
         {
           "type": "minecraft:loot_table",
           "value": "eden:item/pool/spawn_egg"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "eden:item/pool/pet_hat"
         }
       ],
       "conditions": [

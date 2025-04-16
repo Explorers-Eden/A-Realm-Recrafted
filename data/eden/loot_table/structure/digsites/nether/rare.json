@@ -41,6 +41,10 @@
             "weight": 10
           },
           {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/pool/pet_hat"
+          },
+          {
             "type": "minecraft:item",
             "name": "minecraft:warped_planks",
             "weight": 10,

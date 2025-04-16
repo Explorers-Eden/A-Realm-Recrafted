@@ -374,6 +374,10 @@
           {
             "type": "minecraft:loot_table",
             "value": "eden:item/hat/suria_civilasi"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "eden:item/hat/slime_hat"
           }
         ]
       }
