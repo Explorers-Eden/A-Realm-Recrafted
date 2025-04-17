@@ -511,27 +511,6 @@
             ]
           }
         ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:book",
-            "functions": [
-              {
-                "function": "enchant_randomly",
-                "options": "enchantencore:snowflake_arrow_trail"
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "minecraft:random_chance",
-                "chance": 0.05
-              }
-            ]
-          }
-        ]
       }
     ]
   }

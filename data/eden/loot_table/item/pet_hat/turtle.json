@@ -15,7 +15,7 @@
                   "minecraft:item_model": "eden:pet_hats/turtle",
                 "minecraft:equippable": {
                   "slot": "head",
-                  "equip_sound": "minecraft:entity.turtle.ambient"
+                  "equip_sound": "minecraft:entity.turtle.ambient_land"
                 },
                   "minecraft:max_stack_size": 1,
                   "minecraft:rarity": "uncommon"

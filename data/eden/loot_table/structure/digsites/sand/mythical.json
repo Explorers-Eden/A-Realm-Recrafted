@@ -816,27 +816,6 @@
             ]
           }
         ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:book",
-            "functions": [
-              {
-                "function": "enchant_randomly",
-                "options": "enchantencore:glass_breaker"
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "minecraft:random_chance",
-                "chance": 0.05
-              }
-            ]
-          }
-        ]
       }
     ]
   }

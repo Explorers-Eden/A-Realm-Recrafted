@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:unbreakable": {}
+      }
+    },
+    {
+      "function": "minecraft:set_enchantments",
+      "enchantments": {
+        "minecraft:mending": 0,
+        "enchantencore:sacrifice": 0,
+        "enchantencore:handyman": 0,
+        "enchantencore:midas_touch": 0
+      }
+    }
+  ]
