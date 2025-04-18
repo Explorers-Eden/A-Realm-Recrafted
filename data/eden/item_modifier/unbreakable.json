@@ -9,6 +9,7 @@
       "function": "minecraft:set_enchantments",
       "enchantments": {
         "minecraft:mending": 0,
+        "minecraft:unbreaking": 0,
         "enchantencore:sacrifice": 0,
         "enchantencore:handyman": 0,
         "enchantencore:midas_touch": 0,
