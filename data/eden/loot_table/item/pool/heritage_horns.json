@@ -13,7 +13,7 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:item_model": "eden:dunesworn_horn",
-			                    "minecraft:item_name": "{\"fallback\":\"Horn of a Dunesworn\",\"translate\":\"items.eden.heritage_horn.dunesworn\"}",
+			                    "minecraft:item_name": {"fallback":"Horn of a Dunesworn","translate":"items.eden.heritage_horn.dunesworn"},
 			                    "minecraft:instrument": "eden:dunesworn_horn",
 			                    "minecraft:custom_data": "{eden:dunesworn}",
 								"minecraft:use_cooldown": {
@@ -46,7 +46,7 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:item_model": "eden:endling_horn",
-			                    "minecraft:item_name": "{\"fallback\":\"Horn of an Endling\",\"translate\":\"items.eden.heritage_horn.endling\"}",
+			                    "minecraft:item_name": {"fallback":"Horn of an Endling","translate":"items.eden.heritage_horn.endling"},
 			                    "minecraft:instrument": "eden:endling_horn",
 			                    "minecraft:custom_data": "{eden:endling}",
 								"minecraft:use_cooldown": {
@@ -79,7 +79,7 @@
 							"function": "minecraft:set_components",
 							"components": {
                                 "minecraft:item_model": "eden:frostborne_horn",
-                                "minecraft:item_name": "{\"fallback\":\"Horn of a Frostborne\",\"translate\":\"items.eden.heritage_horn.frostborne\"}",
+                                "minecraft:item_name": {"fallback":"Horn of a Frostborne","translate":"items.eden.heritage_horn.frostborne"},
                                 "minecraft:instrument": "eden:frostborne_horn",
                                 "minecraft:custom_data": "{eden:frostborne}",
 								"minecraft:use_cooldown": {
@@ -112,7 +112,7 @@
 							"function": "minecraft:set_components",
 							"components": {
                                 "minecraft:item_model": "eden:moonshroud_horn",
-                                "minecraft:item_name": "{\"fallback\":\"Horn of a Moonshroud\",\"translate\":\"items.eden.heritage_horn.moonshroud\"}",
+                                "minecraft:item_name": {"fallback":"Horn of a Moonshroud","translate":"items.eden.heritage_horn.moonshroud"},
                                 "minecraft:instrument": "eden:moonshroud_horn",
                                 "minecraft:custom_data": "{eden:moonshroud}",
 								"minecraft:use_cooldown": {
@@ -145,7 +145,7 @@
 							"function": "minecraft:set_components",
 							"components": {
                                 "minecraft:item_model": "eden:netherian_horn",
-                                "minecraft:item_name": "{\"fallback\":\"Horn of a Netherian\",\"translate\":\"items.eden.heritage_horn.netherian\"}",
+                                "minecraft:item_name": {"fallback":"Horn of a Netherian","translate":"items.eden.heritage_horn.netherian"},
                                 "minecraft:instrument": "eden:netherian_horn",
                                 "minecraft:custom_data": "{eden:netherian}",
 								"minecraft:use_cooldown": {
@@ -178,7 +178,7 @@
 							"function": "minecraft:set_components",
 							"components": {
                                 "minecraft:item_model": "eden:oakhearted_horn",
-                                "minecraft:item_name": "{\"fallback\":\"Horn of an Oakhearted\",\"translate\":\"items.eden.heritage_horn.oakhearted\"}",
+                                "minecraft:item_name": {"fallback":"Horn of an Oakhearted","translate":"items.eden.heritage_horn.oakhearted"},
                                 "minecraft:instrument": "eden:oakhearted_horn",
                                 "minecraft:custom_data": "{eden:oakhearted}",
 								"minecraft:use_cooldown": {
@@ -211,7 +211,7 @@
 							"function": "minecraft:set_components",
 							"components": {
                                 "minecraft:item_model": "eden:orebringer_horn",
-                                "minecraft:item_name": "{\"fallback\":\"Horn of an Orebringer\",\"translate\":\"items.eden.heritage_horn.orebringer\"}",
+                                "minecraft:item_name": {"fallback":"Horn of an Orebringer","translate":"items.eden.heritage_horn.orebringer"},
                                 "minecraft:instrument": "eden:orebringer_horn",
                                 "minecraft:custom_data": "{eden:orebringer}",
 								"minecraft:use_cooldown": {
@@ -244,7 +244,7 @@
 							"function": "minecraft:set_components",
 							"components": {
                                 "minecraft:item_model": "eden:turtlekin_horn",
-                                "minecraft:item_name": "{\"fallback\":\"Horn of a Turtlekin\",\"translate\":\"items.eden.heritage_horn.turtlekin\"}",
+                                "minecraft:item_name": {"fallback":"Horn of a Turtlekin","translate":"items.eden.heritage_horn.turtlekin"},
                                 "minecraft:instrument": "eden:turtlekin_horn",
                                 "minecraft:custom_data": "{eden:turtlekin}",
 								"minecraft:use_cooldown": {
