@@ -38,7 +38,7 @@
                     "ticks_in_hive": 10
                   }
                 ],
-                "minecraft:item_name": "{\"fallback\":\"Filled Beehive\",\"translate\":\"block.eden.filled_beehive\"}"
+                "minecraft:item_name": {"fallback":"Filled Beehive","translate":"block.eden.filled_beehive"}
               }
             }
           ]
