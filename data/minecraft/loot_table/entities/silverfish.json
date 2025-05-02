@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gravel",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                  "source_entity": {
+                    "type": "minecraft:frog"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "random_sequence": "minecraft:entities/silverfish"
+  }
