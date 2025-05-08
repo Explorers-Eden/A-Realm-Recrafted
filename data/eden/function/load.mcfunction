@@ -22,7 +22,6 @@ scoreboard objectives add eden.deathcounter deathCount
 schedule function eden:rtp/run 2s
 schedule function eden:player_joined/run 5t
 schedule function eden:spawn/run 2s
-schedule function eden:misc/dirt_path_speed 3t
 schedule function eden:heritage_harbor/run 2s
 schedule function eden:digsites/run_clear 60s
 schedule function eden:digsites/run 4t
