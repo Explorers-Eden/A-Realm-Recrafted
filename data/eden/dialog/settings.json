@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:multi_action",
+  "can_close_with_escape": true,
+  "external_title": {
+    "text": "A Realm Recrafted: Settings"
+  },
+  "title": {
+    "text": "A Realm Recrafted: Settings"
+  },
+  "pause": false,
+  "after_action": "close",
+  "exit_action": {
+    "label": {
+      "text": "Close"
+    },
+    "width": 128
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Nice Mob Manager",
+      "width": 196,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:mob_manager"
+      }
+    },
+    {
+      "label": "Nice Actions",
+      "width": 196,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:nice_actions"
+      }
+    },
+    {
+      "label": "Nice Mobs",
+      "width": 196,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:nice_mobs"
+      }
+    },
+    {
+      "label": "Nice Villager Type Changer",
+      "width": 196,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:villager_type_changer"
+      }
+    },
+    {
+      "label": "Warping Wonders",
+      "width": 196,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:warping_wonders"
+      }
+    }
+  ]
+}
