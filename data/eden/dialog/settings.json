@@ -34,14 +34,6 @@
       }
     },
     {
-      "label": "Nice Mobs",
-      "width": 196,
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "function minecraft:nice_mobs"
-      }
-    },
-    {
       "label": "Nice Villager Type Changer",
       "width": 196,
       "action": {
@@ -55,6 +47,14 @@
       "action": {
         "type": "minecraft:run_command",
         "command": "function minecraft:warping_wonders"
+      }
+    },
+    {
+      "label": "Fabled Roots",
+      "width": 196,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:fabled_roots"
       }
     }
   ]
