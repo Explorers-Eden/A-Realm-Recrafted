@@ -42,6 +42,14 @@
       }
     },
     {
+      "label": "Nice Keep Inventory",
+      "width": 196,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:keep_inventory"
+      }
+    },
+    {
       "label": "Warping Wonders",
       "width": 196,
       "action": {
