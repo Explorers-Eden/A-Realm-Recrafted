@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "root": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "root"
+    ]
+  ],
+  "rewards": {
+    "function": "eden:player/first_join"
+  },
+  "sends_telemetry_event": false
+}

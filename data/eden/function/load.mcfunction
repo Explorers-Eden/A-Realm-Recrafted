@@ -1,3 +1,6 @@
+## add default scoreboard
+scoreboard objectives add eden.technical dummy
+
 ## set gamerules
 gamerule minecraft:fire_spread_radius_around_player 0
 gamerule minecraft:elytra_movement_check false
