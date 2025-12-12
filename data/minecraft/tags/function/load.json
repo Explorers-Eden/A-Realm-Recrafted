@@ -2,9 +2,9 @@
 	"values": [
 		
 		"eden:load",
-		"eden:player/unlock_recipes",
 		"eden:spawn/particles",
-		"eden:spawn/conveyor",
-		"eden:spawn/despawn_mobs/init"
+		"eden:spawn/conveyor/items",
+		"eden:spawn/despawn_mobs/init",
+		"eden:spawn/healing"
 	]
 }

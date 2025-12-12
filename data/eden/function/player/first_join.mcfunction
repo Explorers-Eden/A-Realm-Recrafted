@@ -1,11 +1,14 @@
 experience add @s 10 levels
+give @s goml:makeshift_claim_anchor
+give @s goml:goggles
+
 recipe give @s *
-#recipe take @s goml:withering_seal
-#recipe take @s goml:lake_spirit_grace
-#recipe take @s goml:heaven_wings
-#recipe take @s goml:chaos_zone
-#recipe take @s goml:ender_binding
-#recipe take @s goml:angelic_aura
+recipe take @s goml:withering_seal
+recipe take @s goml:lake_spirit_grace
+recipe take @s goml:heaven_wings
+recipe take @s goml:chaos_zone
+recipe take @s goml:ender_binding
+recipe take @s goml:angelic_aura
 
 execute store result score $welcome_msg eden.technical run random value 1..46
 

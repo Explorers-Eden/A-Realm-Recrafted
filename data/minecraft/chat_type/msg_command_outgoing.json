@@ -5,7 +5,7 @@
       "content"
     ],
     "style": {
-      "color": "dark_gray"
+      "color": "gray"
     },
     "translation_key": "commands.message.display.outgoing"
   },
