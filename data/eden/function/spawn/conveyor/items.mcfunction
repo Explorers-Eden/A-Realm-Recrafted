@@ -1,5 +1,7 @@
 schedule function eden:spawn/conveyor/items 2s
 
+execute in minecraft:overworld positioned 49 65 153 unless entity @e[type=player,distance=..10] run return fail
+
 execute in minecraft:overworld run particle minecraft:poof 49 65 153 0.1 0.1 0.1 0.01 3
 
 execute store result score $conveyor_item eden.technical run random value 1..4

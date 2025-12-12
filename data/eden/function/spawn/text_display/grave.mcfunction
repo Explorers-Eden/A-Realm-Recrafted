@@ -10,6 +10,6 @@ execute in minecraft:overworld run \
             translation:[0f,0f,0f],\
             scale:[0.65f,0.65f,0.65f]\
         },\
-        text:{"color":"white","text":"When you die, a Grave will appear holding all the items you would have lost.\n\nIt remains for 10 minutes before disappearing."},\
+        text:{"color":"white","text":"When you die, a Grave will appear holding all the items you would have lost.\n\nIt remains for 30 minutes before disappearing."},\
         background:16711680\
     }

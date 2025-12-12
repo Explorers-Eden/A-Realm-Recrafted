@@ -1,0 +1,14 @@
+## Changelog #1
+
+### Changes:
+- Increased time before graves despawn from 10 to 30 minutes
+- Decreased chance for player heads to drop on death from 20% to 10%
+- Added Shulker Boxes to list of non droppable items
+- Decreased chance for Rarity Mobs to spawn
+- Decreased health of Rarity Mobs
+- Decreased max amount of Waypoint Hubs a player can setup from 64 to 48
+- Increased chance for Stray to drop Ice from 10% to 25%
+
+### Fixes:
+- Smu's fish at spawn causing lag over time
+- Incorrect colors of Final Day Journal Item textures
