@@ -6,7 +6,6 @@ scoreboard objectives add eden.technical dummy
 scoreboard objectives add eden.spawn.starter_boat dummy
 
 ## set gamerules
-difficulty hard
 gamerule minecraft:fire_spread_radius_around_player 0
 gamerule minecraft:elytra_movement_check false
 gamerule minecraft:global_sound_events false

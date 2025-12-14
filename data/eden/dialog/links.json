@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Server Links",
+  "external_title": "Server Links",
+  "exit_action": {
+    "label": {
+      "translate": "mco.selectServer.close"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Armor Poser",
+      "tooltip": "This is an optional client mod. You can use it if you want to but you don't have to.",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://modrinth.com/mod/armor-poser"
+      }
+    },
+    {
+      "label": "Bookshelf Inspector",
+      "tooltip": "This is an optional client mod. You can use it if you want to but you don't have to.",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://modrinth.com/mod/bookshelf-inspector"
+      }
+    },
+    {
+      "label": "Enchantment Overview",
+      "tooltip": "Website which lists all of our enchantments.",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://enchantments.explorerseden.eu/"
+      }
+    },
+    {
+      "label": "World Map",
+      "tooltip": "Online World Map of the SMP",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://https://map.explorerseden.eu/"
+      }
+    }
+  ]
+}

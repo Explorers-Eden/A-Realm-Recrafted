@@ -1,14 +1,13 @@
-## Changelog #1
+## Changelog #2
 
 ### Changes:
-- Increased time before graves despawn from 10 to 30 minutes
-- Decreased chance for player heads to drop on death from 20% to 10%
-- Added Shulker Boxes to list of non droppable items
-- Decreased chance for Rarity Mobs to spawn
-- Decreased health of Rarity Mobs
-- Decreased max amount of Waypoint Hubs a player can setup from 64 to 48
-- Increased chance for Stray to drop Ice from 10% to 25%
+- Setting a home, teleporting to spawn and showing death coords does not cost exp levels anymore
+- Increased radius of RTP from 1500 to 3000
+- Daily random Event message now shows as title instead of chat message
+- Updated bluemap mod which should fix players not being able to join sometimes
+- Changed "Optional Mods" in the pause menu options to "Server Links" and added links for the world map and enchantments overview
 
 ### Fixes:
-- Smu's fish at spawn causing lag over time
-- Incorrect colors of Final Day Journal Item textures
+- Recipes for Unlit Soul-/Campfires being swapped
+- Zombified Piglin missing spawn egg texture on the locator bar
+- Daily random Event Bossbars not working
