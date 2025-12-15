@@ -1,7 +1,11 @@
 ## Changelog #3
 
 ### Changes:
-- Updated Geophilic the native 1.21.11 version
+- Updated Geophilic to its native 1.21.11 version
+- Copper Tools now reflect their damage with oxidization level
+- Added recipes for duping Pottery Sherds
+- Removed Horse & Nautilus Armor from list of non-droppable items
+- Added basic Food Items to list of non-droppable items ([Food Item Tag List](https://github.com/Explorers-Eden/Nice-Keep-Inventory/blob/main/data/keepinv/tags/item/food.json))
 
 ### Fixes:
 - Wither dropping wrong head
