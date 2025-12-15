@@ -1,13 +1,8 @@
-## Changelog #2
+## Changelog #3
 
 ### Changes:
-- Setting a home, teleporting to spawn and showing death coords does not cost exp levels anymore
-- Increased radius of RTP from 1500 to 3000
-- Daily random Event message now shows as title instead of chat message
-- Updated bluemap mod which should fix players not being able to join sometimes
-- Changed "Optional Mods" in the pause menu options to "Server Links" and added links for the world map and enchantments overview
+- Updated Geophilic the native 1.21.11 version
 
 ### Fixes:
-- Recipes for Unlit Soul-/Campfires being swapped
-- Zombified Piglin missing spawn egg texture on the locator bar
-- Daily random Event Bossbars not working
+- Wither dropping wrong head
+- Map Link in Dialog menu

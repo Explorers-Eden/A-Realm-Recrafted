@@ -38,7 +38,7 @@
       "tooltip": "Online World Map of the SMP",
       "action": {
         "type": "minecraft:open_url",
-        "url": "https://https://map.explorerseden.eu/"
+        "url": "https://map.explorerseden.eu/"
       }
     }
   ]
