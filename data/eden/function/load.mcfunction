@@ -16,6 +16,7 @@ gamerule minecraft:players_sleeping_percentage 51
 gamerule minecraft:show_advancement_messages false
 gamerule minecraft:lava_source_conversion true
 gamerule minecraft:max_snow_accumulation_height 4
+gamerule minecraft:ender_pearls_vanish_on_death false
 
 ##animations at spawn
 schedule function eden:spawn/decoration/frogs/_/stop_anim 5t
