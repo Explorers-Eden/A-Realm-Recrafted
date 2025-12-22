@@ -1,12 +1,12 @@
-## Changelog #3
+## Changelog #5
 
 ### Changes:
-- Updated Geophilic to its native 1.21.11 version
-- Copper Tools now reflect their damage with oxidization level
-- Added recipes for duping Pottery Sherds
-- Removed Horse & Nautilus Armor from list of non-droppable items
-- Added basic Food Items to list of non-droppable items ([Food Item Tag List](https://github.com/Explorers-Eden/Nice-Keep-Inventory/blob/main/data/keepinv/tags/item/food.json))
+- Time Hud now also shows players sleeping and players needed for skipping night (when at least 1 player is sleeping)
+- Added button to Quick Action menu to transfer enchantments from offhand to mainhand item (Cost: 30Exp lvl)
+- Added Close Buttons to Waypoint Hub & Portal Horn Menus
+- Added Enchantment Lore Mod
+- Added link to Enchantment Lore Mod to Pause Menu Server Links option
 
 ### Fixes:
-- Wither dropping wrong head
-- Map Link in Dialog menu
+- Base Items for unlit Soul-/Campfire being wrong
+- Villager not changing types when multiple Villagers are around when given an item to

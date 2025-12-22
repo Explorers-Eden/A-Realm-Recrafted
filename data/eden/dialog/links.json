@@ -26,6 +26,14 @@
       }
     },
     {
+      "label": "Enchantment Lore",
+      "tooltip": "This is an optional client mod. You can use it if you want to but you don't have to.",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://modrinth.com/mod/enchantment-lore"
+      }
+    },
+    {
       "label": "Enchantment Overview",
       "tooltip": "Website which lists all of our enchantments.",
       "action": {
