@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "goml:makeshift_claim_anchor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goml:reinforced_claim_anchor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goml:glistening_claim_anchor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goml:explosion_controller"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goml:pvp_arena"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goml:village_core"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goml:greeter"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goml:force_field"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goml:glistening_upgrade_kit"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goml:reinforced_upgrade_kit"
+        }
+      ]
+    }
+  ]
+}

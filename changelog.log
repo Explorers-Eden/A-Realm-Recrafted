@@ -1,12 +1,8 @@
-## Changelog #5
+## Changelog #6
 
 ### Changes:
-- Time Hud now also shows players sleeping and players needed for skipping night (when at least 1 player is sleeping)
-- Added button to Quick Action menu to transfer enchantments from offhand to mainhand item (Cost: 30Exp lvl)
-- Added Close Buttons to Waypoint Hub & Portal Horn Menus
-- Added Enchantment Lore Mod
-- Added link to Enchantment Lore Mod to Pause Menu Server Links option
+- Turtlekin & Netherian abilities are now triggered when sprinting instead of crouching
+- Aetherian ability is now triggered by holding jump
+- Rewards for daily events now also have a chance for some Claim Anchors/- Upgrades, Waypoint Hubs and various different smp specific loot
 
 ### Fixes:
-- Base Items for unlit Soul-/Campfire being wrong
-- Villager not changing types when multiple Villagers are around when given an item to
