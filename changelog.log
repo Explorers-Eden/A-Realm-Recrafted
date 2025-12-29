@@ -2,6 +2,7 @@
 
 ### Changes:
 - RTP is now executed at the players position instead of positioned at spawn
+- Max RTP height is now 120 blocks
 - Added Anchor enchantment: applies to Saddles & Harnesses - anchors the entity in place when not ridden
 - Added Surfer enchantment: applies to Saddles - increases the speed of the entity in water
 - Propeller enchantment is now obtainable from more sources
