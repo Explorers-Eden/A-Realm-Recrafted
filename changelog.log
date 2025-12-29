@@ -1,8 +1,10 @@
-## Changelog #7
+## Changelog #8
 
 ### Changes:
-- Added two more Biome Brews: Teal & Pale Garden
-- Added recipe to smelt Clay from Mud
-- Added new Painting: Harmony
+- RTP is now executed at the players position instead of positioned at spawn
+- Added Anchor enchantment: applies to Saddles & Harnesses - anchors the entity in place when not ridden
+- Added Surfer enchantment: applies to Saddles - increases the speed of the entity in water
+- Propeller enchantment is now obtainable from more sources
 
 ### Fixes:
+- Basalt Waypoint Hub having a missing texture at the bottom
