@@ -1,11 +1,10 @@
-## Changelog #8
+## Changelog #9
 
 ### Changes:
-- RTP is now executed at the players position instead of positioned at spawn
-- Max RTP height is now 120 blocks
-- Added Anchor enchantment: applies to Saddles & Harnesses - anchors the entity in place when not ridden
-- Added Surfer enchantment: applies to Saddles - increases the speed of the entity in water
-- Propeller enchantment is now obtainable from more sources
+- Saddles, Harnesses, Wolf/Nautilus/Horse Armor now get the enchantable component added when in the players inventory - This allows for them to be used in an enchanting table.
+- Increased duration of Regeneration effect when players of the same race are close to each other
+- Rapiers and Throwing Knives now use the stab swing animation (does not apply to already existing items)
 
 ### Fixes:
-- Basalt Waypoint Hub having a missing texture at the bottom
+- Night Vision and Illumination being applicable to the same helmet
+- Guard enchantment not being removed if the item has multiple custom_data entries
