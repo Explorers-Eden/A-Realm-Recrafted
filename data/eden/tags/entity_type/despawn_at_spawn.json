@@ -1,0 +1,31 @@
+{
+  "values": [
+    "minecraft:wandering_trader",
+    "minecraft:trader_llama",
+    "minecraft:pig",
+    "minecraft:cow",
+    "minecraft:chicken",
+    "minecraft:phantom",
+    "#mob_manager:hostile_mobs",
+    "#admin:boats",
+    "#admin:minecarts",
+    "#minecraft:arrows",
+    "minecraft:trident",
+    "minecraft:tnt",
+    "minecraft:lingering_potion",
+    "minecraft:splash_potion",
+    "minecraft:wither_skull",
+    "minecraft:dragon_fireball",
+    "minecraft:firework_rocket",
+    "minecraft:small_fireball",
+    "minecraft:area_effect_cloud",
+    "minecraft:egg",
+    "minecraft:snowball",
+    "minecraft:wind_charge",
+    "minecraft:breeze_wind_charge",
+    "minecraft:end_crystal",
+    "minecraft:ender_pearl",
+    "minecraft:experience_bottle",
+    "minecraft:falling_block"
+  ]
+}

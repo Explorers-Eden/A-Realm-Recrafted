@@ -10,6 +10,6 @@ execute in minecraft:overworld run \
             translation:[0f,0f,0f],\
             scale:[0.65f,0.65f,0.65f]\
         },\
-        text:{"color":"white","text":"Instead of running off with a boat, you can also use the RTP function from the Quick Action menu (Default: G)."},\
+        text:{"color":"white","text":"Instead of swimming, you can also use the RTP function from the Quick Action menu (Default: G)."},\
         background:16711680\
     }

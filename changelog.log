@@ -1,10 +1,8 @@
-## Changelog #9
+## Changelog #10
 
 ### Changes:
-- Saddles, Harnesses, Wolf/Nautilus/Horse Armor now get the enchantable component added when in the players inventory - This allows for them to be used in an enchanting table.
-- Increased duration of Regeneration effect when players of the same race are close to each other
-- Rapiers and Throwing Knives now use the stab swing animation (does not apply to already existing items)
+- Boats & Mounts are no longer interactable when not trusted in a claim (takes affect after next restart)
+- Most entities now get despawned at Spawn Island
+- LadyAgnes no longer gives out a Boat to new players at spawn
 
 ### Fixes:
-- Night Vision and Illumination being applicable to the same helmet
-- Guard enchantment not being removed if the item has multiple custom_data entries
