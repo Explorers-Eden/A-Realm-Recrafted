@@ -4,5 +4,6 @@
 - Boats & Mounts are no longer interactable when not trusted in a claim (takes affect after next restart)
 - Most entities now get despawned at Spawn Island
 - LadyAgnes no longer gives out a Boat to new players at spawn
+- Removed additional Saddle recipe
 
 ### Fixes:
