@@ -1,9 +1,8 @@
-## Changelog #10
+## Changelog #11
+(Changes/Fixes take affect after next restart)
 
 ### Changes:
-- Boats & Mounts are no longer interactable when not trusted in a claim (takes affect after next restart)
-- Most entities now get despawned at Spawn Island
-- LadyAgnes no longer gives out a Boat to new players at spawn
-- Removed additional Saddle recipe
+- Added Charcoal Biome Brew
 
 ### Fixes:
+- Shulkers not being placeable by Dispensers in Claims
