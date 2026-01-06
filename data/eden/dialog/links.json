@@ -56,6 +56,14 @@
         "type": "minecraft:open_url",
         "url": "https://map.explorerseden.eu/"
       }
+    },
+    {
+      "label": "Seed Map",
+      "tooltip": "Online Seed Map of the SMP",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://discord.com/channels/878270685867311164/1041804171071991808/1457419045111464099"
+      }
     }
   ]
 }

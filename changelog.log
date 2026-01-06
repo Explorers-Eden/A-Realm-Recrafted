@@ -1,8 +1,7 @@
-## Changelog #11
-(Changes/Fixes take affect after next restart)
+## Changelog #12
 
 ### Changes:
-- Added Charcoal Biome Brew
+- Added Seed Map link to the Pause Menu links
 
 ### Fixes:
-- Shulkers not being placeable by Dispensers in Claims
+- Raids being disabled
