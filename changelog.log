@@ -1,7 +1,9 @@
-## Changelog #13
+## Changelog #14
 
 ### Changes:
-- Waypoint Hubs now require an Ender Pearl instead of an Ender Eye for crafting
-- Added Katter's Combs Painting
+- Changed Name Tag Recipe to be in line with latest 26.1 snapshot
+- Baby mounts no grow up when they are no longer mounted
+- Mob can now be renamed with a Name Tag to get certain aspects: Silent, Visual Fire, Stop Zombification, Clear Custom Name, Change Villager Type, Keep them as Babies, Prevent Collision
+- Added Info menu for **Nice Name Tags** to Pause menu -> A Realm Recrafted listing all available Name Tag Keys for mob modifications including copy to clipboard functionality
 
 ### Fixes:
