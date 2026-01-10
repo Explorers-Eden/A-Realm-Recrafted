@@ -9,6 +9,7 @@ recipe take @s goml:heaven_wings
 recipe take @s goml:chaos_zone
 recipe take @s goml:ender_binding
 recipe take @s goml:angelic_aura
+recipe take @s goml:force_field
 
 execute store result score $welcome_msg eden.technical run random value 1..46
 

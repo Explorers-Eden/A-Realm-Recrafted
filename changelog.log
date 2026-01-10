@@ -1,9 +1,8 @@
-## Changelog #14
+## Changelog #15
 
 ### Changes:
-- Changed Name Tag Recipe to be in line with latest 26.1 snapshot
-- Baby mounts no grow up when they are no longer mounted
-- Mob can now be renamed with a Name Tag to get certain aspects: Silent, Visual Fire, Stop Zombification, Clear Custom Name, Change Villager Type, Keep them as Babies, Prevent Collision
-- Added Info menu for **Nice Name Tags** to Pause menu -> A Realm Recrafted listing all available Name Tag Keys for mob modifications including copy to clipboard functionality
+- disabled Forcefield Claim addon
+- Leather Armor, Leather Horse Armor & Saddles can now be crafted to 2 Leather
+
 
 ### Fixes:
