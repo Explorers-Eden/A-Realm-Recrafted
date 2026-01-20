@@ -1,7 +1,9 @@
-## Changelog #17
+## Changelog #18
 
 ### Changes:
-- Worn Equipment is now damaged upon death (10% of max durability)
-
+- Time/Date Hud now shows minutes more precise
+- Time/Date Hud now shows a Star Icon instead of a Sun Icon on clear nights
+- Coordinates Hud shows direction players facing more precise (North - North East - East - ...)
 
 ### Fixes: 
+- Copper Tools and Spears not displaying attack damage and speed in line with other tools
