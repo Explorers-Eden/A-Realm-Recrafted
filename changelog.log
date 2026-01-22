@@ -1,9 +1,8 @@
-## Changelog #18
+## Changelog #19
 
 ### Changes:
-- Time/Date Hud now shows minutes more precise
-- Time/Date Hud now shows a Star Icon instead of a Sun Icon on clear nights
-- Coordinates Hud shows direction players facing more precise (North - North East - East - ...)
+- RTP now also teleports the current Mount
 
 ### Fixes: 
-- Copper Tools and Spears not displaying attack damage and speed in line with other tools
+- Mounts and Pets not being teleported to Waypoints in certain situations
+- random "yes" message being displayed when teleporting home with a leashed entity
