@@ -1,7 +1,7 @@
-## Changelog #22
+## Changelog #23
 
 ### Changes:
-- Balanced enchantments mobs can spawn with more fairly
+- Wither Skeletons now have a 15% chance to drop an extra Skull
 
 ### Fixes: 
-- Curse of Randomness not changing enchantments after hitting a block
+- Parched, Wither Skeleton, Camel Husk, Nautilus, Zombie Nautilus not dropping loot/heads
