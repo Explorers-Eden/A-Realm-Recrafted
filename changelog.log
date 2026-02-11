@@ -1,7 +1,11 @@
-## Changelog #23
+## Changelog #24
 
 ### Changes:
-- Wither Skeletons now have a 15% chance to drop an extra Skull
+- Silverfish no longer drop gravel when eaten by Frogs - instead they have a chance to drop Gravel when killed by a player
+- Endermites are now also Frog Food in addition to small Magma Cubes and Silverfish
+- Golden Frogs now also have a rare chance to drop an Emerald when eating
+- Added Frog Feeder Block:
+    - Can be crafted with 7 Iron Ingots, 1 Barrel and 1 Composter
+    - Spawns periodically up to 4 Silverfish, Endermites or small Magma Cubes
 
-### Fixes: 
-- Parched, Wither Skeleton, Camel Husk, Nautilus, Zombie Nautilus not dropping loot/heads
+### Fixes:
