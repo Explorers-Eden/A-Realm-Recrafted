@@ -5,6 +5,7 @@
 		"eden:spawn/particles",
 		"eden:spawn/conveyor/items",
 		"eden:spawn/despawn_mobs/init",
-		"eden:spawn/healing"
+		"eden:spawn/healing",
+		"eden:player/outer_wilds_message/init"
 	]
 }
