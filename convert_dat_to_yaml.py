@@ -15,23 +15,26 @@ os.makedirs(SETTINGS_DIR, exist_ok=True)
 # UTILITIES
 # -------------------------
 def sanitize_filename(name):
-    return re.sub(r'[^a-zA-Z0-9_\-]', '_', name)
-
-
-def flatten_dict(d, parent_key="", sep="."):
-    items = {}
-    for k, v in d.items():
-        new_key = f"{parent_key}{sep}{k}" if parent_key else k
-        if isinstance(v, dict):
-            items.update(flatten_dict(v, new_key, sep=sep))
-        else:
-            items[new_key] = v
-    return items
+    return re.sub(r'[^a-zA-Z0-9_\-]', '_', str(name))
 
 
 def write_yaml(path, data):
     with open(path, "w") as f:
         yaml.dump(data, f, sort_keys=False)
+
+
+def should_skip_key(key: str) -> bool:
+    key = str(key)
+
+    # ignore exact template key
+    if key == "command_template":
+        return True
+
+    # ignore all *_initial values
+    if key.endswith("_initial"):
+        return True
+
+    return False
 
 
 # -------------------------
@@ -50,6 +53,7 @@ def convert_gamerules():
     raw = data.get("data", {})
     gamerules_clean = {}
 
+    # handle dict OR list formats safely
     if isinstance(raw, dict):
         items = raw.items()
     elif isinstance(raw, list):
@@ -63,7 +67,7 @@ def convert_gamerules():
         items = []
 
     for rule, value in items:
-        gamerules_clean[rule] = value
+        gamerules_clean[str(rule)] = value
 
     output_path = os.path.join(OUTPUT_DIR, "gamerules.yml")
     write_yaml(output_path, gamerules_clean)
@@ -101,30 +105,29 @@ def convert_command_storage():
         # -------------------------
         # FILTER UNWANTED KEYS
         # -------------------------
-        if "*command_template*" in key_str or "*initial*" in key_str:
+        if should_skip_key(key_str):
             continue
 
         safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
 
         # -------------------------
-        # HANDLE VALUE TYPES
+        # HANDLE VALUES
         # -------------------------
         if isinstance(value, dict):
             cleaned = {}
 
             for k, v in value.items():
-                if "*command_template*" in str(k) or "*initial*" in str(k):
+                if should_skip_key(k):
                     continue
-                cleaned[k] = v
+                cleaned[str(k)] = v
 
             write_yaml(output_path, cleaned)
 
         elif isinstance(value, list):
             filtered = [
                 v for v in value
-                if "*command_template*" not in str(v)
-                and "*initial*" not in str(v)
+                if not should_skip_key(v)
             ]
             write_yaml(output_path, {"items": filtered})
 
