@@ -39,9 +39,9 @@ def convert_gamerules():
         return
 
     nbt = nbtlib.load(file_path)
-    data = nbt.unpack()
+    data = nbt.root
 
-    gamerules_raw = data.get("Data", {}).get("GameRules", {})
+    gamerules_raw = data["Data"]["GameRules"]
     gamerules_clean = {}
 
     for rule, value in gamerules_raw.items():
