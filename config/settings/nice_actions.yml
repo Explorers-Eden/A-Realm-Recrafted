@@ -1,0 +1,100 @@
+time_hud_style_4_initial: 'false'
+time_format: 24
+spawn_y: 72
+rtp_height_min: 90
+rtp_radius: 3000
+horse_info_cost: 0
+death_coords_cost: 0
+command_template_costs: function nice_actions:dialog/command_template/config/costs
+  {transfer_enchantments_cost:$(transfer_enchantments_cost),rtp_cost:$(rtp_cost),sit_cost:$(sit_cost),equip_hat_cost:$(equip_hat_cost),tp_spawn_cost:$(tp_spawn_cost),send_coords_cost:$(send_coords_cost),death_coords_cost:$(death_coords_cost),set_home_cost:$(set_home_cost),tp_home_cost:$(tp_home_cost),villager_info_cost:$(villager_info_cost),horse_info_cost:$(horse_info_cost),share_stats_cost:$(share_stats_cost)}
+spawn_z: 185
+time_format_initial: 'true'
+time_hud_style_2_initial: 'false'
+events:
+  fishing:
+    type: fishing
+    icon: fishing_rod
+    chance: 0.10000000149011612
+    loot_table: eden:gameplay/events/fishing
+    max_amount: 48
+    chance_initial: 10
+    command_template: function nice_actions:dialog/command_template/config/events_type
+      {type:fishing,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}
+  consuming:
+    type: consuming
+    icon: bread
+    chance: 0.05999999865889549
+    loot_table: eden:gameplay/events/consuming
+    max_amount: 96
+    chance_initial: 6
+    command_template: function nice_actions:dialog/command_template/config/events_type
+      {type:consuming,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}
+  breeding:
+    type: breeding
+    icon: wheat
+    chance: 0.07999999821186066
+    loot_table: eden:gameplay/events/breeding
+    max_amount: 24
+    chance_initial: 8
+    command_template: function nice_actions:dialog/command_template/config/events_type
+      {type:breeding,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}
+  misc:
+    thursday_initial: 'true'
+    event_msg_actionbar_initial: 'false'
+    thursday: disabled
+    monday: enabled
+    tuesday_initial: 'true'
+    event_msg: title
+    friday_initial: 'false'
+    event_msg_chat_initial: 'false'
+    sunday: disabled
+    friday: enabled
+    tuesday: disabled
+    monday_initial: 'false'
+    wednesday_initial: 'false'
+    saturday_initial: 'true'
+    saturday: disabled
+    wednesday: enabled
+    sunday_initial: 'true'
+    command_template: function nice_actions:dialog/command_template/config/events_misc
+      {monday:$(monday),tuesday:$(tuesday),wednesday:$(wednesday),thursday:$(thursday),friday:$(friday),saturday:$(saturday),sunday:$(sunday),event_msg:$(event_msg)}
+  killing:
+    type: killing
+    icon: iron_sword
+    chance: 0.09000000357627869
+    loot_table: eden:gameplay/events/killing
+    max_amount: 96
+    chance_initial: 9
+    command_template: function nice_actions:dialog/command_template/config/events_type
+      {type:killing,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}
+  brewing:
+    type: brewing
+    icon: potion
+    chance: 0.07000000029802322
+    loot_table: eden:gameplay/events/brewing
+    max_amount: 48
+    chance_initial: 7
+    command_template: function nice_actions:dialog/command_template/config/events_type
+      {type:brewing,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}
+tp_spawn_cooldown: 60
+transfer_enchantments_cost: 30
+send_coords_cost: 0
+rtp_type: player
+rtp_cooldown: 300
+rtp_cost: 5
+spawn_dimension: minecraft:overworld
+sit_cost: 0
+tp_home_cost: 0
+spawn_x: 26
+set_home_cost: 0
+tp_spawn_cost: 0
+command_template_misc: function nice_actions:dialog/command_template/config/misc {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}
+time_hud_style_1_initial: 'true'
+equip_hat_cost: 0
+share_stats_cost: 3
+rtp_height_max: 120
+tp_home_cooldown: 20
+time_hud_style: 1
+rtp_type_initial: 'false'
+villager_info_cost: 0
+time_hud_style_3_initial: 'false'

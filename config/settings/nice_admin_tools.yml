@@ -1,0 +1,106 @@
+gamerules:
+  fall_damage: 'true'
+  drowning_damage: 'true'
+  tnt_explodes: 'true'
+  mob_griefing: 'true'
+  fire_damage: 'true'
+  mob_drops: 'true'
+  players_nether_portal_creative_delay: 0
+  block_explosion_drop_decay: 'true'
+  universal_anger: 'false'
+  allow_entering_nether_using_portals: 'true'
+  advance_time: 'true'
+  player_movement_check: 'false'
+  tnt_explosion_drop_decay: 'false'
+  log_admin_commands: 'true'
+  spawn_wandering_traders: 'true'
+  raids: 'true'
+  spawn_mobs: 'true'
+  spawn_phantoms: 'false'
+  lava_source_conversion: 'true'
+  locator_bar: 'true'
+  command_blocks_work: 'true'
+  mob_explosion_drop_decay: 'true'
+  difficulty_normal: 'true'
+  limited_crafting: 'false'
+  immediate_respawn: 'false'
+  global_sound_events: 'false'
+  spawn_monsters: 'true'
+  respawn_radius: 0
+  reduced_debug_info: 'false'
+  players_sleeping_percentage: 51
+  difficulty_easy: 'false'
+  spawn_wardens: 'true'
+  command_block_output: 'true'
+  max_block_modifications: 32768
+  max_entity_cramming: 24
+  difficulty_hard: 'false'
+  ender_pearls_vanish_on_death: 'false'
+  water_source_conversion: 'true'
+  max_command_forks: 65536
+  fire_spread_radius_around_player: 0
+  elytra_movement_check: 'false'
+  max_snow_accumulation_height: 4
+  pvp: 'true'
+  keep_inventory: 'true'
+  spectators_generate_chunks: 'true'
+  block_drops: 'true'
+  natural_health_regeneration: 'true'
+  forgive_dead_players: 'true'
+  command_template: function admin:gamerules {difficulty:$(difficulty),advance_time:$(advance_time),advance_weather:$(advance_weather),allow_entering_nether_using_portals:$(allow_entering_nether_using_portals),block_drops:$(block_drops),block_explosion_drop_decay:$(block_explosion_drop_decay),command_block_output:$(command_block_output),command_blocks_work:$(command_blocks_work),drowning_damage:$(drowning_damage),elytra_movement_check:$(elytra_movement_check),ender_pearls_vanish_on_death:$(ender_pearls_vanish_on_death),entity_drops:$(entity_drops),fall_damage:$(fall_damage),fire_damage:$(fire_damage),fire_spread_radius_around_player:$(fire_spread_radius_around_player),forgive_dead_players:$(forgive_dead_players),freeze_damage:$(freeze_damage),global_sound_events:$(global_sound_events),immediate_respawn:$(immediate_respawn),keep_inventory:$(keep_inventory),lava_source_conversion:$(lava_source_conversion),limited_crafting:$(limited_crafting),locator_bar:$(locator_bar),log_admin_commands:$(log_admin_commands),max_block_modifications:$(max_block_modifications),max_command_forks:$(max_command_forks),max_command_sequence_length:$(max_command_sequence_length),max_entity_cramming:$(max_entity_cramming),max_snow_accumulation_height:$(max_snow_accumulation_height),mob_drops:$(mob_drops),mob_explosion_drop_decay:$(mob_explosion_drop_decay),mob_griefing:$(mob_griefing),natural_health_regeneration:$(natural_health_regeneration),player_movement_check:$(player_movement_check),players_nether_portal_creative_delay:$(players_nether_portal_creative_delay),players_nether_portal_default_delay:$(players_nether_portal_default_delay),players_sleeping_percentage:$(players_sleeping_percentage),projectiles_can_break_blocks:$(projectiles_can_break_blocks),pvp:$(pvp),raids:$(raids),random_tick_speed:$(random_tick_speed),reduced_debug_info:$(reduced_debug_info),respawn_radius:$(respawn_radius),send_command_feedback:$(send_command_feedback),show_advancement_messages:$(show_advancement_messages),spawn_mobs:$(spawn_mobs),spawn_monsters:$(spawn_monsters),spawn_patrols:$(spawn_patrols),spawn_phantoms:$(spawn_phantoms),spawn_wandering_traders:$(spawn_wandering_traders),spawn_wardens:$(spawn_wardens),spawner_blocks_work:$(spawner_blocks_work),spectators_generate_chunks:$(spectators_generate_chunks),spread_vines:$(spread_vines),tnt_explodes:$(tnt_explodes),tnt_explosion_drop_decay:$(tnt_explosion_drop_decay),universal_anger:$(universal_anger),water_source_conversion:$(water_source_conversion)}
+  random_tick_speed: 3
+  max_command_sequence_length: 65536
+  send_command_feedback: 'false'
+  advance_weather: 'true'
+  projectiles_can_break_blocks: 'true'
+  spawner_blocks_work: 'true'
+  spawn_patrols: 'true'
+  players_nether_portal_default_delay: 0
+  spread_vines: 'true'
+  difficulty_peaceful: 'false'
+  entity_drops: 'true'
+  show_advancement_messages: 'false'
+  freeze_damage: 'true'
+datapack_settings:
+  dialog:
+  - action:
+      type: minecraft:run_command
+      command: function minecraft:fabled_roots
+    label: Fabled Roots
+  - action:
+      type: minecraft:run_command
+      command: function minecraft:kattersstructures
+    label: Katters Structures
+  - action:
+      type: minecraft:run_command
+      command: function minecraft:mob_manager
+    label: Nice Mob Manager
+  - action:
+      type: minecraft:run_command
+      command: function minecraft:nice_actions
+    label: Nice Actions
+  - action:
+      type: minecraft:run_command
+      command: function minecraft:keep_inventory
+    label: Nice Keep Inventory
+  - action:
+      type: minecraft:run_command
+      command: function minecraft:warping_wonders
+    label: Warping Wonders
+modify_mannequin:
+  below_name: ''
+  no_gravity_initial: 'false'
+  pose_swimming_initial: 'false'
+  rotate_initial: 'false'
+  name_visible_initial: 'false'
+  pose_crouching_initial: 'false'
+  immovable_initial: 'true'
+  pose_standing_initial: 'true'
+  name: ''
+  invulnerable_initial: 'true'
+  profile: Docm77
+  pose_fall_flying_initial: 'false'
+  pose_sleeping_initial: 'false'
+  scale: 100
+  cape_initial: 'false'
+  command_template: function admin:mannequin/modify/init {tp:$(tp),scale:$(scale),rotate:$(rotate),equipment:$(equipment),name_visible:$(name_visible),profile:'$(profile)',name:'$(name)',below_name:'$(below_name)',pose:$(pose),immovable:$(immovable),invulnerable:$(invulnerable),no_gravity:$(no_gravity),cape:$(cape)}

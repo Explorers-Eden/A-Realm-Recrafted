@@ -1,0 +1,24 @@
+equip_dmg: enabled
+exp_loss_amount: 0.30000001192092896
+exp_loss_initial: 'false'
+grave_type_candle_initial: 'false'
+equip_dmg_initial: 'false'
+equip_dmg_amount_initial: 10
+grave_type_bundle_initial: 'false'
+grave_type_player_head_initial: 'false'
+grave_status: enabled
+grave_status_initial: 'false'
+grave_duration: 30
+grave_type_tombstone_initial: 'false'
+grave_type_skull_initial: 'false'
+player_head_drop_chance: 0.10000000149011612
+grave_type_chest_initial: 'false'
+equip_dmg_amount: 0.1
+grave_type: random
+player_head_drop_chance_initial: 10
+player_head_drop: enabled
+non_droppable_tag_list: keepinv:non_droppable_items
+exp_loss: enabled
+exp_loss_amount_initial: 30
+player_head_drop_initial: 'false'
+command_template: function keepinv:dialog/command_template/config {equip_dmg:$(equip_dmg),equip_dmg_amount:$(equip_dmg_amount),exp_loss_amount:$(exp_loss_amount),exp_loss:'$(exp_loss)',player_head_drop_chance:$(player_head_drop_chance),player_head_drop:'$(player_head_drop)',non_droppable_tag_list:'$(non_droppable_tag_list)',grave_status:'$(grave_status)',grave_duration:'$(grave_duration)',grave_type:'$(grave_type)'}
