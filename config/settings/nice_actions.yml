@@ -1,38 +1,37 @@
 Time Format For HUD: '24'
 Min Y Height For RTP: '90'
 RTP Radius (in Blocks): '3000'
-spawn_z: '185'
 Events:
-  fishing:
-    chance: 10%
-    loot_table: eden:gameplay/events/fishing
-    max_amount: '48'
-  consuming:
-    chance: 6%
-    loot_table: eden:gameplay/events/consuming
-    max_amount: '96'
-  breeding:
-    chance: 8%
-    loot_table: eden:gameplay/events/breeding
-    max_amount: '24'
-  misc:
-    thursday: disabled
-    monday: enabled
-    sunday: disabled
-    friday: enabled
-    saturday: disabled
-    tuesday: disabled
-    wednesday: enabled
-  killing:
-    chance: 9%
-    loot_table: eden:gameplay/events/killing
-    max_amount: '96'
-  brewing:
-    chance: 7%
-    loot_table: eden:gameplay/events/brewing
-    max_amount: '48'
+  Fishing:
+    Chance For This Type Of Event: 10%
+    Loot Table: eden:gameplay/events/fishing
+    Max Amount Of Actions Needed For Completion: '48'
+  Consuming:
+    Chance For This Type Of Event: 6%
+    Loot Table: eden:gameplay/events/consuming
+    Max Amount Of Actions Needed For Completion: '96'
+  Breeding:
+    Chance For This Type Of Event: 8%
+    Loot Table: eden:gameplay/events/breeding
+    Max Amount Of Actions Needed For Completion: '24'
+  Active Weekdays:
+    thursday: Disabled
+    monday: Enabled
+    sunday: Disabled
+    friday: Enabled
+    saturday: Disabled
+    tuesday: Disabled
+    wednesday: Enabled
+  Killing:
+    Chance For This Type Of Event: 9%
+    Loot Table: eden:gameplay/events/killing
+    Max Amount Of Actions Needed For Completion: '96'
+  Brewing:
+    Chance For This Type Of Event: 7%
+    Loot Table: eden:gameplay/events/brewing
+    Max Amount Of Actions Needed For Completion: '48'
 RTP Type: player
-rtp_height_max: '120'
+Max Y Height For RTP: '120'
 Action Costs:
   Horse Info: '0'
   Death/Grave Coordinates: '0'
