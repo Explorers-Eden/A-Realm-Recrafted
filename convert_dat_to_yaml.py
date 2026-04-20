@@ -13,6 +13,9 @@ SFTP_PASS = os.getenv("SFTP_PASS")  # required for password auth in this variant
 # exact remote file paths
 SFTP_REMOTE_GAME_RULES = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/world/data/minecraft/game_rules.dat"
 SFTP_REMOTE_COMMAND_STORAGE = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/world/data/eden/command_storage.dat"
+SFTP_REMOTE_COMMAND_STORAGE = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/world/data/eden/command_storage.dat"
+SFTP_REMOTE_GETOFFMYLAWN = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/config/getoffmylawn.json"
+
 
 # ---- PATHS ----
 INPUT_DIR = "raw_dat"
@@ -29,7 +32,7 @@ os.makedirs(SETTINGS_DIR, exist_ok=True)
 # -------------------------
 def fetch_files_via_sftp():
     if not SFTP_HOST or not SFTP_USER or not SFTP_PASS:
-        print("SFTP_HOST, SFTP_USER and SFTP_PASS must be set in the environment to fetch files via SFTP.")
+        print("Missing SFTP credentials")
         return
 
     transport = paramiko.Transport((SFTP_HOST, SFTP_PORT))
@@ -37,16 +40,19 @@ def fetch_files_via_sftp():
         transport.connect(username=SFTP_USER, password=SFTP_PASS)
         sftp = paramiko.SFTPClient.from_transport(transport)
 
-        remote_files = [
+        files = [
             (SFTP_REMOTE_GAME_RULES, os.path.join(INPUT_DIR, "game_rules.dat")),
             (SFTP_REMOTE_COMMAND_STORAGE, os.path.join(INPUT_DIR, "command_storage.dat")),
+            (SFTP_REMOTE_GETOFFMYLAWN, os.path.join(INPUT_DIR, "getoffmylawn.json")),
         ]
-        for remote_path, local_path in remote_files:
+
+        for remote, local in files:
             try:
-                sftp.get(remote_path, local_path)
-                print(f"Downloaded: {remote_path} -> {local_path}")
-            except IOError as e:
-                print(f"Could not download {remote_path}: {e}")
+                sftp.get(remote, local)
+                print(f"Downloaded: {remote}")
+            except Exception as e:
+                print(f"Failed: {remote} -> {e}")
+
         sftp.close()
     finally:
         transport.close()
@@ -61,19 +67,23 @@ def sanitize_filename(name):
 
 def write_yaml(path, data):
     with open(path, "w", encoding="utf-8") as f:
-        yaml.dump(data, f, sort_keys=False)
+        yaml.dump(data, f, sort_keys=False, allow_unicode=True)
+
+
+def map_booleans(obj):
+    if isinstance(obj, dict):
+        return {k: map_booleans(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [map_booleans(v) for v in obj]
+    if isinstance(obj, bool):
+        return "Enabled" if obj else "Disabled"
+    return obj
 
 
 # -------------------------
 # CLEANER
 # -------------------------
 def clean(obj):
-    """
-    Recursively removes:
-    - *_initial keys
-    - command_template anywhere
-    - icon/bodyicon fields anywhere
-    """
     if isinstance(obj, dict):
         cleaned = {}
         for k, v in obj.items():
@@ -95,6 +105,7 @@ def clean(obj):
         if isinstance(obj, str) and "command_template" in obj:
             return None
         return obj
+
 
 
 # -------------------------
