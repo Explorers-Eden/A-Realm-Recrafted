@@ -1,4 +1,4 @@
-name: Convert Minecraft DAT to YAML
+name: Convert to YAML
 
 on:
   schedule:
