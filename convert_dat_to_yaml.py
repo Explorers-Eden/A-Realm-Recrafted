@@ -28,10 +28,10 @@ def write_yaml(path, data):
 # -------------------------
 def clean(obj):
     """
-    Recursively:
-    - removes *_initial keys
-    - removes command_template anywhere (key or value)
-    - removes whole structures if needed
+    Recursively removes:
+    - *_initial keys
+    - command_template anywhere
+    - icon/bodyicon fields anywhere
     """
 
     if isinstance(obj, dict):
@@ -40,30 +40,40 @@ def clean(obj):
         for k, v in obj.items():
             k_str = str(k)
 
-            # drop initial keys
+            # -------------------------
+            # DROP KEYS
+            # -------------------------
             if k_str.endswith("_initial"):
                 continue
 
-            # drop template keys
-            if k_str == "command_template" or "command_template" in k_str:
+            if k_str in ("command_template", "icon", "bodyicon"):
+                continue
+
+            if "command_template" in k_str:
                 continue
 
             cleaned_v = clean(v)
 
-            # drop values containing template strings
-            if isinstance(cleaned_v, str) and "command_template" in cleaned_v:
-                continue
+            # remove junk string values
+            if isinstance(cleaned_v, str):
+                if "command_template" in cleaned_v:
+                    continue
 
             cleaned[k_str] = cleaned_v
 
         return cleaned
 
     elif isinstance(obj, list):
-        return [clean(v) for v in obj if "command_template" not in str(v)]
+        return [
+            clean(v)
+            for v in obj
+            if "command_template" not in str(v)
+        ]
 
     else:
-        if isinstance(obj, str) and "command_template" in obj:
-            return None
+        if isinstance(obj, str):
+            if "command_template" in obj:
+                return None
         return obj
 
 
