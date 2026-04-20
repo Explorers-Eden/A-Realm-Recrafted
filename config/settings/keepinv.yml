@@ -1,0 +1,10 @@
+Damage Equipment on Death: Enabled
+Graves: Enabled
+Amount Of Exp Level Lost On Death: 30%
+Duration Before Graves Vanish (in Minutes): '30'
+Chance To Drop Playerhead On Death: 10%
+Players Lose Exp Level When Dying: Enabled
+Amount Of Damage Applied To Equipment On Death: 10%
+Tag List For Non Droppable Items: keepinv:non_droppable_items
+Players Drop Their Head When Dying: Enabled
+Graves Appearence: random
