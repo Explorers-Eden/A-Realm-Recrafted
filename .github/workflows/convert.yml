@@ -6,7 +6,7 @@ on:
   push:
     paths:
       - 'raw_dat/*.dat'
-      - 'convert_dat_to_yaml.py'
+      - 'convert_to_yml.py'
   workflow_dispatch:
 
 permissions:
