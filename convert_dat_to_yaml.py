@@ -106,7 +106,15 @@ def convert_gamerules():
         items = []
 
     for rule, value in items:
-        gamerules_clean[str(rule)] = value
+        rule = str(rule)
+    
+        # normalize values
+        if str(value) in ("1", "true", "True"):
+            gamerules_clean[rule] = "Enabled"
+        elif str(value) in ("0", "false", "False"):
+            gamerules_clean[rule] = "Disabled"
+        else:
+            gamerules_clean[rule] = value
 
     write_yaml(os.path.join(OUTPUT_DIR, "gamerules.yml"), gamerules_clean)
 
