@@ -279,6 +279,17 @@ def convert_command_storage():
         "sunday": "Sunday",
     }
 
+    # additionally map weekday keys when they appear as dict keys under Active Weekdays
+    WEEKDAY_KEY_MAP = {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+    }
+
     def format_percent_all_decimals(value):
         try:
             if isinstance(value, (int, float)):
@@ -349,8 +360,9 @@ def convert_command_storage():
                 ks = str(k)
                 if ks in REMOVE_KEYS:
                     continue
-                mapped_k = NICE_ACTIONS_KEY_MAP.get(ks, ks)
-                out[mapped_k] = remap_value(val)
+                # capitalize weekday keys if present
+                key_mapped = WEEKDAY_KEY_MAP.get(ks.lower(), NICE_ACTIONS_KEY_MAP.get(ks, ks))
+                out[key_mapped] = remap_value(val)
             return out
         if isinstance(v, list):
             return [remap_value(i) for i in v]
@@ -394,7 +406,11 @@ def convert_command_storage():
                 continue
             # generic remap
             mapped_key = NICE_ACTIONS_KEY_MAP.get(k, k)
-            result[mapped_key] = remap_value(v)
+            # special-case Active Weekdays (misc) to remap weekday keys inside
+            if mapped_key == "Active Weekdays" and isinstance(v, dict):
+                result[mapped_key] = {WEEKDAY_KEY_MAP.get(kk.lower(), kk): remap_value(vv) for kk, vv in v.items() if kk not in REMOVE_KEYS}
+            else:
+                result[mapped_key] = remap_value(v)
 
         if action_costs:
             result["Action Costs"] = action_costs
