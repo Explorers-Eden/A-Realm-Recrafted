@@ -1,10 +1,10 @@
-equip_dmg: enabled
-exp_loss_amount: 0.30000001192092896
-grave_status: enabled
-grave_duration: 30
-player_head_drop_chance: 0.10000000149011612
-equip_dmg_amount: 0.1
-grave_type: random
-player_head_drop: enabled
-non_droppable_tag_list: keepinv:non_droppable_items
-exp_loss: enabled
+Damage Equipment on Death: Enabled
+Amount Of Exp Level Lost On Death (%): 30%
+Graves: Enabled
+Duration Before Graves Vanish (in Minutes): 30
+Chance To Drop Playerhead On Death (%): 10%
+Amount Of Damage Applied To Equipment On Death (%): 10%
+Graves Appearence: random
+Players Drop Their Head When Dying: Enabled
+Tag List For Non Droppable Items: keepinv:non_droppable_items
+Players Lose Exp Level When Dying: Enabled
