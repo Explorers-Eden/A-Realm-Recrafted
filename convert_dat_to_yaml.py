@@ -199,6 +199,71 @@ def convert_command_storage():
         "player_limit": "Max Waypoint Hubs A Player Can Have Simultaneously",
     }
 
+    # nice_actions mappings and groupings
+    NICE_ACTIONS_KEY_MAP = {
+        "time_format": "Time Format For HUD",
+        "rtp_height_min": "Min Y Height For RTP",
+        "rtp_radius": "RTP Radius (in Blocks)",
+        "rtp_type": "RTP Type",
+        "player": "Player Position As Origin",
+        "events": "Events",
+        "fishing": "Fishing",
+        "consuming": "Consuming",
+        "breeding": "Breeding",
+        "misc": "Active Weekdays",
+        "killing": "Killing",
+        "brewing": "Brewing",
+        "chance": "Chance For This Type Of Event",
+        "loot_table": "Loot Table",
+        "max_amount": "Max Amount Of Actions Needed For Completion",
+        # cost and cooldown keys will be remapped below when grouping
+        "horse_info_cost": "Horse Info",
+        "death_coords_cost": "Death/Grave Coordinates",
+        "transfer_enchantments_cost": "Transfer Enchantments",
+        "send_coords_cost": "Broadcast Coordinates",
+        "rtp_cost": "RTP",
+        "sit_cost": "Sit",
+        "tp_home_cost": "TP Home",
+        "set_home_cost": "Set Home",
+        "tp_spawn_cost": "TP To Spawn",
+        "equip_hat_cost": "Equip Item As Hat",
+        "share_stats_cost": "Share Stats",
+        "villager_info_cost": "Villager Info",
+        "tp_spawn_cooldown": "TP To Spawn",
+        "rtp_cooldown": "RTP",
+        "tp_home_cooldown": "TP Home",
+    }
+
+    COST_KEYS = {
+        "horse_info_cost",
+        "death_coords_cost",
+        "transfer_enchantments_cost",
+        "send_coords_cost",
+        "rtp_cost",
+        "sit_cost",
+        "tp_home_cost",
+        "set_home_cost",
+        "tp_spawn_cost",
+        "equip_hat_cost",
+        "share_stats_cost",
+        "villager_info_cost",
+    }
+
+    COOLDOWN_KEYS = {
+        "tp_spawn_cooldown",
+        "rtp_cooldown",
+        "tp_home_cooldown",
+    }
+
+    REMOVE_KEYS = {
+        "spawn_y",
+        "spawn_x",
+        "spawn_dimension",
+        "time_hud_style",
+        "type",
+        "event_msg",
+    }
+
     def format_percent_all_decimals(value):
         try:
             if isinstance(value, (int, float)):
@@ -254,25 +319,85 @@ def convert_command_storage():
             return format_percent_all_decimals(obj)
         return obj
 
+    def remap_nice_actions(obj):
+        """
+        Remap keys for nice_actions:
+        - rename simple keys
+        - collect cost keys under "Action Costs"
+        - collect cooldown keys under "Action Cooldowns (Seconds)"
+        - remove unwanted keys
+        - apply percentage formatting to numeric decimals
+        """
+        if not isinstance(obj, dict):
+            return obj
+
+        result = {}
+        action_costs = {}
+        action_cooldowns = {}
+
+        for k, v in obj.items():
+            if k in REMOVE_KEYS:
+                continue
+            # costs
+            if k in COST_KEYS:
+                mapped = NICE_ACTIONS_KEY_MAP.get(k, k)
+                action_costs[mapped] = format_percent_all_decimals(remap_value(v))
+                continue
+            # cooldowns
+            if k in COOLDOWN_KEYS:
+                mapped = NICE_ACTIONS_KEY_MAP.get(k, k)
+                action_cooldowns[mapped] = format_percent_all_decimals(remap_value(v))
+                continue
+            # generic remap
+            mapped_key = NICE_ACTIONS_KEY_MAP.get(k, k)
+            result[mapped_key] = remap_value(v)
+
+        if action_costs:
+            result["Action Costs"] = action_costs
+        if action_cooldowns:
+            result["Action Cooldowns (Seconds)"] = action_cooldowns
+
+        return result
+
+    def remap_value(v):
+        """Apply percent formatting recursively and remap dict/list items as needed."""
+        if isinstance(v, dict):
+            return {str(k): remap_value(val) for k, val in v.items() if str(k) not in REMOVE_KEYS}
+        if isinstance(v, list):
+            return [remap_value(i) for i in v]
+        if isinstance(v, (int, float, str)):
+            return format_percent_all_decimals(v)
+        return v
+
     for key, value in settings.items():
         key_str = str(key)
         if key_str == "nice_admin_tools":
             continue
         if key_str == "command_template" or key_str.endswith("_initial"):
             continue
+
         cleaned = clean(value)
         if cleaned is None or cleaned == {}:
             continue
+
         if key_str == "fabled_roots" or key_str.startswith("fabled_roots"):
             cleaned = apply_map_fr(cleaned)
+
         if key_str == "keepinv" or key_str.startswith("keepinv"):
             cleaned = apply_map_with_percent(cleaned, KI_VALUE_MAP)
+
         if key_str == "warping_wonders" or key_str.startswith("warping_wonders"):
             cleaned = apply_map_with_percent(cleaned, WW_VALUE_MAP)
+
+        if key_str == "nice_actions" or key_str.startswith("nice_actions"):
+            cleaned = remap_nice_actions(cleaned)
+
         safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
+
         write_yaml(output_path, cleaned)
         written += 1
+
     print(f"✔ settings/*.yml written ({written} files)")
 
 
