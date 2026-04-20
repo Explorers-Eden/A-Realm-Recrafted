@@ -12,7 +12,7 @@ os.makedirs(SETTINGS_DIR, exist_ok=True)
 
 
 # -------------------------
-# UTILITIES
+# UTIL
 # -------------------------
 def sanitize_filename(name):
     return re.sub(r'[^a-zA-Z0-9_\-]', '_', str(name))
@@ -24,31 +24,46 @@ def write_yaml(path, data):
 
 
 # -------------------------
-# RECURSIVE CLEANER
+# CLEANER
 # -------------------------
-def clean_data(obj):
+def clean(obj):
     """
-    Recursively removes:
-    - command_template
-    - *_initial
+    Recursively:
+    - removes *_initial keys
+    - removes command_template anywhere (key or value)
+    - removes whole structures if needed
     """
+
     if isinstance(obj, dict):
         cleaned = {}
+
         for k, v in obj.items():
             k_str = str(k)
 
-            if k_str == "command_template":
-                continue
+            # drop initial keys
             if k_str.endswith("_initial"):
                 continue
 
-            cleaned[k_str] = clean_data(v)
+            # drop template keys
+            if k_str == "command_template" or "command_template" in k_str:
+                continue
+
+            cleaned_v = clean(v)
+
+            # drop values containing template strings
+            if isinstance(cleaned_v, str) and "command_template" in cleaned_v:
+                continue
+
+            cleaned[k_str] = cleaned_v
+
         return cleaned
 
     elif isinstance(obj, list):
-        return [clean_data(v) for v in obj]
+        return [clean(v) for v in obj if "command_template" not in str(v)]
 
     else:
+        if isinstance(obj, str) and "command_template" in obj:
+            return None
         return obj
 
 
@@ -114,17 +129,23 @@ def convert_command_storage():
 
         key_str = str(key)
 
-        # skip bad root keys
+        # DROP WHOLE FILE
+        if key_str == "nice_admin_tools":
+            continue
+
         if key_str == "command_template" or key_str.endswith("_initial"):
+            continue
+
+        cleaned = clean(value)
+
+        # remove empty results
+        if cleaned is None or cleaned == {}:
             continue
 
         safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
 
-        # FULL recursive cleaning
-        cleaned_value = clean_data(value)
-
-        write_yaml(output_path, cleaned_value)
+        write_yaml(output_path, cleaned)
         written += 1
 
     print(f"✔ settings/*.yml written ({written} files)")
