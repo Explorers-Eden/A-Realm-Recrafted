@@ -1,0 +1,35 @@
+name: Convert Minecraft DAT to YAML
+
+on:
+  push:
+    paths:
+      - 'raw_dat/*.dat'
+      - 'convert_dat_to_yaml.py'
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run converter
+        run: python convert_dat_to_yaml.py
+
+      - name: Commit output
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add config/
+          git commit -m "Auto-convert DAT to YAML" || echo "No changes"
+          git push
