@@ -1,6 +1,8 @@
 name: Convert Minecraft DAT to YAML
 
 on:
+  schedule:
+    - cron: '0 5 * * *'  # every day at 06:00 UTC+1 (05:00 UTC)
   push:
     paths:
       - 'raw_dat/*.dat'
