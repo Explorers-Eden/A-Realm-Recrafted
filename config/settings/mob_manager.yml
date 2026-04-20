@@ -1,4 +1,5 @@
 donkey:
+  type: donkey
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -31,6 +32,7 @@ creeper:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: creeper
 mob_equipment:
   mainhand:
     dropchance: 0.0
@@ -62,7 +64,7 @@ mob_equipment:
     leathercolor: 1630197
     validmobs: mob_manager:valid_for_equipment
     equiploottable: mob_manager:entity/equipment/head
-  Active Weekdays:
+  misc:
     mobheads: 0.15000000596046448
     trim: enabled
     bannershield: enabled
@@ -106,6 +108,7 @@ mob_equipment:
     validmobs: mob_manager:valid_for_equipment
     equiploottable: mob_manager:entity/equipment/chest
 wolf:
+  type: wolf
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -139,6 +142,7 @@ stray:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: stray
 slime:
   attck_dmg: 100
   scale_min: 90
@@ -155,7 +159,9 @@ slime:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: slime
 enderman:
+  type: enderman
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -174,6 +180,7 @@ enderman:
   mobhead: 0.25
   scale_max: 110
 zombie_horse:
+  type: zombie_horse
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -192,6 +199,7 @@ zombie_horse:
   mobhead: 0.25
   scale_max: 110
 tropical_fish:
+  type: tropical_fish
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -209,6 +217,7 @@ tropical_fish:
   mobhead: 0.25
   scale_max: 110
 armadillo:
+  type: armadillo
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -226,6 +235,7 @@ armadillo:
   mobhead: 0.25
   scale_max: 110
 squid:
+  type: squid
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -243,6 +253,7 @@ squid:
   mobhead: 0.25
   scale_max: 110
 cat:
+  type: cat
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -275,6 +286,7 @@ wither:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: wither
 parched:
   attck_dmg: 100
   scale_min: 90
@@ -291,6 +303,7 @@ parched:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: parched
 vex:
   attck_dmg: 100
   scale_min: 90
@@ -307,6 +320,7 @@ vex:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: vex
 pillager:
   attck_dmg: 100
   scale_min: 90
@@ -323,6 +337,7 @@ pillager:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: pillager
 illusioner:
   attck_dmg: 100
   scale_min: 90
@@ -339,6 +354,7 @@ illusioner:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: illusioner
 vindicator:
   attck_dmg: 100
   scale_min: 90
@@ -355,7 +371,9 @@ vindicator:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: vindicator
 sheep:
+  type: sheep
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -389,6 +407,7 @@ villager_settings:
   gossip: enabled
   talking: actionbar
 trader_llama:
+  type: trader_llama
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -407,6 +426,7 @@ trader_llama:
   mobhead: 0.25
   scale_max: 110
 fox:
+  type: fox
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -425,6 +445,7 @@ fox:
   mobhead: 0.25
   scale_max: 110
 all_neutral:
+  type: all_neutral
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -443,6 +464,7 @@ all_neutral:
   mobhead: 0.25
   scale_max: 110
 rabbit:
+  type: rabbit
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -460,6 +482,7 @@ rabbit:
   mobhead: 0.25
   scale_max: 110
 pufferfish:
+  type: pufferfish
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -477,6 +500,7 @@ pufferfish:
   mobhead: 0.25
   scale_max: 110
 frog:
+  type: frog
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -494,6 +518,7 @@ frog:
   mobhead: 0.25
   scale_max: 110
 camel_husk:
+  type: camel_husk
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -512,6 +537,7 @@ camel_husk:
   mobhead: 0.25
   scale_max: 110
 copper_golem:
+  type: copper_golem
   scale_min: 80
   move_speed: 100
   drown: enabled
@@ -544,7 +570,9 @@ witch:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: witch
 cod:
+  type: cod
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -562,6 +590,7 @@ cod:
   mobhead: 0.25
   scale_max: 110
 horse:
+  type: horse
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -594,6 +623,7 @@ blaze:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: blaze
 zoglin:
   attck_dmg: 100
   scale_min: 90
@@ -610,7 +640,9 @@ zoglin:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: zoglin
 polar_bear:
+  type: polar_bear
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -644,7 +676,9 @@ husk:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: husk
 wandering_trader:
+  type: wandering_trader
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -662,6 +696,7 @@ wandering_trader:
   mobhead: 0.25
   scale_max: 110
 salmon:
+  type: salmon
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -679,6 +714,7 @@ salmon:
   mobhead: 0.25
   scale_max: 110
 panda:
+  type: panda
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -712,7 +748,8 @@ hoglin:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
-Active Weekdays:
+  type: hoglin
+misc:
   rabbitcarrot: disabled
   illusionerspawning: 0.15000000596046448
   killerrabbitspawning: 0.009999999776482582
@@ -747,7 +784,9 @@ piglin_brute:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: piglin_brute
 drowned:
+  type: drowned
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -766,6 +805,7 @@ drowned:
   mobhead: 0.25
   scale_max: 110
 piglin:
+  type: piglin
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -799,6 +839,7 @@ endermite:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: endermite
 bogged:
   attck_dmg: 100
   scale_min: 90
@@ -815,6 +856,7 @@ bogged:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: bogged
 wandering_trader_settings:
   treasurebook: enabled
   spawnmsg: actionbar
@@ -829,6 +871,7 @@ wandering_trader_settings:
   plushiepayitem: minecraft:emerald
   miniblockpayamount: 2
 skeleton_horse:
+  type: skeleton_horse
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -846,6 +889,7 @@ skeleton_horse:
   mobhead: 0.25
   scale_max: 110
 zombified_piglin:
+  type: zombified_piglin
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -879,6 +923,7 @@ zombie_villager:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: zombie_villager
 mob_drops:
   dragonegg: 0.10000000149011612
   creakingresin: 0.800000011920929
@@ -898,6 +943,7 @@ mob_drops:
   piglinbrutegoldblock: 0.5
   husksand: 0.25
 goat:
+  type: goat
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -916,6 +962,7 @@ goat:
   mobhead: 0.25
   scale_max: 110
 ocelot:
+  type: ocelot
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -934,6 +981,7 @@ ocelot:
   scale_max: 110
 rarity_mobs:
   rare:
+    type: rare
     loottable: mob_manager:entity/rarity_mob/filled_bundle
     particles: enabled
     customname: enabled
@@ -946,6 +994,7 @@ rarity_mobs:
     spawntime: 60
     validmobs: mob_manager:valid_for_rarity
   legendary:
+    type: legendary
     loottable: mob_manager:entity/rarity_mob/enchanted_book
     particles: enabled
     customname: enabled
@@ -958,6 +1007,7 @@ rarity_mobs:
     spawntime: 60
     validmobs: mob_manager:valid_for_rarity
   mythic:
+    type: mythic
     loottable: mob_manager:entity/rarity_mob/enchanted_equipment
     particles: enabled
     customname: enabled
@@ -970,6 +1020,7 @@ rarity_mobs:
     spawntime: 60
     validmobs: mob_manager:valid_for_rarity
   common:
+    type: common
     loottable: mob_manager:entity/rarity_mob/valuables
     particles: enabled
     customname: enabled
@@ -997,7 +1048,9 @@ warden:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: warden
 all_passive:
+  type: all_passive
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1015,6 +1068,7 @@ all_passive:
   mobhead: 0.25
   scale_max: 110
 cow:
+  type: cow
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1032,6 +1086,7 @@ cow:
   mobhead: 0.25
   scale_max: 110
 mule:
+  type: mule
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1049,6 +1104,7 @@ mule:
   mobhead: 0.25
   scale_max: 110
 camel:
+  type: camel
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1081,7 +1137,9 @@ ghast:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: ghast
 chicken:
+  type: chicken
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1099,6 +1157,7 @@ chicken:
   mobhead: 0.25
   scale_max: 110
 zombie_nautilus:
+  type: zombie_nautilus
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1117,6 +1176,7 @@ zombie_nautilus:
   mobhead: 0.25
   scale_max: 110
 iron_golem:
+  type: iron_golem
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1150,7 +1210,9 @@ guardian:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: guardian
 happy_ghast:
+  type: happy_ghast
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1183,7 +1245,9 @@ evoker:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: evoker
 parrot:
+  type: parrot
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1201,6 +1265,7 @@ parrot:
   mobhead: 0.25
   scale_max: 110
 spider:
+  type: spider
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1219,6 +1284,7 @@ spider:
   mobhead: 0.25
   scale_max: 110
 axolotl:
+  type: axolotl
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1251,6 +1317,7 @@ breeze:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: breeze
 creaking:
   attck_dmg: 100
   scale_min: 90
@@ -1267,7 +1334,9 @@ creaking:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: creaking
 turtle:
+  type: turtle
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1287,6 +1356,7 @@ turtle:
 gamerules:
   cramming: 24
 pig:
+  type: pig
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1304,6 +1374,7 @@ pig:
   mobhead: 0.25
   scale_max: 110
 sniffer:
+  type: sniffer
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1321,6 +1392,7 @@ sniffer:
   mobhead: 0.25
   scale_max: 110
 llama:
+  type: llama
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1354,7 +1426,9 @@ skeleton:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: skeleton
 nautilus:
+  type: nautilus
   scale_min: 80
   move_speed: 100
   drown: enabled
@@ -1372,6 +1446,7 @@ nautilus:
   mobhead: 0.25
   scale_max: 100
 bee:
+  type: bee
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1390,6 +1465,7 @@ bee:
   mobhead: 0.25
   scale_max: 110
 allay:
+  type: allay
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1407,6 +1483,7 @@ allay:
   mobhead: 0.25
   scale_max: 110
 cave_spider:
+  type: cave_spider
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1440,7 +1517,9 @@ phantom:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: phantom
 villager:
+  type: villager
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1458,6 +1537,7 @@ villager:
   mobhead: 0.25
   scale_max: 110
 bat:
+  type: bat
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1490,6 +1570,7 @@ shulker:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: shulker
 zombie:
   attck_dmg: 100
   scale_min: 90
@@ -1506,7 +1587,9 @@ zombie:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: zombie
 mooshroom:
+  type: mooshroom
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1524,6 +1607,7 @@ mooshroom:
   mobhead: 0.25
   scale_max: 110
 snow_golem:
+  type: snow_golem
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1541,6 +1625,7 @@ snow_golem:
   mobhead: 0.25
   scale_max: 110
 glow_squid:
+  type: glow_squid
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1573,6 +1658,7 @@ silverfish:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: silverfish
 all_hostile:
   attck_dmg: 100
   scale_min: 90
@@ -1589,6 +1675,7 @@ all_hostile:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: all_hostile
 wither_skeleton:
   attck_dmg: 100
   scale_min: 90
@@ -1605,6 +1692,7 @@ wither_skeleton:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: wither_skeleton
 magma_cube:
   attck_dmg: 100
   scale_min: 90
@@ -1621,6 +1709,7 @@ magma_cube:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: magma_cube
 ravager:
   attck_dmg: 100
   scale_min: 90
@@ -1637,7 +1726,9 @@ ravager:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: ravager
 dolphin:
+  type: dolphin
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1656,6 +1747,7 @@ dolphin:
   mobhead: 0.25
   scale_max: 110
 strider:
+  type: strider
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1673,6 +1765,7 @@ strider:
   mobhead: 0.25
   scale_max: 110
 tadpole:
+  type: tadpole
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1705,6 +1798,7 @@ elder_guardian:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: elder_guardian
 ender_dragon:
   attck_dmg: 100
   scale_min: 90
@@ -1721,3 +1815,4 @@ ender_dragon:
   silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: ender_dragon
