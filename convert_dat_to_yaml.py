@@ -164,6 +164,8 @@ def convert_getoffmylawn():
     }
 
     RENAME = {
+        "false": "Disabled",
+        "true": "Enabled",
         "maxClaimsPerPlayer": "Max Claims Per Player",
         "enablePvPinClaims": "Enable PVP In Claims",
         "allowDamagingUnnamedHostileMobs": "Allow Damaging Unnamed Hostile Mobs",
