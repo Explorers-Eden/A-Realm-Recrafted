@@ -1,51 +1,52 @@
-Time Format For HUD: '24'
-Min Y Height For RTP: '90'
-RTP Radius (in Blocks): '3000'
+Time Format For HUD: 24
+Min Y Height For RTP: 90
+RTP Radius (in Blocks): 3000
 Events:
   Fishing:
-    Chance For This Type Of Event: 10%
+    Chance For This Type Of Event: 0.10000000149011612
     Loot Table: eden:gameplay/events/fishing
-    Max Amount Of Actions Needed For Completion: '48'
+    Max Amount Of Actions Needed For Completion: 48
   Consuming:
-    Chance For This Type Of Event: 6%
+    Chance For This Type Of Event: 0.05999999865889549
     Loot Table: eden:gameplay/events/consuming
-    Max Amount Of Actions Needed For Completion: '96'
+    Max Amount Of Actions Needed For Completion: 96
   Breeding:
-    Chance For This Type Of Event: 8%
+    Chance For This Type Of Event: 0.07999999821186066
     Loot Table: eden:gameplay/events/breeding
-    Max Amount Of Actions Needed For Completion: '24'
+    Max Amount Of Actions Needed For Completion: 24
   Active Weekdays:
-    Thursday: Disabled
-    Monday: Enabled
-    Sunday: Disabled
-    Friday: Enabled
-    Saturday: Disabled
-    Tuesday: Disabled
-    Wednesday: Enabled
+    Thursday: disabled
+    Monday: enabled
+    event_msg: title
+    Sunday: disabled
+    Friday: enabled
+    Saturday: disabled
+    Tuesday: disabled
+    Wednesday: enabled
   Killing:
-    Chance For This Type Of Event: 9%
+    Chance For This Type Of Event: 0.09000000357627869
     Loot Table: eden:gameplay/events/killing
-    Max Amount Of Actions Needed For Completion: '96'
+    Max Amount Of Actions Needed For Completion: 96
   Brewing:
-    Chance For This Type Of Event: 7%
+    Chance For This Type Of Event: 0.07000000029802322
     Loot Table: eden:gameplay/events/brewing
-    Max Amount Of Actions Needed For Completion: '48'
+    Max Amount Of Actions Needed For Completion: 48
 RTP Type: player
-Max Y Height For RTP: '120'
+Max Y Height For RTP: 120
 Action Costs:
-  Horse Info: '0'
-  Death/Grave Coordinates: '0'
-  Transfer Enchantments: '30'
-  Broadcast Coordinates: '0'
-  RTP: '5'
-  Sit: '0'
-  TP Home: '0'
-  Set Home: '0'
-  TP To Spawn: '0'
-  Equip Item As Hat: '0'
-  Share Stats: '3'
-  Villager Info: '0'
+  Horse Info: 0
+  Death/Grave Coordinates: 0
+  Transfer Enchantments: 30
+  Broadcast Coordinates: 0
+  RTP: 5
+  Sit: 0
+  TP Home: 0
+  Set Home: 0
+  TP To Spawn: 0
+  Equip Item As Hat: 0
+  Share Stats: 3
+  Villager Info: 0
 Action Cooldowns (Seconds):
-  TP To Spawn: '60'
-  RTP: '300'
-  TP Home: '20'
+  TP To Spawn: 60
+  RTP: 300
+  TP Home: 20
