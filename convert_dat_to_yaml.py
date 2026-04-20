@@ -129,16 +129,16 @@ def convert_command_storage():
         "npc_spawning": "Descendant Spawning",
     }
 
-    # mapping for keepinv settings
+    # mapping for keepinv settings (updated labels)
     KI_VALUE_MAP = {
         "enabled": "Enabled",
         "disabled": "Disabled",
         "equip_dmg": "Damage Equipment on Death",
-        "exp_loss_amount": "Amount Of Exp Level Lost On Death (%)",
+        "exp_loss_amount": "Amount Of Exp Level Lost On Death",
         "grave_status": "Graves",
         "grave_duration": "Duration Before Graves Vanish (in Minutes)",
-        "player_head_drop_chance": "Chance To Drop Playerhead On Death (%)",
-        "equip_dmg_amount": "Amount Of Damage Applied To Equipment On Death (%)",
+        "player_head_drop_chance": "Chance To Drop Playerhead On Death",
+        "equip_dmg_amount": "Amount Of Damage Applied To Equipment On Death",
         "grave_type": "Graves Appearence",
         "player_head_drop": "Players Drop Their Head When Dying",
         "non_droppable_tag_list": "Tag List For Non Droppable Items",
@@ -162,27 +162,40 @@ def convert_command_storage():
         "player_limit": "Max Waypoint Hubs A Player Can Have Simultaneously",
     }
 
-    def format_percent(value):
+    def format_percent_all_decimals(value):
         """
-        Convert numeric 0.x or string "0.x" to "xx%". Leave other values untouched.
+        Convert numeric or numeric-like strings to percentages when they contain a decimal point.
+        - 0.x -> "x%"
+        - 1.x -> "100%+" representation: convert to percentage with one decimal if needed (e.g., 1.25 -> "125%")
+        - integers without decimal remain unchanged
+        Returns original value if not numeric.
         """
         try:
+            # numbers
             if isinstance(value, (int, float)):
                 v = float(value)
-                if 0 < v < 1:
+                # convert to percentage (e.g., 0.25 -> 25%, 1.25 -> 125%)
+                if not v.is_integer():
                     return f"{int(round(v * 100))}%"
-                return value
+                # integer: if explicitly provided as int but originally represented without decimal, leave as is
+                return f"{int(v)}" if isinstance(value, int) else f"{int(round(v * 100))}%"
+            # strings
             if isinstance(value, str):
-                if value.strip() == "":
+                s = value.strip()
+                if s == "":
                     return value
-                v = float(value)
-                if 0 < v < 1:
-                    return f"{int(round(v * 100))}%"
+                # only attempt conversion if string contains a dot or looks like a float
+                if "." in s or re.match(r"^\d+(\.\d+)?$", s):
+                    v = float(s)
+                    if not v.is_integer():
+                        return f"{int(round(v * 100))}%"
+                    # integer-like string
+                    return s
         except Exception:
             pass
         return value
 
-    def apply_map(obj):
+    def apply_map_fr(obj):
         """
         Recursively replace dict keys and string values according to FR_VALUE_MAP.
         """
@@ -191,44 +204,39 @@ def convert_command_storage():
             for k, v in obj.items():
                 k_str = str(k)
                 mapped_key = FR_VALUE_MAP.get(k_str, k_str)
-                new[mapped_key] = apply_map(v)
+                new[mapped_key] = apply_map_fr(v)
             return new
         if isinstance(obj, list):
-            return [apply_map(v) for v in obj]
+            return [apply_map_fr(v) for v in obj]
         if isinstance(obj, str):
             return FR_VALUE_MAP.get(obj, obj)
         return obj
 
-    def apply_map_for_maps(obj, map_dict, convert_percent=False):
+    def apply_map_with_percent(obj, map_dict):
         """
-        Recursively replace dict keys and string values according to map_dict.
-        If convert_percent is True, convert decimal fractions to percentages for numeric or numeric-like strings.
+        Recursively replace dict keys (using map_dict). For values:
+        - if numeric or numeric-like string containing a decimal, convert to percentage using format_percent_all_decimals
+        - if string exactly matches a key in map_dict, replace with mapped label
         """
         if isinstance(obj, dict):
             new = {}
             for k, v in obj.items():
                 k_str = str(k)
                 mapped_key = map_dict.get(k_str, k_str)
-                new_val = apply_map_for_maps(v, map_dict, convert_percent)
-                if convert_percent:
-                    new_val = format_percent(new_val)
+                new_val = apply_map_with_percent(v, map_dict)
+                # apply percent conversion to leaf values
+                new_val = format_percent_all_decimals(new_val)
                 new[mapped_key] = new_val
             return new
         if isinstance(obj, list):
-            res = [apply_map_for_maps(v, map_dict, convert_percent) for v in obj]
-            if convert_percent:
-                res = [format_percent(v) for v in res]
-            return res
+            res = [apply_map_with_percent(v, map_dict) for v in obj]
+            return [format_percent_all_decimals(v) for v in res]
         if isinstance(obj, str):
-            # map exact string values if present in map_dict, otherwise optionally convert decimals
             if obj in map_dict:
                 return map_dict[obj]
-            if convert_percent:
-                return format_percent(obj)
-            return obj
-        # numbers
-        if convert_percent and isinstance(obj, (int, float)):
-            return format_percent(obj)
+            return format_percent_all_decimals(obj)
+        if isinstance(obj, (int, float)):
+            return format_percent_all_decimals(obj)
         return obj
 
     for key, value in settings.items():
@@ -250,15 +258,15 @@ def convert_command_storage():
 
         # If this is fabled_roots (or starts with it), apply replacements
         if key_str == "fabled_roots" or key_str.startswith("fabled_roots"):
-            cleaned = apply_map(cleaned)
+            cleaned = apply_map_fr(cleaned)
 
-        # If this is keepinv (or starts with it), apply keepinv mappings & percent conversion
+        # If this is keepinv (or starts with it), apply keepinv mappings & convert decimals (including 1.x) to percentages
         if key_str == "keepinv" or key_str.startswith("keepinv"):
-            cleaned = apply_map_for_maps(cleaned, KI_VALUE_MAP, convert_percent=True)
+            cleaned = apply_map_with_percent(cleaned, KI_VALUE_MAP)
 
-        # If this is warping_wonders (or starts with it), apply warping_wonders mappings & percent conversion
+        # If this is warping_wonders (or starts with it), apply warping_wonders mappings & convert decimals (including 1.x) to percentages
         if key_str == "warping_wonders" or key_str.startswith("warping_wonders"):
-            cleaned = apply_map_for_maps(cleaned, WW_VALUE_MAP, convert_percent=True)
+            cleaned = apply_map_with_percent(cleaned, WW_VALUE_MAP)
 
         safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
