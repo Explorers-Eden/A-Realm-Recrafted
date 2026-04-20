@@ -2,7 +2,19 @@ import os
 import re
 import yaml
 import nbtlib
+import paramiko
 
+# ---- SFTP CONFIG (from environment / GitHub Secrets) ----
+SFTP_HOST = os.getenv("SFTP_HOST")
+SFTP_PORT = int(os.getenv("SFTP_PORT", "22"))
+SFTP_USER = os.getenv("SFTP_USER")
+SFTP_PASS = os.getenv("SFTP_PASS")  # required for password auth in this variant
+
+# exact remote file paths
+SFTP_REMOTE_GAME_RULES = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/world/data/minecraft/game_rules.dat"
+SFTP_REMOTE_COMMAND_STORAGE = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/world/data/eden/command_storage.dat"
+
+# ---- PATHS ----
 INPUT_DIR = "raw_dat"
 OUTPUT_DIR = "config"
 SETTINGS_DIR = os.path.join(OUTPUT_DIR, "settings")
@@ -10,6 +22,34 @@ SETTINGS_DIR = os.path.join(OUTPUT_DIR, "settings")
 os.makedirs(INPUT_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(SETTINGS_DIR, exist_ok=True)
+
+
+# -------------------------
+# SFTP DOWNLOAD
+# -------------------------
+def fetch_files_via_sftp():
+    if not SFTP_HOST or not SFTP_USER or not SFTP_PASS:
+        print("SFTP_HOST, SFTP_USER and SFTP_PASS must be set in the environment to fetch files via SFTP.")
+        return
+
+    transport = paramiko.Transport((SFTP_HOST, SFTP_PORT))
+    try:
+        transport.connect(username=SFTP_USER, password=SFTP_PASS)
+        sftp = paramiko.SFTPClient.from_transport(transport)
+
+        remote_files = [
+            (SFTP_REMOTE_GAME_RULES, os.path.join(INPUT_DIR, "game_rules.dat")),
+            (SFTP_REMOTE_COMMAND_STORAGE, os.path.join(INPUT_DIR, "command_storage.dat")),
+        ]
+        for remote_path, local_path in remote_files:
+            try:
+                sftp.get(remote_path, local_path)
+                print(f"Downloaded: {remote_path} -> {local_path}")
+            except IOError as e:
+                print(f"Could not download {remote_path}: {e}")
+        sftp.close()
+    finally:
+        transport.close()
 
 
 # -------------------------
@@ -118,7 +158,6 @@ def convert_command_storage():
 
     written = 0
 
-    # mapping for specific replacements in fabled_roots settings
     FR_VALUE_MAP = {
         "enabled": "Enabled",
         "disabled": "Disabled",
@@ -129,7 +168,6 @@ def convert_command_storage():
         "npc_spawning": "Descendant Spawning",
     }
 
-    # mapping for keepinv settings (updated labels)
     KI_VALUE_MAP = {
         "enabled": "Enabled",
         "disabled": "Disabled",
@@ -145,7 +183,6 @@ def convert_command_storage():
         "exp_loss": "Players Lose Exp Level When Dying",
     }
 
-    # mapping for warping_wonders settings
     WW_VALUE_MAP = {
         "enabled": "Enabled",
         "disabled": "Disabled",
@@ -163,42 +200,26 @@ def convert_command_storage():
     }
 
     def format_percent_all_decimals(value):
-        """
-        Convert numeric or numeric-like strings to percentages when they contain a decimal point.
-        - 0.x -> "x%"
-        - 1.x -> "100%+" representation: convert to percentage with one decimal if needed (e.g., 1.25 -> "125%")
-        - integers without decimal remain unchanged
-        Returns original value if not numeric.
-        """
         try:
-            # numbers
             if isinstance(value, (int, float)):
                 v = float(value)
-                # convert to percentage (e.g., 0.25 -> 25%, 1.25 -> 125%)
                 if not v.is_integer():
                     return f"{int(round(v * 100))}%"
-                # integer: if explicitly provided as int but originally represented without decimal, leave as is
                 return f"{int(v)}" if isinstance(value, int) else f"{int(round(v * 100))}%"
-            # strings
             if isinstance(value, str):
                 s = value.strip()
                 if s == "":
                     return value
-                # only attempt conversion if string contains a dot or looks like a float
                 if "." in s or re.match(r"^\d+(\.\d+)?$", s):
                     v = float(s)
                     if not v.is_integer():
                         return f"{int(round(v * 100))}%"
-                    # integer-like string
                     return s
         except Exception:
             pass
         return value
 
     def apply_map_fr(obj):
-        """
-        Recursively replace dict keys and string values according to FR_VALUE_MAP.
-        """
         if isinstance(obj, dict):
             new = {}
             for k, v in obj.items():
@@ -213,18 +234,12 @@ def convert_command_storage():
         return obj
 
     def apply_map_with_percent(obj, map_dict):
-        """
-        Recursively replace dict keys (using map_dict). For values:
-        - if numeric or numeric-like string containing a decimal, convert to percentage using format_percent_all_decimals
-        - if string exactly matches a key in map_dict, replace with mapped label
-        """
         if isinstance(obj, dict):
             new = {}
             for k, v in obj.items():
                 k_str = str(k)
                 mapped_key = map_dict.get(k_str, k_str)
                 new_val = apply_map_with_percent(v, map_dict)
-                # apply percent conversion to leaf values
                 new_val = format_percent_all_decimals(new_val)
                 new[mapped_key] = new_val
             return new
@@ -240,40 +255,24 @@ def convert_command_storage():
         return obj
 
     for key, value in settings.items():
-
         key_str = str(key)
-
-        # DROP WHOLE FILE
         if key_str == "nice_admin_tools":
             continue
-
         if key_str == "command_template" or key_str.endswith("_initial"):
             continue
-
         cleaned = clean(value)
-
-        # remove empty results
         if cleaned is None or cleaned == {}:
             continue
-
-        # If this is fabled_roots (or starts with it), apply replacements
         if key_str == "fabled_roots" or key_str.startswith("fabled_roots"):
             cleaned = apply_map_fr(cleaned)
-
-        # If this is keepinv (or starts with it), apply keepinv mappings & convert decimals (including 1.x) to percentages
         if key_str == "keepinv" or key_str.startswith("keepinv"):
             cleaned = apply_map_with_percent(cleaned, KI_VALUE_MAP)
-
-        # If this is warping_wonders (or starts with it), apply warping_wonders mappings & convert decimals (including 1.x) to percentages
         if key_str == "warping_wonders" or key_str.startswith("warping_wonders"):
             cleaned = apply_map_with_percent(cleaned, WW_VALUE_MAP)
-
         safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
-
         write_yaml(output_path, cleaned)
         written += 1
-
     print(f"✔ settings/*.yml written ({written} files)")
 
 
@@ -281,5 +280,9 @@ def convert_command_storage():
 # MAIN
 # -------------------------
 if __name__ == "__main__":
+    try:
+        fetch_files_via_sftp()
+    except Exception as e:
+        print(f"SFTP fetch failed: {e}")
     convert_gamerules()
     convert_command_storage()

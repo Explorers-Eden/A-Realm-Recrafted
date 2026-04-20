@@ -17,18 +17,23 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
+    
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
+    
       - name: Install dependencies
         run: pip install -r requirements.txt
-
+    
       - name: Run converter
-        run: python convert_dat_to_yaml.py
-
+        env:
+          SFTP\_HOST: \${{ secrets.SFTP\_HOST }}
+          SFTP\_PORT: \${{ secrets.SFTP\_PORT }}
+          SFTP\_USER: \${{ secrets.SFTP\_USER }}
+          SFTP\_PASS: \${{ secrets.SFTP\_PASS }}
+        run: python convert\_dat\_to\_yaml.py
+    
       - name: Commit output
         run: |
           git config user.name "github-actions"
