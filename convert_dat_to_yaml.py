@@ -203,6 +203,7 @@ def convert_command_storage():
     NICE_ACTIONS_KEY_MAP = {
         "time_format": "Time Format For HUD",
         "rtp_height_min": "Min Y Height For RTP",
+        "rtp_height_max": "Max Y Height For RTP",
         "rtp_radius": "RTP Radius (in Blocks)",
         "rtp_type": "RTP Type",
         "player": "Player Position As Origin",
@@ -262,6 +263,20 @@ def convert_command_storage():
         "time_hud_style",
         "type",
         "event_msg",
+        "spawn_z",
+    }
+
+    # normalize boolean/value tokens into human labels and weekday capitalization
+    GLOBAL_VALUE_MAP = {
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
     }
 
     def format_percent_all_decimals(value):
@@ -270,12 +285,16 @@ def convert_command_storage():
                 v = float(value)
                 if not v.is_integer():
                     return f"{int(round(v * 100))}%"
-                return f"{int(v)}" if isinstance(value, int) else f"{int(round(v * 100))}%"
+                return str(int(v)) if isinstance(value, int) else str(int(round(v * 100))) + "%"
             if isinstance(value, str):
                 s = value.strip()
                 if s == "":
                     return value
-                if "." in s or re.match(r"^\d+(\.\d+)?$", s):
+                low = s.lower()
+                if low in GLOBAL_VALUE_MAP:
+                    return GLOBAL_VALUE_MAP[low]
+                # numeric check
+                if re.match(r"^-?\d+(\.\d+)?$", s):
                     v = float(s)
                     if not v.is_integer():
                         return f"{int(round(v * 100))}%"
@@ -312,12 +331,37 @@ def convert_command_storage():
             res = [apply_map_with_percent(v, map_dict) for v in obj]
             return [format_percent_all_decimals(v) for v in res]
         if isinstance(obj, str):
+            low = obj.lower()
+            if low in GLOBAL_VALUE_MAP:
+                return GLOBAL_VALUE_MAP[low]
             if obj in map_dict:
                 return map_dict[obj]
             return format_percent_all_decimals(obj)
         if isinstance(obj, (int, float)):
             return format_percent_all_decimals(obj)
         return obj
+
+    def remap_value(v):
+        """Apply percent formatting recursively and remap dict/list items as needed."""
+        if isinstance(v, dict):
+            out = {}
+            for k, val in v.items():
+                ks = str(k)
+                if ks in REMOVE_KEYS:
+                    continue
+                mapped_k = NICE_ACTIONS_KEY_MAP.get(ks, ks)
+                out[mapped_k] = remap_value(val)
+            return out
+        if isinstance(v, list):
+            return [remap_value(i) for i in v]
+        if isinstance(v, str):
+            low = v.lower()
+            if low in GLOBAL_VALUE_MAP:
+                return GLOBAL_VALUE_MAP[low]
+            return format_percent_all_decimals(v)
+        if isinstance(v, (int, float)):
+            return format_percent_all_decimals(v)
+        return v
 
     def remap_nice_actions(obj):
         """
@@ -358,16 +402,6 @@ def convert_command_storage():
             result["Action Cooldowns (Seconds)"] = action_cooldowns
 
         return result
-
-    def remap_value(v):
-        """Apply percent formatting recursively and remap dict/list items as needed."""
-        if isinstance(v, dict):
-            return {str(k): remap_value(val) for k, val in v.items() if str(k) not in REMOVE_KEYS}
-        if isinstance(v, list):
-            return [remap_value(i) for i in v]
-        if isinstance(v, (int, float, str)):
-            return format_percent_all_decimals(v)
-        return v
 
     for key, value in settings.items():
         key_str = str(key)
