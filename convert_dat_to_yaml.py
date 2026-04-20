@@ -13,9 +13,7 @@ SFTP_PASS = os.getenv("SFTP_PASS")  # required for password auth in this variant
 # exact remote file paths
 SFTP_REMOTE_GAME_RULES = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/world/data/minecraft/game_rules.dat"
 SFTP_REMOTE_COMMAND_STORAGE = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/world/data/eden/command_storage.dat"
-SFTP_REMOTE_COMMAND_STORAGE = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/world/data/eden/command_storage.dat"
 SFTP_REMOTE_GETOFFMYLAWN = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/config/getoffmylawn.json"
-
 
 # ---- PATHS ----
 INPUT_DIR = "raw_dat"
@@ -25,7 +23,6 @@ SETTINGS_DIR = os.path.join(OUTPUT_DIR, "settings")
 os.makedirs(INPUT_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(SETTINGS_DIR, exist_ok=True)
-
 
 # -------------------------
 # SFTP DOWNLOAD
@@ -57,7 +54,6 @@ def fetch_files_via_sftp():
     finally:
         transport.close()
 
-
 # -------------------------
 # UTIL
 # -------------------------
@@ -78,7 +74,6 @@ def map_booleans(obj):
     if isinstance(obj, bool):
         return "Enabled" if obj else "Disabled"
     return obj
-
 
 # -------------------------
 # CLEANER
@@ -105,8 +100,6 @@ def clean(obj):
         if isinstance(obj, str) and "command_template" in obj:
             return None
         return obj
-
-
 
 # -------------------------
 # GAMERULES
@@ -146,7 +139,6 @@ def convert_gamerules():
 
     write_yaml(os.path.join(OUTPUT_DIR, "gamerules.yml"), gamerules_clean)
     print(f"✔ gamerules.yml written ({len(gamerules_clean)} entries)")
-
 
 # -------------------------
 # COMMAND STORAGE
@@ -210,7 +202,6 @@ def convert_command_storage():
         "player_limit": "Max Waypoint Hubs A Player Can Have Simultaneously",
     }
 
-    # nice_actions mappings and groupings
     NICE_ACTIONS_KEY_MAP = {
         "time_format": "Time Format For HUD",
         "rtp_height_min": "Min Y Height For RTP",
@@ -228,7 +219,6 @@ def convert_command_storage():
         "chance": "Chance For This Type Of Event",
         "loot_table": "Loot Table",
         "max_amount": "Max Amount Of Actions Needed For Completion",
-        # cost and cooldown keys will be remapped below when grouping
         "horse_info_cost": "Horse Info",
         "death_coords_cost": "Death/Grave Coordinates",
         "transfer_enchantments_cost": "Transfer Enchantments",
@@ -277,20 +267,11 @@ def convert_command_storage():
         "spawn_z",
     }
 
-    # normalize boolean/value tokens into human labels and weekday capitalization
     GLOBAL_VALUE_MAP = {
         "enabled": "Enabled",
         "disabled": "Disabled",
-        "monday": "Monday",
-        "tuesday": "Tuesday",
-        "wednesday": "Wednesday",
-        "thursday": "Thursday",
-        "friday": "Friday",
-        "saturday": "Saturday",
-        "sunday": "Sunday",
     }
 
-    # additionally map weekday keys when they appear as dict keys under Active Weekdays
     WEEKDAY_KEY_MAP = {
         "monday": "Monday",
         "tuesday": "Tuesday",
@@ -371,7 +352,6 @@ def convert_command_storage():
                 ks = str(k)
                 if ks in REMOVE_KEYS:
                     continue
-                # capitalize weekday keys if present
                 key_mapped = WEEKDAY_KEY_MAP.get(ks.lower(), NICE_ACTIONS_KEY_MAP.get(ks, ks))
                 out[key_mapped] = remap_value(val)
             return out
@@ -461,7 +441,6 @@ def convert_command_storage():
 
     print(f"✔ settings/*.yml written ({written} files)")
 
-
 # -------------------------
 # GETOFFMYLAWN
 # -------------------------
@@ -547,8 +526,6 @@ def convert_getoffmylawn():
 
     write_yaml(os.path.join(SETTINGS_DIR, "getoffmylawn.yml"), result)
     print("✔ settings/getoffmylawn.yml")
-
-
 
 # -------------------------
 # MAIN
