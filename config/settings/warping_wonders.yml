@@ -1,26 +1,26 @@
-portal_horn:
-  breaking_chance: 0.0
-  mob_teleport: enabled
-  exp_cost: 5
-  active: enabled
-clock:
-  breaking_chance: 0.5
-  mob_teleport: enabled
-  exp_cost: 5
-  active: disabled
-compass:
-  breaking_chance: 0.0
-  mob_teleport: enabled
-  exp_cost: 5
-  active: disabled
-recovery_compass:
-  breaking_chance: 1.0
-  mob_teleport: enabled
-  exp_cost: 5
-  active: disabled
-waypoint_hub:
-  mob_teleport: enabled
-  player_limit: 32
-  exp_cost: 0
-  active: enabled
-  min_distance: 64
+Portal Horn Settings:
+  Chance Of Item Breaking: 0%
+  Teleport Pets And Leashed Mobs Alongside Player: Enabled
+  Exp Level Cost: '5'
+  Active: Enabled
+Clock Settings:
+  Chance Of Item Breaking: 50%
+  Teleport Pets And Leashed Mobs Alongside Player: Enabled
+  Exp Level Cost: '5'
+  Active: Disabled
+Compass Settings:
+  Chance Of Item Breaking: 0%
+  Teleport Pets And Leashed Mobs Alongside Player: Enabled
+  Exp Level Cost: '5'
+  Active: Disabled
+Recovery Compass Settings:
+  Chance Of Item Breaking: 100%
+  Teleport Pets And Leashed Mobs Alongside Player: Enabled
+  Exp Level Cost: '5'
+  Active: Disabled
+Waypoint Hub Settings:
+  Teleport Pets And Leashed Mobs Alongside Player: Enabled
+  Max Waypoint Hubs A Player Can Have Simultaneously: '32'
+  Exp Level Cost: '0'
+  Active: Enabled
+  Min Distance Between Waypoint Hubs (in Blocks): '64'
