@@ -2,44 +2,44 @@ donkey:
   type: donkey
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 creeper:
-  type: creeper
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: creeper
 mob_equipment:
   mainhand:
     dropchance: 0.0
     enchantment: 0.4
     slot: mainhand
-    capslot: Mainhand
     rngdmg: enabled
+    capslot: Mainhand
     equipchance: 0.1
     validmobs: mob_manager:valid_for_equipment
     equiploottable: mob_manager:entity/equipment/mainhand
@@ -47,133 +47,133 @@ mob_equipment:
     dropchance: 0.0
     enchantment: 0.4
     slot: offhand
-    capslot: Offhand
     rngdmg: enabled
+    capslot: Offhand
     equipchance: 0.05
     validmobs: mob_manager:valid_for_equipment
     equiploottable: mob_manager:entity/equipment/offhand
   head:
     dropchance: 0.0
-    capslot: Head
-    rngdmg: enabled
+    trim_material: diamond
+    trim_pattern: raiser
     enchantment: 0.4
     slot: head
-    trim_pattern: wayfinder
-    trim_material: amethyst
+    rngdmg: enabled
+    capslot: Head
     equipchance: 0.15
-    leathercolor: 6393942
+    leathercolor: 1630197
     validmobs: mob_manager:valid_for_equipment
     equiploottable: mob_manager:entity/equipment/head
   misc:
-    playerheads: 0.05000000074505806
-    trim: enabled
     mobheads: 0.15000000596046448
+    trim: enabled
     bannershield: enabled
     vex_equip: air
     leathercolor: enabled
+    playerheads: 0.05000000074505806
   feet:
     dropchance: 0.0
-    capslot: Feet
-    rngdmg: enabled
+    trim_material: copper
+    trim_pattern: bolt
     enchantment: 0.4
     slot: feet
-    trim_pattern: bolt
-    trim_material: netherite
+    rngdmg: enabled
+    capslot: Feet
     equipchance: 0.25
-    leathercolor: 11496684
+    leathercolor: 16641964
     validmobs: mob_manager:valid_for_equipment
     equiploottable: mob_manager:entity/equipment/feet
   legs:
     dropchance: 0.0
-    capslot: Legs
-    rngdmg: enabled
+    trim_material: redstone
+    trim_pattern: dune
     enchantment: 0.4
     slot: legs
-    trim_pattern: silence
-    trim_material: iron
+    rngdmg: enabled
+    capslot: Legs
     equipchance: 0.25
-    leathercolor: 8716090
+    leathercolor: 5263538
     validmobs: mob_manager:valid_for_equipment
     equiploottable: mob_manager:entity/equipment/legs
   chest:
     dropchance: 0.0
-    capslot: Chest
-    rngdmg: enabled
+    trim_material: emerald
+    trim_pattern: flow
     enchantment: 0.4
     slot: chest
-    trim_pattern: coast
-    trim_material: netherite
+    rngdmg: enabled
+    capslot: Chest
     equipchance: 0.25
-    leathercolor: 1318318
+    leathercolor: 8483931
     validmobs: mob_manager:valid_for_equipment
     equiploottable: mob_manager:entity/equipment/chest
 wolf:
   type: wolf
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 stray:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: stray
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 slime:
-  type: slime
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: slime
 enderman:
   type: enderman
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -183,34 +183,16 @@ zombie_horse:
   type: zombie_horse
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  mobhead: 0.25
-  scale_max: 110
-armadillo:
-  type: armadillo
-  scale_min: 90
-  move_speed: 100
-  allow_mob: enabled
-  drown: enabled
-  breed: enabled
-  follow_range: 100
-  silent: disabled
-  tempt_range: 100
-  locator_range: 8
   pickup: enabled
-  locator_color: 64e764
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -220,33 +202,33 @@ tropical_fish:
   type: tropical_fish
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
-cat:
-  type: cat
+armadillo:
+  type: armadillo
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -256,150 +238,168 @@ squid:
   type: squid
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  mobhead: 0.25
+  scale_max: 110
+cat:
+  type: cat
+  scale_min: 90
+  move_speed: 100
+  drown: enabled
+  allow_mob: enabled
+  breed: enabled
+  follow_range: 100
+  silent: disabled
+  tempt_range: 100
+  locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 wither:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: wither
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 parched:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: parched
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 vex:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: vex
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 pillager:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: pillager
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 illusioner:
-  type: illusioner
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
+  type: illusioner
+vindicator:
   attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
+  type: vindicator
 sheep:
   type: sheep
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  mobhead: 0.25
-  scale_max: 110
-vindicator:
-  type: vindicator
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
   pickup: enabled
-  locator_range: 16
-  drown: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
-  follow_range: 100
   mobhead: 0.25
-  silent: disabled
   scale_max: 110
-  attck_dmg: 100
 villager_settings:
   pet: 0.009999999776482582
   villagecenter_healing: daytime
   customname: enabled
   breeddiversity: enabled
   villagename_rename: enabled
-  restock: disabled
   villagename: enabled
-  villagename_msg: title
+  restock: disabled
   validmobs: mob_manager:valid_for_village_healing
+  villagename_msg: title
   village_heal_distance: 16
   locator_range: 196
   villager_follow: disabled
@@ -410,16 +410,16 @@ trader_llama:
   type: trader_llama
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -429,16 +429,16 @@ fox:
   type: fox
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -448,16 +448,16 @@ all_neutral:
   type: all_neutral
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -467,15 +467,15 @@ rabbit:
   type: rabbit
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -485,15 +485,15 @@ pufferfish:
   type: pufferfish
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -503,15 +503,15 @@ frog:
   type: frog
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -521,16 +521,16 @@ camel_husk:
   type: camel_husk
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -540,50 +540,50 @@ copper_golem:
   type: copper_golem
   scale_min: 80
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 0
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 0
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 100
 witch:
-  type: witch
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: witch
 cod:
   type: cod
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -593,103 +593,103 @@ horse:
   type: horse
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 blaze:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: blaze
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 zoglin:
-  type: zoglin
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: zoglin
 polar_bear:
   type: polar_bear
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 husk:
-  type: husk
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: husk
 wandering_trader:
   type: wandering_trader
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -699,15 +699,15 @@ salmon:
   type: salmon
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -717,41 +717,40 @@ panda:
   type: panda
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 hoglin:
-  type: hoglin
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: hoglin
 misc:
-  babymountspawning: 0.019999999552965164
-  need_sky: enabled
+  rabbitcarrot: disabled
   illusionerspawning: 0.15000000596046448
   killerrabbitspawning: 0.009999999776482582
   egglay: enabled
@@ -767,38 +766,39 @@ misc:
   creeperfuse: enabled
   skeletonhorsetrap: enabled
   mobs_on_locator_bar: enabled
-  rabbitcarrot: disabled
+  babymountspawning: 0.019999999552965164
+  need_sky: enabled
 piglin_brute:
-  type: piglin_brute
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: piglin_brute
 drowned:
   type: drowned
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -808,61 +808,61 @@ piglin:
   type: piglin
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 endermite:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: endermite
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 bogged:
-  type: bogged
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: bogged
 wandering_trader_settings:
   treasurebook: enabled
+  spawnmsg: actionbar
   customname: enabled
   treasurebookpayitem: minecraft:emerald
   spawnglow: enabled
-  spawnmsg: actionbar
   treasurebookpayamount: 12
   miniblock: enabled
   miniblockpayitem: minecraft:emerald
@@ -874,15 +874,15 @@ skeleton_horse:
   type: skeleton_horse
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -892,38 +892,38 @@ zombified_piglin:
   type: zombified_piglin
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 zombie_villager:
-  type: zombie_villager
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: zombie_villager
 mob_drops:
   dragonegg: 0.10000000149011612
   creakingresin: 0.800000011920929
@@ -933,10 +933,10 @@ mob_drops:
   allayshard: 0.8999999761581421
   elderguardianseaheart: 0.75
   villageremerald: 0.4000000059604645
-  dragonelytra: 0.5
-  beehoneycomb: 0.05000000074505806
-  piglingold: 0.20000000298023224
   traderlead: 1.0
+  piglingold: 0.20000000298023224
+  beehoneycomb: 0.05000000074505806
+  dragonelytra: 0.5
   witherskulldrop: 1.0
   foxsweetberries: 0.6000000238418579
   batmembrane: 0.33000001311302185
@@ -946,16 +946,16 @@ goat:
   type: goat
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -965,15 +965,15 @@ ocelot:
   type: ocelot
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -982,86 +982,86 @@ ocelot:
 rarity_mobs:
   rare:
     type: rare
-    particles: enabled
     loottable: mob_manager:entity/rarity_mob/filled_bundle
+    particles: enabled
     customname: enabled
     color: 58CD78
     spawnchance: 0.029999999329447746
-    last_name: Goldborn
+    last_name: Skyforge
     cap_type: Rare
     health: 50
-    first_name: Xavia
+    first_name: Thorne
     spawntime: 60
     validmobs: mob_manager:valid_for_rarity
   legendary:
     type: legendary
-    particles: enabled
     loottable: mob_manager:entity/rarity_mob/enchanted_book
+    particles: enabled
     customname: enabled
     color: F8D40C
     spawnchance: 0.019999999552965164
-    last_name: Skeletonbone
+    last_name: Villagercraft
     cap_type: Legendary
     health: 75
-    first_name: Gwydion
+    first_name: Kieran
     spawntime: 60
     validmobs: mob_manager:valid_for_rarity
   mythic:
     type: mythic
-    particles: enabled
     loottable: mob_manager:entity/rarity_mob/enchanted_equipment
+    particles: enabled
     customname: enabled
     color: B277D7
     spawnchance: 0.009999999776482582
-    last_name: Creepercraft
+    last_name: Archerheart
     cap_type: Mythic
     health: 100
-    first_name: Seraphina
+    first_name: Thaddeus
     spawntime: 60
     validmobs: mob_manager:valid_for_rarity
   common:
     type: common
-    particles: enabled
     loottable: mob_manager:entity/rarity_mob/valuables
+    particles: enabled
     customname: enabled
     color: E8E8E8
     spawnchance: 0.05000000074505806
-    last_name: Spiderborn
+    last_name: Wolfcraft
     cap_type: Common
     health: 30
-    first_name: Orin
+    first_name: Eowyn
     spawntime: 60
     validmobs: mob_manager:valid_for_rarity
 warden:
-  type: warden
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: warden
 all_passive:
   type: all_passive
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1071,15 +1071,15 @@ cow:
   type: cow
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1089,15 +1089,15 @@ mule:
   type: mule
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1107,50 +1107,50 @@ camel:
   type: camel
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 ghast:
-  type: ghast
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: ghast
 chicken:
   type: chicken
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1160,16 +1160,16 @@ zombie_nautilus:
   type: zombie_nautilus
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1179,86 +1179,86 @@ iron_golem:
   type: iron_golem
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 guardian:
-  type: guardian
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: guardian
 happy_ghast:
   type: happy_ghast
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 evoker:
-  type: evoker
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: evoker
 parrot:
   type: parrot
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1268,16 +1268,16 @@ spider:
   type: spider
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1287,67 +1287,67 @@ axolotl:
   type: axolotl
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 breeze:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: breeze
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 creaking:
-  type: creaking
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: creaking
 turtle:
   type: turtle
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1359,15 +1359,15 @@ pig:
   type: pig
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1377,15 +1377,15 @@ sniffer:
   type: sniffer
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1395,51 +1395,51 @@ llama:
   type: llama
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 skeleton:
-  type: skeleton
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: skeleton
 nautilus:
   type: nautilus
   scale_min: 80
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1449,16 +1449,16 @@ bee:
   type: bee
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1468,69 +1468,69 @@ allay:
   type: allay
   scale_min: 90
   move_speed: 100
+  drown: enabled
+  allow_mob: enabled
+  breed: enabled
+  follow_range: 100
+  silent: disabled
+  tempt_range: 100
+  locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  mobhead: 0.25
+  scale_max: 110
+cave_spider:
+  type: cave_spider
+  scale_min: 90
+  move_speed: 100
   allow_mob: enabled
   drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
+  attck_dmg: 100
   tempt_range: 100
-  locator_range: 8
+  locator_color: ade6e6
   pickup: enabled
-  locator_color: 64e764
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 phantom:
-  type: phantom
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
+  drown: enabled
   move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
   locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
-cave_spider:
-  type: cave_spider
-  scale_min: 90
-  move_speed: 100
-  drown: enabled
-  allow_mob: enabled
-  breed: enabled
-  follow_range: 100
-  silent: disabled
-  attck_dmg: 100
-  tempt_range: 100
-  locator_range: 12
   pickup: enabled
-  locator_color: ade6e6
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
+  follow_range: 100
+  silent: disabled
   mobhead: 0.25
   scale_max: 110
+  type: phantom
 villager:
   type: villager
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1540,102 +1540,67 @@ bat:
   type: bat
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 shulker:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: shulker
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 zombie:
-  type: zombie
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: zombie
 mooshroom:
   type: mooshroom
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  mobhead: 0.25
-  scale_max: 110
-silverfish:
-  type: silverfish
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
   pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
-glow_squid:
-  type: glow_squid
-  scale_min: 90
-  move_speed: 100
-  allow_mob: enabled
-  drown: enabled
-  breed: enabled
-  follow_range: 100
-  silent: disabled
-  tempt_range: 100
   locator_range: 8
-  pickup: enabled
-  locator_color: 64e764
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1645,102 +1610,137 @@ snow_golem:
   type: snow_golem
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
+glow_squid:
+  type: glow_squid
+  scale_min: 90
+  move_speed: 100
+  drown: enabled
+  allow_mob: enabled
+  breed: enabled
+  follow_range: 100
+  silent: disabled
+  tempt_range: 100
+  locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  mobhead: 0.25
+  scale_max: 110
+silverfish:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
+  type: silverfish
 all_hostile:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: all_hostile
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 wither_skeleton:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: wither_skeleton
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 magma_cube:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: magma_cube
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 ravager:
-  type: ravager
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: ravager
 dolphin:
   type: dolphin
   scale_min: 90
   move_speed: 100
-  drown: enabled
   allow_mob: enabled
+  drown: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   attck_dmg: 100
   tempt_range: 100
-  locator_range: 12
-  pickup: enabled
   locator_color: ade6e6
+  pickup: enabled
+  locator_range: 12
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1750,15 +1750,15 @@ strider:
   type: strider
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
@@ -1768,51 +1768,51 @@ tadpole:
   type: tadpole
   scale_min: 90
   move_speed: 100
-  allow_mob: enabled
   drown: enabled
+  allow_mob: enabled
   breed: enabled
   follow_range: 100
   silent: disabled
   tempt_range: 100
-  locator_range: 8
-  pickup: enabled
   locator_color: 64e764
+  pickup: enabled
+  locator_range: 8
   health: 100
   burn: enabled
   safe_fall: 100
   mobhead: 0.25
   scale_max: 110
 elder_guardian:
+  attck_dmg: 100
+  scale_min: 90
+  drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
+  health: 100
+  burn: enabled
+  safe_fall: 100
+  follow_range: 100
+  silent: disabled
+  mobhead: 0.25
+  scale_max: 110
   type: elder_guardian
-  scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
-  drown: enabled
-  health: 100
-  burn: enabled
-  safe_fall: 100
-  follow_range: 100
-  mobhead: 0.25
-  silent: disabled
-  scale_max: 110
-  attck_dmg: 100
 ender_dragon:
-  type: ender_dragon
+  attck_dmg: 100
   scale_min: 90
-  allow_mob: enabled
-  move_speed: 100
-  locator_color: 8b0000
-  pickup: enabled
-  locator_range: 16
   drown: enabled
+  move_speed: 100
+  locator_range: 16
+  pickup: enabled
+  locator_color: 8b0000
+  allow_mob: enabled
   health: 100
   burn: enabled
   safe_fall: 100
   follow_range: 100
-  mobhead: 0.25
   silent: disabled
+  mobhead: 0.25
   scale_max: 110
-  attck_dmg: 100
+  type: ender_dragon

@@ -27,8 +27,8 @@ events:
     event_msg: title
     sunday: disabled
     friday: enabled
-    tuesday: disabled
     saturday: disabled
+    tuesday: disabled
     wednesday: enabled
   killing:
     type: killing
@@ -42,8 +42,8 @@ events:
     max_amount: 48
 tp_spawn_cooldown: 60
 transfer_enchantments_cost: 30
-send_coords_cost: 0
 rtp_type: player
+send_coords_cost: 0
 rtp_cooldown: 300
 rtp_cost: 5
 spawn_dimension: minecraft:overworld
