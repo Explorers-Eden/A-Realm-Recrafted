@@ -1,20 +1,18 @@
 import os
 import re
 import yaml
-import json
 import nbtlib
 import paramiko
 
-# ---- SFTP CONFIG ----
+# ---- SFTP CONFIG (from environment / GitHub Secrets) ----
 SFTP_HOST = os.getenv("SFTP_HOST")
 SFTP_PORT = int(os.getenv("SFTP_PORT", "22"))
 SFTP_USER = os.getenv("SFTP_USER")
-SFTP_PASS = os.getenv("SFTP_PASS")
+SFTP_PASS = os.getenv("SFTP_PASS")  # required for password auth in this variant
 
-# ---- REMOTE PATHS ----
+# exact remote file paths
 SFTP_REMOTE_GAME_RULES = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/world/data/minecraft/game_rules.dat"
 SFTP_REMOTE_COMMAND_STORAGE = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/world/data/eden/command_storage.dat"
-SFTP_REMOTE_GETOFFMYLAWN = "/srv/docker/crafty-4/servers/bb1e3d6f-d50b-48d7-84df-8b959126b4c9/config/getoffmylawn.json"
 
 # ---- PATHS ----
 INPUT_DIR = "raw_dat"
@@ -31,7 +29,7 @@ os.makedirs(SETTINGS_DIR, exist_ok=True)
 # -------------------------
 def fetch_files_via_sftp():
     if not SFTP_HOST or not SFTP_USER or not SFTP_PASS:
-        print("Missing SFTP credentials")
+        print("SFTP_HOST, SFTP_USER and SFTP_PASS must be set in the environment to fetch files via SFTP.")
         return
 
     transport = paramiko.Transport((SFTP_HOST, SFTP_PORT))
@@ -39,19 +37,16 @@ def fetch_files_via_sftp():
         transport.connect(username=SFTP_USER, password=SFTP_PASS)
         sftp = paramiko.SFTPClient.from_transport(transport)
 
-        files = [
+        remote_files = [
             (SFTP_REMOTE_GAME_RULES, os.path.join(INPUT_DIR, "game_rules.dat")),
             (SFTP_REMOTE_COMMAND_STORAGE, os.path.join(INPUT_DIR, "command_storage.dat")),
-            (SFTP_REMOTE_GETOFFMYLAWN, os.path.join(INPUT_DIR, "getoffmylawn.json")),
         ]
-
-        for remote, local in files:
+        for remote_path, local_path in remote_files:
             try:
-                sftp.get(remote, local)
-                print(f"Downloaded: {remote}")
-            except Exception as e:
-                print(f"Failed: {remote} -> {e}")
-
+                sftp.get(remote_path, local_path)
+                print(f"Downloaded: {remote_path} -> {local_path}")
+            except IOError as e:
+                print(f"Could not download {remote_path}: {e}")
         sftp.close()
     finally:
         transport.close()
@@ -66,23 +61,19 @@ def sanitize_filename(name):
 
 def write_yaml(path, data):
     with open(path, "w", encoding="utf-8") as f:
-        yaml.dump(data, f, sort_keys=False, allow_unicode=True)
-
-
-def map_booleans(obj):
-    if isinstance(obj, dict):
-        return {k: map_booleans(v) for k, v in obj.items()}
-    if isinstance(obj, list):
-        return [map_booleans(v) for v in obj]
-    if isinstance(obj, bool):
-        return "Enabled" if obj else "Disabled"
-    return obj
+        yaml.dump(data, f, sort_keys=False)
 
 
 # -------------------------
 # CLEANER
 # -------------------------
 def clean(obj):
+    """
+    Recursively removes:
+    - *_initial keys
+    - command_template anywhere
+    - icon/bodyicon fields anywhere
+    """
     if isinstance(obj, dict):
         cleaned = {}
         for k, v in obj.items():
@@ -112,6 +103,7 @@ def clean(obj):
 def convert_gamerules():
     file_path = os.path.join(INPUT_DIR, "game_rules.dat")
     if not os.path.exists(file_path):
+        print("game_rules.dat not found")
         return
 
     nbt = nbtlib.load(file_path)
@@ -120,16 +112,29 @@ def convert_gamerules():
     raw = data.get("data", {})
     gamerules_clean = {}
 
-    for rule, value in raw.items():
-        if str(value).lower() in ("1", "true"):
+    if isinstance(raw, dict):
+        items = raw.items()
+    elif isinstance(raw, list):
+        items = []
+        for item in raw:
+            if isinstance(item, dict):
+                items.extend(item.items())
+            elif isinstance(item, (list, tuple)) and len(item) == 2:
+                items.append(item)
+    else:
+        items = []
+
+    for rule, value in items:
+        rule = str(rule)
+        if str(value) in ("1", "true", "True"):
             gamerules_clean[rule] = "Enabled"
-        elif str(value).lower() in ("0", "false"):
+        elif str(value) in ("0", "false", "False"):
             gamerules_clean[rule] = "Disabled"
         else:
             gamerules_clean[rule] = value
 
     write_yaml(os.path.join(OUTPUT_DIR, "gamerules.yml"), gamerules_clean)
-    print("✔ gamerules.yml")
+    print(f"✔ gamerules.yml written ({len(gamerules_clean)} entries)")
 
 
 # -------------------------
@@ -138,6 +143,7 @@ def convert_gamerules():
 def convert_command_storage():
     file_path = os.path.join(INPUT_DIR, "command_storage.dat")
     if not os.path.exists(file_path):
+        print("command_storage.dat not found")
         return
 
     nbt = nbtlib.load(file_path)
@@ -147,6 +153,7 @@ def convert_command_storage():
     settings = contents.get("settings", {})
 
     if not isinstance(settings, dict):
+        print("settings not found or invalid")
         return
 
     written = 0
@@ -423,9 +430,17 @@ def convert_command_storage():
         if cleaned is None or cleaned == {}:
             continue
 
-        # --- KEEP YOUR ORIGINAL TRANSFORMS HERE ---
+        if key_str == "fabled_roots" or key_str.startswith("fabled_roots"):
+            cleaned = apply_map_fr(cleaned)
 
-        cleaned = map_booleans(cleaned)  # ✅ NEW
+        if key_str == "keepinv" or key_str.startswith("keepinv"):
+            cleaned = apply_map_with_percent(cleaned, KI_VALUE_MAP)
+
+        if key_str == "warping_wonders" or key_str.startswith("warping_wonders"):
+            cleaned = apply_map_with_percent(cleaned, WW_VALUE_MAP)
+
+        if key_str == "nice_actions" or key_str.startswith("nice_actions"):
+            cleaned = remap_nice_actions(cleaned)
 
         safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
@@ -523,6 +538,7 @@ def convert_getoffmylawn():
     print("✔ settings/getoffmylawn.yml")
 
 
+
 # -------------------------
 # MAIN
 # -------------------------
@@ -530,8 +546,6 @@ if __name__ == "__main__":
     try:
         fetch_files_via_sftp()
     except Exception as e:
-        print("SFTP error:", e)
-
+        print(f"SFTP fetch failed: {e}")
     convert_gamerules()
     convert_command_storage()
-    convert_getoffmylawn()
