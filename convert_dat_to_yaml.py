@@ -23,18 +23,33 @@ def write_yaml(path, data):
         yaml.dump(data, f, sort_keys=False)
 
 
-def should_skip_key(key: str) -> bool:
-    key = str(key)
+# -------------------------
+# RECURSIVE CLEANER
+# -------------------------
+def clean_data(obj):
+    """
+    Recursively removes:
+    - command_template
+    - *_initial
+    """
+    if isinstance(obj, dict):
+        cleaned = {}
+        for k, v in obj.items():
+            k_str = str(k)
 
-    # ignore exact template key
-    if key == "command_template":
-        return True
+            if k_str == "command_template":
+                continue
+            if k_str.endswith("_initial"):
+                continue
 
-    # ignore all *_initial values
-    if key.endswith("_initial"):
-        return True
+            cleaned[k_str] = clean_data(v)
+        return cleaned
 
-    return False
+    elif isinstance(obj, list):
+        return [clean_data(v) for v in obj]
+
+    else:
+        return obj
 
 
 # -------------------------
@@ -53,7 +68,6 @@ def convert_gamerules():
     raw = data.get("data", {})
     gamerules_clean = {}
 
-    # handle dict OR list formats safely
     if isinstance(raw, dict):
         items = raw.items()
     elif isinstance(raw, list):
@@ -69,8 +83,7 @@ def convert_gamerules():
     for rule, value in items:
         gamerules_clean[str(rule)] = value
 
-    output_path = os.path.join(OUTPUT_DIR, "gamerules.yml")
-    write_yaml(output_path, gamerules_clean)
+    write_yaml(os.path.join(OUTPUT_DIR, "gamerules.yml"), gamerules_clean)
 
     print(f"✔ gamerules.yml written ({len(gamerules_clean)} entries)")
 
@@ -88,7 +101,6 @@ def convert_command_storage():
     nbt = nbtlib.load(file_path)
     data = nbt.unpack()
 
-    # Navigate structure safely
     contents = data.get("data", {}).get("contents", {})
     settings = contents.get("settings", {})
 
@@ -102,38 +114,17 @@ def convert_command_storage():
 
         key_str = str(key)
 
-        # -------------------------
-        # FILTER UNWANTED KEYS
-        # -------------------------
-        if should_skip_key(key_str):
+        # skip bad root keys
+        if key_str == "command_template" or key_str.endswith("_initial"):
             continue
 
         safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
 
-        # -------------------------
-        # HANDLE VALUES
-        # -------------------------
-        if isinstance(value, dict):
-            cleaned = {}
+        # FULL recursive cleaning
+        cleaned_value = clean_data(value)
 
-            for k, v in value.items():
-                if should_skip_key(k):
-                    continue
-                cleaned[str(k)] = v
-
-            write_yaml(output_path, cleaned)
-
-        elif isinstance(value, list):
-            filtered = [
-                v for v in value
-                if not should_skip_key(v)
-            ]
-            write_yaml(output_path, {"items": filtered})
-
-        else:
-            write_yaml(output_path, {"value": value})
-
+        write_yaml(output_path, cleaned_value)
         written += 1
 
     print(f"✔ settings/*.yml written ({written} files)")
