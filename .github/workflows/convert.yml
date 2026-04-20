@@ -1,12 +1,12 @@
-name: Convert Minecraft DAT to YAML
+name: Convert SMP Files
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # every day at 06:00 UTC+1 (05:00 UTC)
+    - cron: '0 6 * * *'  # every day at 07:00 UTC+1 (06:00 UTC)
   push:
     paths:
       - 'raw_dat/*.dat'
-      - 'convert_to_yaml.py'
+      - 'convert_smp_files.py'
   workflow_dispatch:
 
 permissions:
@@ -34,12 +34,12 @@ jobs:
           SFTP_PORT: ${{ secrets.SFTP_PORT }}
           SFTP_USER: ${{ secrets.SFTP_USER }}
           SFTP_PASS: ${{ secrets.SFTP_PASS }}
-        run: python convert_dat_to_yaml.py
+        run: python convert_smp_files.py
 
       - name: Commit output
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add config/
-          git commit -m "Auto-convert DAT to YAML" || echo "No changes"
+          git commit -m "Auto-convert SMP Files" || echo "No changes"
           git push
