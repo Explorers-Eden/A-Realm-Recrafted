@@ -1,0 +1,58 @@
+Max Claims Per Player: -1
+Enable PVP In Claims: true
+Allow Damaging Unnamed Hostile Mobs: true
+Allow Damaging Named Hostile Mobs: true
+Claim Protects Full World Height: false
+Claim Area Height Multiplier: 1.0
+Claim Area Is Bound To Chunks: false
+Allow Claim Overlapping If Same Owner: true
+Protect Against Hostile Explosions Triggered By Trusted Players: true
+Enabled Claim Augments:
+  Withering Seal: false
+  Explosion Controller: true
+  Spirit Grave: false
+  PVP Arena: true
+  Heaven Wings: false
+  Chaos Zone: false
+  Village Core: true
+  Greeter: true
+  Force Field: false
+  Ender Binding: false
+  Angelic Aura: false
+Allowed Blocks For Interactions Regardless Of Trust:
+- minecraft:oak_button
+- minecraft:ender_chest
+- minecraft:vault
+- minecraft:crafting_table
+- minecraft:grindstone
+- minecraft:stonecutter
+- minecraft:enchanting_table
+- minecraft:smithing_table
+- minecraft:loom
+- minecraft:cartography_table
+- minecraft:green_bed
+- minecraft:red_bed
+- minecraft:white_bed
+- minecraft:gray_bed
+- minecraft:light_gray_bed
+- minecraft:black_bed
+- minecraft:brown_bed
+- minecraft:orange_bed
+- minecraft:yellow_bed
+- minecraft:lime_bed
+- minecraft:cyan_bed
+- minecraft:light_blue_bed
+- minecraft:blue_bed
+- minecraft:purple_bed
+- minecraft:magenta_bed
+- minecraft:pink_bed
+Allowed Entities For Interactions Regardless Of Trust:
+- minecraft:interaction
+- minecraft:villager
+Claim Anchor Radius:
+  Makeshift: 10
+  Reinforced: 25
+  Glistening: 50
+  Crystal: 75
+  Emerdic: 125
+  Withered: 200
