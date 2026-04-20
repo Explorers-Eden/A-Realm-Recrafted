@@ -11,6 +11,9 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(SETTINGS_DIR, exist_ok=True)
 
 
+# -------------------------
+# UTILITIES
+# -------------------------
 def sanitize_filename(name):
     return re.sub(r'[^a-zA-Z0-9_\-]', '_', name)
 
@@ -32,7 +35,7 @@ def write_yaml(path, data):
 
 
 # -------------------------
-# GAMERULES CONVERSION (FIXED)
+# GAMERULES
 # -------------------------
 def convert_gamerules():
     file_path = os.path.join(INPUT_DIR, "game_rules.dat")
@@ -44,26 +47,22 @@ def convert_gamerules():
     nbt = nbtlib.load(file_path)
     data = nbt.unpack()
 
-    raw = data.get("data", {})  # <-- FIX: lowercase "data"
-
+    raw = data.get("data", {})
     gamerules_clean = {}
 
-    # Case 1: dict format
     if isinstance(raw, dict):
-        iterable = raw.items()
-
-    # Case 2: list format (your case)
+        items = raw.items()
     elif isinstance(raw, list):
-        iterable = []
+        items = []
         for item in raw:
             if isinstance(item, dict):
-                iterable.extend(item.items())
+                items.extend(item.items())
             elif isinstance(item, (list, tuple)) and len(item) == 2:
-                iterable.append(item)
+                items.append(item)
     else:
-        iterable = []
+        items = []
 
-    for rule, value in iterable:
+    for rule, value in items:
         gamerules_clean[rule] = value
 
     output_path = os.path.join(OUTPUT_DIR, "gamerules.yml")
@@ -73,7 +72,7 @@ def convert_gamerules():
 
 
 # -------------------------
-# COMMAND STORAGE (FIXED SAFETY)
+# COMMAND STORAGE
 # -------------------------
 def convert_command_storage():
     file_path = os.path.join(INPUT_DIR, "command_storage.dat")
@@ -85,31 +84,56 @@ def convert_command_storage():
     nbt = nbtlib.load(file_path)
     data = nbt.unpack()
 
-    raw = data.get("data", {})  # <-- FIXED same issue
+    # Navigate structure safely
+    contents = data.get("data", {}).get("contents", {})
+    settings = contents.get("settings", {})
 
-    settings = {}
+    if not isinstance(settings, dict):
+        print("settings not found or invalid")
+        return
 
-    if isinstance(raw, dict):
-        settings = raw
-    elif isinstance(raw, list):
-        for item in raw:
-            if isinstance(item, dict):
-                settings.update(item)
-            elif isinstance(item, (list, tuple)) and len(item) == 2:
-                k, v = item
-                settings[k] = v
+    written = 0
 
     for key, value in settings.items():
-        safe_key = sanitize_filename(str(key))
+
+        key_str = str(key)
+
+        # -------------------------
+        # FILTER UNWANTED KEYS
+        # -------------------------
+        if "*command_template*" in key_str or "*initial*" in key_str:
+            continue
+
+        safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
 
+        # -------------------------
+        # HANDLE VALUE TYPES
+        # -------------------------
         if isinstance(value, dict):
-            flattened = flatten_dict(value)
-            write_yaml(output_path, flattened)
+            cleaned = {}
+
+            for k, v in value.items():
+                if "*command_template*" in str(k) or "*initial*" in str(k):
+                    continue
+                cleaned[k] = v
+
+            write_yaml(output_path, cleaned)
+
+        elif isinstance(value, list):
+            filtered = [
+                v for v in value
+                if "*command_template*" not in str(v)
+                and "*initial*" not in str(v)
+            ]
+            write_yaml(output_path, {"items": filtered})
+
         else:
             write_yaml(output_path, {"value": value})
 
-    print(f"✔ settings/*.yml written ({len(settings)} files)")
+        written += 1
+
+    print(f"✔ settings/*.yml written ({written} files)")
 
 
 # -------------------------
