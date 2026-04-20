@@ -143,6 +143,34 @@ def convert_command_storage():
 
     written = 0
 
+    # mapping for specific replacements in fabled_roots settings
+    FR_VALUE_MAP = {
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "starter_equip": "Starter Equipment After Race Selection",
+        "prefix": "Race Prefix In Front Of Player Name",
+        "pvp": "PVP Among Own Race",
+        "seeinvis": "See Invisible Players Of Own Race",
+        "npc_spawning": "Descendant Spawning",
+    }
+
+    def apply_map(obj):
+        """
+        Recursively replace dict keys and string values according to FR_VALUE_MAP.
+        """
+        if isinstance(obj, dict):
+            new = {}
+            for k, v in obj.items():
+                k_str = str(k)
+                mapped_key = FR_VALUE_MAP.get(k_str, k_str)
+                new[mapped_key] = apply_map(v)
+            return new
+        if isinstance(obj, list):
+            return [apply_map(v) for v in obj]
+        if isinstance(obj, str):
+            return FR_VALUE_MAP.get(obj, obj)
+        return obj
+
     for key, value in settings.items():
 
         key_str = str(key)
@@ -159,6 +187,10 @@ def convert_command_storage():
         # remove empty results
         if cleaned is None or cleaned == {}:
             continue
+
+        # If this is fabled_roots (or starts with it), apply replacements
+        if key_str == "fabled_roots" or key_str.startswith("fabled_roots"):
+            cleaned = apply_map(cleaned)
 
         safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
