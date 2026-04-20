@@ -3,43 +3,24 @@ portal_horn:
   mob_teleport: enabled
   active: enabled
   exp_cost: 5
-  active_initial: 'false'
-  breaking_chance_initial: 0
-  mob_teleport_initial: 'false'
-  command_template: function wawo:dialog/command_template/portal_horn {active:$(active),exp_cost:$(exp_cost),breaking_chance:$(breaking_chance),mob_teleport:$(mob_teleport)}
 clock:
   breaking_chance: 0.5
   mob_teleport: enabled
   active: disabled
   exp_cost: 5
-  active_initial: 'true'
-  breaking_chance_initial: 50
-  mob_teleport_initial: 'false'
-  command_template: function wawo:dialog/command_template/clock {active:$(active),exp_cost:$(exp_cost),breaking_chance:$(breaking_chance),mob_teleport:$(mob_teleport)}
 compass:
   breaking_chance: 0.0
   mob_teleport: enabled
   active: disabled
   exp_cost: 5
-  active_initial: 'true'
-  breaking_chance_initial: 0
-  mob_teleport_initial: 'false'
-  command_template: function wawo:dialog/command_template/compass {active:$(active),exp_cost:$(exp_cost),breaking_chance:$(breaking_chance),mob_teleport:$(mob_teleport)}
 recovery_compass:
   breaking_chance: 1.0
   mob_teleport: enabled
   active: disabled
   exp_cost: 5
-  active_initial: 'true'
-  breaking_chance_initial: 100
-  mob_teleport_initial: 'false'
-  command_template: function wawo:dialog/command_template/recovery_compass {active:$(active),exp_cost:$(exp_cost),breaking_chance:$(breaking_chance),mob_teleport:$(mob_teleport)}
 waypoint_hub:
   mob_teleport: enabled
-  active_initial: 'false'
   active: enabled
   exp_cost: 0
   min_distance: 64
   player_limit: 32
-  mob_teleport_initial: 'false'
-  command_template: function wawo:dialog/command_template/waypoint_hub {active:$(active),exp_cost:$(exp_cost),min_distance:$(min_distance),player_limit:$(player_limit),mob_teleport:$(mob_teleport)}

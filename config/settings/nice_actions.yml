@@ -14,65 +14,39 @@ events:
     chance: 0.10000000149011612
     loot_table: eden:gameplay/events/fishing
     max_amount: 48
-    chance_initial: 10
-    command_template: function nice_actions:dialog/command_template/config/events_type
-      {type:fishing,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}
   consuming:
     type: consuming
     icon: bread
     chance: 0.05999999865889549
     loot_table: eden:gameplay/events/consuming
     max_amount: 96
-    chance_initial: 6
-    command_template: function nice_actions:dialog/command_template/config/events_type
-      {type:consuming,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}
   breeding:
     type: breeding
     icon: wheat
     chance: 0.07999999821186066
     loot_table: eden:gameplay/events/breeding
     max_amount: 24
-    chance_initial: 8
-    command_template: function nice_actions:dialog/command_template/config/events_type
-      {type:breeding,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}
   misc:
-    thursday_initial: 'true'
-    event_msg_actionbar_initial: 'false'
     thursday: disabled
     monday: enabled
-    tuesday_initial: 'true'
     event_msg: title
-    friday_initial: 'false'
-    event_msg_chat_initial: 'false'
     sunday: disabled
     friday: enabled
     tuesday: disabled
-    monday_initial: 'false'
-    wednesday_initial: 'false'
-    saturday_initial: 'true'
     saturday: disabled
     wednesday: enabled
-    sunday_initial: 'true'
-    command_template: function nice_actions:dialog/command_template/config/events_misc
-      {monday:$(monday),tuesday:$(tuesday),wednesday:$(wednesday),thursday:$(thursday),friday:$(friday),saturday:$(saturday),sunday:$(sunday),event_msg:$(event_msg)}
   killing:
     type: killing
     icon: iron_sword
     chance: 0.09000000357627869
     loot_table: eden:gameplay/events/killing
     max_amount: 96
-    chance_initial: 9
-    command_template: function nice_actions:dialog/command_template/config/events_type
-      {type:killing,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}
   brewing:
     type: brewing
     icon: potion
     chance: 0.07000000029802322
     loot_table: eden:gameplay/events/brewing
     max_amount: 48
-    chance_initial: 7
-    command_template: function nice_actions:dialog/command_template/config/events_type
-      {type:brewing,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}
 tp_spawn_cooldown: 60
 transfer_enchantments_cost: 30
 send_coords_cost: 0
