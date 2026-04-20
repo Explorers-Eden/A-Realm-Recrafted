@@ -2,6 +2,9 @@ name: Convert Minecraft DAT to YAML
 
 on:
   push:
+  permissions:
+    contents: write
+    
     paths:
       - 'raw_dat/*.dat'
       - 'convert_dat_to_yaml.py'
