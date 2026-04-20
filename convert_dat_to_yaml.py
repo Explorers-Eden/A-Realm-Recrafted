@@ -1,12 +1,13 @@
 import os
+import re
 import yaml
 import nbtlib
-import re
 
 INPUT_DIR = "raw_dat"
 OUTPUT_DIR = "config"
 SETTINGS_DIR = os.path.join(OUTPUT_DIR, "settings")
 
+os.makedirs(INPUT_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(SETTINGS_DIR, exist_ok=True)
 
@@ -19,7 +20,7 @@ def sanitize_filename(name):
 
 
 def write_yaml(path, data):
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         yaml.dump(data, f, sort_keys=False)
 
 
@@ -33,47 +34,26 @@ def clean(obj):
     - command_template anywhere
     - icon/bodyicon fields anywhere
     """
-
     if isinstance(obj, dict):
         cleaned = {}
-
         for k, v in obj.items():
             k_str = str(k)
-
-            # -------------------------
-            # DROP KEYS
-            # -------------------------
             if k_str.endswith("_initial"):
                 continue
-
             if k_str in ("command_template", "icon", "bodyicon"):
                 continue
-
             if "command_template" in k_str:
                 continue
-
             cleaned_v = clean(v)
-
-            # remove junk string values
-            if isinstance(cleaned_v, str):
-                if "command_template" in cleaned_v:
-                    continue
-
+            if isinstance(cleaned_v, str) and "command_template" in cleaned_v:
+                continue
             cleaned[k_str] = cleaned_v
-
         return cleaned
-
     elif isinstance(obj, list):
-        return [
-            clean(v)
-            for v in obj
-            if "command_template" not in str(v)
-        ]
-
+        return [clean(v) for v in obj if "command_template" not in str(v)]
     else:
-        if isinstance(obj, str):
-            if "command_template" in obj:
-                return None
+        if isinstance(obj, str) and "command_template" in obj:
+            return None
         return obj
 
 
@@ -82,7 +62,6 @@ def clean(obj):
 # -------------------------
 def convert_gamerules():
     file_path = os.path.join(INPUT_DIR, "game_rules.dat")
-
     if not os.path.exists(file_path):
         print("game_rules.dat not found")
         return
@@ -107,8 +86,6 @@ def convert_gamerules():
 
     for rule, value in items:
         rule = str(rule)
-    
-        # normalize values
         if str(value) in ("1", "true", "True"):
             gamerules_clean[rule] = "Enabled"
         elif str(value) in ("0", "false", "False"):
@@ -117,7 +94,6 @@ def convert_gamerules():
             gamerules_clean[rule] = value
 
     write_yaml(os.path.join(OUTPUT_DIR, "gamerules.yml"), gamerules_clean)
-
     print(f"✔ gamerules.yml written ({len(gamerules_clean)} entries)")
 
 
@@ -126,7 +102,6 @@ def convert_gamerules():
 # -------------------------
 def convert_command_storage():
     file_path = os.path.join(INPUT_DIR, "command_storage.dat")
-
     if not os.path.exists(file_path):
         print("command_storage.dat not found")
         return
@@ -154,6 +129,43 @@ def convert_command_storage():
         "npc_spawning": "Descendant Spawning",
     }
 
+    # mapping for keepinv settings
+    KI_VALUE_MAP = {
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "equip_dmg": "Damage Equipment on Death",
+        "exp_loss_amount": "Amount Of Exp Level Lost On Death (%)",
+        "grave_status": "Graves",
+        "grave_duration": "Duration Before Graves Vanish (in Minutes)",
+        "player_head_drop_chance": "Chance To Drop Playerhead On Death (%)",
+        "equip_dmg_amount": "Amount Of Damage Applied To Equipment On Death (%)",
+        "grave_type": "Graves Appearence",
+        "player_head_drop": "Players Drop Their Head When Dying",
+        "non_droppable_tag_list": "Tag List For Non Droppable Items",
+        "exp_loss": "Players Lose Exp Level When Dying",
+    }
+
+    def format_percent(value):
+        """
+        Convert numeric 0.x or string "0.x" to "xx%". Leave other values untouched.
+        """
+        try:
+            if isinstance(value, (int, float)):
+                v = float(value)
+                if 0 < v < 1:
+                    return f"{int(round(v * 100))}%"
+                return value
+            if isinstance(value, str):
+                # reject empty strings
+                if value.strip() == "":
+                    return value
+                v = float(value)
+                if 0 < v < 1:
+                    return f"{int(round(v * 100))}%"
+        except Exception:
+            pass
+        return value
+
     def apply_map(obj):
         """
         Recursively replace dict keys and string values according to FR_VALUE_MAP.
@@ -169,6 +181,38 @@ def convert_command_storage():
             return [apply_map(v) for v in obj]
         if isinstance(obj, str):
             return FR_VALUE_MAP.get(obj, obj)
+        return obj
+
+    def apply_map_for_maps(obj, map_dict, convert_percent=False):
+        """
+        Recursively replace dict keys and string values according to map_dict.
+        If convert_percent is True, convert decimal fractions to percentages for numeric or numeric-like strings.
+        """
+        if isinstance(obj, dict):
+            new = {}
+            for k, v in obj.items():
+                k_str = str(k)
+                mapped_key = map_dict.get(k_str, k_str)
+                new_val = apply_map_for_maps(v, map_dict, convert_percent)
+                if convert_percent:
+                    new_val = format_percent(new_val)
+                new[mapped_key] = new_val
+            return new
+        if isinstance(obj, list):
+            res = [apply_map_for_maps(v, map_dict, convert_percent) for v in obj]
+            if convert_percent:
+                res = [format_percent(v) for v in res]
+            return res
+        if isinstance(obj, str):
+            # map exact string values if present in map_dict, otherwise optionally convert decimals
+            if obj in map_dict:
+                return map_dict[obj]
+            if convert_percent:
+                return format_percent(obj)
+            return obj
+        # numbers
+        if convert_percent and isinstance(obj, (int, float)):
+            return format_percent(obj)
         return obj
 
     for key, value in settings.items():
@@ -191,6 +235,10 @@ def convert_command_storage():
         # If this is fabled_roots (or starts with it), apply replacements
         if key_str == "fabled_roots" or key_str.startswith("fabled_roots"):
             cleaned = apply_map(cleaned)
+
+        # If this is keepinv (or starts with it), apply keepinv mappings & percent conversion
+        if key_str == "keepinv" or key_str.startswith("keepinv"):
+            cleaned = apply_map_for_maps(cleaned, KI_VALUE_MAP, convert_percent=True)
 
         safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
