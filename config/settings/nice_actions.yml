@@ -15,13 +15,13 @@ Events:
     Loot Table: eden:gameplay/events/breeding
     Max Amount Of Actions Needed For Completion: '24'
   Active Weekdays:
-    thursday: Disabled
-    monday: Enabled
-    sunday: Disabled
-    friday: Enabled
-    saturday: Disabled
-    tuesday: Disabled
-    wednesday: Enabled
+    Thursday: Disabled
+    Monday: Enabled
+    Sunday: Disabled
+    Friday: Enabled
+    Saturday: Disabled
+    Tuesday: Disabled
+    Wednesday: Enabled
   Killing:
     Chance For This Type Of Event: 9%
     Loot Table: eden:gameplay/events/killing
