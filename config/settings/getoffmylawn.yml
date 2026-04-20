@@ -1,24 +1,24 @@
 Max Claims Per Player: -1
-Enable PVP In Claims: true
-Allow Damaging Unnamed Hostile Mobs: true
-Allow Damaging Named Hostile Mobs: true
-Claim Protects Full World Height: false
+Enable PVP In Claims: Enabled
+Allow Damaging Unnamed Hostile Mobs: Enabled
+Allow Damaging Named Hostile Mobs: Enabled
+Claim Protects Full World Height: Disabled
 Claim Area Height Multiplier: 1.0
-Claim Area Is Bound To Chunks: false
-Allow Claim Overlapping If Same Owner: true
-Protect Against Hostile Explosions Triggered By Trusted Players: true
+Claim Area Is Bound To Chunks: Disabled
+Allow Claim Overlapping If Same Owner: Enabled
+Protect Against Hostile Explosions Triggered By Trusted Players: Enabled
 Enabled Claim Augments:
-  Withering Seal: false
-  Explosion Controller: true
-  Spirit Grave: false
-  PVP Arena: true
-  Heaven Wings: false
-  Chaos Zone: false
-  Village Core: true
-  Greeter: true
-  Force Field: false
-  Ender Binding: false
-  Angelic Aura: false
+  Withering Seal: Disabled
+  Explosion Controller: Enabled
+  Spirit Grave: Disabled
+  PVP Arena: Enabled
+  Heaven Wings: Disabled
+  Chaos Zone: Disabled
+  Village Core: Enabled
+  Greeter: Enabled
+  Force Field: Disabled
+  Ender Binding: Disabled
+  Angelic Aura: Disabled
 Allowed Blocks For Interactions Regardless Of Trust:
 - minecraft:oak_button
 - minecraft:ender_chest
