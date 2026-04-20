@@ -145,6 +145,23 @@ def convert_command_storage():
         "exp_loss": "Players Lose Exp Level When Dying",
     }
 
+    # mapping for warping_wonders settings
+    WW_VALUE_MAP = {
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "portal_horn": "Portal Horn Settings",
+        "breaking_chance": "Chance Of Item Breaking",
+        "mob_teleport": "Teleport Pets And Leashed Mobs Alongside Player",
+        "active": "Active",
+        "exp_cost": "Exp Level Cost",
+        "clock": "Clock Settings",
+        "compass": "Compass Settings",
+        "recovery_compass": "Recovery Compass Settings",
+        "waypoint_hub": "Waypoint Hub Settings",
+        "min_distance": "Min Distance Between Waypoint Hubs (in Blocks)",
+        "player_limit": "Max Waypoint Hubs A Player Can Have Simultaneously",
+    }
+
     def format_percent(value):
         """
         Convert numeric 0.x or string "0.x" to "xx%". Leave other values untouched.
@@ -156,7 +173,6 @@ def convert_command_storage():
                     return f"{int(round(v * 100))}%"
                 return value
             if isinstance(value, str):
-                # reject empty strings
                 if value.strip() == "":
                     return value
                 v = float(value)
@@ -239,6 +255,10 @@ def convert_command_storage():
         # If this is keepinv (or starts with it), apply keepinv mappings & percent conversion
         if key_str == "keepinv" or key_str.startswith("keepinv"):
             cleaned = apply_map_for_maps(cleaned, KI_VALUE_MAP, convert_percent=True)
+
+        # If this is warping_wonders (or starts with it), apply warping_wonders mappings & percent conversion
+        if key_str == "warping_wonders" or key_str.startswith("warping_wonders"):
+            cleaned = apply_map_for_maps(cleaned, WW_VALUE_MAP, convert_percent=True)
 
         safe_key = sanitize_filename(key_str)
         output_path = os.path.join(SETTINGS_DIR, f"{safe_key}.yml")
