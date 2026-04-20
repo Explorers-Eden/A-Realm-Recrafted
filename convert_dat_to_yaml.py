@@ -69,6 +69,16 @@ def write_yaml(path, data):
         yaml.dump(data, f, sort_keys=False, allow_unicode=True)
 
 
+def map_booleans(obj):
+    if isinstance(obj, dict):
+        return {k: map_booleans(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [map_booleans(v) for v in obj]
+    if isinstance(obj, bool):
+        return "Enabled" if obj else "Disabled"
+    return obj
+
+
 # -------------------------
 # CLEANER
 # -------------------------
@@ -138,6 +148,8 @@ def convert_command_storage():
         if not cleaned:
             continue
 
+        cleaned = map_booleans(cleaned)
+
         name = sanitize_filename(key)
         write_yaml(os.path.join(SETTINGS_DIR, f"{name}.yml"), cleaned)
 
@@ -164,8 +176,6 @@ def convert_getoffmylawn():
     }
 
     RENAME = {
-        "false": "Disabled",
-        "true": "Enabled",
         "maxClaimsPerPlayer": "Max Claims Per Player",
         "enablePvPinClaims": "Enable PVP In Claims",
         "allowDamagingUnnamedHostileMobs": "Allow Damaging Unnamed Hostile Mobs",
@@ -226,6 +236,8 @@ def convert_getoffmylawn():
 
     if radius_group:
         result["Claim Anchor Radius"] = radius_group
+
+    result = map_booleans(result)
 
     write_yaml(os.path.join(SETTINGS_DIR, "getoffmylawn.yml"), result)
     print("✔ settings/getoffmylawn.yml")
