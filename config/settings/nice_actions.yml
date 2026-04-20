@@ -8,19 +8,16 @@ spawn_z: 185
 events:
   fishing:
     type: fishing
-    icon: fishing_rod
     chance: 0.10000000149011612
     loot_table: eden:gameplay/events/fishing
     max_amount: 48
   consuming:
     type: consuming
-    icon: bread
     chance: 0.05999999865889549
     loot_table: eden:gameplay/events/consuming
     max_amount: 96
   breeding:
     type: breeding
-    icon: wheat
     chance: 0.07999999821186066
     loot_table: eden:gameplay/events/breeding
     max_amount: 24
@@ -35,13 +32,11 @@ events:
     wednesday: enabled
   killing:
     type: killing
-    icon: iron_sword
     chance: 0.09000000357627869
     loot_table: eden:gameplay/events/killing
     max_amount: 96
   brewing:
     type: brewing
-    icon: potion
     chance: 0.07000000029802322
     loot_table: eden:gameplay/events/brewing
     max_amount: 48

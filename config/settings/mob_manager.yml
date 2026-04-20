@@ -1,6 +1,5 @@
 donkey:
   type: donkey
-  bodyicon: donkey_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -19,7 +18,6 @@ donkey:
   scale_max: 110
 creeper:
   type: creeper
-  bodyicon: creeper_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -38,7 +36,6 @@ creeper:
 mob_equipment:
   mainhand:
     dropchance: 0.0
-    bodyicon: diamond_sword
     enchantment: 0.4
     slot: mainhand
     capslot: Mainhand
@@ -48,7 +45,6 @@ mob_equipment:
     equiploottable: mob_manager:entity/equipment/mainhand
   offhand:
     dropchance: 0.0
-    bodyicon: shield
     enchantment: 0.4
     slot: offhand
     capslot: Offhand
@@ -58,7 +54,6 @@ mob_equipment:
     equiploottable: mob_manager:entity/equipment/offhand
   head:
     dropchance: 0.0
-    bodyicon: diamond_helmet
     capslot: Head
     rngdmg: enabled
     enchantment: 0.4
@@ -78,7 +73,6 @@ mob_equipment:
     leathercolor: enabled
   feet:
     dropchance: 0.0
-    bodyicon: diamond_boots
     capslot: Feet
     rngdmg: enabled
     enchantment: 0.4
@@ -91,7 +85,6 @@ mob_equipment:
     equiploottable: mob_manager:entity/equipment/feet
   legs:
     dropchance: 0.0
-    bodyicon: diamond_leggings
     capslot: Legs
     rngdmg: enabled
     enchantment: 0.4
@@ -104,7 +97,6 @@ mob_equipment:
     equiploottable: mob_manager:entity/equipment/legs
   chest:
     dropchance: 0.0
-    bodyicon: diamond_chestplate
     capslot: Chest
     rngdmg: enabled
     enchantment: 0.4
@@ -117,7 +109,6 @@ mob_equipment:
     equiploottable: mob_manager:entity/equipment/chest
 wolf:
   type: wolf
-  bodyicon: wolf_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -137,7 +128,6 @@ wolf:
   scale_max: 110
 stray:
   type: stray
-  bodyicon: stray_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -155,7 +145,6 @@ stray:
   attck_dmg: 100
 slime:
   type: slime
-  bodyicon: slime_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -173,7 +162,6 @@ slime:
   attck_dmg: 100
 enderman:
   type: enderman
-  bodyicon: enderman_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -193,7 +181,6 @@ enderman:
   scale_max: 110
 zombie_horse:
   type: zombie_horse
-  bodyicon: zombie_horse_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -213,7 +200,6 @@ zombie_horse:
   scale_max: 110
 armadillo:
   type: armadillo
-  bodyicon: armadillo_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -232,7 +218,6 @@ armadillo:
   scale_max: 110
 tropical_fish:
   type: tropical_fish
-  bodyicon: tropical_fish_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -251,7 +236,6 @@ tropical_fish:
   scale_max: 110
 cat:
   type: cat
-  bodyicon: cat_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -270,7 +254,6 @@ cat:
   scale_max: 110
 squid:
   type: squid
-  bodyicon: squid_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -289,7 +272,6 @@ squid:
   scale_max: 110
 wither:
   type: wither
-  bodyicon: wither_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -307,7 +289,6 @@ wither:
   attck_dmg: 100
 parched:
   type: parched
-  bodyicon: parched_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -325,7 +306,6 @@ parched:
   attck_dmg: 100
 vex:
   type: vex
-  bodyicon: vex_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -343,7 +323,6 @@ vex:
   attck_dmg: 100
 pillager:
   type: pillager
-  bodyicon: pillager_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -361,7 +340,6 @@ pillager:
   attck_dmg: 100
 illusioner:
   type: illusioner
-  bodyicon: illusioner_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -379,7 +357,6 @@ illusioner:
   attck_dmg: 100
 sheep:
   type: sheep
-  bodyicon: sheep_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -398,7 +375,6 @@ sheep:
   scale_max: 110
 vindicator:
   type: vindicator
-  bodyicon: vindicator_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -432,7 +408,6 @@ villager_settings:
   talking: actionbar
 trader_llama:
   type: trader_llama
-  bodyicon: trader_llama_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -452,7 +427,6 @@ trader_llama:
   scale_max: 110
 fox:
   type: fox
-  bodyicon: fox_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -472,7 +446,6 @@ fox:
   scale_max: 110
 all_neutral:
   type: all_neutral
-  bodyicon: ender_pearl
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -492,7 +465,6 @@ all_neutral:
   scale_max: 110
 rabbit:
   type: rabbit
-  bodyicon: rabbit_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -511,7 +483,6 @@ rabbit:
   scale_max: 110
 pufferfish:
   type: pufferfish
-  bodyicon: pufferfish_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -530,7 +501,6 @@ pufferfish:
   scale_max: 110
 frog:
   type: frog
-  bodyicon: frog_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -549,7 +519,6 @@ frog:
   scale_max: 110
 camel_husk:
   type: camel_husk
-  bodyicon: camel_husk_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -569,7 +538,6 @@ camel_husk:
   scale_max: 110
 copper_golem:
   type: copper_golem
-  bodyicon: copper_golem_spawn_egg
   scale_min: 80
   move_speed: 100
   allow_mob: enabled
@@ -588,7 +556,6 @@ copper_golem:
   scale_max: 100
 witch:
   type: witch
-  bodyicon: witch_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -606,7 +573,6 @@ witch:
   attck_dmg: 100
 cod:
   type: cod
-  bodyicon: cod_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -625,7 +591,6 @@ cod:
   scale_max: 110
 horse:
   type: horse
-  bodyicon: horse_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -644,7 +609,6 @@ horse:
   scale_max: 110
 blaze:
   type: blaze
-  bodyicon: blaze_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -662,7 +626,6 @@ blaze:
   attck_dmg: 100
 zoglin:
   type: zoglin
-  bodyicon: zoglin_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -680,7 +643,6 @@ zoglin:
   attck_dmg: 100
 polar_bear:
   type: polar_bear
-  bodyicon: polar_bear_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -700,7 +662,6 @@ polar_bear:
   scale_max: 110
 husk:
   type: husk
-  bodyicon: husk_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -718,7 +679,6 @@ husk:
   attck_dmg: 100
 wandering_trader:
   type: wandering_trader
-  bodyicon: wandering_trader_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -737,7 +697,6 @@ wandering_trader:
   scale_max: 110
 salmon:
   type: salmon
-  bodyicon: salmon_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -756,7 +715,6 @@ salmon:
   scale_max: 110
 panda:
   type: panda
-  bodyicon: panda_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -776,7 +734,6 @@ panda:
   scale_max: 110
 hoglin:
   type: hoglin
-  bodyicon: hoglin_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -813,7 +770,6 @@ misc:
   rabbitcarrot: disabled
 piglin_brute:
   type: piglin_brute
-  bodyicon: piglin_brute_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -831,7 +787,6 @@ piglin_brute:
   attck_dmg: 100
 drowned:
   type: drowned
-  bodyicon: drowned_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -851,7 +806,6 @@ drowned:
   scale_max: 110
 piglin:
   type: piglin
-  bodyicon: piglin_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -871,7 +825,6 @@ piglin:
   scale_max: 110
 endermite:
   type: endermite
-  bodyicon: endermite_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -889,7 +842,6 @@ endermite:
   attck_dmg: 100
 bogged:
   type: bogged
-  bodyicon: bogged_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -920,7 +872,6 @@ wandering_trader_settings:
   miniblockpayamount: 2
 skeleton_horse:
   type: skeleton_horse
-  bodyicon: skeleton_horse_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -939,7 +890,6 @@ skeleton_horse:
   scale_max: 110
 zombified_piglin:
   type: zombified_piglin
-  bodyicon: zombified_piglin_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -959,7 +909,6 @@ zombified_piglin:
   scale_max: 110
 zombie_villager:
   type: zombie_villager
-  bodyicon: zombie_villager_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -995,7 +944,6 @@ mob_drops:
   husksand: 0.25
 goat:
   type: goat
-  bodyicon: goat_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1015,7 +963,6 @@ goat:
   scale_max: 110
 ocelot:
   type: ocelot
-  bodyicon: ocelot_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1035,7 +982,6 @@ ocelot:
 rarity_mobs:
   rare:
     type: rare
-    bodyicon: lime_bundle
     particles: enabled
     loottable: mob_manager:entity/rarity_mob/filled_bundle
     customname: enabled
@@ -1049,7 +995,6 @@ rarity_mobs:
     validmobs: mob_manager:valid_for_rarity
   legendary:
     type: legendary
-    bodyicon: yellow_bundle
     particles: enabled
     loottable: mob_manager:entity/rarity_mob/enchanted_book
     customname: enabled
@@ -1063,7 +1008,6 @@ rarity_mobs:
     validmobs: mob_manager:valid_for_rarity
   mythic:
     type: mythic
-    bodyicon: purple_bundle
     particles: enabled
     loottable: mob_manager:entity/rarity_mob/enchanted_equipment
     customname: enabled
@@ -1077,7 +1021,6 @@ rarity_mobs:
     validmobs: mob_manager:valid_for_rarity
   common:
     type: common
-    bodyicon: white_bundle
     particles: enabled
     loottable: mob_manager:entity/rarity_mob/valuables
     customname: enabled
@@ -1091,7 +1034,6 @@ rarity_mobs:
     validmobs: mob_manager:valid_for_rarity
 warden:
   type: warden
-  bodyicon: warden_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1109,7 +1051,6 @@ warden:
   attck_dmg: 100
 all_passive:
   type: all_passive
-  bodyicon: feather
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1128,7 +1069,6 @@ all_passive:
   scale_max: 110
 cow:
   type: cow
-  bodyicon: cow_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1147,7 +1087,6 @@ cow:
   scale_max: 110
 mule:
   type: mule
-  bodyicon: mule_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1166,7 +1105,6 @@ mule:
   scale_max: 110
 camel:
   type: camel
-  bodyicon: camel_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1185,7 +1123,6 @@ camel:
   scale_max: 110
 ghast:
   type: ghast
-  bodyicon: ghast_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1203,7 +1140,6 @@ ghast:
   attck_dmg: 100
 chicken:
   type: chicken
-  bodyicon: chicken_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1222,7 +1158,6 @@ chicken:
   scale_max: 110
 zombie_nautilus:
   type: zombie_nautilus
-  bodyicon: zombie_nautilus_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1242,7 +1177,6 @@ zombie_nautilus:
   scale_max: 110
 iron_golem:
   type: iron_golem
-  bodyicon: iron_golem_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1262,7 +1196,6 @@ iron_golem:
   scale_max: 110
 guardian:
   type: guardian
-  bodyicon: guardian_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1280,7 +1213,6 @@ guardian:
   attck_dmg: 100
 happy_ghast:
   type: happy_ghast
-  bodyicon: happy_ghast_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1299,7 +1231,6 @@ happy_ghast:
   scale_max: 110
 evoker:
   type: evoker
-  bodyicon: evoker_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1317,7 +1248,6 @@ evoker:
   attck_dmg: 100
 parrot:
   type: parrot
-  bodyicon: parrot_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1336,7 +1266,6 @@ parrot:
   scale_max: 110
 spider:
   type: spider
-  bodyicon: spider_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1356,7 +1285,6 @@ spider:
   scale_max: 110
 axolotl:
   type: axolotl
-  bodyicon: axolotl_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1375,7 +1303,6 @@ axolotl:
   scale_max: 110
 breeze:
   type: breeze
-  bodyicon: breeze_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1393,7 +1320,6 @@ breeze:
   attck_dmg: 100
 creaking:
   type: creaking
-  bodyicon: creaking_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1411,7 +1337,6 @@ creaking:
   attck_dmg: 100
 turtle:
   type: turtle
-  bodyicon: turtle_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1432,7 +1357,6 @@ gamerules:
   cramming: 24
 pig:
   type: pig
-  bodyicon: pig_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1451,7 +1375,6 @@ pig:
   scale_max: 110
 sniffer:
   type: sniffer
-  bodyicon: sniffer_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1470,7 +1393,6 @@ sniffer:
   scale_max: 110
 llama:
   type: llama
-  bodyicon: llama_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1490,7 +1412,6 @@ llama:
   scale_max: 110
 skeleton:
   type: skeleton
-  bodyicon: skeleton_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1508,7 +1429,6 @@ skeleton:
   attck_dmg: 100
 nautilus:
   type: nautilus
-  bodyicon: nautilus_spawn_egg
   scale_min: 80
   move_speed: 100
   allow_mob: enabled
@@ -1527,7 +1447,6 @@ nautilus:
   scale_max: 100
 bee:
   type: bee
-  bodyicon: bee_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1547,7 +1466,6 @@ bee:
   scale_max: 110
 allay:
   type: allay
-  bodyicon: allay_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1566,7 +1484,6 @@ allay:
   scale_max: 110
 phantom:
   type: phantom
-  bodyicon: phantom_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1584,7 +1501,6 @@ phantom:
   attck_dmg: 100
 cave_spider:
   type: cave_spider
-  bodyicon: cave_spider_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1604,7 +1520,6 @@ cave_spider:
   scale_max: 110
 villager:
   type: villager
-  bodyicon: villager_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1623,7 +1538,6 @@ villager:
   scale_max: 110
 bat:
   type: bat
-  bodyicon: bat_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1642,7 +1556,6 @@ bat:
   scale_max: 110
 shulker:
   type: shulker
-  bodyicon: shulker_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1660,7 +1573,6 @@ shulker:
   attck_dmg: 100
 zombie:
   type: zombie
-  bodyicon: zombie_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1678,7 +1590,6 @@ zombie:
   attck_dmg: 100
 mooshroom:
   type: mooshroom
-  bodyicon: mooshroom_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1697,7 +1608,6 @@ mooshroom:
   scale_max: 110
 silverfish:
   type: silverfish
-  bodyicon: silverfish_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1715,7 +1625,6 @@ silverfish:
   attck_dmg: 100
 glow_squid:
   type: glow_squid
-  bodyicon: glow_squid_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1734,7 +1643,6 @@ glow_squid:
   scale_max: 110
 snow_golem:
   type: snow_golem
-  bodyicon: snow_golem_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1753,7 +1661,6 @@ snow_golem:
   scale_max: 110
 all_hostile:
   type: all_hostile
-  bodyicon: iron_sword
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1771,7 +1678,6 @@ all_hostile:
   attck_dmg: 100
 wither_skeleton:
   type: wither_skeleton
-  bodyicon: wither_skeleton_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1789,7 +1695,6 @@ wither_skeleton:
   attck_dmg: 100
 magma_cube:
   type: magma_cube
-  bodyicon: magma_cube_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1807,7 +1712,6 @@ magma_cube:
   attck_dmg: 100
 ravager:
   type: ravager
-  bodyicon: ravager_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1825,7 +1729,6 @@ ravager:
   attck_dmg: 100
 dolphin:
   type: dolphin
-  bodyicon: dolphin_spawn_egg
   scale_min: 90
   move_speed: 100
   drown: enabled
@@ -1845,7 +1748,6 @@ dolphin:
   scale_max: 110
 strider:
   type: strider
-  bodyicon: strider_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1864,7 +1766,6 @@ strider:
   scale_max: 110
 tadpole:
   type: tadpole
-  bodyicon: tadpole_spawn_egg
   scale_min: 90
   move_speed: 100
   allow_mob: enabled
@@ -1883,7 +1784,6 @@ tadpole:
   scale_max: 110
 elder_guardian:
   type: elder_guardian
-  bodyicon: elder_guardian_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
@@ -1901,7 +1801,6 @@ elder_guardian:
   attck_dmg: 100
 ender_dragon:
   type: ender_dragon
-  bodyicon: ender_dragon_spawn_egg
   scale_min: 90
   allow_mob: enabled
   move_speed: 100
