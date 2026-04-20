@@ -1,11 +1,5 @@
-seeinvis_initial: 0
 starter_equip: once
 prefix: enabled
-prefix_initial: 0
 pvp: disabled
-pvp_initial: 1
-npc_spawning_initial: 0
 seeinvis: enabled
 npc_spawning: enabled
-starter_equip_initial: 1
-command_template: function fabled_roots:dialog/command_template/config {starter_equip:$(starter_equip),npc_spawning:$(npc_spawning),pvp:$(pvp),prefix:$(prefix),seeinvis:$(seeinvis)}
