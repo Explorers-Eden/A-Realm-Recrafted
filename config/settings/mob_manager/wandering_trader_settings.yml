@@ -2,19 +2,11 @@ treasurebook: Enabled
 spawnmsg: actionbar
 customname: Enabled
 treasurebookpayitem: minecraft:emerald
-spawnglow_initial: 'false'
 spawnglow: Enabled
-miniblock_initial: 'false'
-spawnmsg_actionbar_initial: 'true'
 treasurebookpayamount: '12'
 miniblock: Enabled
-customname_initial: 'false'
-treasurebook_initial: 'false'
 miniblockpayitem: minecraft:emerald
-plushie_initial: 'false'
-spawnmsg_chat_initial: 'false'
 plushie: Enabled
 plushiepayamount: '6'
 plushiepayitem: minecraft:emerald
 miniblockpayamount: '2'
-command_template: function mob_manager:dialog/command_template/wandering_trader {treasurebookpayamount:$(treasurebookpayamount),treasurebookpayitem:'$(treasurebookpayitem)',treasurebook:$(treasurebook),plushiepayamount:$(plushiepayamount),plushiepayitem:'$(plushiepayitem)',plushie:$(plushie),miniblockpayamount:$(miniblockpayamount),miniblockpayitem:'$(miniblockpayitem)',miniblock:$(miniblock),customname:$(customname),spawnmsg:$(spawnmsg),spawnglow:$(spawnglow)}

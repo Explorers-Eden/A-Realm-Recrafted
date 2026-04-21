@@ -1,130 +1,73 @@
 mainhand:
   dropchance: '0'
-  bodyicon: diamond_sword
-  rngdmg_initial: 'false'
-  enchantment_initial: '40'
   enchantment: 40%
   slot: mainhand
-  equipchance_initial: '10'
   rngdmg: Enabled
   capslot: Mainhand
   equipchance: 10%
-  dropchance_initial: '0'
   validmobs: mob_manager:valid_for_equipment
-  command_template: function mob_manager:dialog/command_template/mob_equipment/slot
-    {slot:mainhand,equipchance:$(equipchance),validmobs:'$(validmobs)',equiploottable:'$(equiploottable)',rngdmg:$(rngdmg),enchantment:$(enchantment),dropchance:$(dropchance)}
   equiploottable: mob_manager:entity/equipment/mainhand
 offhand:
   dropchance: '0'
-  bodyicon: shield
-  rngdmg_initial: 'false'
-  enchantment_initial: '40'
   enchantment: 40%
   slot: offhand
-  equipchance_initial: '5'
   rngdmg: Enabled
   capslot: Offhand
   equipchance: 5%
-  dropchance_initial: '0'
   validmobs: mob_manager:valid_for_equipment
-  command_template: function mob_manager:dialog/command_template/mob_equipment/slot
-    {slot:offhand,equipchance:$(equipchance),validmobs:'$(validmobs)',equiploottable:'$(equiploottable)',rngdmg:$(rngdmg),enchantment:$(enchantment),dropchance:$(dropchance)}
   equiploottable: mob_manager:entity/equipment/offhand
 head:
   dropchance: '0'
-  bodyicon: diamond_helmet
-  rngdmg_initial: 'false'
   trim_material: diamond
   trim_pattern: raiser
-  enchantment_initial: '40'
   enchantment: 40%
   slot: head
-  equipchance_initial: '15'
   rngdmg: Enabled
   capslot: Head
   equipchance: 15%
-  dropchance_initial: '0'
   leathercolor: '1630197'
   validmobs: mob_manager:valid_for_equipment
-  command_template: function mob_manager:dialog/command_template/mob_equipment/slot
-    {slot:head,equipchance:$(equipchance),validmobs:'$(validmobs)',equiploottable:'$(equiploottable)',rngdmg:$(rngdmg),enchantment:$(enchantment),dropchance:$(dropchance)}
   equiploottable: mob_manager:entity/equipment/head
 misc:
-  bannershield_initial: 'false'
-  vex_equip_stick_initial: 'false'
-  vex_equip_iron_sword_initial: 'false'
-  playerheads_initial: '5'
   mobheads: 15%
   trim: Enabled
-  vex_equip_golden_sword_initial: 'false'
-  leathercolor_initial: 'false'
   bannershield: Enabled
-  vex_equip_diamond_sword_initial: 'false'
-  trim_initial: 'false'
   vex_equip: air
-  vex_equip_netherite_sword_initial: 'false'
-  mobheads_initial: '15'
   leathercolor: Enabled
-  vex_equip_wooden_sword_initial: 'false'
-  vex_equip_stone_sword_initial: 'false'
-  vex_equip_copper_sword_initial: 'false'
   playerheads: 5%
-  command_template: function mob_manager:dialog/command_template/mob_equipment/misc
-    {vex_equip:$(vex_equip),leathercolor:$(leathercolor),trim:$(trim),bannershield:$(bannershield),playerheads:$(playerheads),mobheads:$(mobheads)}
 feet:
   dropchance: '0'
-  bodyicon: diamond_boots
-  rngdmg_initial: 'false'
   trim_material: copper
   trim_pattern: bolt
-  enchantment_initial: '40'
   enchantment: 40%
   slot: feet
-  equipchance_initial: '25'
   rngdmg: Enabled
   capslot: Feet
   equipchance: 25%
-  dropchance_initial: '0'
   leathercolor: '16641964'
   validmobs: mob_manager:valid_for_equipment
-  command_template: function mob_manager:dialog/command_template/mob_equipment/slot
-    {slot:feet,equipchance:$(equipchance),validmobs:'$(validmobs)',equiploottable:'$(equiploottable)',rngdmg:$(rngdmg),enchantment:$(enchantment),dropchance:$(dropchance)}
   equiploottable: mob_manager:entity/equipment/feet
 legs:
   dropchance: '0'
-  bodyicon: diamond_leggings
-  rngdmg_initial: 'false'
   trim_material: redstone
   trim_pattern: dune
-  enchantment_initial: '40'
   enchantment: 40%
   slot: legs
-  equipchance_initial: '25'
   rngdmg: Enabled
   capslot: Legs
   equipchance: 25%
-  dropchance_initial: '0'
   leathercolor: '5263538'
   validmobs: mob_manager:valid_for_equipment
-  command_template: function mob_manager:dialog/command_template/mob_equipment/slot
-    {slot:legs,equipchance:$(equipchance),validmobs:'$(validmobs)',equiploottable:'$(equiploottable)',rngdmg:$(rngdmg),enchantment:$(enchantment),dropchance:$(dropchance)}
   equiploottable: mob_manager:entity/equipment/legs
 chest:
   dropchance: '0'
-  bodyicon: diamond_chestplate
-  rngdmg_initial: 'false'
   trim_material: emerald
   trim_pattern: flow
-  enchantment_initial: '40'
   enchantment: 40%
   slot: chest
-  equipchance_initial: '25'
   rngdmg: Enabled
   capslot: Chest
   equipchance: 25%
-  dropchance_initial: '0'
   leathercolor: '8483931'
   validmobs: mob_manager:valid_for_equipment
-  command_template: function mob_manager:dialog/command_template/mob_equipment/slot
-    {slot:chest,equipchance:$(equipchance),validmobs:'$(validmobs)',equiploottable:'$(equiploottable)',rngdmg:$(rngdmg),enchantment:$(enchantment),dropchance:$(dropchance)}
   equiploottable: mob_manager:entity/equipment/chest

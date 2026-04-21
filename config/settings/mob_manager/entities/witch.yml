@@ -1,19 +1,12 @@
 attck_dmg: '100'
-bodyicon: witch_spawn_egg
 scale_min: '90'
 drown: Enabled
-drown_initial: '0'
 move_speed: '100'
-mobhead_initial: '25'
-pickup_initial: '0'
-burn_initial: '0'
-silent_initial: '1'
 locator_range: '16'
 pickup: Enabled
 locator_color: 8b0000
 allow_mob: Enabled
 health: '100'
-allow_mob_initial: '0'
 burn: Enabled
 safe_fall: '100'
 follow_range: '100'
@@ -21,4 +14,3 @@ silent: Disabled
 mobhead: 25%
 scale_max: '110'
 type: witch
-command_template: ',mobhead:$(mobhead),allow_mob:$(allow_mob),locator_color:''$(locator_color)'',locator_range:$(locator_range),pickup:$(pickup),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),silent:$(silent),drown:$(drown)}'
