@@ -1,35 +1,25 @@
-makeshiftRadius: 10
-reinforcedRadius: 25
-glisteningRadius: 50
-crystalRadius: 75
-emeradicRadius: 125
-witheredRadius: 200
-maxClaimsPerPlayer: -1
-enablePvPinClaims: true
-allowDamagingUnnamedHostileMobs: true
-allowDamagingNamedHostileMobs: true
-claimProtectsFullWorldHeight: false
-claimAreaHeightMultiplier: 1.0
-makeClaimAreaChunkBound: false
-allowClaimOverlappingIfSameOwner: true
-allowFakePlayersToModify: false
-protectAgainstHostileExplosionsActivatedByTrustedPlayers: true
-relaxedEntitySourceProtectionCheck: false
-dimensionBlacklist: []
-regionBlacklist: {}
-enabledAugments:
-  goml:withering_seal: false
-  goml:explosion_controller: true
-  goml:lake_spirit_grace: false
-  goml:pvp_arena: true
-  goml:heaven_wings: false
-  goml:chaos_zone: false
-  goml:village_core: true
-  goml:greeter: true
-  goml:force_field: false
-  goml:ender_binding: false
-  goml:angelic_aura: false
-allowedBlockInteraction:
+Max Claims Per Player: '-1'
+Enable PVP In Claims: Enabled
+Allow Damaging Unnamed Hostile Mobs: Enabled
+Allow Damaging Named Hostile Mobs: Enabled
+Claim Protects Full World Height: Disabled
+Claim Area Height Multiplier: '1'
+Claim Area Is Bound To Chunks: Disabled
+Allow Claim Overlapping If Same Owner: Enabled
+Protect Against Hostile Explosions Triggered By Trusted Players: Enabled
+Enabled Claim Augments:
+  Withering Seal: Disabled
+  Explosion Controller: Enabled
+  Spirit Grave: Disabled
+  PVP Arena: Enabled
+  Heaven Wings: Disabled
+  Chaos Zone: Disabled
+  Village Core: Enabled
+  Greeter: Enabled
+  Force Field: Disabled
+  Ender Binding: Disabled
+  Angelic Aura: Disabled
+Allowed Blocks For Interactions Regardless Of Trust:
 - minecraft:oak_button
 - minecraft:ender_chest
 - minecraft:vault
@@ -56,13 +46,13 @@ allowedBlockInteraction:
 - minecraft:purple_bed
 - minecraft:magenta_bed
 - minecraft:pink_bed
-allowedEntityInteraction:
+Allowed Entities For Interactions Regardless Of Trust:
 - minecraft:interaction
 - minecraft:villager
-messagePrefix: <yellow>▊
-placeholderNoClaimInfo: <gray>Wilderness
-placeholderNoClaimOwners: <gray>Nobody
-placeholderNoClaimTrusted: <gray>Nobody
-placeholderClaimCanBuildInfo: ${owners} <gray>(<green>${anchor}</green>)
-placeholderClaimCantBuildInfo: ${owners} <gray>(<red>${anchor}</red>)
-claimColorSource: location
+Claim Anchor Radius:
+  Makeshift: '10'
+  Reinforced: '25'
+  Glistening: '50'
+  Crystal: '75'
+  Emerdic: '125'
+  Withered: '200'
