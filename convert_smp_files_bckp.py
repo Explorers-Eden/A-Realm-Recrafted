@@ -141,39 +141,6 @@ def convert_gamerules():
     print(f"✔ gamerules.yml written ({len(gamerules_clean)} entries)")
 
 # -------------------------
-# MOB MANAGER SPLIT
-# -------------------------
-def handle_mob_manager(data):
-    base_dir = os.path.join(SETTINGS_DIR, "mob_manager")
-    entities_dir = os.path.join(base_dir, "entities")
-
-    IGNORE = {"all_neutral", "all_passive", "all_hostile", "gamerules"}
-
-    DIRECT_FILES = {
-        "rarity_mobs",
-        "mob_drops",
-        "wandering_trader_settings",
-        "misc",
-        "villager_settings",
-        "mob_equipment",
-    }
-
-    for key, value in data.items():
-        if key in IGNORE:
-            continue
-
-        value = map_booleans(value)
-
-        if key in DIRECT_FILES:
-            path = os.path.join(base_dir, f"{sanitize_filename(key)}.yml")
-        else:
-            path = os.path.join(entities_dir, f"{sanitize_filename(key)}.yml")
-
-        write_yaml(path, value)
-
-    print("✔ mob_manager split into files")
-
-# -------------------------
 # COMMAND STORAGE
 # -------------------------
 def convert_command_storage():
