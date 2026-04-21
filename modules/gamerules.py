@@ -7,7 +7,6 @@ def convert_gamerules(input_dir, output_dir):
     path = os.path.join(input_dir, "game_rules.dat")
 
     if not os.path.exists(path):
-        print("game_rules.dat not found")
         return
 
     try:
@@ -28,4 +27,3 @@ def convert_gamerules(input_dir, output_dir):
             result[k] = v
 
     write_yaml(os.path.join(output_dir, "gamerules.yml"), result)
-    print("✔ gamerules.yml")

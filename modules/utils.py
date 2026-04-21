@@ -1,9 +1,11 @@
 import re
 import yaml
 
-# -------------------------
-# FILE HELPERS
-# -------------------------
+GLOBAL_VALUE_MAP = {
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+}
+
 def sanitize_filename(name):
     return re.sub(r'[^a-zA-Z0-9_\-]', '_', str(name))
 
@@ -13,15 +15,6 @@ def write_yaml(path, data):
         yaml.dump(data, f, sort_keys=False, allow_unicode=True)
 
 
-# -------------------------
-# VALUE TRANSFORMS
-# -------------------------
-GLOBAL_VALUE_MAP = {
-    "enabled": "Enabled",
-    "disabled": "Disabled",
-}
-
-
 def format_percent(value):
     try:
         if isinstance(value, (int, float)):
@@ -29,6 +22,7 @@ def format_percent(value):
             if not v.is_integer():
                 return f"{int(round(v * 100))}%"
             return str(int(v))
+
         if isinstance(value, str):
             s = value.strip()
             if not s:
@@ -66,15 +60,11 @@ def map_booleans(obj):
     return obj
 
 
-# -------------------------
-# CLEANER
-# -------------------------
 def clean(obj):
     if isinstance(obj, dict):
         cleaned = {}
         for k, v in obj.items():
             k = str(k)
-
             if k.endswith("_initial"):
                 continue
             if k in ("command_template", "icon", "bodyicon"):
