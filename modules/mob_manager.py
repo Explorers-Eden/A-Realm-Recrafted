@@ -1,5 +1,5 @@
 import os
-from modules.utils import write_yaml, sanitize_filename, map_booleans, deep_format
+from modules.utils import write_yaml, sanitize_filename, map_booleans, deep_format, clean
 
 IGNORE = {"all_neutral", "all_passive", "all_hostile", "gamerules"}
 
@@ -24,9 +24,10 @@ def handle_mob_manager(data, settings_dir):
         if key in IGNORE:
             continue
 
-        from modules.utils import clean  # add import
-        
         value = clean(value)
+        if not value:
+            continue
+
         value = map_booleans(value)
         value = deep_format(value)
 

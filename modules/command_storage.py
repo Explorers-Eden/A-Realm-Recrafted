@@ -22,8 +22,20 @@ def convert_command_storage(input_dir, settings_dir):
 
     settings = data.get("data", {}).get("contents", {}).get("settings", {})
 
+    if not isinstance(settings, dict):
+        print("settings not found or invalid")
+        return
+
+    written = 0
+
     for key, value in settings.items():
         key = str(key)
+
+        if key == "nice_admin_tools":
+            continue
+
+        if key == "command_template" or key.endswith("_initial"):
+            continue
 
         if key == "mob_manager":
             handle_mob_manager(value, settings_dir)
@@ -33,21 +45,22 @@ def convert_command_storage(input_dir, settings_dir):
         if not cleaned:
             continue
 
-        if key.startswith("fabled_roots"):
+        if key == "fabled_roots" or key.startswith("fabled_roots"):
             cleaned = apply_mapping(cleaned, FR_VALUE_MAP)
 
-        elif key.startswith("keepinv"):
+        elif key == "keepinv" or key.startswith("keepinv"):
             cleaned = apply_mapping(cleaned, KI_VALUE_MAP)
 
-        elif key.startswith("warping_wonders"):
+        elif key == "warping_wonders" or key.startswith("warping_wonders"):
             cleaned = apply_mapping(cleaned, WW_VALUE_MAP)
 
-        elif key.startswith("nice_actions"):
+        elif key == "nice_actions" or key.startswith("nice_actions"):
             cleaned = remap_nice_actions(cleaned)
 
         cleaned = deep_format(cleaned)
 
         out = os.path.join(settings_dir, f"{sanitize_filename(key)}.yml")
         write_yaml(out, cleaned)
+        written += 1
 
-    print("✔ command_storage processed")
+    print(f"✔ settings/*.yml written ({written} files)")
