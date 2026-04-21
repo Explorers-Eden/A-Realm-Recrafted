@@ -1,51 +1,60 @@
-Time Format For HUD: '24'
-Min Y Height For RTP: '90'
-RTP Radius (in Blocks): '3000'
-Events:
-  Fishing:
-    Chance For This Type Of Event: 10%
-    Loot Table: eden:gameplay/events/fishing
-    Max Amount Of Actions Needed For Completion: '48'
-  Consuming:
-    Chance For This Type Of Event: 6%
-    Loot Table: eden:gameplay/events/consuming
-    Max Amount Of Actions Needed For Completion: '96'
-  Breeding:
-    Chance For This Type Of Event: 8%
-    Loot Table: eden:gameplay/events/breeding
-    Max Amount Of Actions Needed For Completion: '24'
-  Active Weekdays:
-    Thursday: Disabled
-    Monday: Enabled
-    Sunday: Disabled
-    Friday: Enabled
-    Saturday: Disabled
-    Tuesday: Disabled
-    Wednesday: Enabled
-  Killing:
-    Chance For This Type Of Event: 9%
-    Loot Table: eden:gameplay/events/killing
-    Max Amount Of Actions Needed For Completion: '96'
-  Brewing:
-    Chance For This Type Of Event: 7%
-    Loot Table: eden:gameplay/events/brewing
-    Max Amount Of Actions Needed For Completion: '48'
-RTP Type: player
-Max Y Height For RTP: '120'
-Action Costs:
-  Horse Info: '0'
-  Death/Grave Coordinates: '0'
-  Transfer Enchantments: '30'
-  Broadcast Coordinates: '0'
-  RTP: '5'
-  Sit: '0'
-  TP Home: '0'
-  Set Home: '0'
-  TP To Spawn: '0'
-  Equip Item As Hat: '0'
-  Share Stats: '3'
-  Villager Info: '0'
-Action Cooldowns (Seconds):
-  TP To Spawn: '60'
-  RTP: '300'
-  TP Home: '20'
+time_format: '24'
+spawn_y: '72'
+rtp_height_min: '90'
+rtp_radius: '3000'
+horse_info_cost: '0'
+death_coords_cost: '0'
+spawn_z: '185'
+events:
+  fishing:
+    type: fishing
+    chance: 10%
+    loot_table: eden:gameplay/events/fishing
+    max_amount: '48'
+  consuming:
+    type: consuming
+    chance: 6%
+    loot_table: eden:gameplay/events/consuming
+    max_amount: '96'
+  breeding:
+    type: breeding
+    chance: 8%
+    loot_table: eden:gameplay/events/breeding
+    max_amount: '24'
+  misc:
+    thursday: Disabled
+    monday: Enabled
+    event_msg: title
+    sunday: Disabled
+    friday: Enabled
+    saturday: Disabled
+    tuesday: Disabled
+    wednesday: Enabled
+  killing:
+    type: killing
+    chance: 9%
+    loot_table: eden:gameplay/events/killing
+    max_amount: '96'
+  brewing:
+    type: brewing
+    chance: 7%
+    loot_table: eden:gameplay/events/brewing
+    max_amount: '48'
+tp_spawn_cooldown: '60'
+transfer_enchantments_cost: '30'
+rtp_type: player
+send_coords_cost: '0'
+rtp_cooldown: '300'
+rtp_cost: '5'
+spawn_dimension: minecraft:overworld
+sit_cost: '0'
+tp_home_cost: '0'
+spawn_x: '26'
+set_home_cost: '0'
+tp_spawn_cost: '0'
+equip_hat_cost: '0'
+share_stats_cost: '3'
+rtp_height_max: '120'
+tp_home_cooldown: '20'
+time_hud_style: '1'
+villager_info_cost: '0'
