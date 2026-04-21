@@ -21,12 +21,7 @@ Head:
   Entity Tag List Used: mob_manager:valid_for_equipment
   Loot Table Used For Custom Equipment Item: mob_manager:entity/equipment/head
 Misc:
-  Chance Of Entity Wearing A Random Mob Head: 15%
-  Equipment Can Be Trimmed: Enabled
-  Shields Have Random Banners: Enabled
-  Mainhand Item For Vex: air
   Leather Equipment Can Have Random Colors: Enabled
-  Chance For Entity Wearing A Random Mob Head: 5%
 Feet:
   Chance Of Item Being Dropped (Only Applies When Not Vanilla): '0'
   Chance Of Item Being Enchanted: 40%
