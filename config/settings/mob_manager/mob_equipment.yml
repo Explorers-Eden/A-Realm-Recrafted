@@ -14,8 +14,6 @@ Offhand:
   Loot Table Used For Custom Equipment Item: mob_manager:entity/equipment/offhand
 Head:
   Chance Of Item Being Dropped (Only Applies When Not Vanilla): '0'
-  trim_material: diamond
-  trim_pattern: raiser
   Chance Of Item Being Enchanted: 40%
   Apply Random Damage To Item: Enabled
   Chance Of Entity Being Equipped With Custom Item: 15%
@@ -31,8 +29,6 @@ Misc:
   Chance For Entity Wearing A Random Mob Head: 5%
 Feet:
   Chance Of Item Being Dropped (Only Applies When Not Vanilla): '0'
-  trim_material: copper
-  trim_pattern: bolt
   Chance Of Item Being Enchanted: 40%
   Apply Random Damage To Item: Enabled
   Chance Of Entity Being Equipped With Custom Item: 25%
@@ -41,8 +37,6 @@ Feet:
   Loot Table Used For Custom Equipment Item: mob_manager:entity/equipment/feet
 Legs:
   Chance Of Item Being Dropped (Only Applies When Not Vanilla): '0'
-  trim_material: redstone
-  trim_pattern: dune
   Chance Of Item Being Enchanted: 40%
   Apply Random Damage To Item: Enabled
   Chance Of Entity Being Equipped With Custom Item: 25%
@@ -51,8 +45,6 @@ Legs:
   Loot Table Used For Custom Equipment Item: mob_manager:entity/equipment/legs
 Chest:
   Chance Of Item Being Dropped (Only Applies When Not Vanilla): '0'
-  trim_material: emerald
-  trim_pattern: flow
   Chance Of Item Being Enchanted: 40%
   Apply Random Damage To Item: Enabled
   Chance Of Entity Being Equipped With Custom Item: 25%
