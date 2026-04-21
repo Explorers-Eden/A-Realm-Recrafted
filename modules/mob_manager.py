@@ -30,6 +30,8 @@ REMOVE_KEYS = {
     "first_name",
     "capslot",
     "slot",
+    "trim_material",
+    "trim_pattern",
 }
 
 KEY_MAP = {
