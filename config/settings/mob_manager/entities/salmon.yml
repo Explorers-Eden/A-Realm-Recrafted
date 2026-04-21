@@ -1,17 +1,17 @@
-type: salmon
-scale_min: '90'
-move_speed: '100'
-drown: Enabled
-allow_mob: Enabled
-breed: Enabled
-follow_range: '100'
-silent: Disabled
-tempt_range: '100'
-locator_color: 64e764
-pickup: Enabled
-locator_range: '8'
-health: '100'
-burn: Enabled
-safe_fall: '100'
-mobhead: 25%
-scale_max: '110'
+Type: salmon
+Min Entity Size (%): '90'
+Movement Speed (%): '100'
+Entity Can Drown: Enabled
+Entity Spawning: Enabled
+Entity Can Breed: Enabled
+Follow Range (%): '100'
+Entity Is Silent By Default: Disabled
+Tempt Range (%): '100'
+Locator Bar Color (Hex): 64e764
+Entity Can Pickup Loot: Enabled
+Locator Bar Range in Blocks: '8'
+Health (%): '100'
+Entity Can Burn: Enabled
+Safe Fall Distance (%): '100'
+Chance Of Entity Dropping Its Head: 25%
+Max Entity Size (%): '110'

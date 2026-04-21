@@ -1,12 +1,12 @@
-treasurebook: Enabled
-spawnmsg: actionbar
-customname: Enabled
-treasurebookpayitem: minecraft:emerald
-spawnglow: Enabled
-treasurebookpayamount: '12'
-miniblock: Enabled
-miniblockpayitem: minecraft:emerald
-plushie: Enabled
-plushiepayamount: '6'
-plushiepayitem: minecraft:emerald
-miniblockpayamount: '2'
+Enchanted Treasure Book As Trade: Enabled
+Player Message When A Wandering Trader Spawns: actionbar
+Entity Has Custom Name: Enabled
+Payment Item For Enchanted Treasure Books: minecraft:emerald
+Wandering Trader Glows When Spawning: Enabled
+Max Amount Of Payment Item For Enchanted Treasure Book: '12'
+Miniblocks As Trade: Enabled
+Payment Item For Miniblocks: minecraft:emerald
+Plushies As Trade: Enabled
+Max Amount Of Payment Item For Plushies: '6'
+Payment Item For Plushies: minecraft:emerald
+Max Amount Of Payment Item For Miniblocks: '2'

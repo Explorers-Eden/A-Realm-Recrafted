@@ -1,15 +1,15 @@
-pet: 1%
-villagecenter_healing: daytime
-customname: Enabled
-breeddiversity: Enabled
-villagename_rename: Enabled
-villagename: Enabled
-restock: Disabled
-validmobs: mob_manager:valid_for_village_healing
-villagename_msg: title
-village_heal_distance: '16'
-locator_range: '196'
-villager_follow: Disabled
-locator_color: 664c28
-gossip: Enabled
-talking: actionbar
+Chance Of Villager Having A Pet: 1%
+When Entities Near A Village Center Will Be Healed: daytime
+Entity Has Custom Name: Enabled
+Villagers Can Have Babies With Different Variants: Enabled
+Players Can Rename Villages: Enabled
+Village Names: Enabled
+Villagers Restock Their Goods: Disabled
+Entity Tag List Used: mob_manager:valid_for_village_healing
+How Village Names Will Be Displayed To Players: title
+Distance in Blocks Entities Near A Village Center Will Be Healed: '16'
+Locator Bar Range in Blocks: '196'
+Villagers Will Follow Players Holding Emeralds: Disabled
+Locator Bar Color (Hex): 664c28
+Villager Gossip: Enabled
+How Villagers Respond To Players: actionbar

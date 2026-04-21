@@ -1,52 +1,40 @@
-rare:
-  type: rare
-  loottable: mob_manager:entity/rarity_mob/filled_bundle
-  particles: Enabled
-  customname: Enabled
-  color: 58CD78
-  spawnchance: 3%
-  last_name: Skyforge
-  cap_type: Rare
-  health: '50'
-  first_name: Thorne
-  spawntime: '60'
-  validmobs: mob_manager:valid_for_rarity
-legendary:
-  type: legendary
-  loottable: mob_manager:entity/rarity_mob/enchanted_book
-  particles: Enabled
-  customname: Enabled
-  color: F8D40C
-  spawnchance: 2%
-  last_name: Villagercraft
-  cap_type: Legendary
-  health: '75'
-  first_name: Kieran
-  spawntime: '60'
-  validmobs: mob_manager:valid_for_rarity
-mythic:
-  type: mythic
-  loottable: mob_manager:entity/rarity_mob/enchanted_equipment
-  particles: Enabled
-  customname: Enabled
-  color: B277D7
-  spawnchance: 1%
-  last_name: Archerheart
-  cap_type: Mythic
-  health: '100'
-  first_name: Thaddeus
-  spawntime: '60'
-  validmobs: mob_manager:valid_for_rarity
-common:
-  type: common
-  loottable: mob_manager:entity/rarity_mob/valuables
-  particles: Enabled
-  customname: Enabled
-  color: E8E8E8
-  spawnchance: 5%
-  last_name: Wolfcraft
-  cap_type: Common
-  health: '30'
-  first_name: Eowyn
-  spawntime: '60'
-  validmobs: mob_manager:valid_for_rarity
+Rare:
+  Type: rare
+  Loot Table Used On Death: mob_manager:entity/rarity_mob/filled_bundle
+  Entity Particles: Enabled
+  Entity Has Custom Name: Enabled
+  Color: 58CD78
+  Chance Of Becoming A Rarity Mob Of This Type: 3%
+  Health (%): '50'
+  Time In Seconds Before Entity Can Become A Rarity Mob Of This Type: '60'
+  Entity Tag List Used: mob_manager:valid_for_rarity
+Legendary:
+  Type: legendary
+  Loot Table Used On Death: mob_manager:entity/rarity_mob/enchanted_book
+  Entity Particles: Enabled
+  Entity Has Custom Name: Enabled
+  Color: F8D40C
+  Chance Of Becoming A Rarity Mob Of This Type: 2%
+  Health (%): '75'
+  Time In Seconds Before Entity Can Become A Rarity Mob Of This Type: '60'
+  Entity Tag List Used: mob_manager:valid_for_rarity
+Mythic:
+  Type: mythic
+  Loot Table Used On Death: mob_manager:entity/rarity_mob/enchanted_equipment
+  Entity Particles: Enabled
+  Entity Has Custom Name: Enabled
+  Color: B277D7
+  Chance Of Becoming A Rarity Mob Of This Type: 1%
+  Health (%): '100'
+  Time In Seconds Before Entity Can Become A Rarity Mob Of This Type: '60'
+  Entity Tag List Used: mob_manager:valid_for_rarity
+Common:
+  Type: common
+  Loot Table Used On Death: mob_manager:entity/rarity_mob/valuables
+  Entity Particles: Enabled
+  Entity Has Custom Name: Enabled
+  Color: E8E8E8
+  Chance Of Becoming A Rarity Mob Of This Type: 5%
+  Health (%): '30'
+  Time In Seconds Before Entity Can Become A Rarity Mob Of This Type: '60'
+  Entity Tag List Used: mob_manager:valid_for_rarity

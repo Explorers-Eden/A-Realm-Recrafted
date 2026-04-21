@@ -1,16 +1,16 @@
-attck_dmg: '100'
-scale_min: '90'
-drown: Enabled
-move_speed: '100'
-locator_range: '16'
-pickup: Enabled
-locator_color: 8b0000
-allow_mob: Enabled
-health: '100'
-burn: Enabled
-safe_fall: '100'
-follow_range: '100'
-silent: Disabled
-mobhead: 25%
-scale_max: '110'
-type: vex
+Attack Damage (%): '100'
+Min Entity Size (%): '90'
+Entity Can Drown: Enabled
+Movement Speed (%): '100'
+Locator Bar Range in Blocks: '16'
+Entity Can Pickup Loot: Enabled
+Locator Bar Color (Hex): 8b0000
+Entity Spawning: Enabled
+Health (%): '100'
+Entity Can Burn: Enabled
+Safe Fall Distance (%): '100'
+Follow Range (%): '100'
+Entity Is Silent By Default: Disabled
+Chance Of Entity Dropping Its Head: 25%
+Max Entity Size (%): '110'
+Type: vex

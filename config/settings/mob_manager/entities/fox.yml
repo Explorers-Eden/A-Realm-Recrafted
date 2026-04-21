@@ -1,18 +1,18 @@
-type: fox
-scale_min: '90'
-move_speed: '100'
-allow_mob: Enabled
-drown: Enabled
-breed: Enabled
-follow_range: '100'
-silent: Disabled
-attck_dmg: '100'
-tempt_range: '100'
-locator_color: ade6e6
-pickup: Enabled
-locator_range: '12'
-health: '100'
-burn: Enabled
-safe_fall: '100'
-mobhead: 25%
-scale_max: '110'
+Type: fox
+Min Entity Size (%): '90'
+Movement Speed (%): '100'
+Entity Spawning: Enabled
+Entity Can Drown: Enabled
+Entity Can Breed: Enabled
+Follow Range (%): '100'
+Entity Is Silent By Default: Disabled
+Attack Damage (%): '100'
+Tempt Range (%): '100'
+Locator Bar Color (Hex): ade6e6
+Entity Can Pickup Loot: Enabled
+Locator Bar Range in Blocks: '12'
+Health (%): '100'
+Entity Can Burn: Enabled
+Safe Fall Distance (%): '100'
+Chance Of Entity Dropping Its Head: 25%
+Max Entity Size (%): '110'
