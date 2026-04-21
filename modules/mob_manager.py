@@ -111,7 +111,7 @@ KEY_MAP = {
     "illusionerspawning": "Chance Of Illusioner Spawning Instead Of Evoker",
     "killerrabbitspawning": "Chance Of Rabbit Being A Killer Rabbit",
     "egglay": "Chickens Can Lay Eggs",
-    "jebcolor": "Sheep Can Be _jeb Sheeps",
+    "jebcolor": "Sheep Can Be _jeb",
     "lefthanded": "Chance Of Mobs Being Left Handed",
     "shulkercolor": "Shulker Can Have Random Colors",
     "snifferbrain": "Sniffer Remember Where They Dug",
@@ -164,21 +164,18 @@ def remap_mob_manager_value(obj, mobhead_label):
     return obj
 
 
-def filter_mob_equipment_misc(data):
+def keep_leathercolor_only_in_misc(data):
     if not isinstance(data, dict):
         return data
 
-    for key, value in list(data.items()):
-        if key == "Misc" and isinstance(value, dict):
-            filtered = {
-                k: v
-                for k, v in value.items()
-                if k == "Leather Equipment Can Have Random Colors"
-            }
-            if filtered:
-                data[key] = filtered
-            else:
-                del data[key]
+    leather_key = "Leather Equipment Can Have Random Colors"
+
+    for section_name, section_value in data.items():
+        if not isinstance(section_value, dict):
+            continue
+
+        if section_name != "Misc" and leather_key in section_value:
+            del section_value[leather_key]
 
     return data
 
@@ -213,7 +210,7 @@ def handle_mob_manager(data, settings_dir):
         value = deep_format(value)
 
         if key == "mob_equipment":
-            value = filter_mob_equipment_misc(value)
+            value = keep_leathercolor_only_in_misc(value)
 
         write_yaml(path, value)
 
