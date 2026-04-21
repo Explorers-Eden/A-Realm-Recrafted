@@ -6,7 +6,7 @@ on:
   push:
     paths:
       - 'raw_dat/*.dat'
-      - 'convert_smp_files.py'
+      - 'convert_to_yml.py'
   workflow_dispatch:
 
 permissions:
@@ -34,7 +34,7 @@ jobs:
           SFTP_PORT: ${{ secrets.SFTP_PORT }}
           SFTP_USER: ${{ secrets.SFTP_USER }}
           SFTP_PASS: ${{ secrets.SFTP_PASS }}
-        run: python convert_smp_files.py
+        run: python convert_to_yml.py
 
       - name: Commit output
         run: |
