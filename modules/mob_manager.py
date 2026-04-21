@@ -164,6 +164,25 @@ def remap_mob_manager_value(obj, mobhead_label):
     return obj
 
 
+def filter_mob_equipment_misc(data):
+    if not isinstance(data, dict):
+        return data
+
+    for key, value in list(data.items()):
+        if key == "Misc" and isinstance(value, dict):
+            filtered = {
+                k: v
+                for k, v in value.items()
+                if k == "Leather Equipment Can Have Random Colors"
+            }
+            if filtered:
+                data[key] = filtered
+            else:
+                del data[key]
+
+    return data
+
+
 def handle_mob_manager(data, settings_dir):
     base = os.path.join(settings_dir, "mob_manager")
     entities = os.path.join(base, "entities")
@@ -192,6 +211,9 @@ def handle_mob_manager(data, settings_dir):
         value = remap_mob_manager_value(value, mobhead_label)
         value = map_booleans(value)
         value = deep_format(value)
+
+        if key == "mob_equipment":
+            value = filter_mob_equipment_misc(value)
 
         write_yaml(path, value)
 
