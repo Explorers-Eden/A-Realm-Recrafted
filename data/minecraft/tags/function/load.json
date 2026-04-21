@@ -6,6 +6,6 @@
 		"eden:spawn/conveyor/items",
 		"eden:spawn/despawn_mobs/init",
 		"eden:spawn/healing",
-		"eden:player/outer_wilds_message/init"
+		"eden:messages/outer_wilds/init"
 	]
 }
