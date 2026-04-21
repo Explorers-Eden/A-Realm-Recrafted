@@ -24,6 +24,9 @@ def handle_mob_manager(data, settings_dir):
         if key in IGNORE:
             continue
 
+        from modules.utils import clean  # add import
+        
+        value = clean(value)
         value = map_booleans(value)
         value = deep_format(value)
 
