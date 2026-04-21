@@ -4,9 +4,6 @@ import json
 from modules.utils import clean, write_yaml, map_booleans
 from modules.utils import deep_format
 
-result = deep_format(result)
-
-
 def convert_getoffmylawn(input_dir, settings_dir):
     path = os.path.join(input_dir, "getoffmylawn.json")
 
@@ -90,6 +87,8 @@ def convert_getoffmylawn(input_dir, settings_dir):
         result["Claim Anchor Radius"] = radius_group
 
     result = map_booleans(result)
+    
+    result = deep_format(result)
 
     output_path = os.path.join(settings_dir, "getoffmylawn.yml")
     write_yaml(output_path, result)
