@@ -1,6 +1,6 @@
 import os
 import nbtlib
-from modules.utils import write_yaml
+from scripts.utils import write_yaml
 
 
 def convert_gamerules(input_dir, output_dir):

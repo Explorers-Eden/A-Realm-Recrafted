@@ -2,11 +2,12 @@ name: Convert SMP Files
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # every day at 07:00 UTC+1 (06:00 UTC)
+    - cron: "0 6 * * *"
   push:
     paths:
-      - 'raw_dat/*.dat'
-      - 'convert_to_yml.py'
+      - "raw_dat/**"
+      - "scripts/**"
+      - "requirements.txt"
   workflow_dispatch:
 
 permissions:
@@ -17,13 +18,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -34,12 +35,12 @@ jobs:
           SFTP_PORT: ${{ secrets.SFTP_PORT }}
           SFTP_USER: ${{ secrets.SFTP_USER }}
           SFTP_PASS: ${{ secrets.SFTP_PASS }}
-        run: python convert_to_yml.py
+        run: python -m scripts.convert_to_yml
 
-      - name: Commit output
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add config/
-          git commit -m "Auto-convert SMP Files" || echo "No changes"
-          git push
+      - name: Commit generated files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Auto-convert SMP files
+          file_pattern: |
+            config/**
+            config_diff.txt

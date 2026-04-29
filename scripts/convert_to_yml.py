@@ -1,10 +1,10 @@
 import os
 
-from modules.sftp import fetch_files_via_sftp
-from modules.gamerules import convert_gamerules
-from modules.command_storage import convert_command_storage
-from modules.getoffmylawn import convert_getoffmylawn
-from modules.diff_checker import compare_directories
+from scripts.sftp import fetch_files_via_sftp
+from scripts.gamerules import convert_gamerules
+from scripts.command_storage import convert_command_storage
+from scripts.getoffmylawn import convert_getoffmylawn
+from scripts.diff_checker import compare_directories
 
 INPUT_DIR = "raw_dat"
 OUTPUT_DIR = "config"

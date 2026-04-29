@@ -1,8 +1,8 @@
 import os
 import json
 
-from modules.utils import clean, write_yaml, map_booleans
-from modules.utils import deep_format
+from scripts.utils import clean, write_yaml, map_booleans
+from scripts.utils import deep_format
 
 def convert_getoffmylawn(input_dir, settings_dir):
     path = os.path.join(input_dir, "getoffmylawn.json")

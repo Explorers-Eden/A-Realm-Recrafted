@@ -1,4 +1,4 @@
-from modules.utils import format_percent
+from scripts.utils import format_percent
 
 FR_VALUE_MAP = {
     "enabled": "Enabled",

@@ -1,6 +1,6 @@
 import os
 
-from modules.utils import (
+from scripts.utils import (
     write_yaml,
     sanitize_filename,
     map_booleans,

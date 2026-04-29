@@ -1,4 +1,4 @@
-from modules.utils import format_percent
+from scripts.utils import format_percent
 
 NICE_ACTIONS_KEY_MAP = {
     "time_format": "Time Format For HUD",
