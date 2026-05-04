@@ -1,8 +1,8 @@
 Enchanted Treasure Book As Trade: Enabled
+Player Message When A Wandering Trader Spawns: actionbar
 Entity Has Custom Name: Enabled
 Payment Item For Enchanted Treasure Books: minecraft:emerald
 Wandering Trader Glows When Spawning: Enabled
-Player Message When A Wandering Trader Spawns: actionbar
 Max Amount Of Payment Item For Enchanted Treasure Book: '12'
 Miniblocks As Trade: Enabled
 Payment Item For Miniblocks: minecraft:emerald
