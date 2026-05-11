@@ -54,7 +54,7 @@
       "tooltip": "Website which lists all of our enchantments.",
       "action": {
         "type": "minecraft:open_url",
-        "url": "https://enchantments.explorerseden.eu/"
+        "url": "https://explorerseden.eu/enchantments"
       }
     },
     {
