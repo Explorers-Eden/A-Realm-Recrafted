@@ -2,6 +2,9 @@
 - Added a new Journal Book series describing the daily life of normal citizens
 - Random Ingame Events now roll twice instead of once for rewards given to players
 - Creeper Cat variant now drops Gun Powder instead of String
+- Embroidery Cat variant now drops random Dyes instead of String
+- Soul Cat variant now drops Soul Sand instead of String
+- Added Red, Spotted Red & Muddy Red Pig variants (Spawn in the same biomes as vanilla warm variant)
 
 # Fixes:
 - pale_bloom configured feature having the wrong file name (ashen_bloom) resulting in Pale Bloom Scrolls not working
