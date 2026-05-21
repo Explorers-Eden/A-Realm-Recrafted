@@ -19,8 +19,8 @@ Events:
     Monday: Enabled
     Sunday: Disabled
     Friday: Enabled
-    Saturday: Disabled
     Tuesday: Disabled
+    Saturday: Disabled
     Wednesday: Enabled
   Killing:
     Chance For This Type Of Event: 9%
