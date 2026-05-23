@@ -1,10 +1,13 @@
 # Changes:
-- Added a new Journal Book series describing the daily life of normal citizens
-- Random Ingame Events now roll twice instead of once for rewards given to players
-- Creeper Cat variant now drops Gun Powder instead of String
-- Embroidery Cat variant now drops random Dyes instead of String
-- Soul Cat variant now drops Soul Sand instead of String
-- Added Red, Spotted Red & Muddy Red Pig variants (Spawn in the same biomes as vanilla warm variant)
+- Cluckshroom chicken variant now drops Red Mushroom instead of Raw Chicken
+- Swamp zombie nautilus variant now drops Lily Pads instead of Rotten Flesh
+- Cold zombie nautilus variant now drops Packed Ice instead of Rotten Flesh
+- Guardian zombie nautilus variant now drops Prismarine Crystals instead of Rotten Flesh
+- Husk zombie nautilus variant now drops Sand instead of Rotten Flesh
+- Added Glow zombie nautilus variant:
+    - Has a chance to spawn during full moon and in Lush/Dripstone Caves
+    - When fully submerged in water it starts glowing
+    - Drops Glow Ink Sacs on death
 
 # Fixes:
-- pale_bloom configured feature having the wrong file name (ashen_bloom) resulting in Pale Bloom Scrolls not working
+- Lily Pad drops for chicken duck variants being able to get smelted

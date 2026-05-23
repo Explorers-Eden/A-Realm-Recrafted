@@ -1,6 +1,5 @@
 import os
 
-from scripts.sftp import fetch_files_via_sftp
 from scripts.gamerules import convert_gamerules
 from scripts.command_storage import convert_command_storage
 from scripts.getoffmylawn import convert_getoffmylawn
@@ -9,16 +8,12 @@ from scripts.diff_checker import compare_directories
 INPUT_DIR = "raw_dat"
 OUTPUT_DIR = "config"
 SETTINGS_DIR = os.path.join(OUTPUT_DIR, "settings")
-
 BASELINE_DIR = "config_baseline"
 DIFF_REPORT = "config_diff.txt"
 
-os.makedirs(INPUT_DIR, exist_ok=True)
-os.makedirs(OUTPUT_DIR, exist_ok=True)
-os.makedirs(SETTINGS_DIR, exist_ok=True)
-
 if __name__ == "__main__":
-    fetch_files_via_sftp(INPUT_DIR)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(SETTINGS_DIR, exist_ok=True)
 
     convert_gamerules(INPUT_DIR, OUTPUT_DIR)
     convert_command_storage(INPUT_DIR, SETTINGS_DIR)

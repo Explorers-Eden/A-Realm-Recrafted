@@ -16,22 +16,23 @@ REMOTE_FILES = {
 def fetch_files_via_sftp(input_dir):
     if not SFTP_HOST or not SFTP_USER or not SFTP_PASS:
         print("Missing SFTP credentials")
-        return
+        return False
 
     transport = paramiko.Transport((SFTP_HOST, SFTP_PORT))
-
     try:
         transport.connect(username=SFTP_USER, password=SFTP_PASS)
         sftp = paramiko.SFTPClient.from_transport(transport)
-
-        for local_name, remote in REMOTE_FILES.items():
-            local = os.path.join(input_dir, local_name)
-            try:
-                sftp.get(remote, local)
-                print(f"Downloaded: {remote}")
-            except Exception as e:
-                print(f"Failed: {remote} -> {e}")
-
-        sftp.close()
+        try:
+            for local_name, remote in REMOTE_FILES.items():
+                local = os.path.join(input_dir, local_name)
+                try:
+                    sftp.get(remote, local)
+                    print(f"Downloaded: {remote}")
+                except Exception as e:
+                    print(f"Failed: {remote} -> {e}")
+        finally:
+            sftp.close()
     finally:
         transport.close()
+
+    return True

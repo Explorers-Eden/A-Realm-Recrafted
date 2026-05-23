@@ -14,31 +14,72 @@ permissions:
   contents: write
 
 jobs:
-  convert:
+  fetch:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run converter
+      - name: Fetch raw files via SFTP
         env:
           SFTP_HOST: ${{ secrets.SFTP_HOST }}
           SFTP_PORT: ${{ secrets.SFTP_PORT }}
           SFTP_USER: ${{ secrets.SFTP_USER }}
           SFTP_PASS: ${{ secrets.SFTP_PASS }}
-        run: python -m scripts.convert_to_yml
+        run: python -m scripts.fetch
 
-      - name: Commit generated files
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: actions/upload-artifact@v4
+        with:
+          name: raw-dat
+          path: raw_dat/
+
+  convert:
+    needs: fetch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: raw-dat
+          path: raw_dat/
+
+      - name: Convert and diff
+        run: python -m scripts.convert
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: config-out
+          path: |
+            config/
+            config_diff.txt
+          if-no-files-found: ignore
+
+  commit:
+    needs: convert
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: config-out
+          path: .
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Auto-convert SMP files
           file_pattern: |
