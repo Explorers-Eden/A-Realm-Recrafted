@@ -3,10 +3,10 @@ When Entities Near A Village Center Will Be Healed: daytime
 Entity Has Custom Name: Enabled
 Villagers Can Have Babies With Different Variants: Enabled
 Players Can Rename Villages: Enabled
-Village Names: Enabled
 Villagers Restock Their Goods: Disabled
-Entity Tag List Used: mob_manager:valid_for_village_healing
+Village Names: Enabled
 How Village Names Will Be Displayed To Players: title
+Entity Tag List Used: mob_manager:valid_for_village_healing
 Distance in Blocks Entities Near A Village Center Will Be Healed: '16'
 Locator Bar Range in Blocks: '196'
 Villagers Will Follow Players Holding Emeralds: Disabled
