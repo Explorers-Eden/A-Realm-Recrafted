@@ -1,13 +1,53 @@
-# Changes:
+# Changes
+## Mob Variants
 - Cluckshroom chicken variant now drops Red Mushroom instead of Raw Chicken
 - Swamp zombie nautilus variant now drops Lily Pads instead of Rotten Flesh
 - Cold zombie nautilus variant now drops Packed Ice instead of Rotten Flesh
 - Guardian zombie nautilus variant now drops Prismarine Crystals instead of Rotten Flesh
 - Husk zombie nautilus variant now drops Sand instead of Rotten Flesh
+- Creaking wolf variant now drops Resin Clumps
+- Added Turkey chicken variant (spawns in Taiga biomes)
+- Added Legend pig variant (spawns in Pen structures)
 - Added Glow zombie nautilus variant:
     - Has a chance to spawn during full moon and in Lush/Dripstone Caves
     - When fully submerged in water it starts glowing
     - Drops Glow Ink Sacs on death
+- Added Slime wolf and cat variants:
+    - Does not spawn naturally anywhere
+    - Can only be obtained by giving a tamed cat or wolf a Gooey Treat Item
+    - Bounces a lot
+    - Drops Slime when killed
+- Skeleton variants for Cats and Wolves now also use Skeleton sounds
 
-# Fixes:
-- Lily Pad drops for chicken duck variants being able to get smelted
+## Structures
+- Added Slime Dungeon Structures (Generates in the same biomes underground as the Trial Chamber does)
+
+## Items/Blocks
+- Added Gooey Treat Item (Can be obtained from Trial Spawner in Slime Dungeon Structures)
+- Chorus Flowers & Chorus Plants are now placeable on Farmland, Dirt, Grass, Mud, Moss & Podzol Blocks
+- Podzol now supports vegetation
+- Cocoa Beans can now be placed onto every Log type
+- Small Dripleaves are now placeable on Grass, Mud, Moss & Podzol Blocks
+- Crafting Brown Dye from Orange and Black Dye now gives 2 Items in return
+- Crafting Green Dye from Blue and Yellow Dye now gives 2 Items in return
+
+## Enchantments
+- Increased probability of getting Enchanted Books in loot of Rise structure
+- Projectiles shot by a Crossbow with Flare enchantment now also explode after 1-5 seconds (increases with level (lvl 1 = 1 sec)) when no entity/block was hit before
+- Projectiles shot by a Crossbow with Flare enchantment now get removed when they explode
+- Added Velocity enchantment (doubles speed of shot projectiles. Can be obtained in enchanting tables and on random loot)
+- Added Incognito enchantment (hides the wearers name tag. Can be obtained by trading books and on random loot)
+- Added Bounce enchantment (lets the wearer bounce all over the place. Can be obtained in enchanting tables and on random loot)
+- Removed trigger for chat messages from the ingame wiki with links to our new wiki (Entries on the wiki will be created by me over time)
+
+## Misc
+- Changed server Links in the Custom Options of the pause menu to now show links to the servers wiki entry, homepage, world map and seed map
+- Added option to Fabled Roots pause menu options to allow players to change how they trigger their race ability (Crouch, Sprint, Jump, Disabled)
+- Added option to Fabled Roots pause menu options for players to get an info chat message about their current race & class
+- Doubled the amount of death messages per race
+
+# Fixes
+- Lily Pad loot drops for chicken duck variants being able to get smelted
+- Fixed Black wolf variant using the "angry" textures when they should use the "tame" ones
+- Miner class getting Hermit Starter Equipment
+- Small Dripleaves couldnt be placed no longer on Dirt & Farmland blocks due to tag list name change
