@@ -48,6 +48,8 @@
 - Added option to Fabled Roots pause menu options to allow players to change how they trigger their race ability (Crouch, Sprint, Jump, Disabled)
 - Added option to Fabled Roots pause menu options for players to get an info chat message about their current race & class
 - Doubled the amount of death messages per race
+- Performance improvements for the coordinate hud
+- Villagers can follow players holding Emeralds again
 
 # Fixes
 - Lily Pad loot drops for chicken duck variants being able to get smelted
@@ -56,3 +58,4 @@
 - Small Dripleaves couldnt be placed no longer on Dirt & Farmland blocks due to tag list name change
 - Fixed a typo in Pufferfish enchantment description
 - Some bee heads not dropping due to anger changes
+- Villagers flicking up in the air sometimes when they follow a player holding an emerald
