@@ -39,6 +39,8 @@
 - Added Incognito enchantment (hides the wearers name tag. Can be obtained by trading books and on random loot)
 - Added Bounce enchantment (lets the wearer bounce all over the place. Can be obtained in enchanting tables and on random loot)
 - Removed trigger for chat messages from the ingame wiki with links to our new wiki (Entries on the wiki will be created by me over time)
+- Removed Poppy Peace and Sting enchantments due to changes of how Entity Anger works
+- Removed Lupine Echo and Thousand Sting Enchanted Scrolls/Enchantments due to entity anger changes
 
 ## Misc
 - Changed server Links in the Custom Options of the pause menu to now show links to the servers wiki entry, homepage, world map and seed map
@@ -51,3 +53,5 @@
 - Fixed Black wolf variant using the "angry" textures when they should use the "tame" ones
 - Miner class getting Hermit Starter Equipment
 - Small Dripleaves couldnt be placed no longer on Dirt & Farmland blocks due to tag list name change
+- Fixed a typo in Pufferfish enchantment description
+- Some bee heads not dropping due to anger changes
