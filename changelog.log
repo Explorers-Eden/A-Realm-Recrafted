@@ -18,6 +18,8 @@
     - Bounces a lot
     - Drops Slime when killed
 - Skeleton variants for Cats and Wolves now also use Skeleton sounds
+- Added Container Sulfur Cube Archetype. It's as heavy as the High Resistance Archetype but floats on water. Is applied by giving it a Shulker Box (Contents remain in the Shulker Box)
+- Added Balloon Sulfur Cube Archetype. Is applied by giving it a Glass Block. Starts floating, gets a random size and turns invisible when it's leashed
 
 ## Structures
 - Added Slime Dungeon Structures (Generates in the same biomes underground as the Trial Chamber does)
