@@ -33,6 +33,11 @@
 - Small Dripleaves are now placeable on Grass, Mud, Moss & Podzol Blocks
 - Crafting Brown Dye from Orange and Black Dye now gives 2 Items in return
 - Crafting Green Dye from Blue and Yellow Dye now gives 2 Items in return
+- Added Totem of Homecoming item:
+    - Can be crafted from 3 Echo Shards and 2 Amethyst Shards
+    - Saves a player from dying much like a Totem of Undying
+    - When previously used on a Waypoint Hub (Access needed) any Totem of Homecoming item will teleport a player to it when the Totem was used
+    - After Teleporting the saved Waypoint Hub will be forgotten
 
 ## Enchantments
 - Increased probability of getting Enchanted Books in loot of Rise structure
