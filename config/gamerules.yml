@@ -7,9 +7,9 @@ minecraft:respawn_radius: Disabled
 minecraft:max_command_sequence_length: '65536'
 minecraft:immediate_respawn: Disabled
 minecraft:drowning_damage: Enabled
-minecraft:tnt_explosion_drop_decay: Disabled
-minecraft:player_movement_check: Disabled
 minecraft:natural_health_regeneration: Enabled
+minecraft:player_movement_check: Disabled
+minecraft:tnt_explosion_drop_decay: Disabled
 minecraft:players_nether_portal_creative_delay: Disabled
 minecraft:command_blocks_work: Enabled
 minecraft:fire_damage: Enabled
