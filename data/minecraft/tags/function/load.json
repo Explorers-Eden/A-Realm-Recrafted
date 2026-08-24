@@ -6,6 +6,8 @@
 		"eden:spawn/conveyor/items",
 		"eden:spawn/despawn_mobs/init",
 		"eden:spawn/healing",
-		"eden:messages/outer_wilds/init"
+		"eden:messages/outer_wilds/init",
+		"eden:halloween_house/lightning",
+		"eden:halloween_house/ambient"
 	]
 }
