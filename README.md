@@ -1,5 +1,3 @@
-<a href="https://explorerseden.eu"  target="_blank"><img src="https://wiki.explorerseden.eu/realmrecrafted/ee_rr_5.png" alt="Explorer's Eden" style="width:100%;height:100%;"></a>
-
 ## 📚 Introduction
 Welcome to **A Realm Recrafted**!  
 This is a small Minecraft survival server we put together as a place to play, build, and share our datapacks from Modrinth with others.
