@@ -1,5 +1,5 @@
 # Changes
+- Added crafting recipes for filled Suspicious Sand & Gravel (supports almost any vanilla item/block)
+- Added missing translation keys for "R" Banner Patterns
 
 # Fixes
-- Sulfur Cube Locator Bar Icons being broken
-- Biomes changed with Biome Brew having downfall (snow)
