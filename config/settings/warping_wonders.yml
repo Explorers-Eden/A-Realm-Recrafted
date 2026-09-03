@@ -1,26 +1,26 @@
 Portal Horn Settings:
   Chance Of Item Breaking: '0'
   Teleport Pets And Leashed Mobs Alongside Player: Enabled
-  Exp Level Cost: '5'
   Active: Enabled
+  Exp Level Cost: '5'
 Clock Settings:
   Chance Of Item Breaking: 50%
   Teleport Pets And Leashed Mobs Alongside Player: Enabled
-  Exp Level Cost: '5'
   Active: Disabled
+  Exp Level Cost: '5'
 Compass Settings:
   Chance Of Item Breaking: '0'
   Teleport Pets And Leashed Mobs Alongside Player: Enabled
-  Exp Level Cost: '5'
   Active: Disabled
+  Exp Level Cost: '5'
 Recovery Compass Settings:
   Chance Of Item Breaking: '1'
   Teleport Pets And Leashed Mobs Alongside Player: Enabled
-  Exp Level Cost: '5'
   Active: Disabled
+  Exp Level Cost: '5'
 Waypoint Hub Settings:
   Teleport Pets And Leashed Mobs Alongside Player: Enabled
-  Max Waypoint Hubs A Player Can Have Simultaneously: '32'
-  Exp Level Cost: '0'
   Active: Enabled
+  Exp Level Cost: '0'
   Min Distance Between Waypoint Hubs (in Blocks): '64'
+  Max Waypoint Hubs A Player Can Have Simultaneously: '32'
