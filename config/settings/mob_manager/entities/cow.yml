@@ -1,15 +1,15 @@
 Type: cow
 Min Entity Size (%): '90'
 Movement Speed (%): '100'
-Entity Spawning: Enabled
 Entity Can Drown: Enabled
+Entity Spawning: Enabled
 Entity Can Breed: Enabled
 Follow Range (%): '100'
 Entity Is Silent By Default: Disabled
 Tempt Range (%): '100'
-Locator Bar Range in Blocks: '8'
-Entity Can Pickup Loot: Enabled
 Locator Bar Color (Hex): 64e764
+Entity Can Pickup Loot: Enabled
+Locator Bar Range in Blocks: '8'
 Health (%): '100'
 Entity Can Burn: Enabled
 Safe Fall Distance (%): '100'
