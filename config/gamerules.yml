@@ -32,10 +32,10 @@ minecraft:freeze_damage: Enabled
 minecraft:forgive_dead_players: Enabled
 minecraft:mob_drops: Enabled
 minecraft:water_source_conversion: Enabled
-minecraft:max_command_forks: '65536'
 minecraft:show_advancement_messages: Disabled
-minecraft:show_death_messages: Disabled
+minecraft:max_command_forks: '65536'
 minecraft:allow_entering_nether_using_portals: Enabled
+minecraft:show_death_messages: Disabled
 minecraft:spawn_patrols: Enabled
 minecraft:block_explosion_drop_decay: Enabled
 minecraft:send_command_feedback: Disabled
