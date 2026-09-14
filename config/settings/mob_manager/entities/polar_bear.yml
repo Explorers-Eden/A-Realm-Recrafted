@@ -1,16 +1,16 @@
 Type: polar_bear
 Min Entity Size (%): '90'
 Movement Speed (%): '100'
-Entity Spawning: Enabled
 Entity Can Drown: Enabled
+Entity Spawning: Enabled
 Entity Can Breed: Enabled
 Follow Range (%): '100'
 Entity Is Silent By Default: Disabled
 Attack Damage (%): '100'
 Tempt Range (%): '100'
-Locator Bar Color (Hex): ade6e6
-Entity Can Pickup Loot: Enabled
 Locator Bar Range in Blocks: '12'
+Entity Can Pickup Loot: Enabled
+Locator Bar Color (Hex): ade6e6
 Health (%): '100'
 Entity Can Burn: Enabled
 Safe Fall Distance (%): '100'
