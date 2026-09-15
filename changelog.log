@@ -1,5 +1,61 @@
 # Changes
-- Added crafting recipes for filled Suspicious Sand & Gravel (supports almost any vanilla item/block)
-- Added missing translation keys for "R" Banner Patterns
+## Outer Wilds:
+- Instead of repeating the Outer Wilds Actionbar notification, it is now only shown once when entering
+- Added a new overlay Icon which shows up in the upper left corner while in the Outer Wilds (Thank you Arbor)
+
+## Villages:
+- Village names shown as titles now also have an animated letterbox effect
+- Village names and colors are now based on the biome instead of the villager type
+- Extended database for random Village names massively
+
+## Structures:
+- Replaced Powder Snow Blocks with Snow Blocks in Frostborne Shelter Structures
+- Added Creeper Ruins Structure (Generates in Forest Biomes)
+
+## Items:
+- Added Kaleidoscope (can be crafted from 2 Iron Ingots and an Emerald)
+- Added Straw Beds to list of non-droppable items
+- Changed recipes for Rapiers to not conflict with left hand right compatibility
+
+## Blocks:
+- Crying Obsidian and Reinforced Deepslate can now be used as Nether Portal Frames
+- Chopper blocks can now shear Pumpkins into Carved Pumpkins and Wool Blocks into Wool Stairs
+- Redstone Wire, Redstone Torch, Repeater & Comparator Blocks are no longer washed away by fluids
+- Red-/Brown Mushrooms are now placeable on Grass, Dirt, Mud, Moss, Farmland Blocks regardless of the light level
+
+## Enchantments:
+- Using Crop Dance succesfully now lets it rain the respective Crop (only visual)
+- Night Vision now adds the typical night vision goggles effect instead of using Minecrafts effect
+- Added Curse of Shortsight (Blurs vision when equipped)
+- Added Curse of Color Blindness (Wearer becomes color blind when equipped)
+- Added Curse of Mirror Vision (Wearers vision is mirrored horizontally when equipped)
+- Added Curse of Void Vision (Wearer sees the world with the eyes of the Void when equipped)
+- Added Curse of Spider Vision (Wearer sees the world with the eyes of a Spider when equipped)
+- Added Curse of Creeper Vision (Wearer sees the world with the eyes of a Creeper when equipped)
+- Added Curse of Ender Vision (Wearer sees the world with the eyes of an Enderman when equipped)
+
+## Mob Variants:
+- Muddy Pig Variants can now also spawn in Dappled Forest Biomes
+- Turkey Chicken Variant can now also spawn in Dappled Forrest Biomes
+- Golden Chicken Variant can now also spawn in Abandoned Camp Structures
+- Added Creeper Frog Variant (Frogs blown up by Creepers have a 33% chance to turn into this variant; can also spawn in Creeper Ruins Structures; Poops out Gunpowder when eating food entities)
+- Creeper Cat Variant can now also spawn in Creeper Ruins Structures
+- Added Zombified Pig Variant (Pigs have a 10% chance to turn into the Zombified Variant when 30 seconds or longer in the Nether)
+
+## Advancements:
+- Added 16 new progression advancements for Enchantments Encore
+- Added 22 progression advancements for Fabled Roots
+- Added 20 progression advancements for Nice Actions
+- Added 6 progression advancements for Nice Keep Inventory
+- Added 11 progression advancements for Nice Mob Manager
+- Added 18 progression advancements for Nice Mob Manager
+- Added 7 progression advancements for Nice Name Tags
+- Added 17 progression advancements for Nice Things
+
+## Misc:
+- Updated Safe/Unsafe to TP tag lists for Waypoints
+- Descendants now have a *swing* animation when giving out items after bartering
+- Wandering Trader trades are now data driven and were added to the pool of vanilla uncommon ones
 
 # Fixes
+- Skeleton Pig variant having the wrong biome references for spawning

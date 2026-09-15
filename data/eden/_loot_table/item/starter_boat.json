@@ -8,7 +8,7 @@
           "name": "minecraft:acacia_boat",
           "functions": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "Starter Boat"
               }
@@ -20,7 +20,7 @@
           "name": "minecraft:birch_boat",
           "functions": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "Starter Boat"
               }
@@ -32,7 +32,7 @@
           "name": "minecraft:cherry_boat",
           "functions": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "Starter Boat"
               }
@@ -44,7 +44,7 @@
           "name": "minecraft:dark_oak_boat",
           "functions": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "Starter Boat"
               }
@@ -56,7 +56,7 @@
           "name": "minecraft:jungle_boat",
           "functions": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "Starter Boat"
               }
@@ -68,7 +68,7 @@
           "name": "minecraft:mangrove_boat",
           "functions": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "Starter Boat"
               }
@@ -80,7 +80,7 @@
           "name": "minecraft:oak_boat",
           "functions": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "Starter Boat"
               }
@@ -92,7 +92,7 @@
           "name": "minecraft:pale_oak_boat",
           "functions": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "Starter Boat"
               }
@@ -104,7 +104,19 @@
           "name": "minecraft:spruce_boat",
           "functions": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Starter Boat"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poplar_boat",
+          "functions": [
+            {
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "Starter Boat"
               }
