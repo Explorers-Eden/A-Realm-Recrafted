@@ -1,4 +1,16 @@
+### The Wilderness Bound update had lots of small technical changes which added up - so please report any Bugs you catch on our Discord server. 
+### We also moved away from crowdin for our translations and now have our own solution. Feel free to contribute: https://explorerseden.eu/translate/
+### Thank you!
+
 # Changes
+## Mods:
+- Geophilic is not updated to 26.3 yet and therefore removed for the moment
+- Added [Too Cheap!](https://modrinth.com/mod/too-cheap) Mod which removes the Anvil "Too Expensive" Cap
+- Added [FallingTree](https://modrinth.com/mod/fallingtree) Mod:
+    - Tress cut with a Netherite Axe while sneaking will fall on the floor with an animation
+    - Trees cut this way will take up twice the durability per block affected
+    - If the used Netherite Axe would break it will instead break most blocks and leave 1 durability point. If used again with 1 durability point, it breaks.
+
 ## Outer Wilds:
 - Instead of repeating the Outer Wilds Actionbar notification, it is now only shown once when entering
 - Added a new overlay Icon which shows up in the upper left corner while in the Outer Wilds (Thank you Arbor)
