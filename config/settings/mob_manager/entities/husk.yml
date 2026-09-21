@@ -1,16 +1,16 @@
-Type: husk
+Attack Damage (%): '100'
 Min Entity Size (%): '90'
-Entity Spawning: Enabled
-Movement Speed (%): '100'
-Locator Bar Color (Hex): 8b0000
-Entity Can Pickup Loot: Enabled
-Locator Bar Range in Blocks: '16'
 Entity Can Drown: Enabled
+Movement Speed (%): '100'
+Locator Bar Range in Blocks: '16'
+Entity Can Pickup Loot: Enabled
+Locator Bar Color (Hex): 8b0000
+Entity Spawning: Enabled
 Health (%): '100'
 Entity Can Burn: Enabled
 Safe Fall Distance (%): '100'
 Follow Range (%): '100'
-Chance Of Entity Dropping Its Head: 25%
 Entity Is Silent By Default: Disabled
+Chance Of Entity Dropping Its Head: 25%
 Max Entity Size (%): '110'
-Attack Damage (%): '100'
+Type: husk

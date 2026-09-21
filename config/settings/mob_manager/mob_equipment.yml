@@ -14,36 +14,36 @@ Offhand:
   Loot Table Used For Custom Equipment Item: mob_manager:entity/equipment/offhand
 Head:
   Chance Of Item Being Dropped (Only Applies When Not Vanilla): '0'
-  Apply Random Damage To Item: Enabled
   Chance Of Item Being Enchanted: 40%
+  Apply Random Damage To Item: Enabled
   Chance Of Entity Being Equipped With Custom Item: 15%
   Entity Tag List Used: mob_manager:valid_for_equipment
   Loot Table Used For Custom Equipment Item: mob_manager:entity/equipment/head
 Misc:
-  Chance For Entity Wearing A Random Mob Head: 5%
-  Equipment Can Be Trimmed: Enabled
   Chance Of Entity Wearing A Random Mob Head: 15%
+  Equipment Can Be Trimmed: Enabled
   Shields Have Random Banners: Enabled
   Mainhand Item For Vex: air
   Leather Equipment Can Have Random Colors: Enabled
+  Chance For Entity Wearing A Random Mob Head: 5%
 Feet:
   Chance Of Item Being Dropped (Only Applies When Not Vanilla): '0'
-  Apply Random Damage To Item: Enabled
   Chance Of Item Being Enchanted: 40%
+  Apply Random Damage To Item: Enabled
   Chance Of Entity Being Equipped With Custom Item: 25%
   Entity Tag List Used: mob_manager:valid_for_equipment
   Loot Table Used For Custom Equipment Item: mob_manager:entity/equipment/feet
 Legs:
   Chance Of Item Being Dropped (Only Applies When Not Vanilla): '0'
-  Apply Random Damage To Item: Enabled
   Chance Of Item Being Enchanted: 40%
+  Apply Random Damage To Item: Enabled
   Chance Of Entity Being Equipped With Custom Item: 25%
   Entity Tag List Used: mob_manager:valid_for_equipment
   Loot Table Used For Custom Equipment Item: mob_manager:entity/equipment/legs
 Chest:
   Chance Of Item Being Dropped (Only Applies When Not Vanilla): '0'
-  Apply Random Damage To Item: Enabled
   Chance Of Item Being Enchanted: 40%
+  Apply Random Damage To Item: Enabled
   Chance Of Entity Being Equipped With Custom Item: 25%
   Entity Tag List Used: mob_manager:valid_for_equipment
   Loot Table Used For Custom Equipment Item: mob_manager:entity/equipment/chest
