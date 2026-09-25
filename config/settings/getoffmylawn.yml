@@ -49,6 +49,7 @@ Allowed Blocks For Interactions Regardless Of Trust:
 Allowed Entities For Interactions Regardless Of Trust:
 - minecraft:interaction
 - minecraft:villager
+- minecraft:cushion
 Claim Anchor Radius:
   Makeshift: '10'
   Reinforced: '25'
