@@ -1,3 +1,13 @@
 # Changes
+- Changed Chorus Pie recipe to actually use a Chorus Fruit
+- Added new Waypoint Types: Cinnabar, Diamond, Emerald, Golden, Iron, Lodestone, Netherite, Poplar, Red Nether Bricks, Redstone & Resin
+- Added a Back Teleport to the actions menu (costs 5 exp level)
+- Waypoint, Home, Random, Back and Spawn teleport actions now have a 3 seconds cooldown
+- Setting a home now asks for confirmation when a home is already set
+- Coordinates HUD now also shows the light level at a players position
+- Event leaderboard with the top 3 players shown to event participants when an event ends
 
 # Fixes
+- Letterbox Posteffect for village names getting stuck
+- Treasure trade for master Villagers having an empty book instead
+- Wandering Trader having an empty enchanted book instead of an actual one

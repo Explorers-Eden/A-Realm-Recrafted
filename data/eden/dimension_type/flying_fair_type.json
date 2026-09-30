@@ -1,0 +1,37 @@
+{
+  "has_skylight": true,
+  "has_ceiling": false,
+  "coordinate_scale": 1,
+  "ambient_light": 0,
+  "logical_height": 512,
+  "skybox": "overworld",
+  "cardinal_light": "default",
+  "infiniburn": "#minecraft:infiniburn_overworld",
+  "min_y": 0,
+  "height": 512,
+  "monster_spawn_light_level": 0,
+  "monster_spawn_block_light_limit": 0,
+  "has_ender_dragon_fight": false,
+  "has_fixed_time": false,
+  "attributes": {
+    "gameplay/bed_rule": {
+      "can_set_spawn": "never",
+      "can_sleep": "never",
+      "destroy_on_use": false,
+      "destroy_on_leave": false
+    },
+    "gameplay/can_pillager_patrol_spawn": false,
+    "gameplay/sky_light_level": 0,
+    "gameplay/bees_stay_in_hive": true,
+    "gameplay/monsters_burn": false,
+    "gameplay/piglins_zombify": false,
+    "gameplay/increased_fire_burnout": false,
+    "gameplay/respawn_anchor_works": false,
+    "gameplay/fast_lava": true,
+    "gameplay/turtle_egg_hatch_chance": 1,
+    "gameplay/villager_activity": "minecraft:work",
+    "gameplay/can_start_raid": false,
+    "gameplay/snow_golem_melts": false,
+    "gameplay/surface_slime_spawn_chance": 0
+  }
+}
