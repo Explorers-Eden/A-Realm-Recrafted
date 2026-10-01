@@ -1,6 +1,7 @@
 Time Format For HUD: '24'
 Min Y Height For RTP: '90'
 RTP Radius (in Blocks): '3000'
+warmup: '3'
 Events:
   Fishing:
     Chance For This Type Of Event: 10%
@@ -31,16 +32,18 @@ Events:
     Loot Table: eden:gameplay/events/brewing
     Max Amount Of Actions Needed For Completion: '48'
 RTP Type: player
+back_cost: '5'
+back_cooldown: '180'
 Max Y Height For RTP: '120'
 Action Costs:
   Horse Info: '0'
   Death/Grave Coordinates: '0'
   Transfer Enchantments: '30'
   Broadcast Coordinates: '0'
-  RTP: '5'
-  Sit: '0'
   TP Home: '0'
+  RTP: '5'
   Set Home: '0'
+  Sit: '0'
   TP To Spawn: '0'
   Equip Item As Hat: '0'
   Share Stats: '3'

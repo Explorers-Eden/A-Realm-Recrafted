@@ -24,3 +24,4 @@ Waypoint Hub Settings:
   Exp Level Cost: '0'
   Active: Enabled
   Min Distance Between Waypoint Hubs (in Blocks): '64'
+  warmup: '3'
