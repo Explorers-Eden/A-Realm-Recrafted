@@ -24,5 +24,8 @@ schedule function eden:spawn/decoration/frogs/a/default/play_anim_loop 10t
 ##chunky
 schedule function eden:chunky/add_borders 10s
 
+##start repeating loops
+function eden:start
+
 ##set data pack version
 data modify storage eden:datapack realmrecrafted.version set value "1.0"

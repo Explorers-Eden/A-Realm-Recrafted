@@ -1,12 +1,5 @@
 {
   "values": [
-    "eden:halloween_house/ambient",
-    "eden:halloween_house/lightning",
-    "eden:load",
-    "eden:messages/outer_wilds/init",
-    "eden:spawn/conveyor/items",
-    "eden:spawn/despawn_mobs/init",
-    "eden:spawn/healing",
-    "eden:spawn/particles"
+    "eden:load"
   ]
 }

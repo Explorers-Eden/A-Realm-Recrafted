@@ -1,13 +1,10 @@
 # Changes
-- Changed Chorus Pie recipe to actually use a Chorus Fruit
-- Added new Waypoint Types: Cinnabar, Diamond, Emerald, Golden, Iron, Lodestone, Netherite, Poplar, Red Nether Bricks, Redstone & Resin
-- Added a Back Teleport to the actions menu (costs 5 exp level)
-- Waypoint, Home, Random, Back and Spawn teleport actions now have a 3 seconds cooldown
-- Setting a home now asks for confirmation when a home is already set
-- Coordinates HUD now also shows the light level at a players position
-- Event leaderboard with the top 3 players shown to event participants when an event ends
+- You can now ask Merl question ingame about our data packs and what settings we have with `/merl <question>`
+
+- Repeating background tasks of all data packs now start a few ticks apart after loading instead of all on the same tick, spreading out server load
+- Event HUD, Coordinates HUD and sleep tracking (Nice Actions), last safe grave position (Nice Keep Inventory), Heavenly Aura (Enchantments Encore) and boss bars (Katters Structures) no longer read player data every second, removing a lag spike every second
+- Cushion (Enchantments Encore) now reduces wall-crash damage by 20/40/60/80% per level (was 30/60/80/80%, so levels III and IV were identical)
 
 # Fixes
-- Letterbox Posteffect for village names getting stuck
-- Treasure trade for master Villagers having an empty book instead
-- Wandering Trader having an empty enchanted book instead of an actual one
+- Players sleeping in Straw Beds not counting toward skipping the night
+- Theron's boss bar sharing its ID with Raj's, which made it get removed again every second
