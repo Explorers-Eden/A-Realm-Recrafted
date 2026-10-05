@@ -3,7 +3,11 @@
 
 - Repeating background tasks of all data packs now start a few ticks apart after loading instead of all on the same tick, spreading out server load
 - Event HUD, Coordinates HUD and sleep tracking (Nice Actions), last safe grave position (Nice Keep Inventory), Heavenly Aura (Enchantments Encore) and boss bars (Katters Structures) no longer read player data every second, removing a lag spike every second
-- Cushion (Enchantments Encore) now reduces wall-crash damage by 20/40/60/80% per level (was 30/60/80/80%, so levels III and IV were identical)
+- Crab Claw (Enchantments Encore) can no longer be applied to Spears, since Spears use their own fixed attack reach and ignored the extra range
+- New Grave Timer setting (Nice Keep Inventory): graves can now count down in world time instead of only while players are nearby
+- Grave owners now get a message when someone else loots their grave or when it expires, delivered on the next join if they were offline (Nice Keep Inventory)
+- With the World Time grave timer, graves now disappear right when their time runs out, even if nobody is near them, and owners get a warning a minute before (Nice Keep Inventory)
+- Wandering Cows & Pigs now despawn together with their Wandering Trader while still leashed to it (Nice Mob Variants)
 
 # Fixes
 - Players sleeping in Straw Beds not counting toward skipping the night
