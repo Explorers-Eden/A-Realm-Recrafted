@@ -17,6 +17,9 @@ To leave the island, you can either swim or use the RTP function from the Quick 
 
 The Quick Action Menu is where you’ll find most of the important features, like setting a home, enabling HUD additions, and using said RTP. If you ever need help, check the pause menu for more information, or just ask in chat. Even if no one is online, messages are still seen through our linked Discord channel.
 
+## ℹ️ Merl
+**Meet Merl, our in-game helper!** Just type `/merl` and ask her anything: how to get a boss key, where the closest cherry grove is, whether keep inventory is on, or what you can craft with what's in your pockets. She knows our wiki, the Minecraft Wiki and the server's settings, so you get answers right away, and only you see them. Ask her to take you somewhere and she'll walk ahead of you with her map (she even grabs an elytra if you fly). She can also find your bed, your grave, your claims or the nearest waypoint, set reminders, and cheer when you hit big milestones. And if you just want to chat, she has over 2,000 jokes and a cat named Peanut Butter.
+
 ## 📜 Rules & Guidelines
 We don’t have a long list of strict rules, but a few basics still apply - cheating and consistently rude behavior won’t be tolerated here.
 
