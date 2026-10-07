@@ -58,8 +58,8 @@
             "max": 2500
           },
           "z": {
-            "min": -5000,
-            "max": 5000
+            "min": -2500,
+            "max": 2500
           }
         },
         "dimension": "kattersstructures:deep_blue"

@@ -25,7 +25,7 @@ Every dimension has a permanent area around its center. Everything beyond it bel
 | Overworld | -6,500 to 6,500 |
 | The Nether | -5,000 to 5,000 |
 | The End | -2,500 to 2,500 |
-| Deep Blue | X: -2,500 to 2,500, Z: -5,000 to 5,000 |
+| Deep Blue | -2,500 to 2,500 |
 
 You'll always know when you've left the permanent area: a short message appears above your hotbar, and a pulsing red icon of a crossed-out house shows up in the top left corner of your screen for as long as you stay in the Outer Wilds. So build your home inside the permanent area, and treat the Outer Wilds as a place to visit.
 
