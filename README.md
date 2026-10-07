@@ -17,6 +17,18 @@ To leave the island, you can either swim or use the RTP function from the Quick 
 
 The Quick Action Menu is where you’ll find most of the important features, like setting a home, enabling HUD additions, and using said RTP. If you ever need help, check the pause menu for more information, or just ask in chat. Even if no one is online, messages are still seen through our linked Discord channel.
 
+## 🌲 Outer Wilds
+Every dimension has a permanent area around its center. Everything beyond it belongs to the **Outer Wilds**, where chunks are reset every day. That makes it the perfect place to gather resources, find fresh structures and loot, or explore untouched terrain - but anything you build or leave behind out there will be gone the next day.
+
+| Dimension | Permanent Area (X and Z) |
+|:----------|:-------------------------|
+| Overworld | -6,500 to 6,500 |
+| The Nether | -5,000 to 5,000 |
+| The End | -2,500 to 2,500 |
+| Deep Blue | X: -2,500 to 2,500, Z: -5,000 to 5,000 |
+
+You'll always know when you've left the permanent area: a short message appears above your hotbar, and a pulsing red icon of a crossed-out house shows up in the top left corner of your screen for as long as you stay in the Outer Wilds. So build your home inside the permanent area, and treat the Outer Wilds as a place to visit.
+
 ## ℹ️ Merl
 **Meet Merl, our in-game helper!** Just type `/merl` and ask her anything: how to get a boss key, where the closest cherry grove is, whether keep inventory is on, or what you can craft with what's in your pockets. She knows our wiki, the Minecraft Wiki and the server's settings, so you get answers right away, and only you see them. Ask her to take you somewhere and she'll walk ahead of you with her map (she even grabs an elytra if you fly). She can also find your bed, your grave, your claims or the nearest waypoint, set reminders, and cheer when you hit big milestones. And if you just want to chat, she has over 2,000 jokes and a cat named Peanut Butter.
 
