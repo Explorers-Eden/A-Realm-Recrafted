@@ -1,0 +1,59 @@
+name: Publish Git Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (leave empty for today's date, e.g. 2026.10.08)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Read release metadata
+        id: meta
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          version="${INPUT_VERSION:-$(date -u +%Y.%m.%d)}"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag_name=v$version" >> "$GITHUB_OUTPUT"
+          echo "release_name=A Realm Recrafted $version" >> "$GITHUB_OUTPUT"
+          echo "zip_name=a_realm_recrafted_$version.zip" >> "$GITHUB_OUTPUT"
+
+      - name: Build datapack zip
+        env:
+          ZIP_NAME: ${{ steps.meta.outputs.zip_name }}
+        run: |
+          files=(assets data LICENSE pack.mcmeta)
+          [ -f pack.png ] && files+=(pack.png)
+          zip -r -X "$ZIP_NAME" "${files[@]}" -x '*.DS_Store'
+
+      - name: Create or update GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG_NAME: ${{ steps.meta.outputs.tag_name }}
+          RELEASE_NAME: ${{ steps.meta.outputs.release_name }}
+          ZIP_NAME: ${{ steps.meta.outputs.zip_name }}
+        run: |
+          if gh release view "$TAG_NAME" >/dev/null 2>&1; then
+            gh release edit "$TAG_NAME" \
+              --title "$RELEASE_NAME" \
+              --notes-file changelog.log
+          else
+            gh release create "$TAG_NAME" \
+              --title "$RELEASE_NAME" \
+              --notes-file changelog.log \
+              --target "$GITHUB_SHA"
+          fi
+
+          gh release upload "$TAG_NAME" "$ZIP_NAME" --clobber
