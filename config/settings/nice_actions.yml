@@ -20,8 +20,8 @@ Events:
     Monday: Enabled
     Sunday: Disabled
     Friday: Enabled
-    Saturday: Disabled
     Tuesday: Disabled
+    Saturday: Disabled
     Wednesday: Enabled
   Killing:
     Chance For This Type Of Event: 9%
@@ -31,6 +31,7 @@ Events:
     Chance For This Type Of Event: 7%
     Loot Table: eden:gameplay/events/brewing
     Max Amount Of Actions Needed For Completion: '48'
+new_day_msg: Enabled
 RTP Type: player
 back_cost: '5'
 back_cooldown: '180'
