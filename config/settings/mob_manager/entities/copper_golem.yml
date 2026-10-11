@@ -1,5 +1,5 @@
 Type: copper_golem
-Min Entity Size (%): '80'
+Min Entity Size (%): '90'
 Movement Speed (%): '100'
 Entity Spawning: Enabled
 Entity Can Drown: Enabled
@@ -14,4 +14,4 @@ Health (%): '100'
 Entity Can Burn: Enabled
 Safe Fall Distance (%): '100'
 Chance Of Entity Dropping Its Head: 25%
-Max Entity Size (%): '100'
+Max Entity Size (%): '110'
