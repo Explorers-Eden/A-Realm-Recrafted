@@ -1,7 +1,7 @@
 Rare:
   Type: rare
-  Entity Particles: Enabled
   Loot Table Used On Death: mob_manager:entity/rarity_mob/filled_bundle
+  Entity Particles: Enabled
   Entity Has Custom Name: Enabled
   Color: 58CD78
   Chance Of Becoming A Rarity Mob Of This Type: 3%
@@ -10,8 +10,8 @@ Rare:
   Entity Tag List Used: mob_manager:valid_for_rarity
 Legendary:
   Type: legendary
-  Entity Particles: Enabled
   Loot Table Used On Death: mob_manager:entity/rarity_mob/enchanted_book
+  Entity Particles: Enabled
   Entity Has Custom Name: Enabled
   Color: F8D40C
   Chance Of Becoming A Rarity Mob Of This Type: 2%
@@ -20,8 +20,8 @@ Legendary:
   Entity Tag List Used: mob_manager:valid_for_rarity
 Mythic:
   Type: mythic
-  Entity Particles: Enabled
   Loot Table Used On Death: mob_manager:entity/rarity_mob/enchanted_equipment
+  Entity Particles: Enabled
   Entity Has Custom Name: Enabled
   Color: B277D7
   Chance Of Becoming A Rarity Mob Of This Type: 1%
@@ -30,8 +30,8 @@ Mythic:
   Entity Tag List Used: mob_manager:valid_for_rarity
 Common:
   Type: common
-  Entity Particles: Enabled
   Loot Table Used On Death: mob_manager:entity/rarity_mob/valuables
+  Entity Particles: Enabled
   Entity Has Custom Name: Enabled
   Color: E8E8E8
   Chance Of Becoming A Rarity Mob Of This Type: 5%
