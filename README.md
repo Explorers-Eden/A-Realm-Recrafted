@@ -42,7 +42,7 @@ In the claim menu you can:
 
 ## 🛒 Market
 Trade with everyone, even when they're offline. Type `/market` to open the market menu:
-- **Server shop**: what the server itself sells, like claim blocks and other extras. Some offers are only around for a while or limited per player.
+- **Server shop**: what the server itself sells, like claim blocks, pets and other extras. Some offers are only around for a while or limited per player.
 - **Player listings**: browse what players are selling, with each item's icon and tooltip (enchantments and all), search by item or seller, and sort by price or newest. Click an item to see it and buy as many as you want.
 - **Sell** anything from your inventory: pick the item, how many (more than a stack is fine) and the price per item. Everything is paid in the server's currency, one item for the whole market.
 - **My listings** shows what you're selling. Take a listing back whenever you like.
@@ -51,7 +51,7 @@ Trade with everyone, even when they're offline. Type `/market` to open the marke
 What's for sale right now, from the server and from players, is also on the server's info page, and your own listings show on your SMP profile on the website.
 
 ### 🐾 Pets
-Pets are floating heads that follow you around. They're just for looks, with no effects, and everyone near you sees yours. Get one in the **pet shop**: the **Pets** button in `/market`, or `/pets`. Pets are paid in the same currency as the market, some are free, and some are only sold for a while or in limited numbers. Once you have a pet, it's yours for good.
+Pets are floating heads that follow you around. They're just for looks, with no effects, and everyone near you sees yours. Get one in the **Server shop** of `/market`, or in the pet shop with `/pets`. Pets are paid in the same currency as the market, some are free, and some are only sold for a while or in limited numbers. Once you have a pet, it's yours for good.
 
 Type `/pets` to see your pets and take one out or put it away, or use `/pets on` and `/pets off` to do it quickly. There you also choose:
 - **Moves**: how your pet moves. It can float by your shoulder, circle your head, bounce, trail behind you, doze by your feet, dart around you, and more.
