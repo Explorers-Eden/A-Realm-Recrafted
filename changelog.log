@@ -1,4 +1,107 @@
 # Changes
+**Due to backend changes, everyone needs to re-link their Discord account on their first login after this update.**
+
+## World:
+- Except for The End, Outer Wilds Areas are now capped and pregenerated for each dimension. The Chunks reset every Monday with the server restart
+- The Border to the Outer Wilds is now again indicated by (green) particles in game
+- Sizes for each dimension are:
+
+| Dimension | Permanent Area (X and Z) | Edge of the World (X and Z) |
+|:----------|:-------------------------|:----------------------------|
+| Overworld | -6,000 to 6,000 | -18,000 to 18,000 |
+| The Nether | -5,000 to 5,000 | -10,000 to 10,000 |
+| The End | -2,500 to 2,500 | none |
+| Deep Blue | -1,500 to 1,500 | -3,000 to 3,000 |
+
+- World Map now also shows both borders: a green one for the end of the permament area and a red one for the Edge of the World
+- World Map now also shows Public Waypoint Hubs
+- World Map now also shows the current ingame Time/Date of the server and when the next restart is scheduled for
+
+## Performance Tunings:
+- Mobs far from every player only move every few ticks. Mobs that are falling, swimming, fighting, burning, on a lead, riding or in a raid always tick. Items, XP, minecarts and farms are never slowed down
+- Mobs far from every player decide what to do next only every few ticks; what they're already doing keeps running. While the server lags, it also limits how many mobs may search a new path per tick; the others try again a moment later
+- In crowded places Mobs can now do at max 8 pushes per tick. Players always push and get pushed; cramming damage stays as it is
+- Items and XP Orbs merge from farther away, so fewer of them need ticking. (Items: 2.5 Blocks / XP Orbs 4 Blocks)
+- Junk Items despawn earlier than other items (after a minute). Junk Items are: Cobblestone, Cobbled Deepslate, Netherrack, Dirt, Gravel, Sand, Andesite, Diorite, Granite, Tuff, Rotten Flesh, Bone, String, Arrow, Spider Eye, Kelp, Bamboo, Cactus
+- Breeding is now capped if there are too many of the same kind in a 16 Block radius. (Animals: 32 / Villagers 16)
+- Villagers stuck in a 1x1 space now tick every second instead of every tick (20 times per second)
+- Hoppers without items look less often for new items (every 8 ticks instead of 2.5). Hoppers that move items keep their normal speed, and locked hoppers behave as in vanilla, so redstone timing stays the same
+
+## Gameplay Tweaks:
+- Items are still never "too expensive" to combine in an Anvil. Minecraft caps the shown limit at 39 Exp Levels tho, therefore the actual level is shown in the Action Bar
+- Renaming Items in an Anvil now always costs only 1 Exp Level
+- An enchanted item and a book in the grindstone give an enchanted book with the item's enchantments; the item keeps only its curses. It costs levels: the price shows above the hotbar, and without enough levels the book can't be taken
+- Monster Spawners can now be mined with an Diamond or Netherite Pickaxe enchanted with Silk Touch. Mining costs 100x the durability
+- Loyalty tridents come back from the void
+- Tree Chopping while sneaking with a Diamond or Netherite Axe got a new Animation and now costs 10x the durability
+- Vein mining was being added and works similar to the tree chopping. Sneaking while breaking an ore with a Diamond or NEtherite Pickaxe mines the whole vein. Costs 10x the durability
+- Nether Portals can now be build in any shape
+- Sapling Items laying on the ground now have a 50% change to replant themselves after 60 seconds when they have a 4 block space around them (Only in unclaimed spaces)
+- Bone Meal now also works on Sugar Canes, Vines, Cactus, Small Flowers, Nether Wart and Lily Pads
+- Dispensers can now place blocks, plant seeds or feed Sulfur Cubes a block
+
 ## Enchantments:
+- Added the Refuel enchantment for Elytras: each time a firework rocket is used while gliding, an identical rocket is taken from the inventory and added to the held stack; incompatible with Moonwalk
+- The vanilla enchanted book trade of Novice Librarians now offers a vanilla enchantment 2 in 3 times and an Enchantments Encore enchantment 1 in 3 times
+- Novice Librarians can now offer an extra enchanted book trade with an Enchantments Encore enchantment; which enchantments are available depends on the Librarian's villager type
+
+## Market:
+- Added a server wide Marketplace accessible with `/market` or via the Quick Actions Menu (Default:G)
+- Players can sell items for Diamonds and buy what others sell. Unsold items go back to the seller's mailbox after 90 Days (Real Life). Items keep everything (names, enchantments, custom models)
+- Players can have up to 32 active Market listings
+- `/market` also has a Server Shop for Things like Claim Blocks or Pets
+- The current listings are also available on the new public info page: https://serverinfo.explorerseden.eu
+- A players own listings are also visible in the "My SMP Profile" Section of the https://explorerseden.eu website
+
+## Claims:
+- The old GOML claiming mod got removed. Existing GOML claims are being migrated automatically. Owners get claim blocks for the land, so nobody starts in debt. Trusted players get the new Builder role.
+- Players enter claim mode with `/claim mode` or from the `/claim` menu, get the claim tool and right-click two opposite corners. Everything inside, from bedrock to the sky, is protected
+- `/claim` menu is also available in the Quick Actions Menu (Default: G).
+- Claiming is only possible inside the permament area of each Dimension#
+- Each claimed block costs one claim block (subclaims are free). Players earn them by playing. 100 Blocks per hour playing (not afk)
+- Players can also buy Claim Blocks from the `/market` (100 Blocks = 8 Diamonds, 1000 Blocks = 64 Diamonds)
+- New players start with 100 Claim Blocks
+- Max Claim Blocks are capped at 100000 Blocks
+- Claims need to be at least 5 blocks wide and have a 100 Blocks
+- Claims expire when the owner wasn't online for 365 Days. The earliest Co-Owner of expired claims becomes the new Owner. If no Co-Owner exist, the claim gets removed
+- Sub Claims can now also be created with their own Permissions (Sub Claims don't cost Claim Blocks)
+
+## Pets:
+- Added Pets which are floating player heads that follow their owner if equipped
+- Pets can be equipped and customized via the `/pets` menu which is also available in the Quick Actions Menu (Default:G)
+- Equipped Pets can be customized with an animation and particle effect
+- Pets can be quickly equipped/taken off with `/pets on/off`
+- For now Pets can only be purchased in the `/market`. 
+- Currently there are 5 normal and 5 time limited (until 19th Nov 26) Halloween themed pets available for purchase
+
+## Commands:
+- `/info` Shows a clickable link to the server's info page
+- `/website` Shows a clickable link to the Explorer's Eden website
+- `/wiki` Shows a clickable link to the Explorer's Eden wiki
+- `/claim` Opens the claim menu for where you're standing. Everything else can be done from the menu
+- `/claim mode` Turns claim mode on or off. In claim mode you hold the claim tool (a marked golden hoe) to create and resize claims
+- `/claim list` Lists your claims and how many claim blocks you have left
+- `/claim trust <player> [role]` Adds a player to the claim you're standing in. Roles: visitor, containers, builder (default), coowner
+- `/claim untrust <player>` Removes a player from the claim you're standing in
+- `/claim abandon` Gives up the claim you're standing in (asks you to confirm first)
+- `/market` Opens the market menu: buy and sell with other players and the server shop
+- `/pets` Opens the pets menu: get, choose and manage your pets
+- `/pets on` Takes your pet out
+- `/pets off` Puts your pet away
+
+## Misc:
+- Added 59 new advancements worked into the vanilla tabs centered around vanilla content
+- Added a new Public Info page for the SMP Server that shows all Settings and current Marketplace listings
+- Writing @Name in chat shows who mentioned them; Discord messages relayed into the game count too
+- AFK Status is now being shown in the tab list. Players count as AFK after 5 minutes idling
+- Tab List now also shows the Dimension a player currently is in
+- Tab List now also shows TPS, Ping and how many players are online
+- Custom Death messages and other public messages are now also being relayed to the Discord chat
+- There's now also a message shown in the Discord chat whenever the Outer Wilds got reset
+- Servers List Entry now shows a random MOTD after every restart
+- Players now get a Discord Role assigned based on the current Race they have in game
 
 # Fixes
+- Tenkū's push attack leaving an invisible Area Effect Cloud behind every time it was used, which piled up over time
+- Aetherian Spear, Endling Scythe and Netherian Broadsword special attacks and the Atlantic Shot scroll leaving an invisible Area Effect Cloud behind every time they were used, which piled up over time
+- Diamond Chicken variants spawn rate in Pillager Outposts

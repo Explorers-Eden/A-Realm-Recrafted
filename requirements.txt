@@ -1,3 +1,0 @@
-nbtlib
-pyyaml
-paramiko>=3.0.0
