@@ -22,7 +22,7 @@ Every dimension has a permanent area around its center. Everything beyond it bel
 
 | Dimension | Permanent Area (X and Z) | Edge of the World (X and Z) |
 |:----------|:-------------------------|:----------------------------|
-| Overworld | -6,000 to 6,000 | -18,000 to 18,000 |
+| Overworld | -6,000 to 6,000 | -18,000 to 15,000 |
 | The Nether | -5,000 to 5,000 | -10,000 to 10,000 |
 | The End | -2,500 to 2,500 | none |
 | Deep Blue | -1,500 to 1,500 | -3,000 to 3,000 |
