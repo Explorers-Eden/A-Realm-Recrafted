@@ -51,7 +51,7 @@ Trade with everyone, even when they're offline. Type `/market` to open the marke
 What's for sale right now, from the server and from players, is also on the server's info page, and your own listings show on your SMP profile on the website.
 
 ### 🐾 Pets
-Pets are floating heads that follow you around, and everyone near you sees yours. Get one in the **Server shop** of `/market`, or in the pet shop with `/pets`. Pets are paid in the same currency as the market, some are free, and some are only sold for a while or in limited numbers. Once you have a pet, it's yours for good.
+Pets are floating heads that follow you around, and everyone near you sees yours. Get one in the **Server shop** of `/market`, or in the pet shop with `/pets`. Pets are paid in the same currency as the market and some are only sold for a while or in limited numbers. Once you have a pet, it's yours for good.
 
 Type `/pets` to see your pets and take one out or put it away, or use `/pets on` and `/pets off` to do it quickly. There you also choose:
 - **Moves**: how your pet moves. It can float by your shoulder, circle your head, bounce, trail behind you, doze by your feet, dart around you, and more.
@@ -60,7 +60,7 @@ Type `/pets` to see your pets and take one out or put it away, or use `/pets on`
 
 **Reactions:** your pet notices what's going on. It hops when you eat, curls up when you sleep, cheers for your advancements, shivers in the snow, greets other pets and says hi when you join. It also warns you: when your tool is about to break, when you're low on health, food or air, when a creeper hisses or something sneaks up behind you, when you're about to burn, or when your inventory is full. Sneak twice while looking at your pet to give it a pat. Don't want any of it? Switch reactions off in `/pets`.
 
-**Bond and perks:** the longer your pet is out with you (while you're not AFK), the stronger your bond, and some pets have up to two **perks** that unlock at higher bond levels. The shop shows which perks a pet has. Perks are small helps, not superpowers:
+**Bond and perks:** the longer your pet is out with you (while you're not AFK), the stronger your bond, and some pets have up to two **perks** that unlock at higher bond levels. The shop shows which perks a pet has, and a pet's page says what each one does. Perks are small helps, not superpowers:
 - **Lantern** and **Night Eyes**: your pet glows and lights up the dark around you
 - **Fetch**: brings you what dropped from blocks you broke and mobs you killed
 - **Truffle Nose**: sniffs out suspicious sand and gravel nearby
@@ -69,10 +69,22 @@ Type `/pets` to see your pets and take one out or put it away, or use `/pets on`
 - **Torch Bearer**: places one of *your* torches where it's dark enough for monsters
 - **Miner**: mines ore you can see and widens the tunnel you're digging, with your pickaxe (never blocks players placed)
 - **Wood Chopper**: helps chop the tree you started on, with your axe (only real trees, never builds)
+- **XP Magnet**: pulls experience orbs to you from further away
+- **Replanter**: replants the crops you harvest, with seeds from your inventory
+- **Cook**: now and then cooks one raw food in your inventory
+- **Snack Sharer**: feeds you from your inventory when you get hungry
+- **Tinkerer**: now and then mends the tool in your hand or your armor a little
+- **Lure**: fish bite sooner while it's out
+- **Watchful Eye**: makes monsters near you glow, and only you see it
+- **Pack Mule**: carries a small bag for you, which you open in `/pets`. The bag is yours: what's in it stays even if you put the pet away or lose the perk
+- **Lucky Paw**: now and then one more drop from natural ore and grown crops
 - **Small Gifts**: now and then finds something small for you
 - **Second Wind**: heals you a little when you're nearly dead, once in a while
 - **Nipper**: nips monsters that hurt you or that you attack, like a wolf
 - **Shield**: pushes back monsters that come too close
+- **Fire Watch**: puts you out when you're burning, once in a while
+- **Soft Paws**: takes most of the damage of a fall, once in a while
+- **Guardian Roar**: roars monsters away when several close in on you
 
 Perks pause while you're AFK and never work in other people's claims unless you have rights there. You can switch single perks off in `/pets`.
 
