@@ -1,35 +1,12 @@
 # Changes
-## Market:
-- Selling starts with a list of everything you carry, each item with its picture and a **[ Sell ]** button; then you set how many and the price for just that item
-- You can change the price of your listings (and how many are bought at a time) and add more of the same item to a listing whenever you like. Adding more runs the listing for its full time again
-- Browsing shows every listing in one scrolling list instead of pages of 10, so pricier listings are no longer easy to miss
-- New **Market** page on the website: everything players and the server sell right now, searchable
-- **My SMP Profile** now shows your **Market Inbox** (earnings and items waiting for you in `/market`) and your **Pets**
-- Shulker boxes, chests, banners and decorated pots now have pictures on the info page and the website
-- Ask Merl what to sell something for: *"how much should I sell diamonds for?"*, *"what's this worth?"* (the item in your hand). She looks at what it sold for lately and what it's listed for now
+## Changes:
+- Added 7 new Waypoint Hub icons (left-click a hub to cycle through them)
+- When players interact with their own Waypoint Hub it no longer opens the list of Waypoints directly. Instead it shows an menu where players can either get the Waypoint list to TP to or configure their Waypoint Hub (Waypoint Hubs can still be configured using the packs own functions).
+- Pets can now be given a Nickname via the `/pets`menu
+- Pets now react to certain situations (for Example: When Music is playing, Player got attacked, Under Water) 
+- Pet reactions can be toggled via the `/pets` menu
+- Added a Merl menu to the Quick Actions menu where players can more quickly access some of Merls functions (Default: G)
 
-## Gameplay:
-- Mini blocks of the new cinnabar, sulfur and poplar blocks: in the stonecutter, and sometimes from Wandering Traders
-- Crops grow faster while it rains on them
-- Better Mending: sneak and right-click an anvil to repair the Mending item in your hand with your experience
-- AFK players no longer count when it's about skipping the night: the players who are actually there decide
-- Tree chopping no longer takes the tree next to it along when their branches or leaves touch
-- Graves, Waypoint Hubs and the clickable spots at spawn work inside every claim, also when you aren't a member of it
-
-## Pets:
-- Pets no longer fly through you during their moves
-- While you're AFK your pet roams around you on its own, and goes back to its move when you're back
-- Pet particles no longer drift into your view
-
-## World Map:
-- Waypoint Hub pins have the colour of the hub's name in game, and the hub's own icon in their popup
-- The names of who's online in the status card jump to that player on the map
-
-## Website:
-- Waypoint Hubs on My SMP Profile show the hub's own icon instead of your head
-- The advancements Nice Things adds to the vanilla tabs now show up in those tabs on the Statistics page and My SMP Profile
-
-# Fixes
-- Tenkū's explosion attack, the Rusta's Random Totem anvils, the Stonepiercer and Heavy Shot scrolls, the spawn decorations and the villager job site highlight used a block format 26.3 no longer reads
-- The Congress Assembled advancement was granted for using any trial key on any vault; now only a Trial Key of Roots counts
-- The Supercharged advancement's description: it's about having Haste II, wherever it comes from
+## Fixes:
+- Cycling through the icons no longer has an empty click before it starts over with the owner's head
+- The "Entered/Exited Outer Wilds" message now always matches the current world borders and shows within a second of crossing them
