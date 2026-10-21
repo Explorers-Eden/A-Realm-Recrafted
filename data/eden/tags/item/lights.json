@@ -1,0 +1,16 @@
+{
+  "values": [
+    "minecraft:campfire",
+    "minecraft:end_rod",
+    "minecraft:glowstone",
+    "minecraft:lantern",
+    "minecraft:ochre_froglight",
+    "minecraft:pearlescent_froglight",
+    "minecraft:redstone_lamp",
+    "minecraft:soul_campfire",
+    "minecraft:soul_lantern",
+    "minecraft:soul_torch",
+    "minecraft:torch",
+    "minecraft:verdant_froglight"
+  ]
+}

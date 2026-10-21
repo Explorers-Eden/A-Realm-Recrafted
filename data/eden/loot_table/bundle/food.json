@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:orange_bundle",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.eden.food_bundle",
+                "fallback": "Food Bundle",
+                "color": "white",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "eden:bundle/contents/food"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_bundle",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.eden.redstone_bundle",
+                "fallback": "Redstone Bundle",
+                "color": "white",
+                "bold": false,
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "eden:bundle/contents/redstone"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

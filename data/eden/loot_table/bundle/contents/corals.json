@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 12,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "items": "#eden:dead_corals"
+        }
+      ]
+    },
+    {
+      "rolls": 12,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "items": "#eden:corals"
+        }
+      ]
+    }
+  ]
+}

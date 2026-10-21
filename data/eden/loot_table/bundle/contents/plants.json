@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 24,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "items": "#eden:plants"
+        }
+      ]
+    }
+  ]
+}

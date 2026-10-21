@@ -8,7 +8,13 @@
 - Added a Merl menu to the Quick Actions menu where players can more quickly access some of Merls functions (Default: G)
 - Dimension name is now shown in front of the Player name instead of at the end in the Tab list
 - Server Shop now offers 3 random Mob Heads or Mini Blocks for 2 Diamonds each
+- Server Shop now offers various Bundles with themed contents for 8 Diamonds each
+
+
 
 ## Fixes:
 - Cycling through the icons no longer has an empty click before it starts over with the owner's head
 - The "Entered/Exited Outer Wilds" message now always matches the current world borders and shows within a second of crossing them
+
+
+

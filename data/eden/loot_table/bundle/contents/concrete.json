@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 12,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "items": "#eden:dyeable_concrete"
+        }
+      ]
+    },
+    {
+      "rolls": 12,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "items": "#eden:dyeable_concrete_powder"
+        }
+      ]
+    }
+  ]
+}
