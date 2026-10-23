@@ -1,20 +1,4 @@
 # Changes
-## Changes:
-- Added 7 new Waypoint Hub icons (left-click a hub to cycle through them)
-- When players interact with their own Waypoint Hub it no longer opens the list of Waypoints directly. Instead it shows an menu where players can either get the Waypoint list to TP to or configure their Waypoint Hub (Waypoint Hubs can still be configured using the packs own functions).
-- Pets can now be given a Nickname via the `/pets`menu
-- Pets now react to certain situations (for Example: When Music is playing, Player got attacked, Under Water) 
-- Pet reactions can be toggled via the `/pets` menu
-- Added a Merl menu to the Quick Actions menu where players can more quickly access some of Merls functions (Default: G)
-- Dimension name is now shown in front of the Player name instead of at the end in the Tab list
-- Server Shop now offers 3 random Mob Heads or Mini Blocks for 2 Diamonds each
-- Server Shop now offers various Bundles with themed contents for 8 Diamonds each
 
 
-
-## Fixes:
-- Cycling through the icons no longer has an empty click before it starts over with the owner's head
-- The "Entered/Exited Outer Wilds" message now always matches the current world borders and shows within a second of crossing them
-
-
-
+# Fixes

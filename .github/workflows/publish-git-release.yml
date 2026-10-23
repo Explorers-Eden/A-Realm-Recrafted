@@ -2,6 +2,14 @@ name: Publish Git Release
 
 on:
   workflow_dispatch:
+  # Every push to main rebuilds the "latest" release (the tag this workflow moves doesn't start it again).
+  push:
+    branches: [main]
+
+# Two quick pushes: the newer run replaces the older one instead of both updating the release at once.
+concurrency:
+  group: publish-git-release
+  cancel-in-progress: true
 
 permissions:
   contents: write
