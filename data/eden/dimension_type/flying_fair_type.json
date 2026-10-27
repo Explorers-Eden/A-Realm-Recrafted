@@ -26,7 +26,7 @@
     "gameplay/monsters_burn": false,
     "gameplay/piglins_zombify": false,
     "gameplay/increased_fire_burnout": false,
-    "gameplay/respawn_anchor_works": false,
+    "gameplay/respawn_anchor_works": true,
     "gameplay/fast_lava": true,
     "gameplay/turtle_egg_hatch_chance": 1,
     "gameplay/villager_activity": "minecraft:work",
