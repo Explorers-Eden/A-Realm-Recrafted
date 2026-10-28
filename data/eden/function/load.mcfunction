@@ -16,6 +16,10 @@ scoreboard objectives add eden.technical dummy
 #gamerule minecraft:max_snow_accumulation_height 4
 #gamerule minecraft:ender_pearls_vanish_on_death false
 
+## Flying Fair: its own clock, stopped at 15000 (night); set again on every load
+time of eden:flying_fair set 15000
+time of eden:flying_fair pause
+
 ##start repeating loops
 function eden:start
 
