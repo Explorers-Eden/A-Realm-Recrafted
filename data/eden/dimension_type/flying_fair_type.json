@@ -1,4 +1,6 @@
 {
+  "default_clock": "minecraft:overworld",
+  "timelines": "#minecraft:in_overworld",
   "has_skylight": true,
   "has_ceiling": false,
   "coordinate_scale": 1,
@@ -8,11 +10,11 @@
   "cardinal_light": "default",
   "infiniburn": "#minecraft:infiniburn_overworld",
   "min_y": 0,
-  "height": 512,
+  "height": 1024,
   "monster_spawn_light_level": 0,
   "monster_spawn_block_light_limit": 0,
   "has_ender_dragon_fight": false,
-  "has_fixed_time": false,
+  "has_fixed_time": true,
   "attributes": {
     "gameplay/bed_rule": {
       "can_set_spawn": "never",
