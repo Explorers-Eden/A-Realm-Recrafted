@@ -1,5 +1,6 @@
 {
   "values": [
-    "eden:load"
+    "eden:load",
+    "flying_fair:tp_back_to_spawn"
   ]
 }

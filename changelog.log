@@ -1,3 +1,4 @@
 # Changes
+- New Mob Equipment settings "Mobhead Drop Chance" and "Playerhead Drop Chance" (Mob Equipment > Miscellaneous): set how likely mobs drop the custom mob head or player head they spawned wearing (default 8%, same as before)
 
 # Fixes
